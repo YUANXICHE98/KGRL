@@ -1,0 +1,242 @@
+{
+  "kg_id": "example_basic_kg",
+  "description": "基础文本游戏知识图谱示例",
+  "version": "1.0",
+  "facts": [
+    {
+      "subject": "kitchen",
+      "predicate": "connected_to",
+      "object": "living_room",
+      "confidence": 1.0,
+      "source": "manual"
+    },
+    {
+      "subject": "living_room",
+      "predicate": "connected_to",
+      "object": "bedroom",
+      "confidence": 1.0,
+      "source": "manual"
+    },
+    {
+      "subject": "bedroom",
+      "predicate": "connected_to",
+      "object": "bathroom",
+      "confidence": 1.0,
+      "source": "manual"
+    },
+    {
+      "subject": "fridge",
+      "predicate": "located_in",
+      "object": "kitchen",
+      "confidence": 1.0,
+      "source": "manual"
+    },
+    {
+      "subject": "table",
+      "predicate": "located_in",
+      "object": "kitchen",
+      "confidence": 1.0,
+      "source": "manual"
+    },
+    {
+      "subject": "sofa",
+      "predicate": "located_in",
+      "object": "living_room",
+      "confidence": 1.0,
+      "source": "manual"
+    },
+    {
+      "subject": "tv",
+      "predicate": "located_in",
+      "object": "living_room",
+      "confidence": 1.0,
+      "source": "manual"
+    },
+    {
+      "subject": "bed",
+      "predicate": "located_in",
+      "object": "bedroom",
+      "confidence": 1.0,
+      "source": "manual"
+    },
+    {
+      "subject": "chest",
+      "predicate": "located_in",
+      "object": "bedroom",
+      "confidence": 1.0,
+      "source": "manual"
+    },
+    {
+      "subject": "mirror",
+      "predicate": "located_in",
+      "object": "bathroom",
+      "confidence": 1.0,
+      "source": "manual"
+    },
+    {
+      "subject": "apple",
+      "predicate": "located_in",
+      "object": "fridge",
+      "confidence": 0.8,
+      "source": "manual"
+    },
+    {
+      "subject": "key",
+      "predicate": "located_in",
+      "object": "kitchen",
+      "confidence": 0.9,
+      "source": "manual"
+    },
+    {
+      "subject": "book",
+      "predicate": "located_in",
+      "object": "living_room",
+      "confidence": 0.7,
+      "source": "manual"
+    },
+    {
+      "subject": "pillow",
+      "predicate": "located_in",
+      "object": "bedroom",
+      "confidence": 0.9,
+      "source": "manual"
+    },
+    {
+      "subject": "fridge",
+      "predicate": "can_be",
+      "object": "opened",
+      "confidence": 1.0,
+      "source": "manual"
+    },
+    {
+      "subject": "chest",
+      "predicate": "can_be",
+      "object": "opened",
+      "confidence": 1.0,
+      "source": "manual"
+    },
+    {
+      "subject": "apple",
+      "predicate": "can_be",
+      "object": "taken",
+      "confidence": 1.0,
+      "source": "manual"
+    },
+    {
+      "subject": "key",
+      "predicate": "can_be",
+      "object": "taken",
+      "confidence": 1.0,
+      "source": "manual"
+    },
+    {
+      "subject": "book",
+      "predicate": "can_be",
+      "object": "taken",
+      "confidence": 1.0,
+      "source": "manual"
+    },
+    {
+      "subject": "pillow",
+      "predicate": "can_be",
+      "object": "taken",
+      "confidence": 1.0,
+      "source": "manual"
+    },
+    {
+      "subject": "key",
+      "predicate": "opens",
+      "object": "chest",
+      "confidence": 1.0,
+      "source": "manual"
+    },
+    {
+      "subject": "chest",
+      "predicate": "requires",
+      "object": "key",
+      "confidence": 1.0,
+      "source": "manual"
+    },
+    {
+      "subject": "take_item",
+      "predicate": "requires",
+      "object": "free_hands",
+      "confidence": 1.0,
+      "source": "manual"
+    },
+    {
+      "subject": "open_container",
+      "predicate": "requires",
+      "object": "key",
+      "confidence": 0.8,
+      "source": "manual"
+    },
+    {
+      "subject": "go_direction",
+      "predicate": "changes",
+      "object": "location",
+      "confidence": 1.0,
+      "source": "manual"
+    },
+    {
+      "subject": "treasure",
+      "predicate": "hidden_in",
+      "object": "chest",
+      "confidence": 0.9,
+      "source": "manual"
+    },
+    {
+      "subject": "player",
+      "predicate": "goal",
+      "object": "find_treasure",
+      "confidence": 1.0,
+      "source": "manual"
+    },
+    {
+      "subject": "find_treasure",
+      "predicate": "requires",
+      "object": "open_chest",
+      "confidence": 1.0,
+      "source": "manual"
+    },
+    {
+      "subject": "open_chest",
+      "predicate": "requires",
+      "object": "have_key",
+      "confidence": 1.0,
+      "source": "manual"
+    },
+    {
+      "subject": "have_key",
+      "predicate": "requires",
+      "object": "take_key",
+      "confidence": 1.0,
+      "source": "manual"
+    }
+  ],
+  "entities": [
+    "kitchen", "living_room", "bedroom", "bathroom",
+    "fridge", "table", "sofa", "tv", "bed", "chest", "mirror",
+    "apple", "key", "book", "pillow", "treasure",
+    "player", "take_item", "open_container", "go_direction",
+    "find_treasure", "open_chest", "have_key", "take_key",
+    "opened", "taken", "free_hands", "location"
+  ],
+  "relations": [
+    "connected_to", "located_in", "can_be", "opens", "requires", 
+    "changes", "hidden_in", "goal"
+  ],
+  "stats": {
+    "num_facts": 30,
+    "num_entities": 28,
+    "num_relations": 8,
+    "creation_date": "2024-01-01",
+    "last_modified": "2024-01-01"
+  },
+  "metadata": {
+    "domain": "text_adventure_game",
+    "difficulty": "easy",
+    "scenario": "treasure_hunt",
+    "notes": "Basic knowledge graph for a simple treasure hunting game where the player needs to find a key to open a chest containing treasure."
+  }
+}

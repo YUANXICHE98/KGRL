@@ -1,0 +1,49 @@
+# Core dependencies
+torch>=2.0.0
+transformers>=4.30.0
+datasets>=2.12.0
+accelerate>=0.20.0
+
+# Reinforcement Learning
+trl>=0.7.0
+peft>=0.4.0
+
+# Environment dependencies
+textworld>=1.6.0
+gym>=0.21.0
+numpy>=1.21.0
+
+# Knowledge Graph
+networkx>=2.8.0
+rdflib>=6.2.0
+
+# Data processing
+pandas>=1.5.0
+scikit-learn>=1.1.0
+
+# Visualization
+matplotlib>=3.5.0
+seaborn>=0.11.0
+plotly>=5.10.0
+
+# Utilities
+tqdm>=4.64.0
+wandb>=0.13.0
+python-dotenv>=0.19.0
+pyyaml>=6.0
+
+# API clients
+openai>=0.27.0
+anthropic>=0.3.0
+
+# Development
+pytest>=7.0.0
+black>=22.0.0
+flake8>=5.0.0
+mypy>=0.991
+
+# Optional: for ALFWorld
+# alfworld>=0.3.0  # Uncomment if using ALFWorld
+
+# Optional: for advanced RL
+# rl4lms>=0.1.0  # Uncomment if using RL4LMs instead of TRL
