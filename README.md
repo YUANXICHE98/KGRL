@@ -1,10 +1,22 @@
-# KGRL: Knowledge Graph Enhanced Reinforcement Learning
+# KGRL: Knowledge Graph Reinforced Learning
 
-一个基于知识图谱增强的强化学习智能体框架，专门用于文本冒险游戏中的指令跟随任务。
+A research project implementing **DODAF-based ReAct RAG agents** for text-based adventure games, exploring the integration of structured knowledge graphs with large language models for enhanced decision-making.
 
-## 🎯 项目概述
+## 🎯 Project Overview
 
-KGRL通过集成知识图谱和大语言模型，构建能够在复杂文本环境中进行推理和决策的智能体。项目包含完整的消融实验设计，用于验证知识图谱对性能的提升效果。
+This project investigates how **Knowledge Graphs (KG)** can enhance **Large Language Model (LLM)** decision-making through a novel **DODAF (DO-DA-F)** framework integrated with **ReAct (Reasoning and Acting)** methodology.
+
+### Key Innovation: Dynamic query_kg Mechanism
+
+Instead of static knowledge injection, our RAG agents can **dynamically query** the knowledge graph during reasoning:
+
+```
+Thought: I need to understand what actions are available with the key
+Action: query_kg('dodaf', 'DO:key')
+Observation: [DO] key opens chest
+Thought: Perfect! Now I should take the key first
+Action: take key
+```
 
 ### 核心特性
 - 🤖 **多种Agent**: Baseline LLM、RAG增强、ReAct推理
