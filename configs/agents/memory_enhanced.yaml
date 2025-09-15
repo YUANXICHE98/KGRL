@@ -1,0 +1,41 @@
+# Memory-Enhanced Agent配置 - Vanilla LLM + 记忆系统
+# 用于测试记忆系统的单独贡献
+
+agent_name: "memory_enhanced"
+agent_type: "UnifiedKGAgent"
+description: "Baseline agent enhanced with memory capabilities"
+
+# LLM基础配置
+model_name: "gpt-4o"
+temperature: 0.7
+max_tokens: 300
+
+# 能力开关
+capabilities:
+  use_knowledge_graph: false
+  use_memory: true
+  use_enhanced_reasoning: false
+  use_rl: false
+
+# 记忆系统配置
+memory:
+  enabled: true
+  use_short_term: true
+  use_medium_term: true
+  use_long_term: false
+  short_term_size: 10
+  medium_term_size: 50
+  similarity_threshold: 0.6
+  max_retrieved_memories: 5
+
+# 实验标签
+experiment_tags:
+  - "memory_enhanced"
+  - "single_capability"
+  - "memory_only"
+
+# 预期性能
+expected_performance:
+  success_rate: 0.4  # 预期记忆能提升成功率
+  avg_steps: 22      # 预期减少重复动作
+  efficiency: 0.35   # 预期提升效率

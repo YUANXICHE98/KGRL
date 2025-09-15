@@ -1,0 +1,111 @@
+# RAG/ReAct智能体配置
+# 结合检索增强生成和ReAct推理的智能体
+
+agent_name: "rag_react_agent"
+agent_type: "RAGReActAgent"
+description: "RAG enhanced agent with ReAct reasoning capabilities"
+
+# LLM配置
+llm:
+  model_name: "gpt-4o"
+  api_key: "${OPENAI_API_KEY}"
+  temperature: 0.7
+  max_tokens: 1024
+  top_p: 0.9
+
+# RAG配置
+rag:
+  enabled: true
+  retrieval_strategy: "hybrid"  # semantic, keyword, hybrid
+  max_retrieved_docs: 5
+  similarity_threshold: 0.7
+  rerank_results: true
+  
+  # 向量检索配置
+  vector_search:
+    model_name: "sentence-transformers/all-MiniLM-L6-v2"
+    index_type: "faiss"  # faiss, qdrant, chromadb
+    embedding_dim: 384
+    
+  # 关键词检索配置
+  keyword_search:
+    method: "bm25"
+    k1: 1.2
+    b: 0.75
+
+# ReAct推理配置
+react:
+  enabled: true
+  max_iterations: 5
+  thought_prompt: "prompts/react_thought.txt"
+  action_prompt: "prompts/react_action.txt"
+  observation_prompt: "prompts/react_observation.txt"
+  
+  # 推理策略
+  reasoning_strategy: "step_by_step"  # step_by_step, parallel, adaptive
+  confidence_threshold: 0.6
+  early_stopping: true
+
+# 知识图谱集成
+knowledge_graph:
+  enabled: true
+  query_types:
+    - "entity_lookup"
+    - "relation_search"
+    - "path_finding"
+  max_kg_facts: 10
+  kg_confidence_threshold: 0.5
+
+# 记忆系统
+memory:
+  enabled: true
+  short_term_size: 20
+  medium_term_size: 100
+  memory_types:
+    - "episodic"
+    - "semantic"
+    - "procedural"
+  
+  # 记忆检索
+  retrieval_strategy: "similarity"
+  max_retrieved_memories: 5
+
+# 能力开关
+capabilities:
+  use_knowledge_graph: true
+  use_memory: true
+  use_enhanced_reasoning: true
+  use_rl: false
+
+# 模式控制
+mode:
+  retrieve_update_strategy: "joint"  # joint, update_first, retrieve_first
+  update_threshold: 0.8
+  retrieve_threshold: 0.6
+
+# 评估配置
+evaluation:
+  metrics:
+    - "success_rate"
+    - "avg_steps"
+    - "decision_time"
+    - "retrieval_accuracy"
+    - "reasoning_quality"
+  
+  logging:
+    log_retrievals: true
+    log_reasoning_chain: true
+    log_kg_updates: true
+
+# 实验标签
+experiment_tags:
+  - "rag"
+  - "react"
+  - "knowledge_enhanced"
+  - "reasoning"
+
+# 环境适配
+environment:
+  observation_preprocessing: "structured"
+  action_space: "discrete"
+  reward_shaping: true

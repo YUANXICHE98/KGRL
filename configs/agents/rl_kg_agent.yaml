@@ -1,0 +1,150 @@
+# RL KG智能体配置
+# 基于知识图谱的强化学习智能体，主导决策过程
+
+agent_name: "rl_kg_agent"
+agent_type: "RLKGAgent"
+description: "Reinforcement Learning agent with Knowledge Graph integration"
+
+# RL算法配置
+rl_algorithm:
+  name: "PPO"  # PPO, DQN, A2C, SAC
+  
+  # PPO特定参数
+  ppo:
+    learning_rate: 3e-4
+    n_steps: 2048
+    batch_size: 64
+    n_epochs: 10
+    gamma: 0.99
+    gae_lambda: 0.95
+    clip_range: 0.2
+    ent_coef: 0.01
+    vf_coef: 0.5
+    max_grad_norm: 0.5
+  
+  # 网络架构
+  policy_network:
+    hidden_sizes: [256, 256]
+    activation: "relu"
+    use_orthogonal_init: true
+  
+  value_network:
+    hidden_sizes: [256, 256]
+    activation: "relu"
+    use_orthogonal_init: true
+
+# 知识图谱集成
+knowledge_graph:
+  enabled: true
+  
+  # KG特征提取
+  feature_extraction:
+    node_embedding_dim: 128
+    edge_embedding_dim: 64
+    graph_embedding_method: "graph_attention"  # gcn, gat, graph_attention
+    max_subgraph_size: 50
+  
+  # KG状态表示
+  state_representation:
+    include_node_features: true
+    include_edge_features: true
+    include_graph_structure: true
+    include_temporal_info: true
+  
+  # KG更新策略
+  update_strategy:
+    update_frequency: "every_step"  # every_step, every_episode, adaptive
+    confidence_threshold: 0.7
+    max_updates_per_step: 3
+
+# 奖励塑形
+reward_shaping:
+  enabled: true
+  
+  # KG一致性奖励
+  kg_consistency_reward:
+    weight: 0.2
+    method: "graph_coherence"
+  
+  # 知识质量奖励
+  knowledge_quality_reward:
+    weight: 0.1
+    method: "evidence_strength"
+  
+  # 探索奖励
+  exploration_reward:
+    weight: 0.05
+    method: "novelty_based"
+
+# 经验回放
+replay_buffer:
+  size: 100000
+  include_kg_state: true
+  prioritized: false
+  
+  # KG状态压缩
+  kg_state_compression:
+    enabled: true
+    method: "graph_summarization"
+
+# 训练配置
+training:
+  total_timesteps: 1000000
+  eval_freq: 10000
+  save_freq: 50000
+  log_interval: 1000
+  
+  # 课程学习
+  curriculum_learning:
+    enabled: true
+    difficulty_schedule: "linear"  # linear, exponential, adaptive
+    initial_difficulty: 0.3
+    final_difficulty: 1.0
+
+# 能力开关
+capabilities:
+  use_knowledge_graph: true
+  use_memory: true
+  use_enhanced_reasoning: true
+  use_rl: true
+
+# LLM辅助（可选）
+llm_assistance:
+  enabled: false
+  model_name: "gpt-4o"
+  use_for_action_explanation: false
+  use_for_reward_interpretation: false
+
+# 评估配置
+evaluation:
+  metrics:
+    - "success_rate"
+    - "avg_steps"
+    - "cumulative_reward"
+    - "kg_consistency_score"
+    - "knowledge_utilization"
+    - "exploration_efficiency"
+  
+  logging:
+    log_kg_states: true
+    log_policy_gradients: true
+    log_value_estimates: true
+
+# 实验标签
+experiment_tags:
+  - "reinforcement_learning"
+  - "knowledge_graph"
+  - "ppo"
+  - "reward_shaping"
+
+# 环境适配
+environment:
+  observation_preprocessing: "kg_enhanced"
+  action_space: "discrete"
+  reward_shaping: true
+  
+  # KG环境包装
+  kg_wrapper:
+    enabled: true
+    update_kg_on_action: true
+    include_kg_in_observation: true

@@ -1,0 +1,67 @@
+# 快速对比实验配置
+# 用于快速验证和调试
+
+experiment_name: "quick_comparison"
+experiment_type: "comparison"
+description: "Quick comparison between baseline and full system"
+
+# 实验设置（较少的episodes用于快速测试）
+settings:
+  num_episodes: 5
+  max_steps_per_episode: 20
+  random_seed: 42
+  save_detailed_logs: false
+  generate_plots: true
+
+# 环境配置
+environment:
+  type: "TextWorld"
+  difficulty: "easy"
+  scenario: "simple_treasure"
+  config:
+    nb_objects: 3
+    nb_rooms: 2
+    quest_length: 2
+
+# Agent配置列表（只对比关键配置）
+agents:
+  - name: "vanilla_llm"
+    config_file: "agents/vanilla_llm.yaml"
+    description: "Vanilla LLM (baseline)"
+
+  - name: "fully_augmented"
+    config_file: "agents/fully_augmented.yaml"
+    description: "Fully-Augmented system"
+
+# 评估指标
+evaluation:
+  metrics:
+    - "success_rate"
+    - "average_steps"
+    - "efficiency"
+    - "decision_time"
+  
+  statistical_tests:
+    - "t_test"
+  
+  significance_level: 0.05
+
+# 输出配置
+output:
+  base_dir: "results/quick_comparison"
+  formats: ["json", "plots"]
+  
+  files:
+    - "quick_results.json"
+    - "comparison_plot.png"
+  
+  plots:
+    - type: "bar_chart"
+      title: "Baseline vs Full System"
+      x_axis: "Agent Type"
+      y_axis: "Success Rate"
+
+# 快速分析
+analysis:
+  focus: "performance_gap"
+  threshold: 0.2  # 如果性能差异小于20%，可能需要更多episodes

@@ -1,0 +1,64 @@
+# LLM基线智能体配置
+# 用于任务抓取和基础决策的纯LLM系统
+
+agent_name: "llm_baseline"
+agent_type: "LLMBaselineAgent"
+description: "Pure LLM agent for task extraction and baseline decision making"
+
+# LLM配置
+llm:
+  model_name: "gpt-4o"
+  api_key: "${OPENAI_API_KEY}"
+  temperature: 0.7
+  max_tokens: 512
+  top_p: 0.9
+  frequency_penalty: 0.0
+  presence_penalty: 0.0
+  timeout: 30
+
+# 任务抓取配置
+task_extraction:
+  enabled: true
+  prompt_template: "prompts/task_extraction.txt"
+  max_subgoals: 5
+  confidence_threshold: 0.6
+
+# 决策配置
+decision_making:
+  strategy: "direct"  # direct, chain_of_thought, few_shot
+  prompt_template: "prompts/decision_making.txt"
+  use_history: true
+  max_history_length: 10
+  action_selection: "greedy"  # greedy, sampling, beam_search
+
+# 能力开关
+capabilities:
+  use_knowledge_graph: false
+  use_memory: false
+  use_enhanced_reasoning: false
+  use_rl: false
+
+# 评估配置
+evaluation:
+  metrics:
+    - "success_rate"
+    - "avg_steps"
+    - "decision_time"
+    - "task_completion"
+  
+  logging:
+    log_decisions: true
+    log_reasoning: true
+    log_errors: true
+
+# 实验标签
+experiment_tags:
+  - "baseline"
+  - "llm_only"
+  - "task_extraction"
+
+# 环境适配
+environment:
+  observation_preprocessing: "text_only"
+  action_space: "discrete"
+  reward_shaping: false

@@ -1,0 +1,39 @@
+# Reasoning-Enhanced Agent配置 - Vanilla LLM + 推理增强
+# 用于测试推理增强的单独贡献
+
+agent_name: "reasoning_enhanced"
+agent_type: "UnifiedKGAgent"
+description: "Baseline agent enhanced with advanced reasoning capabilities"
+
+# LLM基础配置
+model_name: "gpt-4o"
+temperature: 0.7
+max_tokens: 300
+
+# 能力开关
+capabilities:
+  use_knowledge_graph: false
+  use_memory: false
+  use_enhanced_reasoning: true
+  use_rl: false
+
+# 推理增强配置
+reasoning:
+  enabled: true
+  use_react: true
+  use_dodaf: false
+  use_chain_of_thought: false
+  max_react_iterations: 5
+  react_temperature: 0.7
+
+# 实验标签
+experiment_tags:
+  - "reasoning_enhanced"
+  - "single_capability"
+  - "react_only"
+
+# 预期性能
+expected_performance:
+  success_rate: 0.45 # 预期推理能提升成功率
+  avg_steps: 18      # 预期更好的规划减少步数
+  efficiency: 0.4    # 预期提升效率

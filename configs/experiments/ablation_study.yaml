@@ -1,0 +1,135 @@
+# 消融实验配置
+# 系统性测试各个能力模块的贡献
+
+experiment_name: "ablation_study"
+experiment_type: "ablation"
+description: "Systematic ablation study of all capability modules"
+
+# 实验设置
+settings:
+  num_episodes: 20
+  max_steps_per_episode: 30
+  random_seed: 42
+  save_detailed_logs: true
+  generate_plots: true
+
+# 环境配置
+environment:
+  type: "TextWorld"
+  difficulty: "easy"
+  scenario: "treasure_hunt"
+  config:
+    nb_objects: 5
+    nb_rooms: 3
+    quest_length: 3
+
+# Agent配置列表（按消融顺序）
+agents:
+  - name: "vanilla_llm"
+    config_file: "agents/vanilla_llm.yaml"
+    description: "Vanilla LLM (baseline)"
+
+  - name: "kg_augmented"
+    config_file: "agents/kg_augmented.yaml"
+    description: "KG-Augmented (vanilla + knowledge graph)"
+
+  - name: "memory_enhanced"
+    config_file: "agents/memory_enhanced.yaml"
+    description: "Memory-Enhanced (vanilla + memory system)"
+
+  - name: "reasoning_enhanced"
+    config_file: "agents/reasoning_enhanced.yaml"
+    description: "Reasoning-Enhanced (vanilla + advanced reasoning)"
+
+  - name: "dual_augmented"
+    config_file: "agents/dual_augmented.yaml"
+    description: "Dual-Augmented (KG + memory)"
+
+  - name: "fully_augmented"
+    config_file: "agents/fully_augmented.yaml"
+    description: "Fully-Augmented (all capabilities)"
+
+# 评估指标
+evaluation:
+  metrics:
+    - "success_rate"
+    - "average_steps"
+    - "efficiency"
+    - "decision_time"
+    - "llm_calls"
+    - "kg_queries"
+    - "memory_retrievals"
+  
+  # 统计测试
+  statistical_tests:
+    - "t_test"
+    - "wilcoxon"
+    - "anova"
+  
+  # 显著性水平
+  significance_level: 0.05
+
+# 输出配置
+output:
+  base_dir: "results/ablation_study"
+  formats: ["json", "csv", "plots"]
+  
+  # 生成的文件
+  files:
+    - "detailed_results.json"
+    - "summary_stats.csv"
+    - "comparison_plots.png"
+    - "ablation_report.md"
+  
+  # 可视化配置
+  plots:
+    - type: "bar_chart"
+      title: "Success Rate by Configuration"
+      x_axis: "Agent Configuration"
+      y_axis: "Success Rate"
+      
+    - type: "line_chart"
+      title: "Average Steps by Configuration"
+      x_axis: "Agent Configuration"
+      y_axis: "Average Steps"
+      
+    - type: "heatmap"
+      title: "Performance Metrics Heatmap"
+      metrics: ["success_rate", "efficiency", "avg_steps"]
+
+# 分析配置
+analysis:
+  # 能力贡献分析
+  capability_contribution:
+    - capability: "knowledge_graph"
+      baseline: "vanilla_llm"
+      enhanced: "kg_augmented"
+
+    - capability: "memory_system"
+      baseline: "vanilla_llm"
+      enhanced: "memory_enhanced"
+
+    - capability: "enhanced_reasoning"
+      baseline: "vanilla_llm"
+      enhanced: "reasoning_enhanced"
+
+  # 协同效应分析
+  synergy_analysis:
+    - combination: "dual_capabilities"
+      individual: ["kg_augmented", "memory_enhanced"]
+      combined: "dual_augmented"
+
+    - combination: "full_system"
+      individual: ["kg_augmented", "memory_enhanced", "reasoning_enhanced"]
+      combined: "fully_augmented"
+
+# 报告模板
+report_template:
+  title: "KGRL Ablation Study Results"
+  sections:
+    - "Executive Summary"
+    - "Methodology"
+    - "Individual Capability Analysis"
+    - "Synergy Effects"
+    - "Statistical Significance"
+    - "Conclusions and Recommendations"

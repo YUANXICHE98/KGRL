@@ -1,0 +1,39 @@
+# KG-Augmented Agent配置 - Vanilla LLM + 知识图谱
+# 用于测试知识图谱的单独贡献
+
+agent_name: "kg_augmented"
+agent_type: "UnifiedKGAgent"
+description: "Baseline agent enhanced with knowledge graph capabilities"
+
+# LLM基础配置
+model_name: "gpt-4o"
+temperature: 0.7
+max_tokens: 300
+
+# 能力开关
+capabilities:
+  use_knowledge_graph: true
+  use_memory: false
+  use_enhanced_reasoning: false
+  use_rl: false
+
+# 知识图谱配置
+knowledge_graph:
+  enabled: true
+  update_dynamically: true
+  max_facts_per_query: 5
+  query_types: ["keywords", "dodaf", "entity"]
+  dodaf_enabled: true
+  confidence_threshold: 0.5
+
+# 实验标签
+experiment_tags:
+  - "kg_enhanced"
+  - "single_capability"
+  - "knowledge_only"
+
+# 预期性能
+expected_performance:
+  success_rate: 0.5  # 预期KG能提升成功率
+  avg_steps: 20      # 预期减少步数
+  efficiency: 0.4    # 预期提升效率
