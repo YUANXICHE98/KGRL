@@ -39,14 +39,14 @@ ANTHROPIC_API_KEY=sk-ant-your-key-here
 运行多个LLM的性能对比：
 
 ```bash
-# 比较推荐的LLM组合
-python experiments/llm_comparison.py --episodes 20
+# 使用新的实验框架
+python main.py --llm-comp
 
-# 比较特定模型
-python experiments/llm_comparison.py --models gpt-4o-mini claude-3-haiku --episodes 30
+# 或使用快速启动
+python run.py llm-comparison
 
-# 快速测试
-python experiments/llm_comparison.py --episodes 5 --max-steps 20
+# 运行特定的LLM评估实验
+python experiments/llm_evaluation/model_comparison.py
 ```
 
 ### 选择建议

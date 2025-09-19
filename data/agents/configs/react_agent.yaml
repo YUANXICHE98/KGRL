@@ -1,0 +1,79 @@
+agent_type: "ReactAgent"
+version: "1.0"
+description: "ReAct agent with knowledge graph integration and reasoning loops"
+
+# LLM Configuration
+model:
+  name: "gpt-4o"
+  provider: "openai"
+  temperature: 0.7
+  max_tokens: 300
+  timeout: 30
+
+# Knowledge Graph Configuration
+knowledge_graph:
+  enabled: true
+  max_facts: 5
+  query_types: ["keywords", "dodaf", "entity"]
+  query_expansion: true
+  result_ranking: true
+  cache_results: true
+  
+# Memory Configuration  
+memory:
+  enabled: false
+  short_term_size: 0
+  medium_term_size: 0
+  long_term_size: 0
+
+# Reasoning Configuration
+reasoning:
+  type: "react"
+  max_iterations: 5
+  use_react: true
+  use_dodaf: false
+  thought_prefix: "Thought:"
+  action_prefix: "Action:"
+  observation_prefix: "Observation:"
+
+# Prompts Configuration
+prompts:
+  system_prompt: |
+    You are an AI assistant that uses ReAct (Reasoning and Acting) to solve problems.
+    You can query a knowledge graph for relevant information.
+    
+    Use this format:
+    Thought: [your reasoning about what to do next]
+    Action: [your action]
+    Observation: [the result of your action]
+    
+    Continue this process until you solve the problem.
+  
+  react_template: |
+    {previous_steps}
+    
+    Current situation: {observation}
+    
+    Think step by step about what to do next.
+    Thought:
+    
+# Knowledge Graph Query Configuration
+kg_query:
+  default_type: "keywords"
+  max_results: 10
+  min_confidence: 0.5
+  expand_queries: true
+  
+# Performance Configuration
+performance:
+  max_retries: 3
+  timeout: 60
+  cache_responses: true
+
+# Logging Configuration
+logging:
+  level: "INFO"
+  log_actions: true
+  log_observations: true
+  log_reasoning: true
+  log_kg_queries: true

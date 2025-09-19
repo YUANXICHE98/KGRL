@@ -1,0 +1,50 @@
+agent_type: "BaselineAgent"
+version: "1.0"
+description: "Baseline agent configuration without knowledge graph or memory"
+
+# LLM Configuration
+model:
+  name: "gpt-4o"
+  provider: "openai"
+  temperature: 0.7
+  max_tokens: 200
+  timeout: 30
+
+# Knowledge Graph Configuration
+knowledge_graph:
+  enabled: false
+  max_facts: 0
+  query_types: []
+  
+# Memory Configuration  
+memory:
+  enabled: false
+  short_term_size: 0
+  medium_term_size: 0
+  long_term_size: 0
+
+# Reasoning Configuration
+reasoning:
+  type: "direct"
+  max_iterations: 1
+  use_react: false
+  use_dodaf: false
+
+# Prompts Configuration
+prompts:
+  system_prompt: "You are a helpful AI assistant playing a text-based game. Respond with a single action."
+  action_prefix: "Action:"
+  observation_prefix: "Observation:"
+  
+# Performance Configuration
+performance:
+  max_retries: 3
+  timeout: 30
+  cache_responses: false
+
+# Logging Configuration
+logging:
+  level: "INFO"
+  log_actions: true
+  log_observations: true
+  log_reasoning: false
