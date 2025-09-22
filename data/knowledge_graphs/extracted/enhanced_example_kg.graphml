@@ -1,0 +1,313 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d7" for="edge" attr.name="attributes_json" attr.type="string" />
+  <key id="d6" for="edge" attr.name="type" attr.type="string" />
+  <key id="d5" for="edge" attr.name="target" attr.type="string" />
+  <key id="d4" for="edge" attr.name="source" attr.type="string" />
+  <key id="d3" for="node" attr.name="attributes_json" attr.type="string" />
+  <key id="d2" for="node" attr.name="name" attr.type="string" />
+  <key id="d1" for="node" attr.name="type" attr.type="string" />
+  <key id="d0" for="node" attr.name="id" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="entity_1">
+      <data key="d0">entity_1</data>
+      <data key="d1">entity</data>
+      <data key="d2">打开宝箱完整场景</data>
+      <data key="d3">{'description': '游戏场景: 打开宝箱完整场景', 'type': 'game_scene', 'entity_type': 'scene'}</data>
+    </node>
+    <node id="entity_2">
+      <data key="d0">entity_2</data>
+      <data key="d1">entity</data>
+      <data key="d2">青铜钥匙</data>
+      <data key="d3">{'properties': {'名称': '青铜钥匙', '材质': '青铜', '描述': '一把古老的青铜钥匙'}, 'initial_state': '未获取', 'possible_states': ['未获取', '已获取'], 'entity_type': '道具'}</data>
+    </node>
+    <node id="state_3">
+      <data key="d0">state_3</data>
+      <data key="d1">state</data>
+      <data key="d2">青铜钥匙_未获取</data>
+      <data key="d3">{'entity_name': '青铜钥匙', 'state_type': 'entity_state', 'is_initial': True, 'state_value': '未获取'}</data>
+    </node>
+    <node id="state_4">
+      <data key="d0">state_4</data>
+      <data key="d1">state</data>
+      <data key="d2">青铜钥匙_已获取</data>
+      <data key="d3">{'entity_name': '青铜钥匙', 'state_type': 'entity_state', 'is_initial': False, 'state_value': '已获取'}</data>
+    </node>
+    <node id="entity_5">
+      <data key="d0">entity_5</data>
+      <data key="d1">entity</data>
+      <data key="d2">木制宝箱</data>
+      <data key="d3">{'properties': {'材质': '木制', '描述': '一个古老的木制宝箱'}, 'initial_state': '锁定', 'possible_states': ['锁定', '解锁', '打开'], 'entity_type': '容器'}</data>
+    </node>
+    <node id="state_6">
+      <data key="d0">state_6</data>
+      <data key="d1">state</data>
+      <data key="d2">木制宝箱_锁定</data>
+      <data key="d3">{'entity_name': '木制宝箱', 'state_type': 'entity_state', 'is_initial': True, 'state_value': '锁定'}</data>
+    </node>
+    <node id="state_7">
+      <data key="d0">state_7</data>
+      <data key="d1">state</data>
+      <data key="d2">木制宝箱_解锁</data>
+      <data key="d3">{'entity_name': '木制宝箱', 'state_type': 'entity_state', 'is_initial': False, 'state_value': '解锁'}</data>
+    </node>
+    <node id="state_8">
+      <data key="d0">state_8</data>
+      <data key="d1">state</data>
+      <data key="d2">木制宝箱_打开</data>
+      <data key="d3">{'entity_name': '木制宝箱', 'state_type': 'entity_state', 'is_initial': False, 'state_value': '打开'}</data>
+    </node>
+    <node id="entity_9">
+      <data key="d0">entity_9</data>
+      <data key="d1">entity</data>
+      <data key="d2">玩家</data>
+      <data key="d3">{'properties': {'描述': '游戏玩家'}, 'initial_state': '空手', 'possible_states': ['空手', '持有钥匙'], 'entity_type': '角色'}</data>
+    </node>
+    <node id="state_10">
+      <data key="d0">state_10</data>
+      <data key="d1">state</data>
+      <data key="d2">玩家_空手</data>
+      <data key="d3">{'entity_name': '玩家', 'state_type': 'entity_state', 'is_initial': True, 'state_value': '空手'}</data>
+    </node>
+    <node id="state_11">
+      <data key="d0">state_11</data>
+      <data key="d1">state</data>
+      <data key="d2">玩家_持有钥匙</data>
+      <data key="d3">{'entity_name': '玩家', 'state_type': 'entity_state', 'is_initial': False, 'state_value': '持有钥匙'}</data>
+    </node>
+    <node id="action_12">
+      <data key="d0">action_12</data>
+      <data key="d1">action</data>
+      <data key="d2">获取钥匙</data>
+      <data key="d3">{'description': '拿取青铜钥匙', 'required_entities': ['青铜钥匙', '玩家'], 'required_states': {'青铜钥匙': '未获取', '玩家': '空手'}, 'effects': {'青铜钥匙': '已获取', '玩家': '持有钥匙'}, 'result': '获取成功'}</data>
+    </node>
+    <node id="result_13">
+      <data key="d0">result_13</data>
+      <data key="d1">result</data>
+      <data key="d2">获取钥匙_result</data>
+      <data key="d3">{'action_name': '获取钥匙', 'description': '动作 获取钥匙 的结果', 'result_value': '获取成功'}</data>
+    </node>
+    <node id="action_14">
+      <data key="d0">action_14</data>
+      <data key="d1">action</data>
+      <data key="d2">使用钥匙</data>
+      <data key="d3">{'description': '用钥匙解锁宝箱', 'required_entities': ['青铜钥匙', '木制宝箱', '玩家'], 'required_states': {'青铜钥匙': '已获取', '木制宝箱': '锁定', '玩家': '持有钥匙'}, 'effects': {'木制宝箱': '解锁'}, 'result': '解锁成功'}</data>
+    </node>
+    <node id="result_15">
+      <data key="d0">result_15</data>
+      <data key="d1">result</data>
+      <data key="d2">使用钥匙_result</data>
+      <data key="d3">{'action_name': '使用钥匙', 'description': '动作 使用钥匙 的结果', 'result_value': '解锁成功'}</data>
+    </node>
+    <node id="action_16">
+      <data key="d0">action_16</data>
+      <data key="d1">action</data>
+      <data key="d2">打开</data>
+      <data key="d3">{'description': '打开宝箱', 'required_entities': ['木制宝箱'], 'required_states': {'木制宝箱': '解锁'}, 'effects': {'木制宝箱': '打开'}, 'result': '打开成功'}</data>
+    </node>
+    <node id="result_17">
+      <data key="d0">result_17</data>
+      <data key="d1">result</data>
+      <data key="d2">打开_result</data>
+      <data key="d3">{'action_name': '打开', 'description': '动作 打开 的结果', 'result_value': '打开成功'}</data>
+    </node>
+    <edge source="entity_1" target="entity_2">
+      <data key="d4">entity_1</data>
+      <data key="d5">entity_2</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'scene_contains_entity'}</data>
+    </edge>
+    <edge source="entity_1" target="entity_5">
+      <data key="d4">entity_1</data>
+      <data key="d5">entity_5</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'scene_contains_entity'}</data>
+    </edge>
+    <edge source="entity_1" target="entity_9">
+      <data key="d4">entity_1</data>
+      <data key="d5">entity_9</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'scene_contains_entity'}</data>
+    </edge>
+    <edge source="entity_2" target="state_3">
+      <data key="d4">entity_2</data>
+      <data key="d5">state_3</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': '未获取', 'is_initial': True}</data>
+    </edge>
+    <edge source="entity_2" target="state_4">
+      <data key="d4">entity_2</data>
+      <data key="d5">state_4</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': '已获取', 'is_initial': False}</data>
+    </edge>
+    <edge source="state_3" target="state_4">
+      <data key="d4">state_3</data>
+      <data key="d5">state_4</data>
+      <data key="d6">transitions</data>
+      <data key="d7">{'action': '获取钥匙', 'conditions': ['钥匙可见', '玩家在场'], 'effects': ['钥匙在玩家手中']}</data>
+    </edge>
+    <edge source="entity_5" target="state_6">
+      <data key="d4">entity_5</data>
+      <data key="d5">state_6</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': '锁定', 'is_initial': True}</data>
+    </edge>
+    <edge source="entity_5" target="state_7">
+      <data key="d4">entity_5</data>
+      <data key="d5">state_7</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': '解锁', 'is_initial': False}</data>
+    </edge>
+    <edge source="entity_5" target="state_8">
+      <data key="d4">entity_5</data>
+      <data key="d5">state_8</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': '打开', 'is_initial': False}</data>
+    </edge>
+    <edge source="state_6" target="state_7">
+      <data key="d4">state_6</data>
+      <data key="d5">state_7</data>
+      <data key="d6">transitions</data>
+      <data key="d7">{'action': '使用钥匙', 'conditions': ['有正确的钥匙', '钥匙已获取'], 'effects': ['宝箱解锁']}</data>
+    </edge>
+    <edge source="state_7" target="state_8">
+      <data key="d4">state_7</data>
+      <data key="d5">state_8</data>
+      <data key="d6">transitions</data>
+      <data key="d7">{'action': '打开', 'conditions': ['宝箱已解锁'], 'effects': ['宝箱内容可见', '任务完成']}</data>
+    </edge>
+    <edge source="entity_9" target="state_10">
+      <data key="d4">entity_9</data>
+      <data key="d5">state_10</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': '空手', 'is_initial': True}</data>
+    </edge>
+    <edge source="entity_9" target="state_11">
+      <data key="d4">entity_9</data>
+      <data key="d5">state_11</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': '持有钥匙', 'is_initial': False}</data>
+    </edge>
+    <edge source="state_10" target="state_11">
+      <data key="d4">state_10</data>
+      <data key="d5">state_11</data>
+      <data key="d6">transitions</data>
+      <data key="d7">{'action': '获取钥匙', 'conditions': ['钥匙可获取'], 'effects': ['玩家状态改变']}</data>
+    </edge>
+    <edge source="action_12" target="result_13">
+      <data key="d4">action_12</data>
+      <data key="d5">result_13</data>
+      <data key="d6">produces</data>
+      <data key="d7">{'relationship': 'action_produces_result'}</data>
+    </edge>
+    <edge source="action_12" target="entity_2">
+      <data key="d4">action_12</data>
+      <data key="d5">entity_2</data>
+      <data key="d6">requires</data>
+      <data key="d7">{'relationship': 'action_requires_entity'}</data>
+    </edge>
+    <edge source="action_12" target="entity_9">
+      <data key="d4">action_12</data>
+      <data key="d5">entity_9</data>
+      <data key="d6">requires</data>
+      <data key="d7">{'relationship': 'action_requires_entity'}</data>
+    </edge>
+    <edge source="action_12" target="state_3">
+      <data key="d4">action_12</data>
+      <data key="d5">state_3</data>
+      <data key="d6">requires</data>
+      <data key="d7">{'relationship': 'action_requires_state', 'required_value': '未获取'}</data>
+    </edge>
+    <edge source="action_12" target="state_10">
+      <data key="d4">action_12</data>
+      <data key="d5">state_10</data>
+      <data key="d6">requires</data>
+      <data key="d7">{'relationship': 'action_requires_state', 'required_value': '空手'}</data>
+    </edge>
+    <edge source="action_12" target="state_4">
+      <data key="d4">action_12</data>
+      <data key="d5">state_4</data>
+      <data key="d6">modifies</data>
+      <data key="d7">{'relationship': 'action_modifies_state', 'new_value': '已获取'}</data>
+    </edge>
+    <edge source="action_12" target="state_11">
+      <data key="d4">action_12</data>
+      <data key="d5">state_11</data>
+      <data key="d6">modifies</data>
+      <data key="d7">{'relationship': 'action_modifies_state', 'new_value': '持有钥匙'}</data>
+    </edge>
+    <edge source="action_14" target="result_15">
+      <data key="d4">action_14</data>
+      <data key="d5">result_15</data>
+      <data key="d6">produces</data>
+      <data key="d7">{'relationship': 'action_produces_result'}</data>
+    </edge>
+    <edge source="action_14" target="entity_2">
+      <data key="d4">action_14</data>
+      <data key="d5">entity_2</data>
+      <data key="d6">requires</data>
+      <data key="d7">{'relationship': 'action_requires_entity'}</data>
+    </edge>
+    <edge source="action_14" target="entity_5">
+      <data key="d4">action_14</data>
+      <data key="d5">entity_5</data>
+      <data key="d6">requires</data>
+      <data key="d7">{'relationship': 'action_requires_entity'}</data>
+    </edge>
+    <edge source="action_14" target="entity_9">
+      <data key="d4">action_14</data>
+      <data key="d5">entity_9</data>
+      <data key="d6">requires</data>
+      <data key="d7">{'relationship': 'action_requires_entity'}</data>
+    </edge>
+    <edge source="action_14" target="state_4">
+      <data key="d4">action_14</data>
+      <data key="d5">state_4</data>
+      <data key="d6">requires</data>
+      <data key="d7">{'relationship': 'action_requires_state', 'required_value': '已获取'}</data>
+    </edge>
+    <edge source="action_14" target="state_6">
+      <data key="d4">action_14</data>
+      <data key="d5">state_6</data>
+      <data key="d6">requires</data>
+      <data key="d7">{'relationship': 'action_requires_state', 'required_value': '锁定'}</data>
+    </edge>
+    <edge source="action_14" target="state_11">
+      <data key="d4">action_14</data>
+      <data key="d5">state_11</data>
+      <data key="d6">requires</data>
+      <data key="d7">{'relationship': 'action_requires_state', 'required_value': '持有钥匙'}</data>
+    </edge>
+    <edge source="action_14" target="state_7">
+      <data key="d4">action_14</data>
+      <data key="d5">state_7</data>
+      <data key="d6">modifies</data>
+      <data key="d7">{'relationship': 'action_modifies_state', 'new_value': '解锁'}</data>
+    </edge>
+    <edge source="action_16" target="result_17">
+      <data key="d4">action_16</data>
+      <data key="d5">result_17</data>
+      <data key="d6">produces</data>
+      <data key="d7">{'relationship': 'action_produces_result'}</data>
+    </edge>
+    <edge source="action_16" target="entity_5">
+      <data key="d4">action_16</data>
+      <data key="d5">entity_5</data>
+      <data key="d6">requires</data>
+      <data key="d7">{'relationship': 'action_requires_entity'}</data>
+    </edge>
+    <edge source="action_16" target="state_7">
+      <data key="d4">action_16</data>
+      <data key="d5">state_7</data>
+      <data key="d6">requires</data>
+      <data key="d7">{'relationship': 'action_requires_state', 'required_value': '解锁'}</data>
+    </edge>
+    <edge source="action_16" target="state_8">
+      <data key="d4">action_16</data>
+      <data key="d5">state_8</data>
+      <data key="d6">modifies</data>
+      <data key="d7">{'relationship': 'action_modifies_state', 'new_value': '打开'}</data>
+    </edge>
+  </graph>
+</graphml>

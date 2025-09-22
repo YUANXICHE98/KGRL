@@ -1,0 +1,208 @@
+{
+  "total_scenes": 10,
+  "output_directory": "/Users/cheyuanxi/PycharmProjects/KGRL/data/knowledge_graphs/scenes",
+  "scenes": {
+    "FloorPlan228-openable": {
+      "file_path": "/Users/cheyuanxi/PycharmProjects/KGRL/data/knowledge_graphs/scenes/FloorPlan228-openable_kg.json",
+      "entities": 8,
+      "actions": 1,
+      "transitions": 1,
+      "total_nodes": 38,
+      "total_edges": 40,
+      "node_types": {
+        "entity": 9,
+        "state": 27,
+        "action": 1,
+        "result": 1
+      },
+      "edge_types": {
+        "contains": 8,
+        "has_state": 27,
+        "produces": 1,
+        "requires": 2,
+        "modifies": 1,
+        "transitions": 1
+      }
+    },
+    "FloorPlan211-openable": {
+      "file_path": "/Users/cheyuanxi/PycharmProjects/KGRL/data/knowledge_graphs/scenes/FloorPlan211-openable_kg.json",
+      "entities": 11,
+      "actions": 1,
+      "transitions": 1,
+      "total_nodes": 50,
+      "total_edges": 52,
+      "node_types": {
+        "entity": 12,
+        "state": 36,
+        "action": 1,
+        "result": 1
+      },
+      "edge_types": {
+        "contains": 11,
+        "has_state": 36,
+        "produces": 1,
+        "requires": 2,
+        "modifies": 1,
+        "transitions": 1
+      }
+    },
+    "FloorPlan206-openable": {
+      "file_path": "/Users/cheyuanxi/PycharmProjects/KGRL/data/knowledge_graphs/scenes/FloorPlan206-openable_kg.json",
+      "entities": 19,
+      "actions": 0,
+      "transitions": 0,
+      "total_nodes": 77,
+      "total_edges": 76,
+      "node_types": {
+        "entity": 20,
+        "state": 57
+      },
+      "edge_types": {
+        "contains": 19,
+        "has_state": 57
+      }
+    },
+    "FloorPlan202-openable": {
+      "file_path": "/Users/cheyuanxi/PycharmProjects/KGRL/data/knowledge_graphs/scenes/FloorPlan202-openable_kg.json",
+      "entities": 6,
+      "actions": 0,
+      "transitions": 0,
+      "total_nodes": 25,
+      "total_edges": 24,
+      "node_types": {
+        "entity": 7,
+        "state": 18
+      },
+      "edge_types": {
+        "contains": 6,
+        "has_state": 18
+      }
+    },
+    "FloorPlan215-openable": {
+      "file_path": "/Users/cheyuanxi/PycharmProjects/KGRL/data/knowledge_graphs/scenes/FloorPlan215-openable_kg.json",
+      "entities": 13,
+      "actions": 0,
+      "transitions": 0,
+      "total_nodes": 53,
+      "total_edges": 52,
+      "node_types": {
+        "entity": 14,
+        "state": 39
+      },
+      "edge_types": {
+        "contains": 13,
+        "has_state": 39
+      }
+    },
+    "FloorPlan20-openable": {
+      "file_path": "/Users/cheyuanxi/PycharmProjects/KGRL/data/knowledge_graphs/scenes/FloorPlan20-openable_kg.json",
+      "entities": 19,
+      "actions": 1,
+      "transitions": 1,
+      "total_nodes": 82,
+      "total_edges": 84,
+      "node_types": {
+        "entity": 20,
+        "state": 60,
+        "action": 1,
+        "result": 1
+      },
+      "edge_types": {
+        "contains": 19,
+        "has_state": 60,
+        "produces": 1,
+        "requires": 2,
+        "modifies": 1,
+        "transitions": 1
+      }
+    },
+    "FloorPlan308-openable": {
+      "file_path": "/Users/cheyuanxi/PycharmProjects/KGRL/data/knowledge_graphs/scenes/FloorPlan308-openable_kg.json",
+      "entities": 13,
+      "actions": 1,
+      "transitions": 1,
+      "total_nodes": 58,
+      "total_edges": 60,
+      "node_types": {
+        "entity": 14,
+        "state": 42,
+        "action": 1,
+        "result": 1
+      },
+      "edge_types": {
+        "contains": 13,
+        "has_state": 42,
+        "produces": 1,
+        "requires": 2,
+        "modifies": 1,
+        "transitions": 1
+      }
+    },
+    "FloorPlan3-openable": {
+      "file_path": "/Users/cheyuanxi/PycharmProjects/KGRL/data/knowledge_graphs/scenes/FloorPlan3-openable_kg.json",
+      "entities": 16,
+      "actions": 1,
+      "transitions": 1,
+      "total_nodes": 70,
+      "total_edges": 72,
+      "node_types": {
+        "entity": 17,
+        "state": 51,
+        "action": 1,
+        "result": 1
+      },
+      "edge_types": {
+        "contains": 16,
+        "has_state": 51,
+        "produces": 1,
+        "requires": 2,
+        "modifies": 1,
+        "transitions": 1
+      }
+    },
+    "FloorPlan421-openable": {
+      "file_path": "/Users/cheyuanxi/PycharmProjects/KGRL/data/knowledge_graphs/scenes/FloorPlan421-openable_kg.json",
+      "entities": 11,
+      "actions": 1,
+      "transitions": 1,
+      "total_nodes": 50,
+      "total_edges": 52,
+      "node_types": {
+        "entity": 12,
+        "state": 36,
+        "action": 1,
+        "result": 1
+      },
+      "edge_types": {
+        "contains": 11,
+        "has_state": 36,
+        "produces": 1,
+        "requires": 2,
+        "modifies": 1,
+        "transitions": 1
+      }
+    },
+    "FloorPlan19-openable": {
+      "file_path": "/Users/cheyuanxi/PycharmProjects/KGRL/data/knowledge_graphs/scenes/FloorPlan19-openable_kg.json",
+      "entities": 19,
+      "actions": 1,
+      "transitions": 1,
+      "total_nodes": 82,
+      "total_edges": 84,
+      "node_types": {
+        "entity": 20,
+        "state": 60,
+        "action": 1,
+        "result": 1
+      },
+      "edge_types": {
+        "contains": 19,
+        "has_state": 60,
+        "produces": 1,
+        "requires": 2,
+        "modifies": 1,
+        "transitions": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,266 @@
+# Neo4j数据库配置文件
+# Neo4j Database Configuration
+
+# 数据库连接设置
+database:
+  # 连接信息
+  connection:
+    uri: "bolt://localhost:7687"
+    user: "neo4j"
+    password: "yuanxi98"
+    database: "neo4j"  # 默认数据库名
+    
+  # 连接池设置
+  pool:
+    max_connection_lifetime: 3600  # 秒
+    max_connection_pool_size: 100
+    connection_acquisition_timeout: 60  # 秒
+    connection_timeout: 30  # 秒
+    
+  # 事务设置
+  transaction:
+    timeout: 300  # 秒
+    max_retry_time: 30  # 秒
+    initial_retry_delay: 1.0  # 秒
+    retry_delay_multiplier: 2.0
+    retry_delay_jitter_factor: 0.2
+
+# 导入设置
+import:
+  # 批量导入
+  batch:
+    enabled: true
+    batch_size: 1000
+    commit_interval: 5000
+    
+  # 数据库管理
+  database_management:
+    clear_before_import: true
+    create_constraints: true
+    create_indexes: true
+    verify_import: true
+    
+  # 错误处理
+  error_handling:
+    continue_on_error: false
+    log_errors: true
+    max_errors: 100
+    
+  # 性能优化
+  performance:
+    use_apoc: false  # 是否使用APOC插件
+    parallel_import: false
+    memory_limit_mb: 2048
+
+# 节点标签映射
+node_labels:
+  action: "Action"
+  entity: "Entity"
+  state: "State"
+  result: "Result"
+  condition: "Condition"
+  rule: "Rule"
+  scene: "Scene"
+
+# 关系类型映射
+relationship_types:
+  requires: "REQUIRES"
+  produces: "PRODUCES"
+  modifies: "MODIFIES"
+  enables: "ENABLES"
+  prevents: "PREVENTS"
+  transitions: "TRANSITIONS"
+  contains: "CONTAINS"
+  has_state: "HAS_STATE"
+  belongs_to: "BELONGS_TO"
+  part_of: "PART_OF"
+
+# 索引配置
+indexes:
+  # 节点索引
+  nodes:
+    - label: "Action"
+      properties: ["id", "name"]
+    - label: "Entity"
+      properties: ["id", "name", "entity_type"]
+    - label: "State"
+      properties: ["id", "name", "state_value"]
+    - label: "Result"
+      properties: ["id", "name"]
+    - label: "Scene"
+      properties: ["id", "name"]
+      
+  # 复合索引
+  composite:
+    - label: "Entity"
+      properties: ["entity_type", "name"]
+    - label: "State"
+      properties: ["entity_name", "state_value"]
+
+# 约束配置
+constraints:
+  # 唯一性约束
+  unique:
+    - label: "Action"
+      property: "id"
+    - label: "Entity"
+      property: "id"
+    - label: "State"
+      property: "id"
+    - label: "Result"
+      property: "id"
+    - label: "Scene"
+      property: "id"
+      
+  # 存在性约束
+  existence:
+    - label: "Action"
+      property: "name"
+    - label: "Entity"
+      property: "name"
+    - label: "State"
+      property: "state_value"
+
+# 查询配置
+queries:
+  # 常用查询
+  common:
+    # 获取所有节点
+    all_nodes: "MATCH (n) RETURN n LIMIT $limit"
+    
+    # 获取节点统计
+    node_stats: "MATCH (n) RETURN labels(n)[0] as label, count(n) as count ORDER BY count DESC"
+    
+    # 获取关系统计
+    relationship_stats: "MATCH ()-[r]->() RETURN type(r) as type, count(r) as count ORDER BY count DESC"
+    
+    # 获取场景信息
+    scene_info: "MATCH (s:Scene)-[:CONTAINS]->(e:Entity) RETURN s.name as scene, collect(e.name) as entities"
+    
+    # 获取动作链
+    action_chain: "MATCH (a1:Action)-[:ENABLES*]->(a2:Action) RETURN a1.name, a2.name"
+    
+    # 获取状态转换
+    state_transitions: "MATCH (s1:State)-[:TRANSITIONS]->(s2:State) RETURN s1.state_value, s2.state_value"
+
+  # 分析查询
+  analytics:
+    # 图统计
+    graph_stats: |
+      MATCH (n)
+      OPTIONAL MATCH (n)-[r]->()
+      RETURN 
+        count(DISTINCT n) as nodes,
+        count(r) as relationships,
+        count(DISTINCT labels(n)[0]) as node_types,
+        count(DISTINCT type(r)) as relationship_types
+    
+    # 中心性分析
+    centrality: |
+      MATCH (n)
+      OPTIONAL MATCH (n)-[r]-()
+      RETURN n.name as name, labels(n)[0] as type, count(r) as degree
+      ORDER BY degree DESC
+      LIMIT $limit
+    
+    # 路径分析
+    paths: |
+      MATCH path = (start:Action)-[*1..5]->(end:Result)
+      WHERE start.name = $start_action
+      RETURN path
+      LIMIT $limit
+
+# 导出配置
+export:
+  # 支持的格式
+  formats:
+    - name: "cypher"
+      extension: ".cypher"
+      description: "Cypher脚本格式"
+    - name: "graphml"
+      extension: ".graphml"
+      description: "GraphML格式"
+    - name: "json"
+      extension: ".json"
+      description: "JSON格式"
+      
+  # 导出选项
+  options:
+    include_properties: true
+    include_labels: true
+    include_relationships: true
+    format_properties: true
+    escape_strings: true
+
+# 监控配置
+monitoring:
+  # 性能监控
+  performance:
+    enabled: true
+    log_slow_queries: true
+    slow_query_threshold_ms: 1000
+    
+  # 内存监控
+  memory:
+    enabled: true
+    warning_threshold_mb: 1024
+    critical_threshold_mb: 2048
+    
+  # 连接监控
+  connections:
+    enabled: true
+    max_connections: 100
+    warning_threshold: 80
+
+# 备份配置
+backup:
+  # 自动备份
+  auto_backup:
+    enabled: false
+    interval_hours: 24
+    retention_days: 7
+    backup_path: "backups/neo4j"
+    
+  # 备份格式
+  format: "dump"  # dump, cypher, json
+  compression: true
+  
+  # 恢复设置
+  restore:
+    verify_before_restore: true
+    backup_current_before_restore: true
+
+# 安全配置
+security:
+  # 认证
+  authentication:
+    required: true
+    timeout_minutes: 60
+    
+  # 授权
+  authorization:
+    enabled: false
+    default_role: "reader"
+    
+  # 加密
+  encryption:
+    enabled: false
+    ssl_policy: "default"
+
+# 开发配置
+development:
+  # 调试模式
+  debug:
+    enabled: true
+    log_queries: true
+    log_parameters: false
+    
+  # 测试数据
+  test_data:
+    auto_create: false
+    sample_size: 100
+    
+  # 开发工具
+  tools:
+    neo4j_browser: "http://localhost:7474"
+    neo4j_bloom: "http://localhost:7474/bloom"

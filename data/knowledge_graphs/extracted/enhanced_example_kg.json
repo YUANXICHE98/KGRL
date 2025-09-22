@@ -1,0 +1,554 @@
+{
+  "nodes": [
+    {
+      "id": "entity_1",
+      "type": "entity",
+      "name": "打开宝箱完整场景",
+      "attributes": {
+        "description": "游戏场景: 打开宝箱完整场景",
+        "type": "game_scene",
+        "entity_type": "scene"
+      }
+    },
+    {
+      "id": "entity_2",
+      "type": "entity",
+      "name": "青铜钥匙",
+      "attributes": {
+        "properties": {
+          "名称": "青铜钥匙",
+          "材质": "青铜",
+          "描述": "一把古老的青铜钥匙"
+        },
+        "initial_state": "未获取",
+        "possible_states": [
+          "未获取",
+          "已获取"
+        ],
+        "entity_type": "道具"
+      }
+    },
+    {
+      "id": "state_3",
+      "type": "state",
+      "name": "青铜钥匙_未获取",
+      "attributes": {
+        "entity_name": "青铜钥匙",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "未获取"
+      }
+    },
+    {
+      "id": "state_4",
+      "type": "state",
+      "name": "青铜钥匙_已获取",
+      "attributes": {
+        "entity_name": "青铜钥匙",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "已获取"
+      }
+    },
+    {
+      "id": "entity_5",
+      "type": "entity",
+      "name": "木制宝箱",
+      "attributes": {
+        "properties": {
+          "材质": "木制",
+          "描述": "一个古老的木制宝箱"
+        },
+        "initial_state": "锁定",
+        "possible_states": [
+          "锁定",
+          "解锁",
+          "打开"
+        ],
+        "entity_type": "容器"
+      }
+    },
+    {
+      "id": "state_6",
+      "type": "state",
+      "name": "木制宝箱_锁定",
+      "attributes": {
+        "entity_name": "木制宝箱",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "锁定"
+      }
+    },
+    {
+      "id": "state_7",
+      "type": "state",
+      "name": "木制宝箱_解锁",
+      "attributes": {
+        "entity_name": "木制宝箱",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "解锁"
+      }
+    },
+    {
+      "id": "state_8",
+      "type": "state",
+      "name": "木制宝箱_打开",
+      "attributes": {
+        "entity_name": "木制宝箱",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "打开"
+      }
+    },
+    {
+      "id": "entity_9",
+      "type": "entity",
+      "name": "玩家",
+      "attributes": {
+        "properties": {
+          "描述": "游戏玩家"
+        },
+        "initial_state": "空手",
+        "possible_states": [
+          "空手",
+          "持有钥匙"
+        ],
+        "entity_type": "角色"
+      }
+    },
+    {
+      "id": "state_10",
+      "type": "state",
+      "name": "玩家_空手",
+      "attributes": {
+        "entity_name": "玩家",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "空手"
+      }
+    },
+    {
+      "id": "state_11",
+      "type": "state",
+      "name": "玩家_持有钥匙",
+      "attributes": {
+        "entity_name": "玩家",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "持有钥匙"
+      }
+    },
+    {
+      "id": "action_12",
+      "type": "action",
+      "name": "获取钥匙",
+      "attributes": {
+        "description": "拿取青铜钥匙",
+        "required_entities": [
+          "青铜钥匙",
+          "玩家"
+        ],
+        "required_states": {
+          "青铜钥匙": "未获取",
+          "玩家": "空手"
+        },
+        "effects": {
+          "青铜钥匙": "已获取",
+          "玩家": "持有钥匙"
+        },
+        "result": "获取成功"
+      }
+    },
+    {
+      "id": "result_13",
+      "type": "result",
+      "name": "获取钥匙_result",
+      "attributes": {
+        "action_name": "获取钥匙",
+        "description": "动作 获取钥匙 的结果",
+        "result_value": "获取成功"
+      }
+    },
+    {
+      "id": "action_14",
+      "type": "action",
+      "name": "使用钥匙",
+      "attributes": {
+        "description": "用钥匙解锁宝箱",
+        "required_entities": [
+          "青铜钥匙",
+          "木制宝箱",
+          "玩家"
+        ],
+        "required_states": {
+          "青铜钥匙": "已获取",
+          "木制宝箱": "锁定",
+          "玩家": "持有钥匙"
+        },
+        "effects": {
+          "木制宝箱": "解锁"
+        },
+        "result": "解锁成功"
+      }
+    },
+    {
+      "id": "result_15",
+      "type": "result",
+      "name": "使用钥匙_result",
+      "attributes": {
+        "action_name": "使用钥匙",
+        "description": "动作 使用钥匙 的结果",
+        "result_value": "解锁成功"
+      }
+    },
+    {
+      "id": "action_16",
+      "type": "action",
+      "name": "打开",
+      "attributes": {
+        "description": "打开宝箱",
+        "required_entities": [
+          "木制宝箱"
+        ],
+        "required_states": {
+          "木制宝箱": "解锁"
+        },
+        "effects": {
+          "木制宝箱": "打开"
+        },
+        "result": "打开成功"
+      }
+    },
+    {
+      "id": "result_17",
+      "type": "result",
+      "name": "打开_result",
+      "attributes": {
+        "action_name": "打开",
+        "description": "动作 打开 的结果",
+        "result_value": "打开成功"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "entity_1",
+      "target": "entity_2",
+      "type": "contains",
+      "attributes": {
+        "relationship": "scene_contains_entity"
+      }
+    },
+    {
+      "source": "entity_2",
+      "target": "state_3",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "未获取",
+        "is_initial": true
+      }
+    },
+    {
+      "source": "entity_2",
+      "target": "state_4",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "已获取",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_1",
+      "target": "entity_5",
+      "type": "contains",
+      "attributes": {
+        "relationship": "scene_contains_entity"
+      }
+    },
+    {
+      "source": "entity_5",
+      "target": "state_6",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "锁定",
+        "is_initial": true
+      }
+    },
+    {
+      "source": "entity_5",
+      "target": "state_7",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "解锁",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_5",
+      "target": "state_8",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "打开",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_1",
+      "target": "entity_9",
+      "type": "contains",
+      "attributes": {
+        "relationship": "scene_contains_entity"
+      }
+    },
+    {
+      "source": "entity_9",
+      "target": "state_10",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "空手",
+        "is_initial": true
+      }
+    },
+    {
+      "source": "entity_9",
+      "target": "state_11",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "持有钥匙",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "action_12",
+      "target": "result_13",
+      "type": "produces",
+      "attributes": {
+        "relationship": "action_produces_result"
+      }
+    },
+    {
+      "source": "action_14",
+      "target": "result_15",
+      "type": "produces",
+      "attributes": {
+        "relationship": "action_produces_result"
+      }
+    },
+    {
+      "source": "action_16",
+      "target": "result_17",
+      "type": "produces",
+      "attributes": {
+        "relationship": "action_produces_result"
+      }
+    },
+    {
+      "source": "action_12",
+      "target": "entity_2",
+      "type": "requires",
+      "attributes": {
+        "relationship": "action_requires_entity"
+      }
+    },
+    {
+      "source": "action_12",
+      "target": "entity_9",
+      "type": "requires",
+      "attributes": {
+        "relationship": "action_requires_entity"
+      }
+    },
+    {
+      "source": "action_12",
+      "target": "state_3",
+      "type": "requires",
+      "attributes": {
+        "relationship": "action_requires_state",
+        "required_value": "未获取"
+      }
+    },
+    {
+      "source": "action_12",
+      "target": "state_10",
+      "type": "requires",
+      "attributes": {
+        "relationship": "action_requires_state",
+        "required_value": "空手"
+      }
+    },
+    {
+      "source": "action_12",
+      "target": "state_4",
+      "type": "modifies",
+      "attributes": {
+        "relationship": "action_modifies_state",
+        "new_value": "已获取"
+      }
+    },
+    {
+      "source": "action_12",
+      "target": "state_11",
+      "type": "modifies",
+      "attributes": {
+        "relationship": "action_modifies_state",
+        "new_value": "持有钥匙"
+      }
+    },
+    {
+      "source": "action_14",
+      "target": "entity_2",
+      "type": "requires",
+      "attributes": {
+        "relationship": "action_requires_entity"
+      }
+    },
+    {
+      "source": "action_14",
+      "target": "entity_5",
+      "type": "requires",
+      "attributes": {
+        "relationship": "action_requires_entity"
+      }
+    },
+    {
+      "source": "action_14",
+      "target": "entity_9",
+      "type": "requires",
+      "attributes": {
+        "relationship": "action_requires_entity"
+      }
+    },
+    {
+      "source": "action_14",
+      "target": "state_4",
+      "type": "requires",
+      "attributes": {
+        "relationship": "action_requires_state",
+        "required_value": "已获取"
+      }
+    },
+    {
+      "source": "action_14",
+      "target": "state_6",
+      "type": "requires",
+      "attributes": {
+        "relationship": "action_requires_state",
+        "required_value": "锁定"
+      }
+    },
+    {
+      "source": "action_14",
+      "target": "state_11",
+      "type": "requires",
+      "attributes": {
+        "relationship": "action_requires_state",
+        "required_value": "持有钥匙"
+      }
+    },
+    {
+      "source": "action_14",
+      "target": "state_7",
+      "type": "modifies",
+      "attributes": {
+        "relationship": "action_modifies_state",
+        "new_value": "解锁"
+      }
+    },
+    {
+      "source": "action_16",
+      "target": "entity_5",
+      "type": "requires",
+      "attributes": {
+        "relationship": "action_requires_entity"
+      }
+    },
+    {
+      "source": "action_16",
+      "target": "state_7",
+      "type": "requires",
+      "attributes": {
+        "relationship": "action_requires_state",
+        "required_value": "解锁"
+      }
+    },
+    {
+      "source": "action_16",
+      "target": "state_8",
+      "type": "modifies",
+      "attributes": {
+        "relationship": "action_modifies_state",
+        "new_value": "打开"
+      }
+    },
+    {
+      "source": "state_3",
+      "target": "state_4",
+      "type": "transitions",
+      "attributes": {
+        "action": "获取钥匙",
+        "conditions": [
+          "钥匙可见",
+          "玩家在场"
+        ],
+        "effects": [
+          "钥匙在玩家手中"
+        ]
+      }
+    },
+    {
+      "source": "state_6",
+      "target": "state_7",
+      "type": "transitions",
+      "attributes": {
+        "action": "使用钥匙",
+        "conditions": [
+          "有正确的钥匙",
+          "钥匙已获取"
+        ],
+        "effects": [
+          "宝箱解锁"
+        ]
+      }
+    },
+    {
+      "source": "state_7",
+      "target": "state_8",
+      "type": "transitions",
+      "attributes": {
+        "action": "打开",
+        "conditions": [
+          "宝箱已解锁"
+        ],
+        "effects": [
+          "宝箱内容可见",
+          "任务完成"
+        ]
+      }
+    },
+    {
+      "source": "state_10",
+      "target": "state_11",
+      "type": "transitions",
+      "attributes": {
+        "action": "获取钥匙",
+        "conditions": [
+          "钥匙可获取"
+        ],
+        "effects": [
+          "玩家状态改变"
+        ]
+      }
+    }
+  ],
+  "metadata": {
+    "node_count": 17,
+    "edge_count": 33,
+    "node_types": [
+      "result",
+      "action",
+      "entity",
+      "state"
+    ]
+  }
+}

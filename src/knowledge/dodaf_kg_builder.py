@@ -34,6 +34,8 @@ class EdgeType(Enum):
     ENABLES = "enables"         # 启用关系
     PREVENTS = "prevents"       # 阻止关系
     TRANSITIONS = "transitions" # 状态转换
+    CONTAINS = "contains"       # 包含关系
+    HAS_STATE = "has_state"     # 具有状态关系
 
 
 @dataclass
@@ -152,7 +154,24 @@ class DODAFKGBuilder:
         self.nodes[node_id] = node
         self.graph.add_node(node_id, **node.to_dict())
         return node_id
-    
+
+    def add_result_node(self, name: str, result_value: str,
+                       attributes: Dict[str, Any] = None) -> str:
+        """添加结果节点"""
+        node_id = self._generate_node_id("result")
+        attrs = attributes or {}
+        attrs["result_value"] = result_value
+
+        node = KGNode(
+            id=node_id,
+            type=NodeType.RESULT,
+            name=name,
+            attributes=attrs
+        )
+        self.nodes[node_id] = node
+        self.graph.add_node(node_id, **node.to_dict())
+        return node_id
+
     def add_edge(self, source_id: str, target_id: str, edge_type: EdgeType,
                 attributes: Dict[str, Any] = None) -> None:
         """添加边"""
@@ -226,7 +245,31 @@ class DODAFKGBuilder:
     
     def export_to_graphml(self, filepath: str) -> None:
         """导出为GraphML格式"""
-        nx.write_graphml(self.graph, filepath)
+        # 创建一个简化的图，只包含基本属性
+        simple_graph = nx.DiGraph()
+
+        # 添加节点，只保留字符串和数字属性
+        for node_id, node_data in self.graph.nodes(data=True):
+            simple_attrs = {}
+            for key, value in node_data.items():
+                if isinstance(value, (str, int, float, bool)):
+                    simple_attrs[key] = str(value)
+                elif isinstance(value, dict):
+                    # 将字典转换为字符串
+                    simple_attrs[f"{key}_json"] = str(value)
+            simple_graph.add_node(node_id, **simple_attrs)
+
+        # 添加边，只保留字符串和数字属性
+        for source, target, edge_data in self.graph.edges(data=True):
+            simple_attrs = {}
+            for key, value in edge_data.items():
+                if isinstance(value, (str, int, float, bool)):
+                    simple_attrs[key] = str(value)
+                elif isinstance(value, dict):
+                    simple_attrs[f"{key}_json"] = str(value)
+            simple_graph.add_edge(source, target, **simple_attrs)
+
+        nx.write_graphml(simple_graph, filepath)
     
     def get_statistics(self) -> Dict[str, Any]:
         """获取图谱统计信息"""
@@ -247,6 +290,186 @@ class DODAFKGBuilder:
             "edge_types": edge_types,
             "density": nx.density(self.graph),
             "is_connected": nx.is_weakly_connected(self.graph)
+        }
+
+    def extract_from_alfworld_json(self, json_data: Dict[str, Any], scene_name: str = "unknown") -> Dict[str, Any]:
+        """从ALFWorld JSON布局数据中抽取知识图谱
+
+        Args:
+            json_data: ALFWorld布局JSON数据
+            scene_name: 场景名称
+
+        Returns:
+            dict: 抽取统计信息
+        """
+        extracted_nodes = 0
+        extracted_edges = 0
+
+        # 创建场景节点
+        scene_id = self.add_entity_node(scene_name, "scene", {
+            'category': 'environment',
+            'description': f'ALFWorld scene: {scene_name}'
+        })
+        extracted_nodes += 1
+
+        # 处理布局中的每个对象
+        for object_key, position_data in json_data.items():
+            # 解析对象信息 格式: "ObjectType|x|y|z"
+            parts = object_key.split('|')
+            if len(parts) >= 4:
+                object_type = parts[0]
+                x_pos = parts[1]
+                y_pos = parts[2]
+                z_pos = parts[3]
+
+                # 创建对象实体节点
+                object_id = self.add_entity_node(object_type, "furniture", {
+                    'category': 'physical_object',
+                    'position_x': float(x_pos),
+                    'position_y': float(y_pos),
+                    'position_z': float(z_pos),
+                    'layout_data': str(position_data),  # 转换为字符串避免GraphML问题
+                    'source': 'alfworld'
+                })
+                extracted_nodes += 1
+
+                # 创建与场景的空间关系
+                self.add_edge(scene_id, object_id, EdgeType.CONTAINS, {
+                    'relationship': 'spatial_containment',
+                    'position_info': str(position_data)
+                })
+                extracted_edges += 1
+
+                # 创建对象的默认状态
+                state_id = self.add_state_node(f"{object_type}_available", "accessible", {
+                    'state_type': 'availability',
+                    'object_name': object_type,
+                    'description': f'{object_type} is accessible in the environment'
+                })
+
+                self.add_edge(object_id, state_id, EdgeType.HAS_STATE, {
+                    'state_category': 'availability'
+                })
+                extracted_nodes += 1
+                extracted_edges += 1
+
+        return {
+            'nodes_extracted': extracted_nodes,
+            'edges_extracted': extracted_edges,
+            'scene_name': scene_name,
+            'objects_processed': len(json_data)
+        }
+
+    def extract_from_pddl_problem(self, pddl_content: str, problem_name: str = "unknown") -> Dict[str, Any]:
+        """从PDDL问题文件中抽取知识图谱
+
+        Args:
+            pddl_content: PDDL文件内容
+            problem_name: 问题名称
+
+        Returns:
+            dict: 抽取统计信息
+        """
+        import re
+
+        extracted_nodes = 0
+        extracted_edges = 0
+
+        # 创建问题节点
+        problem_id = self.add_entity_node(problem_name, "problem", {
+            'category': 'planning_problem',
+            'description': f'PDDL planning problem: {problem_name}',
+            'source': 'pddl'
+        })
+        extracted_nodes += 1
+
+        # 解析对象定义
+        objects_match = re.search(r'\(:objects\s+(.*?)\)', pddl_content, re.DOTALL)
+        if objects_match:
+            objects_text = objects_match.group(1)
+            # 解析对象和类型 格式: "object1 object2 - type"
+            object_lines = [line.strip() for line in objects_text.split('\n') if line.strip()]
+
+            for line in object_lines:
+                if ' - ' in line:
+                    objects_part, type_part = line.split(' - ')
+                    object_names = objects_part.strip().split()
+                    object_type = type_part.strip()
+
+                    for obj_name in object_names:
+                        if obj_name:  # 跳过空字符串
+                            # 创建对象实体节点
+                            obj_id = self.add_entity_node(obj_name, object_type, {
+                                'category': 'pddl_object',
+                                'object_type': object_type,
+                                'source': 'pddl'
+                            })
+                            extracted_nodes += 1
+
+                            # 与问题建立关系
+                            self.add_edge(problem_id, obj_id, EdgeType.CONTAINS, {
+                                'relationship': 'problem_contains_object'
+                            })
+                            extracted_edges += 1
+
+                            # 创建对象的初始状态
+                            initial_state_id = self.add_state_node(f"{obj_name}_initial", "available", {
+                                'state_type': 'initial',
+                                'object_name': obj_name,
+                                'object_type': object_type
+                            })
+
+                            self.add_edge(obj_id, initial_state_id, EdgeType.HAS_STATE, {
+                                'state_category': 'initial'
+                            })
+                            extracted_nodes += 1
+                            extracted_edges += 1
+
+        # 解析初始状态（如果存在）
+        init_match = re.search(r'\(:init\s+(.*?)\)', pddl_content, re.DOTALL)
+        if init_match:
+            init_text = init_match.group(1)
+            # 简单解析谓词，可以根据需要扩展
+            predicates = re.findall(r'\([^)]+\)', init_text)
+
+            for predicate in predicates:
+                # 创建初始条件状态
+                pred_clean = predicate.strip('()')
+                if pred_clean:
+                    condition_id = self.add_state_node(f"init_{pred_clean}", "true", {
+                        'state_type': 'initial_condition',
+                        'predicate': pred_clean,
+                        'source': 'pddl'
+                    })
+
+                    self.add_edge(problem_id, condition_id, EdgeType.HAS_STATE, {
+                        'state_category': 'initial_condition'
+                    })
+                    extracted_nodes += 1
+                    extracted_edges += 1
+
+        # 解析目标状态（如果存在）
+        goal_match = re.search(r'\(:goal\s+(.*?)\)', pddl_content, re.DOTALL)
+        if goal_match:
+            goal_text = goal_match.group(1)
+            # 创建目标状态
+            goal_id = self.add_state_node(f"goal_{problem_name}", "target", {
+                'state_type': 'goal',
+                'goal_description': goal_text.strip(),
+                'source': 'pddl'
+            })
+
+            self.add_edge(problem_id, goal_id, EdgeType.REQUIRES, {
+                'relationship': 'problem_requires_goal'
+            })
+            extracted_nodes += 1
+            extracted_edges += 1
+
+        return {
+            'nodes_extracted': extracted_nodes,
+            'edges_extracted': extracted_edges,
+            'problem_name': problem_name,
+            'source': 'pddl'
         }
 
 

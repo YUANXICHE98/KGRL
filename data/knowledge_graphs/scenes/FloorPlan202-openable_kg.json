@@ -1,0 +1,588 @@
+{
+  "nodes": [
+    {
+      "id": "entity_1",
+      "type": "entity",
+      "name": "FloorPlan202-openable",
+      "attributes": {
+        "description": "游戏场景: FloorPlan202-openable",
+        "type": "game_scene",
+        "entity_type": "scene"
+      }
+    },
+    {
+      "id": "entity_2",
+      "type": "entity",
+      "name": "ArmChair_0",
+      "attributes": {
+        "properties": {
+          "position_x": -3.08,
+          "position_y": 0.47,
+          "position_z": 0.37,
+          "layout_data": [
+            -3.0,
+            1.5,
+            180,
+            30
+          ],
+          "object_type": "ArmChair"
+        },
+        "initial_state": "available",
+        "possible_states": [
+          "available",
+          "unavailable",
+          "in_use"
+        ],
+        "entity_type": "armchair"
+      }
+    },
+    {
+      "id": "state_3",
+      "type": "state",
+      "name": "ArmChair_0_available",
+      "attributes": {
+        "entity_name": "ArmChair_0",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "state_4",
+      "type": "state",
+      "name": "ArmChair_0_unavailable",
+      "attributes": {
+        "entity_name": "ArmChair_0",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "unavailable"
+      }
+    },
+    {
+      "id": "state_5",
+      "type": "state",
+      "name": "ArmChair_0_in_use",
+      "attributes": {
+        "entity_name": "ArmChair_0",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "in_use"
+      }
+    },
+    {
+      "id": "entity_6",
+      "type": "entity",
+      "name": "CoffeeTable_1",
+      "attributes": {
+        "properties": {
+          "position_x": -1.74,
+          "position_y": 0.0,
+          "position_z": 2.36,
+          "layout_data": [
+            -1.5,
+            1.25,
+            0,
+            30
+          ],
+          "object_type": "CoffeeTable"
+        },
+        "initial_state": "available",
+        "possible_states": [
+          "available",
+          "unavailable",
+          "in_use"
+        ],
+        "entity_type": "coffeetable"
+      }
+    },
+    {
+      "id": "state_7",
+      "type": "state",
+      "name": "CoffeeTable_1_available",
+      "attributes": {
+        "entity_name": "CoffeeTable_1",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "state_8",
+      "type": "state",
+      "name": "CoffeeTable_1_unavailable",
+      "attributes": {
+        "entity_name": "CoffeeTable_1",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "unavailable"
+      }
+    },
+    {
+      "id": "state_9",
+      "type": "state",
+      "name": "CoffeeTable_1_in_use",
+      "attributes": {
+        "entity_name": "CoffeeTable_1",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "in_use"
+      }
+    },
+    {
+      "id": "entity_10",
+      "type": "entity",
+      "name": "GarbageCan_2",
+      "attributes": {
+        "properties": {
+          "position_x": -0.38,
+          "position_y": 0.0,
+          "position_z": 4.1,
+          "layout_data": [
+            0.5,
+            3.75,
+            270,
+            30
+          ],
+          "object_type": "GarbageCan"
+        },
+        "initial_state": "available",
+        "possible_states": [
+          "available",
+          "unavailable",
+          "in_use"
+        ],
+        "entity_type": "garbagecan"
+      }
+    },
+    {
+      "id": "state_11",
+      "type": "state",
+      "name": "GarbageCan_2_available",
+      "attributes": {
+        "entity_name": "GarbageCan_2",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "state_12",
+      "type": "state",
+      "name": "GarbageCan_2_unavailable",
+      "attributes": {
+        "entity_name": "GarbageCan_2",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "unavailable"
+      }
+    },
+    {
+      "id": "state_13",
+      "type": "state",
+      "name": "GarbageCan_2_in_use",
+      "attributes": {
+        "entity_name": "GarbageCan_2",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "in_use"
+      }
+    },
+    {
+      "id": "entity_14",
+      "type": "entity",
+      "name": "SideTable_3",
+      "attributes": {
+        "properties": {
+          "position_x": 0.63,
+          "position_y": 0.0,
+          "position_z": 0.34,
+          "layout_data": [
+            0.75,
+            1.5,
+            180,
+            30
+          ],
+          "object_type": "SideTable"
+        },
+        "initial_state": "available",
+        "possible_states": [
+          "available",
+          "unavailable",
+          "in_use"
+        ],
+        "entity_type": "sidetable"
+      }
+    },
+    {
+      "id": "state_15",
+      "type": "state",
+      "name": "SideTable_3_available",
+      "attributes": {
+        "entity_name": "SideTable_3",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "state_16",
+      "type": "state",
+      "name": "SideTable_3_unavailable",
+      "attributes": {
+        "entity_name": "SideTable_3",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "unavailable"
+      }
+    },
+    {
+      "id": "state_17",
+      "type": "state",
+      "name": "SideTable_3_in_use",
+      "attributes": {
+        "entity_name": "SideTable_3",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "in_use"
+      }
+    },
+    {
+      "id": "entity_18",
+      "type": "entity",
+      "name": "Sofa_4",
+      "attributes": {
+        "properties": {
+          "position_x": -1.16,
+          "position_y": 0.0,
+          "position_z": 0.45,
+          "layout_data": [
+            -1.25,
+            1.75,
+            180,
+            30
+          ],
+          "object_type": "Sofa"
+        },
+        "initial_state": "available",
+        "possible_states": [
+          "available",
+          "unavailable",
+          "in_use"
+        ],
+        "entity_type": "sofa"
+      }
+    },
+    {
+      "id": "state_19",
+      "type": "state",
+      "name": "Sofa_4_available",
+      "attributes": {
+        "entity_name": "Sofa_4",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "state_20",
+      "type": "state",
+      "name": "Sofa_4_unavailable",
+      "attributes": {
+        "entity_name": "Sofa_4",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "unavailable"
+      }
+    },
+    {
+      "id": "state_21",
+      "type": "state",
+      "name": "Sofa_4_in_use",
+      "attributes": {
+        "entity_name": "Sofa_4",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "in_use"
+      }
+    },
+    {
+      "id": "entity_22",
+      "type": "entity",
+      "name": "TVStand_5",
+      "attributes": {
+        "properties": {
+          "position_x": -1.57,
+          "position_y": 0.0,
+          "position_z": 3.87,
+          "layout_data": [
+            -1.5,
+            3.0,
+            0,
+            30
+          ],
+          "object_type": "TVStand"
+        },
+        "initial_state": "available",
+        "possible_states": [
+          "available",
+          "unavailable",
+          "in_use"
+        ],
+        "entity_type": "tvstand"
+      }
+    },
+    {
+      "id": "state_23",
+      "type": "state",
+      "name": "TVStand_5_available",
+      "attributes": {
+        "entity_name": "TVStand_5",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "state_24",
+      "type": "state",
+      "name": "TVStand_5_unavailable",
+      "attributes": {
+        "entity_name": "TVStand_5",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "unavailable"
+      }
+    },
+    {
+      "id": "state_25",
+      "type": "state",
+      "name": "TVStand_5_in_use",
+      "attributes": {
+        "entity_name": "TVStand_5",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "in_use"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "entity_1",
+      "target": "entity_2",
+      "type": "contains",
+      "attributes": {
+        "relationship": "scene_contains_entity"
+      }
+    },
+    {
+      "source": "entity_2",
+      "target": "state_3",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "available",
+        "is_initial": true
+      }
+    },
+    {
+      "source": "entity_2",
+      "target": "state_4",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "unavailable",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_2",
+      "target": "state_5",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "in_use",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_1",
+      "target": "entity_6",
+      "type": "contains",
+      "attributes": {
+        "relationship": "scene_contains_entity"
+      }
+    },
+    {
+      "source": "entity_6",
+      "target": "state_7",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "available",
+        "is_initial": true
+      }
+    },
+    {
+      "source": "entity_6",
+      "target": "state_8",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "unavailable",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_6",
+      "target": "state_9",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "in_use",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_1",
+      "target": "entity_10",
+      "type": "contains",
+      "attributes": {
+        "relationship": "scene_contains_entity"
+      }
+    },
+    {
+      "source": "entity_10",
+      "target": "state_11",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "available",
+        "is_initial": true
+      }
+    },
+    {
+      "source": "entity_10",
+      "target": "state_12",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "unavailable",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_10",
+      "target": "state_13",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "in_use",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_1",
+      "target": "entity_14",
+      "type": "contains",
+      "attributes": {
+        "relationship": "scene_contains_entity"
+      }
+    },
+    {
+      "source": "entity_14",
+      "target": "state_15",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "available",
+        "is_initial": true
+      }
+    },
+    {
+      "source": "entity_14",
+      "target": "state_16",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "unavailable",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_14",
+      "target": "state_17",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "in_use",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_1",
+      "target": "entity_18",
+      "type": "contains",
+      "attributes": {
+        "relationship": "scene_contains_entity"
+      }
+    },
+    {
+      "source": "entity_18",
+      "target": "state_19",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "available",
+        "is_initial": true
+      }
+    },
+    {
+      "source": "entity_18",
+      "target": "state_20",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "unavailable",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_18",
+      "target": "state_21",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "in_use",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_1",
+      "target": "entity_22",
+      "type": "contains",
+      "attributes": {
+        "relationship": "scene_contains_entity"
+      }
+    },
+    {
+      "source": "entity_22",
+      "target": "state_23",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "available",
+        "is_initial": true
+      }
+    },
+    {
+      "source": "entity_22",
+      "target": "state_24",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "unavailable",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_22",
+      "target": "state_25",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "in_use",
+        "is_initial": false
+      }
+    }
+  ],
+  "metadata": {
+    "node_count": 25,
+    "edge_count": 24,
+    "node_types": [
+      "entity",
+      "state"
+    ]
+  }
+}

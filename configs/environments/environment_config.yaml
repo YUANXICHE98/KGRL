@@ -1,0 +1,362 @@
+# 环境配置文件
+# Environment Configuration
+
+# 项目设置
+project:
+  name: "KGRL Environments"
+  version: "1.0.0"
+  description: "Knowledge Graph Enhanced Reinforcement Learning Environments"
+
+# 环境类型配置
+environments:
+  # ALFWorld环境
+  alfworld:
+    enabled: true
+    description: "ALFWorld embodied AI environment"
+    
+    # 基本设置
+    settings:
+      data_path: "data/benchmarks/alfworld"
+      max_steps: 50
+      timeout: 300  # 秒
+      
+    # 场景设置
+    scenes:
+      # 场景选择
+      selection:
+        mode: "random"  # random, sequential, specific
+        specific_scenes: []  # 指定场景列表
+        max_scenes: 10
+        
+      # 场景过滤
+      filters:
+        openable_only: true
+        min_objects: 5
+        max_objects: 50
+        required_object_types: ["Drawer", "Cabinet"]
+        
+    # 动作空间
+    action_space:
+      type: "discrete"  # discrete, continuous, multi_discrete
+      actions:
+        - "go_to"
+        - "open"
+        - "close"
+        - "pick_up"
+        - "put_down"
+        - "toggle"
+        - "examine"
+        
+    # 观察空间
+    observation_space:
+      type: "dict"  # dict, box, discrete
+      components:
+        text_description:
+          enabled: true
+          max_length: 500
+          
+        object_list:
+          enabled: true
+          max_objects: 20
+          
+        spatial_info:
+          enabled: false
+          grid_size: [10, 10]
+          
+        kg_state:
+          enabled: true
+          max_nodes: 100
+          
+    # 奖励设置
+    rewards:
+      success: 10.0
+      failure: -5.0
+      step_penalty: -0.01
+      invalid_action: -0.1
+      progress_bonus: 0.1
+
+  # TextWorld环境
+  textworld:
+    enabled: true
+    description: "TextWorld text-based game environment"
+    
+    # 基本设置
+    settings:
+      data_path: "data/benchmarks/textworld"
+      max_steps: 100
+      timeout: 600  # 秒
+      
+    # 游戏设置
+    games:
+      # 游戏生成
+      generation:
+        enabled: true
+        difficulty: "easy"  # easy, medium, hard
+        num_rooms: 3
+        num_objects: 5
+        
+      # 游戏选择
+      selection:
+        mode: "benchmark"  # benchmark, generated, custom
+        benchmark_games: "all"  # all, subset, specific
+        
+    # 动作空间
+    action_space:
+      type: "text"  # text, discrete
+      vocabulary_size: 1000
+      max_command_length: 20
+      
+    # 观察空间
+    observation_space:
+      type: "text"
+      max_description_length: 1000
+      include_inventory: true
+      include_score: true
+      
+    # 奖励设置
+    rewards:
+      completion: 20.0
+      progress: 1.0
+      step_penalty: -0.01
+      invalid_command: -0.05
+
+  # 自定义环境
+  custom:
+    enabled: false
+    description: "Custom knowledge graph environment"
+    
+    # 基本设置
+    settings:
+      kg_source: "neo4j"
+      update_frequency: "step"
+      
+    # 环境定义
+    definition:
+      state_space: "graph"
+      action_space: "graph_operations"
+      reward_function: "custom"
+
+# 知识图谱集成
+kg_integration:
+  # 集成模式
+  mode: "real_time"  # real_time, pre_computed, hybrid
+  
+  # 数据源
+  source:
+    type: "neo4j"  # neo4j, json, networkx
+    config_path: "configs/neo4j/neo4j_config.yaml"
+    
+  # 状态表示
+  state_representation:
+    # 图状态
+    graph_state:
+      enabled: true
+      include_nodes: true
+      include_edges: true
+      max_nodes: 50
+      
+    # 嵌入表示
+    embedding:
+      enabled: true
+      node_embedding_dim: 64
+      graph_embedding_dim: 128
+      
+    # 符号表示
+    symbolic:
+      enabled: true
+      use_predicates: true
+      max_predicates: 20
+      
+  # 动作映射
+  action_mapping:
+    # 环境动作 -> KG操作
+    mappings:
+      "open": ["modify_state", "create_edge"]
+      "close": ["modify_state", "remove_edge"]
+      "pick_up": ["change_location", "modify_state"]
+      "put_down": ["change_location", "modify_state"]
+      
+  # 更新策略
+  update_strategy:
+    # 状态更新
+    state_updates:
+      immediate: true
+      batch_size: 1
+      
+    # 图更新
+    graph_updates:
+      enabled: true
+      update_frequency: "action"  # action, episode, manual
+
+# 环境包装器
+wrappers:
+  # 观察包装器
+  observation:
+    # 标准化
+    normalize:
+      enabled: false
+      method: "minmax"  # minmax, zscore, robust
+      
+    # 历史记录
+    frame_stack:
+      enabled: false
+      num_frames: 4
+      
+    # 图像处理
+    image_processing:
+      enabled: false
+      resize: [84, 84]
+      grayscale: true
+      
+  # 动作包装器
+  action:
+    # 动作重复
+    action_repeat:
+      enabled: false
+      repeat_count: 4
+      
+    # 动作限制
+    action_limit:
+      enabled: false
+      max_actions_per_step: 1
+      
+  # 奖励包装器
+  reward:
+    # 奖励裁剪
+    clip:
+      enabled: false
+      min_reward: -1.0
+      max_reward: 1.0
+      
+    # 奖励缩放
+    scale:
+      enabled: false
+      scale_factor: 0.1
+
+# 评估配置
+evaluation:
+  # 评估模式
+  modes:
+    - name: "standard"
+      episodes: 100
+      max_steps: 50
+      
+    - name: "extended"
+      episodes: 500
+      max_steps: 100
+      
+  # 评估指标
+  metrics:
+    # 性能指标
+    performance:
+      - "success_rate"
+      - "average_reward"
+      - "average_steps"
+      - "completion_time"
+      
+    # KG指标
+    knowledge_graph:
+      - "kg_utilization_rate"
+      - "kg_accuracy"
+      - "kg_coverage"
+      
+    # 效率指标
+    efficiency:
+      - "actions_per_success"
+      - "invalid_action_rate"
+      - "exploration_efficiency"
+
+# 数据收集
+data_collection:
+  # 轨迹收集
+  trajectories:
+    enabled: true
+    save_path: "data/trajectories"
+    format: "json"  # json, pickle, hdf5
+    
+  # 状态收集
+  states:
+    enabled: true
+    include_kg_state: true
+    compression: true
+    
+  # 统计收集
+  statistics:
+    enabled: true
+    real_time: true
+    save_frequency: 100
+
+# 可视化配置
+visualization:
+  # 环境可视化
+  environment:
+    enabled: false
+    render_mode: "human"  # human, rgb_array, ansi
+    
+  # KG可视化
+  knowledge_graph:
+    enabled: true
+    real_time_updates: false
+    save_snapshots: true
+    
+  # 轨迹可视化
+  trajectories:
+    enabled: true
+    plot_rewards: true
+    plot_actions: true
+
+# 调试配置
+debug:
+  # 调试模式
+  enabled: false
+  
+  # 详细日志
+  verbose_logging: false
+  
+  # 状态检查
+  state_validation: true
+  
+  # 性能监控
+  performance_monitoring: true
+  
+  # 错误处理
+  error_handling:
+    continue_on_error: false
+    log_errors: true
+    save_error_states: true
+
+# 并行配置
+parallel:
+  # 多环境
+  multi_env:
+    enabled: false
+    num_envs: 4
+    
+  # 异步执行
+  async_execution:
+    enabled: false
+    max_workers: 4
+    
+  # 分布式
+  distributed:
+    enabled: false
+    backend: "ray"  # ray, multiprocessing
+
+# 缓存配置
+caching:
+  # 环境缓存
+  environment:
+    enabled: true
+    cache_size: 100
+    ttl_minutes: 60
+    
+  # KG缓存
+  knowledge_graph:
+    enabled: true
+    cache_queries: true
+    cache_size: 500
+    
+  # 状态缓存
+  states:
+    enabled: false
+    max_states: 1000

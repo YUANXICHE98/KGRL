@@ -1,0 +1,865 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d7" for="edge" attr.name="attributes_json" attr.type="string" />
+  <key id="d6" for="edge" attr.name="type" attr.type="string" />
+  <key id="d5" for="edge" attr.name="target" attr.type="string" />
+  <key id="d4" for="edge" attr.name="source" attr.type="string" />
+  <key id="d3" for="node" attr.name="attributes_json" attr.type="string" />
+  <key id="d2" for="node" attr.name="name" attr.type="string" />
+  <key id="d1" for="node" attr.name="type" attr.type="string" />
+  <key id="d0" for="node" attr.name="id" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="entity_1">
+      <data key="d0">entity_1</data>
+      <data key="d1">entity</data>
+      <data key="d2">FloorPlan3-openable</data>
+      <data key="d3">{'description': '游戏场景: FloorPlan3-openable', 'type': 'game_scene', 'entity_type': 'scene'}</data>
+    </node>
+    <node id="entity_2">
+      <data key="d0">entity_2</data>
+      <data key="d1">entity</data>
+      <data key="d2">Cabinet_0</data>
+      <data key="d3">{'properties': {'position_x': 0.58, 'position_y': 0.78, 'position_z': -2.05, 'layout_data': [-0.25, -2.25, 90, 30], 'object_type': 'Cabinet'}, 'initial_state': 'locked', 'possible_states': ['available', 'unavailable', 'in_use', 'locked', 'unlocked', 'opened'], 'entity_type': 'cabinet'}</data>
+    </node>
+    <node id="state_3">
+      <data key="d0">state_3</data>
+      <data key="d1">state</data>
+      <data key="d2">Cabinet_0_available</data>
+      <data key="d3">{'entity_name': 'Cabinet_0', 'state_type': 'entity_state', 'is_initial': False, 'state_value': 'available'}</data>
+    </node>
+    <node id="state_4">
+      <data key="d0">state_4</data>
+      <data key="d1">state</data>
+      <data key="d2">Cabinet_0_unavailable</data>
+      <data key="d3">{'entity_name': 'Cabinet_0', 'state_type': 'entity_state', 'is_initial': False, 'state_value': 'unavailable'}</data>
+    </node>
+    <node id="state_5">
+      <data key="d0">state_5</data>
+      <data key="d1">state</data>
+      <data key="d2">Cabinet_0_in_use</data>
+      <data key="d3">{'entity_name': 'Cabinet_0', 'state_type': 'entity_state', 'is_initial': False, 'state_value': 'in_use'}</data>
+    </node>
+    <node id="state_6">
+      <data key="d0">state_6</data>
+      <data key="d1">state</data>
+      <data key="d2">Cabinet_0_locked</data>
+      <data key="d3">{'entity_name': 'Cabinet_0', 'state_type': 'entity_state', 'is_initial': True, 'state_value': 'locked'}</data>
+    </node>
+    <node id="state_7">
+      <data key="d0">state_7</data>
+      <data key="d1">state</data>
+      <data key="d2">Cabinet_0_unlocked</data>
+      <data key="d3">{'entity_name': 'Cabinet_0', 'state_type': 'entity_state', 'is_initial': False, 'state_value': 'unlocked'}</data>
+    </node>
+    <node id="state_8">
+      <data key="d0">state_8</data>
+      <data key="d1">state</data>
+      <data key="d2">Cabinet_0_opened</data>
+      <data key="d3">{'entity_name': 'Cabinet_0', 'state_type': 'entity_state', 'is_initial': False, 'state_value': 'opened'}</data>
+    </node>
+    <node id="entity_9">
+      <data key="d0">entity_9</data>
+      <data key="d1">entity</data>
+      <data key="d2">Cabinet_1</data>
+      <data key="d3">{'properties': {'position_x': -1.46, 'position_y': 0.78, 'position_z': 0.47, 'layout_data': [-0.5, 0.0, 270, 30], 'object_type': 'Cabinet'}, 'initial_state': 'available', 'possible_states': ['available', 'unavailable', 'in_use'], 'entity_type': 'cabinet'}</data>
+    </node>
+    <node id="state_10">
+      <data key="d0">state_10</data>
+      <data key="d1">state</data>
+      <data key="d2">Cabinet_1_available</data>
+      <data key="d3">{'entity_name': 'Cabinet_1', 'state_type': 'entity_state', 'is_initial': True, 'state_value': 'available'}</data>
+    </node>
+    <node id="state_11">
+      <data key="d0">state_11</data>
+      <data key="d1">state</data>
+      <data key="d2">Cabinet_1_unavailable</data>
+      <data key="d3">{'entity_name': 'Cabinet_1', 'state_type': 'entity_state', 'is_initial': False, 'state_value': 'unavailable'}</data>
+    </node>
+    <node id="state_12">
+      <data key="d0">state_12</data>
+      <data key="d1">state</data>
+      <data key="d2">Cabinet_1_in_use</data>
+      <data key="d3">{'entity_name': 'Cabinet_1', 'state_type': 'entity_state', 'is_initial': False, 'state_value': 'in_use'}</data>
+    </node>
+    <node id="entity_13">
+      <data key="d0">entity_13</data>
+      <data key="d1">entity</data>
+      <data key="d2">Cabinet_2</data>
+      <data key="d3">{'properties': {'position_x': -1.46, 'position_y': 0.78, 'position_z': 1.31, 'layout_data': [-0.5, 1.75, 270, 30], 'object_type': 'Cabinet'}, 'initial_state': 'available', 'possible_states': ['available', 'unavailable', 'in_use'], 'entity_type': 'cabinet'}</data>
+    </node>
+    <node id="state_14">
+      <data key="d0">state_14</data>
+      <data key="d1">state</data>
+      <data key="d2">Cabinet_2_available</data>
+      <data key="d3">{'entity_name': 'Cabinet_2', 'state_type': 'entity_state', 'is_initial': True, 'state_value': 'available'}</data>
+    </node>
+    <node id="state_15">
+      <data key="d0">state_15</data>
+      <data key="d1">state</data>
+      <data key="d2">Cabinet_2_unavailable</data>
+      <data key="d3">{'entity_name': 'Cabinet_2', 'state_type': 'entity_state', 'is_initial': False, 'state_value': 'unavailable'}</data>
+    </node>
+    <node id="state_16">
+      <data key="d0">state_16</data>
+      <data key="d1">state</data>
+      <data key="d2">Cabinet_2_in_use</data>
+      <data key="d3">{'entity_name': 'Cabinet_2', 'state_type': 'entity_state', 'is_initial': False, 'state_value': 'in_use'}</data>
+    </node>
+    <node id="entity_17">
+      <data key="d0">entity_17</data>
+      <data key="d1">entity</data>
+      <data key="d2">Cabinet_3</data>
+      <data key="d3">{'properties': {'position_x': -1.46, 'position_y': 0.78, 'position_z': -2.0, 'layout_data': [-0.5, -1.5, 270, 30], 'object_type': 'Cabinet'}, 'initial_state': 'available', 'possible_states': ['available', 'unavailable', 'in_use'], 'entity_type': 'cabinet'}</data>
+    </node>
+    <node id="state_18">
+      <data key="d0">state_18</data>
+      <data key="d1">state</data>
+      <data key="d2">Cabinet_3_available</data>
+      <data key="d3">{'entity_name': 'Cabinet_3', 'state_type': 'entity_state', 'is_initial': True, 'state_value': 'available'}</data>
+    </node>
+    <node id="state_19">
+      <data key="d0">state_19</data>
+      <data key="d1">state</data>
+      <data key="d2">Cabinet_3_unavailable</data>
+      <data key="d3">{'entity_name': 'Cabinet_3', 'state_type': 'entity_state', 'is_initial': False, 'state_value': 'unavailable'}</data>
+    </node>
+    <node id="state_20">
+      <data key="d0">state_20</data>
+      <data key="d1">state</data>
+      <data key="d2">Cabinet_3_in_use</data>
+      <data key="d3">{'entity_name': 'Cabinet_3', 'state_type': 'entity_state', 'is_initial': False, 'state_value': 'in_use'}</data>
+    </node>
+    <node id="entity_21">
+      <data key="d0">entity_21</data>
+      <data key="d1">entity</data>
+      <data key="d2">CounterTop_4</data>
+      <data key="d3">{'properties': {'position_x': -1.81, 'position_y': 1.36, 'position_z': 1.18, 'layout_data': [-1.0, 1.25, 270, 30], 'object_type': 'CounterTop'}, 'initial_state': 'available', 'possible_states': ['available', 'unavailable', 'in_use'], 'entity_type': 'countertop'}</data>
+    </node>
+    <node id="state_22">
+      <data key="d0">state_22</data>
+      <data key="d1">state</data>
+      <data key="d2">CounterTop_4_available</data>
+      <data key="d3">{'entity_name': 'CounterTop_4', 'state_type': 'entity_state', 'is_initial': True, 'state_value': 'available'}</data>
+    </node>
+    <node id="state_23">
+      <data key="d0">state_23</data>
+      <data key="d1">state</data>
+      <data key="d2">CounterTop_4_unavailable</data>
+      <data key="d3">{'entity_name': 'CounterTop_4', 'state_type': 'entity_state', 'is_initial': False, 'state_value': 'unavailable'}</data>
+    </node>
+    <node id="state_24">
+      <data key="d0">state_24</data>
+      <data key="d1">state</data>
+      <data key="d2">CounterTop_4_in_use</data>
+      <data key="d3">{'entity_name': 'CounterTop_4', 'state_type': 'entity_state', 'is_initial': False, 'state_value': 'in_use'}</data>
+    </node>
+    <node id="entity_25">
+      <data key="d0">entity_25</data>
+      <data key="d1">entity</data>
+      <data key="d2">Drawer_5</data>
+      <data key="d3">{'properties': {'position_x': 0.71, 'position_y': 0.85, 'position_z': 1.02, 'layout_data': [0.0, 1.5, 90, 30], 'object_type': 'Drawer'}, 'initial_state': 'available', 'possible_states': ['available', 'unavailable', 'in_use'], 'entity_type': 'drawer'}</data>
+    </node>
+    <node id="state_26">
+      <data key="d0">state_26</data>
+      <data key="d1">state</data>
+      <data key="d2">Drawer_5_available</data>
+      <data key="d3">{'entity_name': 'Drawer_5', 'state_type': 'entity_state', 'is_initial': True, 'state_value': 'available'}</data>
+    </node>
+    <node id="state_27">
+      <data key="d0">state_27</data>
+      <data key="d1">state</data>
+      <data key="d2">Drawer_5_unavailable</data>
+      <data key="d3">{'entity_name': 'Drawer_5', 'state_type': 'entity_state', 'is_initial': False, 'state_value': 'unavailable'}</data>
+    </node>
+    <node id="state_28">
+      <data key="d0">state_28</data>
+      <data key="d1">state</data>
+      <data key="d2">Drawer_5_in_use</data>
+      <data key="d3">{'entity_name': 'Drawer_5', 'state_type': 'entity_state', 'is_initial': False, 'state_value': 'in_use'}</data>
+    </node>
+    <node id="entity_29">
+      <data key="d0">entity_29</data>
+      <data key="d1">entity</data>
+      <data key="d2">Drawer_6</data>
+      <data key="d3">{'properties': {'position_x': 0.71, 'position_y': 1.06, 'position_z': 1.02, 'layout_data': [0.0, 0.75, 90, 30], 'object_type': 'Drawer'}, 'initial_state': 'available', 'possible_states': ['available', 'unavailable', 'in_use'], 'entity_type': 'drawer'}</data>
+    </node>
+    <node id="state_30">
+      <data key="d0">state_30</data>
+      <data key="d1">state</data>
+      <data key="d2">Drawer_6_available</data>
+      <data key="d3">{'entity_name': 'Drawer_6', 'state_type': 'entity_state', 'is_initial': True, 'state_value': 'available'}</data>
+    </node>
+    <node id="state_31">
+      <data key="d0">state_31</data>
+      <data key="d1">state</data>
+      <data key="d2">Drawer_6_unavailable</data>
+      <data key="d3">{'entity_name': 'Drawer_6', 'state_type': 'entity_state', 'is_initial': False, 'state_value': 'unavailable'}</data>
+    </node>
+    <node id="state_32">
+      <data key="d0">state_32</data>
+      <data key="d1">state</data>
+      <data key="d2">Drawer_6_in_use</data>
+      <data key="d3">{'entity_name': 'Drawer_6', 'state_type': 'entity_state', 'is_initial': False, 'state_value': 'in_use'}</data>
+    </node>
+    <node id="entity_33">
+      <data key="d0">entity_33</data>
+      <data key="d1">entity</data>
+      <data key="d2">Drawer_7</data>
+      <data key="d3">{'properties': {'position_x': 0.72, 'position_y': 0.59, 'position_z': 0.68, 'layout_data': [-0.25, 0.0, 90, 30], 'object_type': 'Drawer'}, 'initial_state': 'available', 'possible_states': ['available', 'unavailable', 'in_use'], 'entity_type': 'drawer'}</data>
+    </node>
+    <node id="state_34">
+      <data key="d0">state_34</data>
+      <data key="d1">state</data>
+      <data key="d2">Drawer_7_available</data>
+      <data key="d3">{'entity_name': 'Drawer_7', 'state_type': 'entity_state', 'is_initial': True, 'state_value': 'available'}</data>
+    </node>
+    <node id="state_35">
+      <data key="d0">state_35</data>
+      <data key="d1">state</data>
+      <data key="d2">Drawer_7_unavailable</data>
+      <data key="d3">{'entity_name': 'Drawer_7', 'state_type': 'entity_state', 'is_initial': False, 'state_value': 'unavailable'}</data>
+    </node>
+    <node id="state_36">
+      <data key="d0">state_36</data>
+      <data key="d1">state</data>
+      <data key="d2">Drawer_7_in_use</data>
+      <data key="d3">{'entity_name': 'Drawer_7', 'state_type': 'entity_state', 'is_initial': False, 'state_value': 'in_use'}</data>
+    </node>
+    <node id="entity_37">
+      <data key="d0">entity_37</data>
+      <data key="d1">entity</data>
+      <data key="d2">Drawer_8</data>
+      <data key="d3">{'properties': {'position_x': 0.72, 'position_y': 0.59, 'position_z': 1.02, 'layout_data': [-0.25, 0.5, 90, 30], 'object_type': 'Drawer'}, 'initial_state': 'available', 'possible_states': ['available', 'unavailable', 'in_use'], 'entity_type': 'drawer'}</data>
+    </node>
+    <node id="state_38">
+      <data key="d0">state_38</data>
+      <data key="d1">state</data>
+      <data key="d2">Drawer_8_available</data>
+      <data key="d3">{'entity_name': 'Drawer_8', 'state_type': 'entity_state', 'is_initial': True, 'state_value': 'available'}</data>
+    </node>
+    <node id="state_39">
+      <data key="d0">state_39</data>
+      <data key="d1">state</data>
+      <data key="d2">Drawer_8_unavailable</data>
+      <data key="d3">{'entity_name': 'Drawer_8', 'state_type': 'entity_state', 'is_initial': False, 'state_value': 'unavailable'}</data>
+    </node>
+    <node id="state_40">
+      <data key="d0">state_40</data>
+      <data key="d1">state</data>
+      <data key="d2">Drawer_8_in_use</data>
+      <data key="d3">{'entity_name': 'Drawer_8', 'state_type': 'entity_state', 'is_initial': False, 'state_value': 'in_use'}</data>
+    </node>
+    <node id="entity_41">
+      <data key="d0">entity_41</data>
+      <data key="d1">entity</data>
+      <data key="d2">Drawer_9</data>
+      <data key="d3">{'properties': {'position_x': 0.72, 'position_y': 0.84, 'position_z': 0.68, 'layout_data': [0.0, 0.25, 90, 30], 'object_type': 'Drawer'}, 'initial_state': 'available', 'possible_states': ['available', 'unavailable', 'in_use'], 'entity_type': 'drawer'}</data>
+    </node>
+    <node id="state_42">
+      <data key="d0">state_42</data>
+      <data key="d1">state</data>
+      <data key="d2">Drawer_9_available</data>
+      <data key="d3">{'entity_name': 'Drawer_9', 'state_type': 'entity_state', 'is_initial': True, 'state_value': 'available'}</data>
+    </node>
+    <node id="state_43">
+      <data key="d0">state_43</data>
+      <data key="d1">state</data>
+      <data key="d2">Drawer_9_unavailable</data>
+      <data key="d3">{'entity_name': 'Drawer_9', 'state_type': 'entity_state', 'is_initial': False, 'state_value': 'unavailable'}</data>
+    </node>
+    <node id="state_44">
+      <data key="d0">state_44</data>
+      <data key="d1">state</data>
+      <data key="d2">Drawer_9_in_use</data>
+      <data key="d3">{'entity_name': 'Drawer_9', 'state_type': 'entity_state', 'is_initial': False, 'state_value': 'in_use'}</data>
+    </node>
+    <node id="entity_45">
+      <data key="d0">entity_45</data>
+      <data key="d1">entity</data>
+      <data key="d2">Drawer_10</data>
+      <data key="d3">{'properties': {'position_x': 0.72, 'position_y': 1.06, 'position_z': 0.68, 'layout_data': [0.0, 0.25, 90, 30], 'object_type': 'Drawer'}, 'initial_state': 'available', 'possible_states': ['available', 'unavailable', 'in_use'], 'entity_type': 'drawer'}</data>
+    </node>
+    <node id="state_46">
+      <data key="d0">state_46</data>
+      <data key="d1">state</data>
+      <data key="d2">Drawer_10_available</data>
+      <data key="d3">{'entity_name': 'Drawer_10', 'state_type': 'entity_state', 'is_initial': True, 'state_value': 'available'}</data>
+    </node>
+    <node id="state_47">
+      <data key="d0">state_47</data>
+      <data key="d1">state</data>
+      <data key="d2">Drawer_10_unavailable</data>
+      <data key="d3">{'entity_name': 'Drawer_10', 'state_type': 'entity_state', 'is_initial': False, 'state_value': 'unavailable'}</data>
+    </node>
+    <node id="state_48">
+      <data key="d0">state_48</data>
+      <data key="d1">state</data>
+      <data key="d2">Drawer_10_in_use</data>
+      <data key="d3">{'entity_name': 'Drawer_10', 'state_type': 'entity_state', 'is_initial': False, 'state_value': 'in_use'}</data>
+    </node>
+    <node id="entity_49">
+      <data key="d0">entity_49</data>
+      <data key="d1">entity</data>
+      <data key="d2">Fridge_11</data>
+      <data key="d3">{'properties': {'position_x': 1.01, 'position_y': 0.23, 'position_z': 1.92, 'layout_data': [0.0, 2.0, 90, 0], 'object_type': 'Fridge'}, 'initial_state': 'available', 'possible_states': ['available', 'unavailable', 'in_use'], 'entity_type': 'fridge'}</data>
+    </node>
+    <node id="state_50">
+      <data key="d0">state_50</data>
+      <data key="d1">state</data>
+      <data key="d2">Fridge_11_available</data>
+      <data key="d3">{'entity_name': 'Fridge_11', 'state_type': 'entity_state', 'is_initial': True, 'state_value': 'available'}</data>
+    </node>
+    <node id="state_51">
+      <data key="d0">state_51</data>
+      <data key="d1">state</data>
+      <data key="d2">Fridge_11_unavailable</data>
+      <data key="d3">{'entity_name': 'Fridge_11', 'state_type': 'entity_state', 'is_initial': False, 'state_value': 'unavailable'}</data>
+    </node>
+    <node id="state_52">
+      <data key="d0">state_52</data>
+      <data key="d1">state</data>
+      <data key="d2">Fridge_11_in_use</data>
+      <data key="d3">{'entity_name': 'Fridge_11', 'state_type': 'entity_state', 'is_initial': False, 'state_value': 'in_use'}</data>
+    </node>
+    <node id="entity_53">
+      <data key="d0">entity_53</data>
+      <data key="d1">entity</data>
+      <data key="d2">GarbageCan_12</data>
+      <data key="d3">{'properties': {'position_x': -1.63, 'position_y': 0.22, 'position_z': 2.19, 'layout_data': [-1.0, 1.25, 0, 30], 'object_type': 'GarbageCan'}, 'initial_state': 'available', 'possible_states': ['available', 'unavailable', 'in_use'], 'entity_type': 'garbagecan'}</data>
+    </node>
+    <node id="state_54">
+      <data key="d0">state_54</data>
+      <data key="d1">state</data>
+      <data key="d2">GarbageCan_12_available</data>
+      <data key="d3">{'entity_name': 'GarbageCan_12', 'state_type': 'entity_state', 'is_initial': True, 'state_value': 'available'}</data>
+    </node>
+    <node id="state_55">
+      <data key="d0">state_55</data>
+      <data key="d1">state</data>
+      <data key="d2">GarbageCan_12_unavailable</data>
+      <data key="d3">{'entity_name': 'GarbageCan_12', 'state_type': 'entity_state', 'is_initial': False, 'state_value': 'unavailable'}</data>
+    </node>
+    <node id="state_56">
+      <data key="d0">state_56</data>
+      <data key="d1">state</data>
+      <data key="d2">GarbageCan_12_in_use</data>
+      <data key="d3">{'entity_name': 'GarbageCan_12', 'state_type': 'entity_state', 'is_initial': False, 'state_value': 'in_use'}</data>
+    </node>
+    <node id="entity_57">
+      <data key="d0">entity_57</data>
+      <data key="d1">entity</data>
+      <data key="d2">Microwave_13</data>
+      <data key="d3">{'properties': {'position_x': 1.16, 'position_y': 1.19, 'position_z': 0.85, 'layout_data': [0.25, 0.75, 90, 30], 'object_type': 'Microwave'}, 'initial_state': 'available', 'possible_states': ['available', 'unavailable', 'in_use'], 'entity_type': 'microwave'}</data>
+    </node>
+    <node id="state_58">
+      <data key="d0">state_58</data>
+      <data key="d1">state</data>
+      <data key="d2">Microwave_13_available</data>
+      <data key="d3">{'entity_name': 'Microwave_13', 'state_type': 'entity_state', 'is_initial': True, 'state_value': 'available'}</data>
+    </node>
+    <node id="state_59">
+      <data key="d0">state_59</data>
+      <data key="d1">state</data>
+      <data key="d2">Microwave_13_unavailable</data>
+      <data key="d3">{'entity_name': 'Microwave_13', 'state_type': 'entity_state', 'is_initial': False, 'state_value': 'unavailable'}</data>
+    </node>
+    <node id="state_60">
+      <data key="d0">state_60</data>
+      <data key="d1">state</data>
+      <data key="d2">Microwave_13_in_use</data>
+      <data key="d3">{'entity_name': 'Microwave_13', 'state_type': 'entity_state', 'is_initial': False, 'state_value': 'in_use'}</data>
+    </node>
+    <node id="entity_61">
+      <data key="d0">entity_61</data>
+      <data key="d1">entity</data>
+      <data key="d2">SideTable_14</data>
+      <data key="d3">{'properties': {'position_x': 1.02, 'position_y': 1.24, 'position_z': 0.87, 'layout_data': [0.25, 1.0, 90, 30], 'object_type': 'SideTable'}, 'initial_state': 'available', 'possible_states': ['available', 'unavailable', 'in_use'], 'entity_type': 'sidetable'}</data>
+    </node>
+    <node id="state_62">
+      <data key="d0">state_62</data>
+      <data key="d1">state</data>
+      <data key="d2">SideTable_14_available</data>
+      <data key="d3">{'entity_name': 'SideTable_14', 'state_type': 'entity_state', 'is_initial': True, 'state_value': 'available'}</data>
+    </node>
+    <node id="state_63">
+      <data key="d0">state_63</data>
+      <data key="d1">state</data>
+      <data key="d2">SideTable_14_unavailable</data>
+      <data key="d3">{'entity_name': 'SideTable_14', 'state_type': 'entity_state', 'is_initial': False, 'state_value': 'unavailable'}</data>
+    </node>
+    <node id="state_64">
+      <data key="d0">state_64</data>
+      <data key="d1">state</data>
+      <data key="d2">SideTable_14_in_use</data>
+      <data key="d3">{'entity_name': 'SideTable_14', 'state_type': 'entity_state', 'is_initial': False, 'state_value': 'in_use'}</data>
+    </node>
+    <node id="entity_65">
+      <data key="d0">entity_65</data>
+      <data key="d1">entity</data>
+      <data key="d2">Sink_15</data>
+      <data key="d3">{'properties': {'position_x': -1.99, 'position_y': 1.14, 'position_z': -0.98, 'layout_data': [-1.0, -0.75, 270, 30], 'object_type': 'Sink'}, 'initial_state': 'available', 'possible_states': ['available', 'unavailable', 'in_use'], 'entity_type': 'sink'}</data>
+    </node>
+    <node id="state_66">
+      <data key="d0">state_66</data>
+      <data key="d1">state</data>
+      <data key="d2">Sink_15_available</data>
+      <data key="d3">{'entity_name': 'Sink_15', 'state_type': 'entity_state', 'is_initial': True, 'state_value': 'available'}</data>
+    </node>
+    <node id="state_67">
+      <data key="d0">state_67</data>
+      <data key="d1">state</data>
+      <data key="d2">Sink_15_unavailable</data>
+      <data key="d3">{'entity_name': 'Sink_15', 'state_type': 'entity_state', 'is_initial': False, 'state_value': 'unavailable'}</data>
+    </node>
+    <node id="state_68">
+      <data key="d0">state_68</data>
+      <data key="d1">state</data>
+      <data key="d2">Sink_15_in_use</data>
+      <data key="d3">{'entity_name': 'Sink_15', 'state_type': 'entity_state', 'is_initial': False, 'state_value': 'in_use'}</data>
+    </node>
+    <node id="action_69">
+      <data key="d0">action_69</data>
+      <data key="d1">action</data>
+      <data key="d2">open_Cabinet_0</data>
+      <data key="d3">{'description': '打开 Cabinet_0', 'required_entities': ['Cabinet_0'], 'required_states': {'Cabinet_0': 'unlocked'}, 'effects': {'Cabinet_0': 'opened'}, 'result': '打开成功'}</data>
+    </node>
+    <node id="result_70">
+      <data key="d0">result_70</data>
+      <data key="d1">result</data>
+      <data key="d2">open_Cabinet_0_result</data>
+      <data key="d3">{'action_name': 'open_Cabinet_0', 'description': '动作 open_Cabinet_0 的结果', 'result_value': '打开成功'}</data>
+    </node>
+    <edge source="entity_1" target="entity_2">
+      <data key="d4">entity_1</data>
+      <data key="d5">entity_2</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'scene_contains_entity'}</data>
+    </edge>
+    <edge source="entity_1" target="entity_9">
+      <data key="d4">entity_1</data>
+      <data key="d5">entity_9</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'scene_contains_entity'}</data>
+    </edge>
+    <edge source="entity_1" target="entity_13">
+      <data key="d4">entity_1</data>
+      <data key="d5">entity_13</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'scene_contains_entity'}</data>
+    </edge>
+    <edge source="entity_1" target="entity_17">
+      <data key="d4">entity_1</data>
+      <data key="d5">entity_17</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'scene_contains_entity'}</data>
+    </edge>
+    <edge source="entity_1" target="entity_21">
+      <data key="d4">entity_1</data>
+      <data key="d5">entity_21</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'scene_contains_entity'}</data>
+    </edge>
+    <edge source="entity_1" target="entity_25">
+      <data key="d4">entity_1</data>
+      <data key="d5">entity_25</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'scene_contains_entity'}</data>
+    </edge>
+    <edge source="entity_1" target="entity_29">
+      <data key="d4">entity_1</data>
+      <data key="d5">entity_29</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'scene_contains_entity'}</data>
+    </edge>
+    <edge source="entity_1" target="entity_33">
+      <data key="d4">entity_1</data>
+      <data key="d5">entity_33</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'scene_contains_entity'}</data>
+    </edge>
+    <edge source="entity_1" target="entity_37">
+      <data key="d4">entity_1</data>
+      <data key="d5">entity_37</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'scene_contains_entity'}</data>
+    </edge>
+    <edge source="entity_1" target="entity_41">
+      <data key="d4">entity_1</data>
+      <data key="d5">entity_41</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'scene_contains_entity'}</data>
+    </edge>
+    <edge source="entity_1" target="entity_45">
+      <data key="d4">entity_1</data>
+      <data key="d5">entity_45</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'scene_contains_entity'}</data>
+    </edge>
+    <edge source="entity_1" target="entity_49">
+      <data key="d4">entity_1</data>
+      <data key="d5">entity_49</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'scene_contains_entity'}</data>
+    </edge>
+    <edge source="entity_1" target="entity_53">
+      <data key="d4">entity_1</data>
+      <data key="d5">entity_53</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'scene_contains_entity'}</data>
+    </edge>
+    <edge source="entity_1" target="entity_57">
+      <data key="d4">entity_1</data>
+      <data key="d5">entity_57</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'scene_contains_entity'}</data>
+    </edge>
+    <edge source="entity_1" target="entity_61">
+      <data key="d4">entity_1</data>
+      <data key="d5">entity_61</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'scene_contains_entity'}</data>
+    </edge>
+    <edge source="entity_1" target="entity_65">
+      <data key="d4">entity_1</data>
+      <data key="d5">entity_65</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'scene_contains_entity'}</data>
+    </edge>
+    <edge source="entity_2" target="state_3">
+      <data key="d4">entity_2</data>
+      <data key="d5">state_3</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': 'available', 'is_initial': False}</data>
+    </edge>
+    <edge source="entity_2" target="state_4">
+      <data key="d4">entity_2</data>
+      <data key="d5">state_4</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': 'unavailable', 'is_initial': False}</data>
+    </edge>
+    <edge source="entity_2" target="state_5">
+      <data key="d4">entity_2</data>
+      <data key="d5">state_5</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': 'in_use', 'is_initial': False}</data>
+    </edge>
+    <edge source="entity_2" target="state_6">
+      <data key="d4">entity_2</data>
+      <data key="d5">state_6</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': 'locked', 'is_initial': True}</data>
+    </edge>
+    <edge source="entity_2" target="state_7">
+      <data key="d4">entity_2</data>
+      <data key="d5">state_7</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': 'unlocked', 'is_initial': False}</data>
+    </edge>
+    <edge source="entity_2" target="state_8">
+      <data key="d4">entity_2</data>
+      <data key="d5">state_8</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': 'opened', 'is_initial': False}</data>
+    </edge>
+    <edge source="state_7" target="state_8">
+      <data key="d4">state_7</data>
+      <data key="d5">state_8</data>
+      <data key="d6">transitions</data>
+      <data key="d7">{'action': 'open_Cabinet_0', 'conditions': ['Cabinet_0 must be unlocked'], 'effects': ['Cabinet_0 becomes opened']}</data>
+    </edge>
+    <edge source="entity_9" target="state_10">
+      <data key="d4">entity_9</data>
+      <data key="d5">state_10</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': 'available', 'is_initial': True}</data>
+    </edge>
+    <edge source="entity_9" target="state_11">
+      <data key="d4">entity_9</data>
+      <data key="d5">state_11</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': 'unavailable', 'is_initial': False}</data>
+    </edge>
+    <edge source="entity_9" target="state_12">
+      <data key="d4">entity_9</data>
+      <data key="d5">state_12</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': 'in_use', 'is_initial': False}</data>
+    </edge>
+    <edge source="entity_13" target="state_14">
+      <data key="d4">entity_13</data>
+      <data key="d5">state_14</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': 'available', 'is_initial': True}</data>
+    </edge>
+    <edge source="entity_13" target="state_15">
+      <data key="d4">entity_13</data>
+      <data key="d5">state_15</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': 'unavailable', 'is_initial': False}</data>
+    </edge>
+    <edge source="entity_13" target="state_16">
+      <data key="d4">entity_13</data>
+      <data key="d5">state_16</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': 'in_use', 'is_initial': False}</data>
+    </edge>
+    <edge source="entity_17" target="state_18">
+      <data key="d4">entity_17</data>
+      <data key="d5">state_18</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': 'available', 'is_initial': True}</data>
+    </edge>
+    <edge source="entity_17" target="state_19">
+      <data key="d4">entity_17</data>
+      <data key="d5">state_19</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': 'unavailable', 'is_initial': False}</data>
+    </edge>
+    <edge source="entity_17" target="state_20">
+      <data key="d4">entity_17</data>
+      <data key="d5">state_20</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': 'in_use', 'is_initial': False}</data>
+    </edge>
+    <edge source="entity_21" target="state_22">
+      <data key="d4">entity_21</data>
+      <data key="d5">state_22</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': 'available', 'is_initial': True}</data>
+    </edge>
+    <edge source="entity_21" target="state_23">
+      <data key="d4">entity_21</data>
+      <data key="d5">state_23</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': 'unavailable', 'is_initial': False}</data>
+    </edge>
+    <edge source="entity_21" target="state_24">
+      <data key="d4">entity_21</data>
+      <data key="d5">state_24</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': 'in_use', 'is_initial': False}</data>
+    </edge>
+    <edge source="entity_25" target="state_26">
+      <data key="d4">entity_25</data>
+      <data key="d5">state_26</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': 'available', 'is_initial': True}</data>
+    </edge>
+    <edge source="entity_25" target="state_27">
+      <data key="d4">entity_25</data>
+      <data key="d5">state_27</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': 'unavailable', 'is_initial': False}</data>
+    </edge>
+    <edge source="entity_25" target="state_28">
+      <data key="d4">entity_25</data>
+      <data key="d5">state_28</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': 'in_use', 'is_initial': False}</data>
+    </edge>
+    <edge source="entity_29" target="state_30">
+      <data key="d4">entity_29</data>
+      <data key="d5">state_30</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': 'available', 'is_initial': True}</data>
+    </edge>
+    <edge source="entity_29" target="state_31">
+      <data key="d4">entity_29</data>
+      <data key="d5">state_31</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': 'unavailable', 'is_initial': False}</data>
+    </edge>
+    <edge source="entity_29" target="state_32">
+      <data key="d4">entity_29</data>
+      <data key="d5">state_32</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': 'in_use', 'is_initial': False}</data>
+    </edge>
+    <edge source="entity_33" target="state_34">
+      <data key="d4">entity_33</data>
+      <data key="d5">state_34</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': 'available', 'is_initial': True}</data>
+    </edge>
+    <edge source="entity_33" target="state_35">
+      <data key="d4">entity_33</data>
+      <data key="d5">state_35</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': 'unavailable', 'is_initial': False}</data>
+    </edge>
+    <edge source="entity_33" target="state_36">
+      <data key="d4">entity_33</data>
+      <data key="d5">state_36</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': 'in_use', 'is_initial': False}</data>
+    </edge>
+    <edge source="entity_37" target="state_38">
+      <data key="d4">entity_37</data>
+      <data key="d5">state_38</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': 'available', 'is_initial': True}</data>
+    </edge>
+    <edge source="entity_37" target="state_39">
+      <data key="d4">entity_37</data>
+      <data key="d5">state_39</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': 'unavailable', 'is_initial': False}</data>
+    </edge>
+    <edge source="entity_37" target="state_40">
+      <data key="d4">entity_37</data>
+      <data key="d5">state_40</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': 'in_use', 'is_initial': False}</data>
+    </edge>
+    <edge source="entity_41" target="state_42">
+      <data key="d4">entity_41</data>
+      <data key="d5">state_42</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': 'available', 'is_initial': True}</data>
+    </edge>
+    <edge source="entity_41" target="state_43">
+      <data key="d4">entity_41</data>
+      <data key="d5">state_43</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': 'unavailable', 'is_initial': False}</data>
+    </edge>
+    <edge source="entity_41" target="state_44">
+      <data key="d4">entity_41</data>
+      <data key="d5">state_44</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': 'in_use', 'is_initial': False}</data>
+    </edge>
+    <edge source="entity_45" target="state_46">
+      <data key="d4">entity_45</data>
+      <data key="d5">state_46</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': 'available', 'is_initial': True}</data>
+    </edge>
+    <edge source="entity_45" target="state_47">
+      <data key="d4">entity_45</data>
+      <data key="d5">state_47</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': 'unavailable', 'is_initial': False}</data>
+    </edge>
+    <edge source="entity_45" target="state_48">
+      <data key="d4">entity_45</data>
+      <data key="d5">state_48</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': 'in_use', 'is_initial': False}</data>
+    </edge>
+    <edge source="entity_49" target="state_50">
+      <data key="d4">entity_49</data>
+      <data key="d5">state_50</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': 'available', 'is_initial': True}</data>
+    </edge>
+    <edge source="entity_49" target="state_51">
+      <data key="d4">entity_49</data>
+      <data key="d5">state_51</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': 'unavailable', 'is_initial': False}</data>
+    </edge>
+    <edge source="entity_49" target="state_52">
+      <data key="d4">entity_49</data>
+      <data key="d5">state_52</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': 'in_use', 'is_initial': False}</data>
+    </edge>
+    <edge source="entity_53" target="state_54">
+      <data key="d4">entity_53</data>
+      <data key="d5">state_54</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': 'available', 'is_initial': True}</data>
+    </edge>
+    <edge source="entity_53" target="state_55">
+      <data key="d4">entity_53</data>
+      <data key="d5">state_55</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': 'unavailable', 'is_initial': False}</data>
+    </edge>
+    <edge source="entity_53" target="state_56">
+      <data key="d4">entity_53</data>
+      <data key="d5">state_56</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': 'in_use', 'is_initial': False}</data>
+    </edge>
+    <edge source="entity_57" target="state_58">
+      <data key="d4">entity_57</data>
+      <data key="d5">state_58</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': 'available', 'is_initial': True}</data>
+    </edge>
+    <edge source="entity_57" target="state_59">
+      <data key="d4">entity_57</data>
+      <data key="d5">state_59</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': 'unavailable', 'is_initial': False}</data>
+    </edge>
+    <edge source="entity_57" target="state_60">
+      <data key="d4">entity_57</data>
+      <data key="d5">state_60</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': 'in_use', 'is_initial': False}</data>
+    </edge>
+    <edge source="entity_61" target="state_62">
+      <data key="d4">entity_61</data>
+      <data key="d5">state_62</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': 'available', 'is_initial': True}</data>
+    </edge>
+    <edge source="entity_61" target="state_63">
+      <data key="d4">entity_61</data>
+      <data key="d5">state_63</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': 'unavailable', 'is_initial': False}</data>
+    </edge>
+    <edge source="entity_61" target="state_64">
+      <data key="d4">entity_61</data>
+      <data key="d5">state_64</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': 'in_use', 'is_initial': False}</data>
+    </edge>
+    <edge source="entity_65" target="state_66">
+      <data key="d4">entity_65</data>
+      <data key="d5">state_66</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': 'available', 'is_initial': True}</data>
+    </edge>
+    <edge source="entity_65" target="state_67">
+      <data key="d4">entity_65</data>
+      <data key="d5">state_67</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': 'unavailable', 'is_initial': False}</data>
+    </edge>
+    <edge source="entity_65" target="state_68">
+      <data key="d4">entity_65</data>
+      <data key="d5">state_68</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_value': 'in_use', 'is_initial': False}</data>
+    </edge>
+    <edge source="action_69" target="result_70">
+      <data key="d4">action_69</data>
+      <data key="d5">result_70</data>
+      <data key="d6">produces</data>
+      <data key="d7">{'relationship': 'action_produces_result'}</data>
+    </edge>
+    <edge source="action_69" target="entity_2">
+      <data key="d4">action_69</data>
+      <data key="d5">entity_2</data>
+      <data key="d6">requires</data>
+      <data key="d7">{'relationship': 'action_requires_entity'}</data>
+    </edge>
+    <edge source="action_69" target="state_7">
+      <data key="d4">action_69</data>
+      <data key="d5">state_7</data>
+      <data key="d6">requires</data>
+      <data key="d7">{'relationship': 'action_requires_state', 'required_value': 'unlocked'}</data>
+    </edge>
+    <edge source="action_69" target="state_8">
+      <data key="d4">action_69</data>
+      <data key="d5">state_8</data>
+      <data key="d6">modifies</data>
+      <data key="d7">{'relationship': 'action_modifies_state', 'new_value': 'opened'}</data>
+    </edge>
+  </graph>
+</graphml>

@@ -1,0 +1,1951 @@
+{
+  "nodes": [
+    {
+      "id": "entity_1",
+      "type": "entity",
+      "name": "FloorPlan19-openable",
+      "attributes": {
+        "description": "游戏场景: FloorPlan19-openable",
+        "type": "game_scene",
+        "entity_type": "scene"
+      }
+    },
+    {
+      "id": "entity_2",
+      "type": "entity",
+      "name": "Cabinet_0",
+      "attributes": {
+        "properties": {
+          "position_x": -0.19,
+          "position_y": 1.21,
+          "position_z": -4.24,
+          "layout_data": [
+            -1.25,
+            -3.25,
+            90,
+            0
+          ],
+          "object_type": "Cabinet"
+        },
+        "initial_state": "locked",
+        "possible_states": [
+          "available",
+          "unavailable",
+          "in_use",
+          "locked",
+          "unlocked",
+          "opened"
+        ],
+        "entity_type": "cabinet"
+      }
+    },
+    {
+      "id": "state_3",
+      "type": "state",
+      "name": "Cabinet_0_available",
+      "attributes": {
+        "entity_name": "Cabinet_0",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "state_4",
+      "type": "state",
+      "name": "Cabinet_0_unavailable",
+      "attributes": {
+        "entity_name": "Cabinet_0",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "unavailable"
+      }
+    },
+    {
+      "id": "state_5",
+      "type": "state",
+      "name": "Cabinet_0_in_use",
+      "attributes": {
+        "entity_name": "Cabinet_0",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "in_use"
+      }
+    },
+    {
+      "id": "state_6",
+      "type": "state",
+      "name": "Cabinet_0_locked",
+      "attributes": {
+        "entity_name": "Cabinet_0",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "locked"
+      }
+    },
+    {
+      "id": "state_7",
+      "type": "state",
+      "name": "Cabinet_0_unlocked",
+      "attributes": {
+        "entity_name": "Cabinet_0",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "unlocked"
+      }
+    },
+    {
+      "id": "state_8",
+      "type": "state",
+      "name": "Cabinet_0_opened",
+      "attributes": {
+        "entity_name": "Cabinet_0",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "opened"
+      }
+    },
+    {
+      "id": "entity_9",
+      "type": "entity",
+      "name": "Cabinet_1",
+      "attributes": {
+        "properties": {
+          "position_x": -0.58,
+          "position_y": 0.39,
+          "position_z": -0.45,
+          "layout_data": [
+            -1.5,
+            -0.5,
+            90,
+            30
+          ],
+          "object_type": "Cabinet"
+        },
+        "initial_state": "available",
+        "possible_states": [
+          "available",
+          "unavailable",
+          "in_use"
+        ],
+        "entity_type": "cabinet"
+      }
+    },
+    {
+      "id": "state_10",
+      "type": "state",
+      "name": "Cabinet_1_available",
+      "attributes": {
+        "entity_name": "Cabinet_1",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "state_11",
+      "type": "state",
+      "name": "Cabinet_1_unavailable",
+      "attributes": {
+        "entity_name": "Cabinet_1",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "unavailable"
+      }
+    },
+    {
+      "id": "state_12",
+      "type": "state",
+      "name": "Cabinet_1_in_use",
+      "attributes": {
+        "entity_name": "Cabinet_1",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "in_use"
+      }
+    },
+    {
+      "id": "entity_13",
+      "type": "entity",
+      "name": "Cabinet_2",
+      "attributes": {
+        "properties": {
+          "position_x": -0.58,
+          "position_y": 0.39,
+          "position_z": -1.73,
+          "layout_data": [
+            -1.75,
+            -1.0,
+            90,
+            30
+          ],
+          "object_type": "Cabinet"
+        },
+        "initial_state": "available",
+        "possible_states": [
+          "available",
+          "unavailable",
+          "in_use"
+        ],
+        "entity_type": "cabinet"
+      }
+    },
+    {
+      "id": "state_14",
+      "type": "state",
+      "name": "Cabinet_2_available",
+      "attributes": {
+        "entity_name": "Cabinet_2",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "state_15",
+      "type": "state",
+      "name": "Cabinet_2_unavailable",
+      "attributes": {
+        "entity_name": "Cabinet_2",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "unavailable"
+      }
+    },
+    {
+      "id": "state_16",
+      "type": "state",
+      "name": "Cabinet_2_in_use",
+      "attributes": {
+        "entity_name": "Cabinet_2",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "in_use"
+      }
+    },
+    {
+      "id": "entity_17",
+      "type": "entity",
+      "name": "Cabinet_3",
+      "attributes": {
+        "properties": {
+          "position_x": -0.58,
+          "position_y": 0.39,
+          "position_z": -2.74,
+          "layout_data": [
+            -1.5,
+            -3.25,
+            90,
+            30
+          ],
+          "object_type": "Cabinet"
+        },
+        "initial_state": "available",
+        "possible_states": [
+          "available",
+          "unavailable",
+          "in_use"
+        ],
+        "entity_type": "cabinet"
+      }
+    },
+    {
+      "id": "state_18",
+      "type": "state",
+      "name": "Cabinet_3_available",
+      "attributes": {
+        "entity_name": "Cabinet_3",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "state_19",
+      "type": "state",
+      "name": "Cabinet_3_unavailable",
+      "attributes": {
+        "entity_name": "Cabinet_3",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "unavailable"
+      }
+    },
+    {
+      "id": "state_20",
+      "type": "state",
+      "name": "Cabinet_3_in_use",
+      "attributes": {
+        "entity_name": "Cabinet_3",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "in_use"
+      }
+    },
+    {
+      "id": "entity_21",
+      "type": "entity",
+      "name": "Cabinet_4",
+      "attributes": {
+        "properties": {
+          "position_x": -0.58,
+          "position_y": 0.39,
+          "position_z": -3.48,
+          "layout_data": [
+            -1.75,
+            -2.75,
+            90,
+            30
+          ],
+          "object_type": "Cabinet"
+        },
+        "initial_state": "available",
+        "possible_states": [
+          "available",
+          "unavailable",
+          "in_use"
+        ],
+        "entity_type": "cabinet"
+      }
+    },
+    {
+      "id": "state_22",
+      "type": "state",
+      "name": "Cabinet_4_available",
+      "attributes": {
+        "entity_name": "Cabinet_4",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "state_23",
+      "type": "state",
+      "name": "Cabinet_4_unavailable",
+      "attributes": {
+        "entity_name": "Cabinet_4",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "unavailable"
+      }
+    },
+    {
+      "id": "state_24",
+      "type": "state",
+      "name": "Cabinet_4_in_use",
+      "attributes": {
+        "entity_name": "Cabinet_4",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "in_use"
+      }
+    },
+    {
+      "id": "entity_25",
+      "type": "entity",
+      "name": "Cabinet_5",
+      "attributes": {
+        "properties": {
+          "position_x": -0.61,
+          "position_y": 0.39,
+          "position_z": -3.51,
+          "layout_data": [
+            -1.25,
+            -2.5,
+            180,
+            30
+          ],
+          "object_type": "Cabinet"
+        },
+        "initial_state": "available",
+        "possible_states": [
+          "available",
+          "unavailable",
+          "in_use"
+        ],
+        "entity_type": "cabinet"
+      }
+    },
+    {
+      "id": "state_26",
+      "type": "state",
+      "name": "Cabinet_5_available",
+      "attributes": {
+        "entity_name": "Cabinet_5",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "state_27",
+      "type": "state",
+      "name": "Cabinet_5_unavailable",
+      "attributes": {
+        "entity_name": "Cabinet_5",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "unavailable"
+      }
+    },
+    {
+      "id": "state_28",
+      "type": "state",
+      "name": "Cabinet_5_in_use",
+      "attributes": {
+        "entity_name": "Cabinet_5",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "in_use"
+      }
+    },
+    {
+      "id": "entity_29",
+      "type": "entity",
+      "name": "Cabinet_6",
+      "attributes": {
+        "properties": {
+          "position_x": -1.23,
+          "position_y": 1.81,
+          "position_z": -3.76,
+          "layout_data": [
+            -1.0,
+            -3.25,
+            180,
+            0
+          ],
+          "object_type": "Cabinet"
+        },
+        "initial_state": "available",
+        "possible_states": [
+          "available",
+          "unavailable",
+          "in_use"
+        ],
+        "entity_type": "cabinet"
+      }
+    },
+    {
+      "id": "state_30",
+      "type": "state",
+      "name": "Cabinet_6_available",
+      "attributes": {
+        "entity_name": "Cabinet_6",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "state_31",
+      "type": "state",
+      "name": "Cabinet_6_unavailable",
+      "attributes": {
+        "entity_name": "Cabinet_6",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "unavailable"
+      }
+    },
+    {
+      "id": "state_32",
+      "type": "state",
+      "name": "Cabinet_6_in_use",
+      "attributes": {
+        "entity_name": "Cabinet_6",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "in_use"
+      }
+    },
+    {
+      "id": "entity_33",
+      "type": "entity",
+      "name": "Cabinet_7",
+      "attributes": {
+        "properties": {
+          "position_x": -1.36,
+          "position_y": 0.39,
+          "position_z": -3.51,
+          "layout_data": [
+            -1.0,
+            -2.5,
+            180,
+            30
+          ],
+          "object_type": "Cabinet"
+        },
+        "initial_state": "available",
+        "possible_states": [
+          "available",
+          "unavailable",
+          "in_use"
+        ],
+        "entity_type": "cabinet"
+      }
+    },
+    {
+      "id": "state_34",
+      "type": "state",
+      "name": "Cabinet_7_available",
+      "attributes": {
+        "entity_name": "Cabinet_7",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "state_35",
+      "type": "state",
+      "name": "Cabinet_7_unavailable",
+      "attributes": {
+        "entity_name": "Cabinet_7",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "unavailable"
+      }
+    },
+    {
+      "id": "state_36",
+      "type": "state",
+      "name": "Cabinet_7_in_use",
+      "attributes": {
+        "entity_name": "Cabinet_7",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "in_use"
+      }
+    },
+    {
+      "id": "entity_37",
+      "type": "entity",
+      "name": "Cabinet_8",
+      "attributes": {
+        "properties": {
+          "position_x": -1.38,
+          "position_y": 0.39,
+          "position_z": -3.51,
+          "layout_data": [
+            -2.0,
+            -2.5,
+            180,
+            30
+          ],
+          "object_type": "Cabinet"
+        },
+        "initial_state": "available",
+        "possible_states": [
+          "available",
+          "unavailable",
+          "in_use"
+        ],
+        "entity_type": "cabinet"
+      }
+    },
+    {
+      "id": "state_38",
+      "type": "state",
+      "name": "Cabinet_8_available",
+      "attributes": {
+        "entity_name": "Cabinet_8",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "state_39",
+      "type": "state",
+      "name": "Cabinet_8_unavailable",
+      "attributes": {
+        "entity_name": "Cabinet_8",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "unavailable"
+      }
+    },
+    {
+      "id": "state_40",
+      "type": "state",
+      "name": "Cabinet_8_in_use",
+      "attributes": {
+        "entity_name": "Cabinet_8",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "in_use"
+      }
+    },
+    {
+      "id": "entity_41",
+      "type": "entity",
+      "name": "Cabinet_9",
+      "attributes": {
+        "properties": {
+          "position_x": -2.15,
+          "position_y": 0.39,
+          "position_z": -3.51,
+          "layout_data": [
+            -2.25,
+            -2.5,
+            180,
+            30
+          ],
+          "object_type": "Cabinet"
+        },
+        "initial_state": "available",
+        "possible_states": [
+          "available",
+          "unavailable",
+          "in_use"
+        ],
+        "entity_type": "cabinet"
+      }
+    },
+    {
+      "id": "state_42",
+      "type": "state",
+      "name": "Cabinet_9_available",
+      "attributes": {
+        "entity_name": "Cabinet_9",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "state_43",
+      "type": "state",
+      "name": "Cabinet_9_unavailable",
+      "attributes": {
+        "entity_name": "Cabinet_9",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "unavailable"
+      }
+    },
+    {
+      "id": "state_44",
+      "type": "state",
+      "name": "Cabinet_9_in_use",
+      "attributes": {
+        "entity_name": "Cabinet_9",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "in_use"
+      }
+    },
+    {
+      "id": "entity_45",
+      "type": "entity",
+      "name": "Cabinet_10",
+      "attributes": {
+        "properties": {
+          "position_x": -2.81,
+          "position_y": 1.81,
+          "position_z": -3.76,
+          "layout_data": [
+            -2.25,
+            -3.0,
+            180,
+            0
+          ],
+          "object_type": "Cabinet"
+        },
+        "initial_state": "available",
+        "possible_states": [
+          "available",
+          "unavailable",
+          "in_use"
+        ],
+        "entity_type": "cabinet"
+      }
+    },
+    {
+      "id": "state_46",
+      "type": "state",
+      "name": "Cabinet_10_available",
+      "attributes": {
+        "entity_name": "Cabinet_10",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "state_47",
+      "type": "state",
+      "name": "Cabinet_10_unavailable",
+      "attributes": {
+        "entity_name": "Cabinet_10",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "unavailable"
+      }
+    },
+    {
+      "id": "state_48",
+      "type": "state",
+      "name": "Cabinet_10_in_use",
+      "attributes": {
+        "entity_name": "Cabinet_10",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "in_use"
+      }
+    },
+    {
+      "id": "entity_49",
+      "type": "entity",
+      "name": "Cabinet_11",
+      "attributes": {
+        "properties": {
+          "position_x": -3.02,
+          "position_y": 2.1,
+          "position_z": -1.74,
+          "layout_data": [
+            -2.0,
+            -2.25,
+            270,
+            -30
+          ],
+          "object_type": "Cabinet"
+        },
+        "initial_state": "available",
+        "possible_states": [
+          "available",
+          "unavailable",
+          "in_use"
+        ],
+        "entity_type": "cabinet"
+      }
+    },
+    {
+      "id": "state_50",
+      "type": "state",
+      "name": "Cabinet_11_available",
+      "attributes": {
+        "entity_name": "Cabinet_11",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "state_51",
+      "type": "state",
+      "name": "Cabinet_11_unavailable",
+      "attributes": {
+        "entity_name": "Cabinet_11",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "unavailable"
+      }
+    },
+    {
+      "id": "state_52",
+      "type": "state",
+      "name": "Cabinet_11_in_use",
+      "attributes": {
+        "entity_name": "Cabinet_11",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "in_use"
+      }
+    },
+    {
+      "id": "entity_53",
+      "type": "entity",
+      "name": "Cabinet_12",
+      "attributes": {
+        "properties": {
+          "position_x": -3.02,
+          "position_y": 2.1,
+          "position_z": -2.68,
+          "layout_data": [
+            -2.0,
+            -2.75,
+            270,
+            -30
+          ],
+          "object_type": "Cabinet"
+        },
+        "initial_state": "available",
+        "possible_states": [
+          "available",
+          "unavailable",
+          "in_use"
+        ],
+        "entity_type": "cabinet"
+      }
+    },
+    {
+      "id": "state_54",
+      "type": "state",
+      "name": "Cabinet_12_available",
+      "attributes": {
+        "entity_name": "Cabinet_12",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "state_55",
+      "type": "state",
+      "name": "Cabinet_12_unavailable",
+      "attributes": {
+        "entity_name": "Cabinet_12",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "unavailable"
+      }
+    },
+    {
+      "id": "state_56",
+      "type": "state",
+      "name": "Cabinet_12_in_use",
+      "attributes": {
+        "entity_name": "Cabinet_12",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "in_use"
+      }
+    },
+    {
+      "id": "entity_57",
+      "type": "entity",
+      "name": "CounterTop_13",
+      "attributes": {
+        "properties": {
+          "position_x": -0.27,
+          "position_y": 0.95,
+          "position_z": -1.09,
+          "layout_data": [
+            -1.0,
+            -1.25,
+            90,
+            30
+          ],
+          "object_type": "CounterTop"
+        },
+        "initial_state": "available",
+        "possible_states": [
+          "available",
+          "unavailable",
+          "in_use"
+        ],
+        "entity_type": "countertop"
+      }
+    },
+    {
+      "id": "state_58",
+      "type": "state",
+      "name": "CounterTop_13_available",
+      "attributes": {
+        "entity_name": "CounterTop_13",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "state_59",
+      "type": "state",
+      "name": "CounterTop_13_unavailable",
+      "attributes": {
+        "entity_name": "CounterTop_13",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "unavailable"
+      }
+    },
+    {
+      "id": "state_60",
+      "type": "state",
+      "name": "CounterTop_13_in_use",
+      "attributes": {
+        "entity_name": "CounterTop_13",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "in_use"
+      }
+    },
+    {
+      "id": "entity_61",
+      "type": "entity",
+      "name": "CounterTop_14",
+      "attributes": {
+        "properties": {
+          "position_x": -1.79,
+          "position_y": 0.95,
+          "position_z": -3.8,
+          "layout_data": [
+            -1.0,
+            -3.25,
+            180,
+            30
+          ],
+          "object_type": "CounterTop"
+        },
+        "initial_state": "available",
+        "possible_states": [
+          "available",
+          "unavailable",
+          "in_use"
+        ],
+        "entity_type": "countertop"
+      }
+    },
+    {
+      "id": "state_62",
+      "type": "state",
+      "name": "CounterTop_14_available",
+      "attributes": {
+        "entity_name": "CounterTop_14",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "state_63",
+      "type": "state",
+      "name": "CounterTop_14_unavailable",
+      "attributes": {
+        "entity_name": "CounterTop_14",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "unavailable"
+      }
+    },
+    {
+      "id": "state_64",
+      "type": "state",
+      "name": "CounterTop_14_in_use",
+      "attributes": {
+        "entity_name": "CounterTop_14",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "in_use"
+      }
+    },
+    {
+      "id": "entity_65",
+      "type": "entity",
+      "name": "DiningTable_15",
+      "attributes": {
+        "properties": {
+          "position_x": -2.87,
+          "position_y": 0.68,
+          "position_z": -0.51,
+          "layout_data": [
+            -1.75,
+            -0.5,
+            270,
+            30
+          ],
+          "object_type": "DiningTable"
+        },
+        "initial_state": "available",
+        "possible_states": [
+          "available",
+          "unavailable",
+          "in_use"
+        ],
+        "entity_type": "diningtable"
+      }
+    },
+    {
+      "id": "state_66",
+      "type": "state",
+      "name": "DiningTable_15_available",
+      "attributes": {
+        "entity_name": "DiningTable_15",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "state_67",
+      "type": "state",
+      "name": "DiningTable_15_unavailable",
+      "attributes": {
+        "entity_name": "DiningTable_15",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "unavailable"
+      }
+    },
+    {
+      "id": "state_68",
+      "type": "state",
+      "name": "DiningTable_15_in_use",
+      "attributes": {
+        "entity_name": "DiningTable_15",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "in_use"
+      }
+    },
+    {
+      "id": "entity_69",
+      "type": "entity",
+      "name": "Fridge_16",
+      "attributes": {
+        "properties": {
+          "position_x": -3.19,
+          "position_y": 0.0,
+          "position_z": -2.19,
+          "layout_data": [
+            -2.25,
+            -2.25,
+            270,
+            30
+          ],
+          "object_type": "Fridge"
+        },
+        "initial_state": "available",
+        "possible_states": [
+          "available",
+          "unavailable",
+          "in_use"
+        ],
+        "entity_type": "fridge"
+      }
+    },
+    {
+      "id": "state_70",
+      "type": "state",
+      "name": "Fridge_16_available",
+      "attributes": {
+        "entity_name": "Fridge_16",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "state_71",
+      "type": "state",
+      "name": "Fridge_16_unavailable",
+      "attributes": {
+        "entity_name": "Fridge_16",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "unavailable"
+      }
+    },
+    {
+      "id": "state_72",
+      "type": "state",
+      "name": "Fridge_16_in_use",
+      "attributes": {
+        "entity_name": "Fridge_16",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "in_use"
+      }
+    },
+    {
+      "id": "entity_73",
+      "type": "entity",
+      "name": "Microwave_17",
+      "attributes": {
+        "properties": {
+          "position_x": -0.14,
+          "position_y": 0.9,
+          "position_z": -0.91,
+          "layout_data": [
+            -1.0,
+            -0.75,
+            90,
+            30
+          ],
+          "object_type": "Microwave"
+        },
+        "initial_state": "available",
+        "possible_states": [
+          "available",
+          "unavailable",
+          "in_use"
+        ],
+        "entity_type": "microwave"
+      }
+    },
+    {
+      "id": "state_74",
+      "type": "state",
+      "name": "Microwave_17_available",
+      "attributes": {
+        "entity_name": "Microwave_17",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "state_75",
+      "type": "state",
+      "name": "Microwave_17_unavailable",
+      "attributes": {
+        "entity_name": "Microwave_17",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "unavailable"
+      }
+    },
+    {
+      "id": "state_76",
+      "type": "state",
+      "name": "Microwave_17_in_use",
+      "attributes": {
+        "entity_name": "Microwave_17",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "in_use"
+      }
+    },
+    {
+      "id": "entity_77",
+      "type": "entity",
+      "name": "Sink_18",
+      "attributes": {
+        "properties": {
+          "position_x": -1.79,
+          "position_y": 0.9,
+          "position_z": -3.75,
+          "layout_data": [
+            -2.0,
+            -3.25,
+            180,
+            30
+          ],
+          "object_type": "Sink"
+        },
+        "initial_state": "available",
+        "possible_states": [
+          "available",
+          "unavailable",
+          "in_use"
+        ],
+        "entity_type": "sink"
+      }
+    },
+    {
+      "id": "state_78",
+      "type": "state",
+      "name": "Sink_18_available",
+      "attributes": {
+        "entity_name": "Sink_18",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "state_79",
+      "type": "state",
+      "name": "Sink_18_unavailable",
+      "attributes": {
+        "entity_name": "Sink_18",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "unavailable"
+      }
+    },
+    {
+      "id": "state_80",
+      "type": "state",
+      "name": "Sink_18_in_use",
+      "attributes": {
+        "entity_name": "Sink_18",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "in_use"
+      }
+    },
+    {
+      "id": "action_81",
+      "type": "action",
+      "name": "open_Cabinet_0",
+      "attributes": {
+        "description": "打开 Cabinet_0",
+        "required_entities": [
+          "Cabinet_0"
+        ],
+        "required_states": {
+          "Cabinet_0": "unlocked"
+        },
+        "effects": {
+          "Cabinet_0": "opened"
+        },
+        "result": "打开成功"
+      }
+    },
+    {
+      "id": "result_82",
+      "type": "result",
+      "name": "open_Cabinet_0_result",
+      "attributes": {
+        "action_name": "open_Cabinet_0",
+        "description": "动作 open_Cabinet_0 的结果",
+        "result_value": "打开成功"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "entity_1",
+      "target": "entity_2",
+      "type": "contains",
+      "attributes": {
+        "relationship": "scene_contains_entity"
+      }
+    },
+    {
+      "source": "entity_2",
+      "target": "state_3",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "available",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_2",
+      "target": "state_4",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "unavailable",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_2",
+      "target": "state_5",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "in_use",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_2",
+      "target": "state_6",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "locked",
+        "is_initial": true
+      }
+    },
+    {
+      "source": "entity_2",
+      "target": "state_7",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "unlocked",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_2",
+      "target": "state_8",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "opened",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_1",
+      "target": "entity_9",
+      "type": "contains",
+      "attributes": {
+        "relationship": "scene_contains_entity"
+      }
+    },
+    {
+      "source": "entity_9",
+      "target": "state_10",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "available",
+        "is_initial": true
+      }
+    },
+    {
+      "source": "entity_9",
+      "target": "state_11",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "unavailable",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_9",
+      "target": "state_12",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "in_use",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_1",
+      "target": "entity_13",
+      "type": "contains",
+      "attributes": {
+        "relationship": "scene_contains_entity"
+      }
+    },
+    {
+      "source": "entity_13",
+      "target": "state_14",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "available",
+        "is_initial": true
+      }
+    },
+    {
+      "source": "entity_13",
+      "target": "state_15",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "unavailable",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_13",
+      "target": "state_16",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "in_use",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_1",
+      "target": "entity_17",
+      "type": "contains",
+      "attributes": {
+        "relationship": "scene_contains_entity"
+      }
+    },
+    {
+      "source": "entity_17",
+      "target": "state_18",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "available",
+        "is_initial": true
+      }
+    },
+    {
+      "source": "entity_17",
+      "target": "state_19",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "unavailable",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_17",
+      "target": "state_20",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "in_use",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_1",
+      "target": "entity_21",
+      "type": "contains",
+      "attributes": {
+        "relationship": "scene_contains_entity"
+      }
+    },
+    {
+      "source": "entity_21",
+      "target": "state_22",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "available",
+        "is_initial": true
+      }
+    },
+    {
+      "source": "entity_21",
+      "target": "state_23",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "unavailable",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_21",
+      "target": "state_24",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "in_use",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_1",
+      "target": "entity_25",
+      "type": "contains",
+      "attributes": {
+        "relationship": "scene_contains_entity"
+      }
+    },
+    {
+      "source": "entity_25",
+      "target": "state_26",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "available",
+        "is_initial": true
+      }
+    },
+    {
+      "source": "entity_25",
+      "target": "state_27",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "unavailable",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_25",
+      "target": "state_28",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "in_use",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_1",
+      "target": "entity_29",
+      "type": "contains",
+      "attributes": {
+        "relationship": "scene_contains_entity"
+      }
+    },
+    {
+      "source": "entity_29",
+      "target": "state_30",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "available",
+        "is_initial": true
+      }
+    },
+    {
+      "source": "entity_29",
+      "target": "state_31",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "unavailable",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_29",
+      "target": "state_32",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "in_use",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_1",
+      "target": "entity_33",
+      "type": "contains",
+      "attributes": {
+        "relationship": "scene_contains_entity"
+      }
+    },
+    {
+      "source": "entity_33",
+      "target": "state_34",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "available",
+        "is_initial": true
+      }
+    },
+    {
+      "source": "entity_33",
+      "target": "state_35",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "unavailable",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_33",
+      "target": "state_36",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "in_use",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_1",
+      "target": "entity_37",
+      "type": "contains",
+      "attributes": {
+        "relationship": "scene_contains_entity"
+      }
+    },
+    {
+      "source": "entity_37",
+      "target": "state_38",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "available",
+        "is_initial": true
+      }
+    },
+    {
+      "source": "entity_37",
+      "target": "state_39",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "unavailable",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_37",
+      "target": "state_40",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "in_use",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_1",
+      "target": "entity_41",
+      "type": "contains",
+      "attributes": {
+        "relationship": "scene_contains_entity"
+      }
+    },
+    {
+      "source": "entity_41",
+      "target": "state_42",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "available",
+        "is_initial": true
+      }
+    },
+    {
+      "source": "entity_41",
+      "target": "state_43",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "unavailable",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_41",
+      "target": "state_44",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "in_use",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_1",
+      "target": "entity_45",
+      "type": "contains",
+      "attributes": {
+        "relationship": "scene_contains_entity"
+      }
+    },
+    {
+      "source": "entity_45",
+      "target": "state_46",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "available",
+        "is_initial": true
+      }
+    },
+    {
+      "source": "entity_45",
+      "target": "state_47",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "unavailable",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_45",
+      "target": "state_48",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "in_use",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_1",
+      "target": "entity_49",
+      "type": "contains",
+      "attributes": {
+        "relationship": "scene_contains_entity"
+      }
+    },
+    {
+      "source": "entity_49",
+      "target": "state_50",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "available",
+        "is_initial": true
+      }
+    },
+    {
+      "source": "entity_49",
+      "target": "state_51",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "unavailable",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_49",
+      "target": "state_52",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "in_use",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_1",
+      "target": "entity_53",
+      "type": "contains",
+      "attributes": {
+        "relationship": "scene_contains_entity"
+      }
+    },
+    {
+      "source": "entity_53",
+      "target": "state_54",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "available",
+        "is_initial": true
+      }
+    },
+    {
+      "source": "entity_53",
+      "target": "state_55",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "unavailable",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_53",
+      "target": "state_56",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "in_use",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_1",
+      "target": "entity_57",
+      "type": "contains",
+      "attributes": {
+        "relationship": "scene_contains_entity"
+      }
+    },
+    {
+      "source": "entity_57",
+      "target": "state_58",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "available",
+        "is_initial": true
+      }
+    },
+    {
+      "source": "entity_57",
+      "target": "state_59",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "unavailable",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_57",
+      "target": "state_60",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "in_use",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_1",
+      "target": "entity_61",
+      "type": "contains",
+      "attributes": {
+        "relationship": "scene_contains_entity"
+      }
+    },
+    {
+      "source": "entity_61",
+      "target": "state_62",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "available",
+        "is_initial": true
+      }
+    },
+    {
+      "source": "entity_61",
+      "target": "state_63",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "unavailable",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_61",
+      "target": "state_64",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "in_use",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_1",
+      "target": "entity_65",
+      "type": "contains",
+      "attributes": {
+        "relationship": "scene_contains_entity"
+      }
+    },
+    {
+      "source": "entity_65",
+      "target": "state_66",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "available",
+        "is_initial": true
+      }
+    },
+    {
+      "source": "entity_65",
+      "target": "state_67",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "unavailable",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_65",
+      "target": "state_68",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "in_use",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_1",
+      "target": "entity_69",
+      "type": "contains",
+      "attributes": {
+        "relationship": "scene_contains_entity"
+      }
+    },
+    {
+      "source": "entity_69",
+      "target": "state_70",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "available",
+        "is_initial": true
+      }
+    },
+    {
+      "source": "entity_69",
+      "target": "state_71",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "unavailable",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_69",
+      "target": "state_72",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "in_use",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_1",
+      "target": "entity_73",
+      "type": "contains",
+      "attributes": {
+        "relationship": "scene_contains_entity"
+      }
+    },
+    {
+      "source": "entity_73",
+      "target": "state_74",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "available",
+        "is_initial": true
+      }
+    },
+    {
+      "source": "entity_73",
+      "target": "state_75",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "unavailable",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_73",
+      "target": "state_76",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "in_use",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_1",
+      "target": "entity_77",
+      "type": "contains",
+      "attributes": {
+        "relationship": "scene_contains_entity"
+      }
+    },
+    {
+      "source": "entity_77",
+      "target": "state_78",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "available",
+        "is_initial": true
+      }
+    },
+    {
+      "source": "entity_77",
+      "target": "state_79",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "unavailable",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "entity_77",
+      "target": "state_80",
+      "type": "has_state",
+      "attributes": {
+        "state_value": "in_use",
+        "is_initial": false
+      }
+    },
+    {
+      "source": "action_81",
+      "target": "result_82",
+      "type": "produces",
+      "attributes": {
+        "relationship": "action_produces_result"
+      }
+    },
+    {
+      "source": "action_81",
+      "target": "entity_2",
+      "type": "requires",
+      "attributes": {
+        "relationship": "action_requires_entity"
+      }
+    },
+    {
+      "source": "action_81",
+      "target": "state_7",
+      "type": "requires",
+      "attributes": {
+        "relationship": "action_requires_state",
+        "required_value": "unlocked"
+      }
+    },
+    {
+      "source": "action_81",
+      "target": "state_8",
+      "type": "modifies",
+      "attributes": {
+        "relationship": "action_modifies_state",
+        "new_value": "opened"
+      }
+    },
+    {
+      "source": "state_7",
+      "target": "state_8",
+      "type": "transitions",
+      "attributes": {
+        "action": "open_Cabinet_0",
+        "conditions": [
+          "Cabinet_0 must be unlocked"
+        ],
+        "effects": [
+          "Cabinet_0 becomes opened"
+        ]
+      }
+    }
+  ],
+  "metadata": {
+    "node_count": 82,
+    "edge_count": 84,
+    "node_types": [
+      "entity",
+      "action",
+      "state",
+      "result"
+    ]
+  }
+}

@@ -1,0 +1,264 @@
+# 智能体配置文件
+# Agent Configuration
+
+# 项目设置
+project:
+  name: "KGRL Agents"
+  version: "1.0.0"
+  description: "Knowledge Graph Enhanced Reinforcement Learning Agents"
+
+# 基础智能体配置
+base_agent:
+  # 智能体类型
+  type: "kg_enhanced"  # base, kg_enhanced, rl_agent
+  
+  # 基本参数
+  parameters:
+    learning_rate: 0.001
+    discount_factor: 0.99
+    exploration_rate: 0.1
+    exploration_decay: 0.995
+    min_exploration_rate: 0.01
+    
+  # 记忆设置
+  memory:
+    type: "replay_buffer"  # replay_buffer, prioritized, episodic
+    capacity: 10000
+    batch_size: 32
+    
+  # 网络架构
+  network:
+    hidden_layers: [256, 128, 64]
+    activation: "relu"
+    dropout: 0.2
+    batch_norm: true
+
+# 知识图谱增强智能体
+kg_enhanced_agent:
+  # KG集成设置
+  kg_integration:
+    enabled: true
+    kg_source: "neo4j"  # neo4j, json, networkx
+    update_frequency: "episode"  # step, episode, never
+    
+  # KG查询设置
+  kg_queries:
+    # 状态查询
+    state_query:
+      enabled: true
+      query_type: "current_state"
+      max_results: 10
+      
+    # 动作查询
+    action_query:
+      enabled: true
+      query_type: "available_actions"
+      max_results: 5
+      
+    # 路径查询
+    path_query:
+      enabled: true
+      query_type: "action_sequences"
+      max_depth: 3
+      
+  # KG表示学习
+  kg_representation:
+    # 节点嵌入
+    node_embedding:
+      enabled: true
+      embedding_dim: 64
+      method: "node2vec"  # node2vec, deepwalk, line
+      
+    # 图嵌入
+    graph_embedding:
+      enabled: true
+      embedding_dim: 128
+      method: "graph2vec"  # graph2vec, graphsage, gin
+      
+    # 关系嵌入
+    relation_embedding:
+      enabled: true
+      embedding_dim: 32
+      method: "transe"  # transe, rotate, complex
+
+# 强化学习智能体
+rl_agent:
+  # 算法选择
+  algorithm: "dqn"  # dqn, ddqn, dueling_dqn, a3c, ppo
+  
+  # DQN特定设置
+  dqn:
+    target_update_frequency: 1000
+    double_dqn: true
+    dueling: true
+    
+  # PPO特定设置
+  ppo:
+    clip_ratio: 0.2
+    value_loss_coef: 0.5
+    entropy_coef: 0.01
+    
+  # A3C特定设置
+  a3c:
+    num_workers: 4
+    t_max: 20
+
+# 环境配置
+environment:
+  # 环境类型
+  type: "alfworld"  # alfworld, textworld, custom
+  
+  # ALFWorld设置
+  alfworld:
+    data_path: "data/benchmarks/alfworld"
+    max_steps: 50
+    reward_shaping: true
+    
+  # TextWorld设置
+  textworld:
+    data_path: "data/benchmarks/textworld"
+    max_steps: 100
+    difficulty: "easy"  # easy, medium, hard
+    
+  # 奖励设置
+  rewards:
+    success: 10.0
+    failure: -1.0
+    step_penalty: -0.01
+    invalid_action: -0.1
+
+# 训练配置
+training:
+  # 基本设置
+  episodes: 1000
+  max_steps_per_episode: 100
+  
+  # 评估设置
+  evaluation:
+    frequency: 100  # 每100个episode评估一次
+    episodes: 10    # 评估10个episode
+    
+  # 保存设置
+  checkpoints:
+    frequency: 500  # 每500个episode保存一次
+    path: "checkpoints/agents"
+    keep_best: true
+    
+  # 早停设置
+  early_stopping:
+    enabled: true
+    patience: 200
+    min_improvement: 0.01
+
+# 评估配置
+evaluation:
+  # 评估指标
+  metrics:
+    - "success_rate"
+    - "average_reward"
+    - "average_steps"
+    - "action_efficiency"
+    - "kg_utilization"
+    
+  # 基准测试
+  benchmarks:
+    - name: "alfworld_validation"
+      episodes: 100
+      
+    - name: "textworld_validation"
+      episodes: 50
+      
+  # 比较基线
+  baselines:
+    - name: "random_agent"
+      type: "random"
+      
+    - name: "rule_based_agent"
+      type: "rule_based"
+
+# 可视化配置
+visualization:
+  # 训练可视化
+  training:
+    enabled: true
+    plot_frequency: 100
+    metrics: ["reward", "loss", "exploration_rate"]
+    
+  # KG可视化
+  knowledge_graph:
+    enabled: true
+    layout: "spring"  # spring, circular, hierarchical
+    node_size_by: "degree"
+    edge_width_by: "weight"
+    
+  # 决策可视化
+  decision_process:
+    enabled: false
+    save_decision_trees: false
+    visualize_attention: false
+
+# 实验配置
+experiments:
+  # 实验设置
+  name: "kg_enhanced_rl"
+  description: "Knowledge Graph Enhanced Reinforcement Learning Experiment"
+  
+  # 随机种子
+  random_seed: 42
+  
+  # 实验变量
+  variables:
+    - name: "kg_integration"
+      values: [true, false]
+      
+    - name: "learning_rate"
+      values: [0.001, 0.01, 0.1]
+      
+  # 重复次数
+  repetitions: 3
+  
+  # 结果保存
+  results:
+    path: "results/experiments"
+    format: ["json", "csv"]
+
+# 日志配置
+logging:
+  # 基本设置
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  
+  # 文件日志
+  file:
+    enabled: true
+    path: "logs/agents.log"
+    max_size_mb: 100
+    backup_count: 5
+    
+  # 训练日志
+  training_log:
+    enabled: true
+    path: "logs/training.log"
+    level: "DEBUG"
+    
+  # 性能日志
+  performance_log:
+    enabled: true
+    path: "logs/performance.log"
+    metrics_frequency: 10  # 每10步记录一次
+
+# 调试配置
+debug:
+  # 调试模式
+  enabled: false
+  
+  # 详细输出
+  verbose: false
+  
+  # 保存调试信息
+  save_debug_info: false
+  debug_path: "debug/agents"
+  
+  # 可视化调试
+  visualize_decisions: false
+  save_episode_videos: false

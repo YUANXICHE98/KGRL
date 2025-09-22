@@ -1,0 +1,4312 @@
+{
+  "nodes": [
+    {
+      "id": "entity_1",
+      "type": "entity",
+      "name": "FloorPlan228-openable",
+      "attributes": {
+        "category": "environment",
+        "description": "ALFWorld scene: FloorPlan228-openable",
+        "entity_type": "scene"
+      }
+    },
+    {
+      "id": "entity_2",
+      "type": "entity",
+      "name": "CoffeeTable",
+      "attributes": {
+        "category": "physical_object",
+        "position_x": -4.0,
+        "position_y": 0.01,
+        "position_z": 2.45,
+        "layout_data": "[-2.75, 2.25, 270, 30]",
+        "source": "alfworld",
+        "entity_type": "furniture"
+      }
+    },
+    {
+      "id": "state_3",
+      "type": "state",
+      "name": "CoffeeTable_available",
+      "attributes": {
+        "state_type": "availability",
+        "object_name": "CoffeeTable",
+        "description": "CoffeeTable is accessible in the environment",
+        "state_value": "accessible"
+      }
+    },
+    {
+      "id": "entity_4",
+      "type": "entity",
+      "name": "DiningTable",
+      "attributes": {
+        "category": "physical_object",
+        "position_x": -1.4,
+        "position_y": 0.0,
+        "position_z": 1.45,
+        "layout_data": "[-2.5, 1.5, 90, 30]",
+        "source": "alfworld",
+        "entity_type": "furniture"
+      }
+    },
+    {
+      "id": "state_5",
+      "type": "state",
+      "name": "DiningTable_available",
+      "attributes": {
+        "state_type": "availability",
+        "object_name": "DiningTable",
+        "description": "DiningTable is accessible in the environment",
+        "state_value": "accessible"
+      }
+    },
+    {
+      "id": "entity_6",
+      "type": "entity",
+      "name": "Drawer",
+      "attributes": {
+        "category": "physical_object",
+        "position_x": -2.56,
+        "position_y": 0.53,
+        "position_z": 4.48,
+        "layout_data": "[-3.0, 3.75, 0, 30]",
+        "source": "alfworld",
+        "entity_type": "furniture"
+      }
+    },
+    {
+      "id": "state_7",
+      "type": "state",
+      "name": "Drawer_available",
+      "attributes": {
+        "state_type": "availability",
+        "object_name": "Drawer",
+        "description": "Drawer is accessible in the environment",
+        "state_value": "accessible"
+      }
+    },
+    {
+      "id": "entity_8",
+      "type": "entity",
+      "name": "GarbageCan",
+      "attributes": {
+        "category": "physical_object",
+        "position_x": -0.22,
+        "position_y": -0.01,
+        "position_z": 4.73,
+        "layout_data": "[-1.25, 4.25, 90, 30]",
+        "source": "alfworld",
+        "entity_type": "furniture"
+      }
+    },
+    {
+      "id": "state_9",
+      "type": "state",
+      "name": "GarbageCan_available",
+      "attributes": {
+        "state_type": "availability",
+        "object_name": "GarbageCan",
+        "description": "GarbageCan is accessible in the environment",
+        "state_value": "accessible"
+      }
+    },
+    {
+      "id": "entity_10",
+      "type": "entity",
+      "name": "SideTable",
+      "attributes": {
+        "category": "physical_object",
+        "position_x": -2.56,
+        "position_y": -0.01,
+        "position_z": 4.74,
+        "layout_data": "[-1.5, 4.25, 270, 30]",
+        "source": "alfworld",
+        "entity_type": "furniture"
+      }
+    },
+    {
+      "id": "state_11",
+      "type": "state",
+      "name": "SideTable_available",
+      "attributes": {
+        "state_type": "availability",
+        "object_name": "SideTable",
+        "description": "SideTable is accessible in the environment",
+        "state_value": "accessible"
+      }
+    },
+    {
+      "id": "entity_12",
+      "type": "entity",
+      "name": "SideTable",
+      "attributes": {
+        "category": "physical_object",
+        "position_x": -3.79,
+        "position_y": -0.01,
+        "position_z": 4.46,
+        "layout_data": "[-4.75, 4.5, 90, 30]",
+        "source": "alfworld",
+        "entity_type": "furniture"
+      }
+    },
+    {
+      "id": "state_13",
+      "type": "state",
+      "name": "SideTable_available",
+      "attributes": {
+        "state_type": "availability",
+        "object_name": "SideTable",
+        "description": "SideTable is accessible in the environment",
+        "state_value": "accessible"
+      }
+    },
+    {
+      "id": "entity_14",
+      "type": "entity",
+      "name": "Sofa",
+      "attributes": {
+        "category": "physical_object",
+        "position_x": -3.66,
+        "position_y": -0.02,
+        "position_z": 0.46,
+        "layout_data": "[-3.25, 1.75, 180, 30]",
+        "source": "alfworld",
+        "entity_type": "furniture"
+      }
+    },
+    {
+      "id": "state_15",
+      "type": "state",
+      "name": "Sofa_available",
+      "attributes": {
+        "state_type": "availability",
+        "object_name": "Sofa",
+        "description": "Sofa is accessible in the environment",
+        "state_value": "accessible"
+      }
+    },
+    {
+      "id": "entity_16",
+      "type": "entity",
+      "name": "Sofa",
+      "attributes": {
+        "category": "physical_object",
+        "position_x": -5.4,
+        "position_y": -0.02,
+        "position_z": 2.43,
+        "layout_data": "[-4.5, 2.5, 270, 30]",
+        "source": "alfworld",
+        "entity_type": "furniture"
+      }
+    },
+    {
+      "id": "state_17",
+      "type": "state",
+      "name": "Sofa_available",
+      "attributes": {
+        "state_type": "availability",
+        "object_name": "Sofa",
+        "description": "Sofa is accessible in the environment",
+        "state_value": "accessible"
+      }
+    },
+    {
+      "id": "entity_18",
+      "type": "entity",
+      "name": "FloorPlan24-objects",
+      "attributes": {
+        "category": "environment",
+        "description": "ALFWorld scene: FloorPlan24-objects",
+        "entity_type": "scene"
+      }
+    },
+    {
+      "id": "entity_19",
+      "type": "entity",
+      "name": "FloorPlan213-objects",
+      "attributes": {
+        "category": "environment",
+        "description": "ALFWorld scene: FloorPlan213-objects",
+        "entity_type": "scene"
+      }
+    },
+    {
+      "id": "entity_20",
+      "type": "entity",
+      "name": "FloorPlan211-openable",
+      "attributes": {
+        "category": "environment",
+        "description": "ALFWorld scene: FloorPlan211-openable",
+        "entity_type": "scene"
+      }
+    },
+    {
+      "id": "entity_21",
+      "type": "entity",
+      "name": "ArmChair",
+      "attributes": {
+        "category": "physical_object",
+        "position_x": -1.76,
+        "position_y": 0.0,
+        "position_z": -1.49,
+        "layout_data": "[-0.5, -1.0, 270, 30]",
+        "source": "alfworld",
+        "entity_type": "furniture"
+      }
+    },
+    {
+      "id": "state_22",
+      "type": "state",
+      "name": "ArmChair_available",
+      "attributes": {
+        "state_type": "availability",
+        "object_name": "ArmChair",
+        "description": "ArmChair is accessible in the environment",
+        "state_value": "accessible"
+      }
+    },
+    {
+      "id": "entity_23",
+      "type": "entity",
+      "name": "CoffeeTable",
+      "attributes": {
+        "category": "physical_object",
+        "position_x": 0.17,
+        "position_y": 0.0,
+        "position_z": 0.42,
+        "layout_data": "[-1.0, 0.5, 90, 30]",
+        "source": "alfworld",
+        "entity_type": "furniture"
+      }
+    },
+    {
+      "id": "state_24",
+      "type": "state",
+      "name": "CoffeeTable_available",
+      "attributes": {
+        "state_type": "availability",
+        "object_name": "CoffeeTable",
+        "description": "CoffeeTable is accessible in the environment",
+        "state_value": "accessible"
+      }
+    },
+    {
+      "id": "entity_25",
+      "type": "entity",
+      "name": "Drawer",
+      "attributes": {
+        "category": "physical_object",
+        "position_x": 1.52,
+        "position_y": 0.62,
+        "position_z": -0.76,
+        "layout_data": "[1.25, -1.5, 0, 30]",
+        "source": "alfworld",
+        "entity_type": "furniture"
+      }
+    },
+    {
+      "id": "state_26",
+      "type": "state",
+      "name": "Drawer_available",
+      "attributes": {
+        "state_type": "availability",
+        "object_name": "Drawer",
+        "description": "Drawer is accessible in the environment",
+        "state_value": "accessible"
+      }
+    },
+    {
+      "id": "entity_27",
+      "type": "entity",
+      "name": "Shelf",
+      "attributes": {
+        "category": "physical_object",
+        "position_x": -0.2,
+        "position_y": 0.54,
+        "position_z": 1.93,
+        "layout_data": "[-0.75, 0.75, 0, 30]",
+        "source": "alfworld",
+        "entity_type": "furniture"
+      }
+    },
+    {
+      "id": "state_28",
+      "type": "state",
+      "name": "Shelf_available",
+      "attributes": {
+        "state_type": "availability",
+        "object_name": "Shelf",
+        "description": "Shelf is accessible in the environment",
+        "state_value": "accessible"
+      }
+    },
+    {
+      "id": "entity_29",
+      "type": "entity",
+      "name": "Shelf",
+      "attributes": {
+        "category": "physical_object",
+        "position_x": -0.2,
+        "position_y": 0.87,
+        "position_z": 1.93,
+        "layout_data": "[-0.75, 0.75, 0, 30]",
+        "source": "alfworld",
+        "entity_type": "furniture"
+      }
+    },
+    {
+      "id": "state_30",
+      "type": "state",
+      "name": "Shelf_available",
+      "attributes": {
+        "state_type": "availability",
+        "object_name": "Shelf",
+        "description": "Shelf is accessible in the environment",
+        "state_value": "accessible"
+      }
+    },
+    {
+      "id": "entity_31",
+      "type": "entity",
+      "name": "Shelf",
+      "attributes": {
+        "category": "physical_object",
+        "position_x": -1.82,
+        "position_y": 0.38,
+        "position_z": 0.56,
+        "layout_data": "[-0.5, 0.5, 270, 30]",
+        "source": "alfworld",
+        "entity_type": "furniture"
+      }
+    },
+    {
+      "id": "state_32",
+      "type": "state",
+      "name": "Shelf_available",
+      "attributes": {
+        "state_type": "availability",
+        "object_name": "Shelf",
+        "description": "Shelf is accessible in the environment",
+        "state_value": "accessible"
+      }
+    },
+    {
+      "id": "entity_33",
+      "type": "entity",
+      "name": "Shelf",
+      "attributes": {
+        "category": "physical_object",
+        "position_x": -1.83,
+        "position_y": 0.13,
+        "position_z": 0.56,
+        "layout_data": "[-0.75, 0.5, 270, 30]",
+        "source": "alfworld",
+        "entity_type": "furniture"
+      }
+    },
+    {
+      "id": "state_34",
+      "type": "state",
+      "name": "Shelf_available",
+      "attributes": {
+        "state_type": "availability",
+        "object_name": "Shelf",
+        "description": "Shelf is accessible in the environment",
+        "state_value": "accessible"
+      }
+    },
+    {
+      "id": "entity_35",
+      "type": "entity",
+      "name": "SideTable",
+      "attributes": {
+        "category": "physical_object",
+        "position_x": 1.52,
+        "position_y": 0.0,
+        "position_z": -0.7,
+        "layout_data": "[1.25, -1.5, 0, 30]",
+        "source": "alfworld",
+        "entity_type": "furniture"
+      }
+    },
+    {
+      "id": "state_36",
+      "type": "state",
+      "name": "SideTable_available",
+      "attributes": {
+        "state_type": "availability",
+        "object_name": "SideTable",
+        "description": "SideTable is accessible in the environment",
+        "state_value": "accessible"
+      }
+    },
+    {
+      "id": "entity_37",
+      "type": "entity",
+      "name": "SideTable",
+      "attributes": {
+        "category": "physical_object",
+        "position_x": 3.58,
+        "position_y": 0.0,
+        "position_z": -1.17,
+        "layout_data": "[2.5, -1.25, 90, 30]",
+        "source": "alfworld",
+        "entity_type": "furniture"
+      }
+    },
+    {
+      "id": "state_38",
+      "type": "state",
+      "name": "SideTable_available",
+      "attributes": {
+        "state_type": "availability",
+        "object_name": "SideTable",
+        "description": "SideTable is accessible in the environment",
+        "state_value": "accessible"
+      }
+    },
+    {
+      "id": "entity_39",
+      "type": "entity",
+      "name": "Sofa",
+      "attributes": {
+        "category": "physical_object",
+        "position_x": 1.42,
+        "position_y": 0.0,
+        "position_z": 0.39,
+        "layout_data": "[0.75, 0.5, 90, 30]",
+        "source": "alfworld",
+        "entity_type": "furniture"
+      }
+    },
+    {
+      "id": "state_40",
+      "type": "state",
+      "name": "Sofa_available",
+      "attributes": {
+        "state_type": "availability",
+        "object_name": "Sofa",
+        "description": "Sofa is accessible in the environment",
+        "state_value": "accessible"
+      }
+    },
+    {
+      "id": "entity_41",
+      "type": "entity",
+      "name": "TVStand",
+      "attributes": {
+        "category": "physical_object",
+        "position_x": -1.97,
+        "position_y": 0.0,
+        "position_z": 0.56,
+        "layout_data": "[-1.0, 0.5, 270, 30]",
+        "source": "alfworld",
+        "entity_type": "furniture"
+      }
+    },
+    {
+      "id": "state_42",
+      "type": "state",
+      "name": "TVStand_available",
+      "attributes": {
+        "state_type": "availability",
+        "object_name": "TVStand",
+        "description": "TVStand is accessible in the environment",
+        "state_value": "accessible"
+      }
+    },
+    {
+      "id": "entity_43",
+      "type": "entity",
+      "name": "FloorPlan415-objects",
+      "attributes": {
+        "category": "environment",
+        "description": "ALFWorld scene: FloorPlan415-objects",
+        "entity_type": "scene"
+      }
+    },
+    {
+      "id": "entity_44",
+      "type": "entity",
+      "name": "problem_0_0",
+      "attributes": {
+        "category": "planning_problem",
+        "description": "PDDL planning problem: problem_0_0",
+        "source": "pddl",
+        "entity_type": "problem"
+      }
+    },
+    {
+      "id": "entity_45",
+      "type": "entity",
+      "name": "agent1",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "agent",
+        "source": "pddl",
+        "entity_type": "agent"
+      }
+    },
+    {
+      "id": "state_46",
+      "type": "state",
+      "name": "agent1_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "agent1",
+        "object_type": "agent",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_47",
+      "type": "entity",
+      "name": "Plate",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "object",
+        "source": "pddl",
+        "entity_type": "object"
+      }
+    },
+    {
+      "id": "state_48",
+      "type": "state",
+      "name": "Plate_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "Plate",
+        "object_type": "object",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_49",
+      "type": "entity",
+      "name": "Egg",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "object",
+        "source": "pddl",
+        "entity_type": "object"
+      }
+    },
+    {
+      "id": "state_50",
+      "type": "state",
+      "name": "Egg_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "Egg",
+        "object_type": "object",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_51",
+      "type": "entity",
+      "name": "TableTop",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "object",
+        "source": "pddl",
+        "entity_type": "object"
+      }
+    },
+    {
+      "id": "state_52",
+      "type": "state",
+      "name": "TableTop_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "TableTop",
+        "object_type": "object",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_53",
+      "type": "entity",
+      "name": "Bowl",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "object",
+        "source": "pddl",
+        "entity_type": "object"
+      }
+    },
+    {
+      "id": "state_54",
+      "type": "state",
+      "name": "Bowl_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "Bowl",
+        "object_type": "object",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_55",
+      "type": "entity",
+      "name": "Mug",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "object",
+        "source": "pddl",
+        "entity_type": "object"
+      }
+    },
+    {
+      "id": "state_56",
+      "type": "state",
+      "name": "Mug_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "Mug",
+        "object_type": "object",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_57",
+      "type": "entity",
+      "name": "Sink",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "object",
+        "source": "pddl",
+        "entity_type": "object"
+      }
+    },
+    {
+      "id": "state_58",
+      "type": "state",
+      "name": "Sink_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "Sink",
+        "object_type": "object",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_59",
+      "type": "entity",
+      "name": "Knife",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "object",
+        "source": "pddl",
+        "entity_type": "object"
+      }
+    },
+    {
+      "id": "state_60",
+      "type": "state",
+      "name": "Knife_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "Knife",
+        "object_type": "object",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_61",
+      "type": "entity",
+      "name": "Pot",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "object",
+        "source": "pddl",
+        "entity_type": "object"
+      }
+    },
+    {
+      "id": "state_62",
+      "type": "state",
+      "name": "Pot_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "Pot",
+        "object_type": "object",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_63",
+      "type": "entity",
+      "name": "Pan",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "object",
+        "source": "pddl",
+        "entity_type": "object"
+      }
+    },
+    {
+      "id": "state_64",
+      "type": "state",
+      "name": "Pan_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "Pan",
+        "object_type": "object",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_65",
+      "type": "entity",
+      "name": "Potato",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "object",
+        "source": "pddl",
+        "entity_type": "object"
+      }
+    },
+    {
+      "id": "state_66",
+      "type": "state",
+      "name": "Potato_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "Potato",
+        "object_type": "object",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_67",
+      "type": "entity",
+      "name": "Apple",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "object",
+        "source": "pddl",
+        "entity_type": "object"
+      }
+    },
+    {
+      "id": "state_68",
+      "type": "state",
+      "name": "Apple_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "Apple",
+        "object_type": "object",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_69",
+      "type": "entity",
+      "name": "StoveBurner",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "object",
+        "source": "pddl",
+        "entity_type": "object"
+      }
+    },
+    {
+      "id": "state_70",
+      "type": "state",
+      "name": "StoveBurner_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "StoveBurner",
+        "object_type": "object",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_71",
+      "type": "entity",
+      "name": "Tomato",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "object",
+        "source": "pddl",
+        "entity_type": "object"
+      }
+    },
+    {
+      "id": "state_72",
+      "type": "state",
+      "name": "Tomato_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "Tomato",
+        "object_type": "object",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_73",
+      "type": "entity",
+      "name": "Container",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "object",
+        "source": "pddl",
+        "entity_type": "object"
+      }
+    },
+    {
+      "id": "state_74",
+      "type": "state",
+      "name": "Container_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "Container",
+        "object_type": "object",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_75",
+      "type": "entity",
+      "name": "Fork",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "object",
+        "source": "pddl",
+        "entity_type": "object"
+      }
+    },
+    {
+      "id": "state_76",
+      "type": "state",
+      "name": "Fork_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "Fork",
+        "object_type": "object",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_77",
+      "type": "entity",
+      "name": "Lettuce",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "object",
+        "source": "pddl",
+        "entity_type": "object"
+      }
+    },
+    {
+      "id": "state_78",
+      "type": "state",
+      "name": "Lettuce_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "Lettuce",
+        "object_type": "object",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_79",
+      "type": "entity",
+      "name": "Cabinet",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "object",
+        "source": "pddl",
+        "entity_type": "object"
+      }
+    },
+    {
+      "id": "state_80",
+      "type": "state",
+      "name": "Cabinet_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "Cabinet",
+        "object_type": "object",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_81",
+      "type": "entity",
+      "name": "Background",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "object",
+        "source": "pddl",
+        "entity_type": "object"
+      }
+    },
+    {
+      "id": "state_82",
+      "type": "state",
+      "name": "Background_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "Background",
+        "object_type": "object",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_83",
+      "type": "entity",
+      "name": "Spoon",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "object",
+        "source": "pddl",
+        "entity_type": "object"
+      }
+    },
+    {
+      "id": "state_84",
+      "type": "state",
+      "name": "Spoon_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "Spoon",
+        "object_type": "object",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_85",
+      "type": "entity",
+      "name": "Microwave",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "object",
+        "source": "pddl",
+        "entity_type": "object"
+      }
+    },
+    {
+      "id": "state_86",
+      "type": "state",
+      "name": "Microwave_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "Microwave",
+        "object_type": "object",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_87",
+      "type": "entity",
+      "name": "GarbageCan",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "object",
+        "source": "pddl",
+        "entity_type": "object"
+      }
+    },
+    {
+      "id": "state_88",
+      "type": "state",
+      "name": "GarbageCan_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "GarbageCan",
+        "object_type": "object",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_89",
+      "type": "entity",
+      "name": "Fridge",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "object",
+        "source": "pddl",
+        "entity_type": "object"
+      }
+    },
+    {
+      "id": "state_90",
+      "type": "state",
+      "name": "Fridge_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "Fridge",
+        "object_type": "object",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_91",
+      "type": "entity",
+      "name": "Bread",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "object",
+        "source": "pddl",
+        "entity_type": "object"
+      }
+    },
+    {
+      "id": "state_92",
+      "type": "state",
+      "name": "Bread_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "Bread",
+        "object_type": "object",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_93",
+      "type": "entity",
+      "name": "PlateType",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "otype",
+        "source": "pddl",
+        "entity_type": "otype"
+      }
+    },
+    {
+      "id": "state_94",
+      "type": "state",
+      "name": "PlateType_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "PlateType",
+        "object_type": "otype",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_95",
+      "type": "entity",
+      "name": "EggType",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "otype",
+        "source": "pddl",
+        "entity_type": "otype"
+      }
+    },
+    {
+      "id": "state_96",
+      "type": "state",
+      "name": "EggType_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "EggType",
+        "object_type": "otype",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_97",
+      "type": "entity",
+      "name": "BowlType",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "otype",
+        "source": "pddl",
+        "entity_type": "otype"
+      }
+    },
+    {
+      "id": "state_98",
+      "type": "state",
+      "name": "BowlType_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "BowlType",
+        "object_type": "otype",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_99",
+      "type": "entity",
+      "name": "MugType",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "otype",
+        "source": "pddl",
+        "entity_type": "otype"
+      }
+    },
+    {
+      "id": "state_100",
+      "type": "state",
+      "name": "MugType_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "MugType",
+        "object_type": "otype",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_101",
+      "type": "entity",
+      "name": "KnifeType",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "otype",
+        "source": "pddl",
+        "entity_type": "otype"
+      }
+    },
+    {
+      "id": "state_102",
+      "type": "state",
+      "name": "KnifeType_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "KnifeType",
+        "object_type": "otype",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_103",
+      "type": "entity",
+      "name": "PotatoType",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "otype",
+        "source": "pddl",
+        "entity_type": "otype"
+      }
+    },
+    {
+      "id": "state_104",
+      "type": "state",
+      "name": "PotatoType_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "PotatoType",
+        "object_type": "otype",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_105",
+      "type": "entity",
+      "name": "AppleType",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "otype",
+        "source": "pddl",
+        "entity_type": "otype"
+      }
+    },
+    {
+      "id": "state_106",
+      "type": "state",
+      "name": "AppleType_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "AppleType",
+        "object_type": "otype",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_107",
+      "type": "entity",
+      "name": "TomatoType",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "otype",
+        "source": "pddl",
+        "entity_type": "otype"
+      }
+    },
+    {
+      "id": "state_108",
+      "type": "state",
+      "name": "TomatoType_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "TomatoType",
+        "object_type": "otype",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_109",
+      "type": "entity",
+      "name": "ContainerType",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "otype",
+        "source": "pddl",
+        "entity_type": "otype"
+      }
+    },
+    {
+      "id": "state_110",
+      "type": "state",
+      "name": "ContainerType_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "ContainerType",
+        "object_type": "otype",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_111",
+      "type": "entity",
+      "name": "ForkType",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "otype",
+        "source": "pddl",
+        "entity_type": "otype"
+      }
+    },
+    {
+      "id": "state_112",
+      "type": "state",
+      "name": "ForkType_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "ForkType",
+        "object_type": "otype",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_113",
+      "type": "entity",
+      "name": "LettuceType",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "otype",
+        "source": "pddl",
+        "entity_type": "otype"
+      }
+    },
+    {
+      "id": "state_114",
+      "type": "state",
+      "name": "LettuceType_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "LettuceType",
+        "object_type": "otype",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_115",
+      "type": "entity",
+      "name": "BackgroundType",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "otype",
+        "source": "pddl",
+        "entity_type": "otype"
+      }
+    },
+    {
+      "id": "state_116",
+      "type": "state",
+      "name": "BackgroundType_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "BackgroundType",
+        "object_type": "otype",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_117",
+      "type": "entity",
+      "name": "SpoonType",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "otype",
+        "source": "pddl",
+        "entity_type": "otype"
+      }
+    },
+    {
+      "id": "state_118",
+      "type": "state",
+      "name": "SpoonType_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "SpoonType",
+        "object_type": "otype",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_119",
+      "type": "entity",
+      "name": "BreadType",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "otype",
+        "source": "pddl",
+        "entity_type": "otype"
+      }
+    },
+    {
+      "id": "state_120",
+      "type": "state",
+      "name": "BreadType_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "BreadType",
+        "object_type": "otype",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_121",
+      "type": "entity",
+      "name": "CounterTopType",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "rtype",
+        "source": "pddl",
+        "entity_type": "rtype"
+      }
+    },
+    {
+      "id": "state_122",
+      "type": "state",
+      "name": "CounterTopType_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "CounterTopType",
+        "object_type": "rtype",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_123",
+      "type": "entity",
+      "name": "ToiletPaperHangerType",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "rtype",
+        "source": "pddl",
+        "entity_type": "rtype"
+      }
+    },
+    {
+      "id": "state_124",
+      "type": "state",
+      "name": "ToiletPaperHangerType_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "ToiletPaperHangerType",
+        "object_type": "rtype",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_125",
+      "type": "entity",
+      "name": "SinkType",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "rtype",
+        "source": "pddl",
+        "entity_type": "rtype"
+      }
+    },
+    {
+      "id": "state_126",
+      "type": "state",
+      "name": "SinkType_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "SinkType",
+        "object_type": "rtype",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_127",
+      "type": "entity",
+      "name": "PaintingHangerType",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "rtype",
+        "source": "pddl",
+        "entity_type": "rtype"
+      }
+    },
+    {
+      "id": "state_128",
+      "type": "state",
+      "name": "PaintingHangerType_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "PaintingHangerType",
+        "object_type": "rtype",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_129",
+      "type": "entity",
+      "name": "TableTopType",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "rtype",
+        "source": "pddl",
+        "entity_type": "rtype"
+      }
+    },
+    {
+      "id": "state_130",
+      "type": "state",
+      "name": "TableTopType_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "TableTopType",
+        "object_type": "rtype",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_131",
+      "type": "entity",
+      "name": "MicrowaveType",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "rtype",
+        "source": "pddl",
+        "entity_type": "rtype"
+      }
+    },
+    {
+      "id": "state_132",
+      "type": "state",
+      "name": "MicrowaveType_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "MicrowaveType",
+        "object_type": "rtype",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_133",
+      "type": "entity",
+      "name": "StoveBurnerType",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "rtype",
+        "source": "pddl",
+        "entity_type": "rtype"
+      }
+    },
+    {
+      "id": "state_134",
+      "type": "state",
+      "name": "StoveBurnerType_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "StoveBurnerType",
+        "object_type": "rtype",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_135",
+      "type": "entity",
+      "name": "TowelHolderType",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "rtype",
+        "source": "pddl",
+        "entity_type": "rtype"
+      }
+    },
+    {
+      "id": "state_136",
+      "type": "state",
+      "name": "TowelHolderType_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "TowelHolderType",
+        "object_type": "rtype",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_137",
+      "type": "entity",
+      "name": "BoxType",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "rtype",
+        "source": "pddl",
+        "entity_type": "rtype"
+      }
+    },
+    {
+      "id": "state_138",
+      "type": "state",
+      "name": "BoxType_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "BoxType",
+        "object_type": "rtype",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_139",
+      "type": "entity",
+      "name": "GarbageCanType",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "rtype",
+        "source": "pddl",
+        "entity_type": "rtype"
+      }
+    },
+    {
+      "id": "state_140",
+      "type": "state",
+      "name": "GarbageCanType_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "GarbageCanType",
+        "object_type": "rtype",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_141",
+      "type": "entity",
+      "name": "CoffeeMachineType",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "rtype",
+        "source": "pddl",
+        "entity_type": "rtype"
+      }
+    },
+    {
+      "id": "state_142",
+      "type": "state",
+      "name": "CoffeeMachineType_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "CoffeeMachineType",
+        "object_type": "rtype",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_143",
+      "type": "entity",
+      "name": "PotType",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "rtype",
+        "source": "pddl",
+        "entity_type": "rtype"
+      }
+    },
+    {
+      "id": "state_144",
+      "type": "state",
+      "name": "PotType_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "PotType",
+        "object_type": "rtype",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_145",
+      "type": "entity",
+      "name": "FridgeType",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "rtype",
+        "source": "pddl",
+        "entity_type": "rtype"
+      }
+    },
+    {
+      "id": "state_146",
+      "type": "state",
+      "name": "FridgeType_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "FridgeType",
+        "object_type": "rtype",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_147",
+      "type": "entity",
+      "name": "PanType",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "rtype",
+        "source": "pddl",
+        "entity_type": "rtype"
+      }
+    },
+    {
+      "id": "state_148",
+      "type": "state",
+      "name": "PanType_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "PanType",
+        "object_type": "rtype",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_149",
+      "type": "entity",
+      "name": "CabinetType",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "rtype",
+        "source": "pddl",
+        "entity_type": "rtype"
+      }
+    },
+    {
+      "id": "state_150",
+      "type": "state",
+      "name": "CabinetType_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "CabinetType",
+        "object_type": "rtype",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_151",
+      "type": "entity",
+      "name": "Tomato__minus_9_dot_035537719726562_comma__minus_7_dot_835324287414551_comma_5_dot_713982105255127_comma_6_dot_23344612121582_comma_2_dot_3547914028167725_comma_3_dot_755065441131592",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "object",
+        "source": "pddl",
+        "entity_type": "object"
+      }
+    },
+    {
+      "id": "state_152",
+      "type": "state",
+      "name": "Tomato__minus_9_dot_035537719726562_comma__minus_7_dot_835324287414551_comma_5_dot_713982105255127_comma_6_dot_23344612121582_comma_2_dot_3547914028167725_comma_3_dot_755065441131592_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "Tomato__minus_9_dot_035537719726562_comma__minus_7_dot_835324287414551_comma_5_dot_713982105255127_comma_6_dot_23344612121582_comma_2_dot_3547914028167725_comma_3_dot_755065441131592",
+        "object_type": "object",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_153",
+      "type": "entity",
+      "name": "Tomato__minus_1_dot_0570077896118164_comma__minus_0_dot_5236053466796875_comma__minus_2_dot_072747230529785_comma__minus_1_dot_8277060985565186_comma_4_dot_158245086669922_comma_4_dot_269499778747559",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "object",
+        "source": "pddl",
+        "entity_type": "object"
+      }
+    },
+    {
+      "id": "state_154",
+      "type": "state",
+      "name": "Tomato__minus_1_dot_0570077896118164_comma__minus_0_dot_5236053466796875_comma__minus_2_dot_072747230529785_comma__minus_1_dot_8277060985565186_comma_4_dot_158245086669922_comma_4_dot_269499778747559_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "Tomato__minus_1_dot_0570077896118164_comma__minus_0_dot_5236053466796875_comma__minus_2_dot_072747230529785_comma__minus_1_dot_8277060985565186_comma_4_dot_158245086669922_comma_4_dot_269499778747559",
+        "object_type": "object",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_155",
+      "type": "entity",
+      "name": "Tomato__minus_0_dot_831298828125_comma__minus_0_dot_287841796875_comma__minus_2_dot_0093939304351807_comma__minus_1_dot_8134915828704834_comma_4_dot_315568447113037_comma_4_dot_361780166625977",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "object",
+        "source": "pddl",
+        "entity_type": "object"
+      }
+    },
+    {
+      "id": "state_156",
+      "type": "state",
+      "name": "Tomato__minus_0_dot_831298828125_comma__minus_0_dot_287841796875_comma__minus_2_dot_0093939304351807_comma__minus_1_dot_8134915828704834_comma_4_dot_315568447113037_comma_4_dot_361780166625977_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "Tomato__minus_0_dot_831298828125_comma__minus_0_dot_287841796875_comma__minus_2_dot_0093939304351807_comma__minus_1_dot_8134915828704834_comma_4_dot_315568447113037_comma_4_dot_361780166625977",
+        "object_type": "object",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_157",
+      "type": "entity",
+      "name": "Egg__minus_9_dot_452194213867188_comma__minus_7_dot_5859246253967285_comma_4_dot_341163158416748_comma_5_dot_080314636230469_comma_2_dot_1993935108184814_comma_4_dot_265804290771484",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "object",
+        "source": "pddl",
+        "entity_type": "object"
+      }
+    },
+    {
+      "id": "state_158",
+      "type": "state",
+      "name": "Egg__minus_9_dot_452194213867188_comma__minus_7_dot_5859246253967285_comma_4_dot_341163158416748_comma_5_dot_080314636230469_comma_2_dot_1993935108184814_comma_4_dot_265804290771484_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "Egg__minus_9_dot_452194213867188_comma__minus_7_dot_5859246253967285_comma_4_dot_341163158416748_comma_5_dot_080314636230469_comma_2_dot_1993935108184814_comma_4_dot_265804290771484",
+        "object_type": "object",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_159",
+      "type": "entity",
+      "name": "Egg__minus_9_dot_652677536010742_comma__minus_8_dot_346057891845703_comma_5_dot_756226539611816_comma_6_dot_524506568908691_comma_4_dot_171130180358887_comma_5_dot_012834072113037",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "object",
+        "source": "pddl",
+        "entity_type": "object"
+      }
+    },
+    {
+      "id": "state_160",
+      "type": "state",
+      "name": "Egg__minus_9_dot_652677536010742_comma__minus_8_dot_346057891845703_comma_5_dot_756226539611816_comma_6_dot_524506568908691_comma_4_dot_171130180358887_comma_5_dot_012834072113037_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "Egg__minus_9_dot_652677536010742_comma__minus_8_dot_346057891845703_comma_5_dot_756226539611816_comma_6_dot_524506568908691_comma_4_dot_171130180358887_comma_5_dot_012834072113037",
+        "object_type": "object",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_161",
+      "type": "entity",
+      "name": "Egg__minus_9_dot_860950469970703_comma__minus_7_dot_895341873168945_comma_5_dot_116359710693359_comma_5_dot_503124713897705_comma_5_dot_927033424377441_comma_6_dot_482849597930908",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "object",
+        "source": "pddl",
+        "entity_type": "object"
+      }
+    },
+    {
+      "id": "state_162",
+      "type": "state",
+      "name": "Egg__minus_9_dot_860950469970703_comma__minus_7_dot_895341873168945_comma_5_dot_116359710693359_comma_5_dot_503124713897705_comma_5_dot_927033424377441_comma_6_dot_482849597930908_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "Egg__minus_9_dot_860950469970703_comma__minus_7_dot_895341873168945_comma_5_dot_116359710693359_comma_5_dot_503124713897705_comma_5_dot_927033424377441_comma_6_dot_482849597930908",
+        "object_type": "object",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_163",
+      "type": "entity",
+      "name": "Egg__minus_10_dot_358665466308594_comma__minus_9_dot_605772018432617_comma_6_dot_000458717346191_comma_6_dot_358250141143799_comma_3_dot_796931266784668_comma_4_dot_260854721069336",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "object",
+        "source": "pddl",
+        "entity_type": "object"
+      }
+    },
+    {
+      "id": "state_164",
+      "type": "state",
+      "name": "Egg__minus_10_dot_358665466308594_comma__minus_9_dot_605772018432617_comma_6_dot_000458717346191_comma_6_dot_358250141143799_comma_3_dot_796931266784668_comma_4_dot_260854721069336_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "Egg__minus_10_dot_358665466308594_comma__minus_9_dot_605772018432617_comma_6_dot_000458717346191_comma_6_dot_358250141143799_comma_3_dot_796931266784668_comma_4_dot_260854721069336",
+        "object_type": "object",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_165",
+      "type": "entity",
+      "name": "Egg__minus_8_dot_524584770202637_comma__minus_7_dot_802861213684082_comma_5_dot_121776580810547_comma_5_dot_33831787109375_comma_2_dot_2516515254974365_comma_2_dot_9880518913269043",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "object",
+        "source": "pddl",
+        "entity_type": "object"
+      }
+    },
+    {
+      "id": "state_166",
+      "type": "state",
+      "name": "Egg__minus_8_dot_524584770202637_comma__minus_7_dot_802861213684082_comma_5_dot_121776580810547_comma_5_dot_33831787109375_comma_2_dot_2516515254974365_comma_2_dot_9880518913269043_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "Egg__minus_8_dot_524584770202637_comma__minus_7_dot_802861213684082_comma_5_dot_121776580810547_comma_5_dot_33831787109375_comma_2_dot_2516515254974365_comma_2_dot_9880518913269043",
+        "object_type": "object",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_167",
+      "type": "entity",
+      "name": "Egg__minus_9_dot_063394546508789_comma__minus_8_dot_450336456298828_comma_4_dot_740201950073242_comma_5_dot_089858055114746_comma_4_dot_572659492492676_comma_4_dot_99241304397583",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "object",
+        "source": "pddl",
+        "entity_type": "object"
+      }
+    },
+    {
+      "id": "state_168",
+      "type": "state",
+      "name": "Egg__minus_9_dot_063394546508789_comma__minus_8_dot_450336456298828_comma_4_dot_740201950073242_comma_5_dot_089858055114746_comma_4_dot_572659492492676_comma_4_dot_99241304397583_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "Egg__minus_9_dot_063394546508789_comma__minus_8_dot_450336456298828_comma_4_dot_740201950073242_comma_5_dot_089858055114746_comma_4_dot_572659492492676_comma_4_dot_99241304397583",
+        "object_type": "object",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_169",
+      "type": "entity",
+      "name": "Egg__minus_0_dot_8469671010971069_comma__minus_0_dot_5195290446281433_comma__minus_10_dot_826122283935547_comma__minus_10_dot_067672729492188_comma_7_dot_158126354217529_comma_7_dot_479614734649658",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "object",
+        "source": "pddl",
+        "entity_type": "object"
+      }
+    },
+    {
+      "id": "state_170",
+      "type": "state",
+      "name": "Egg__minus_0_dot_8469671010971069_comma__minus_0_dot_5195290446281433_comma__minus_10_dot_826122283935547_comma__minus_10_dot_067672729492188_comma_7_dot_158126354217529_comma_7_dot_479614734649658_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "Egg__minus_0_dot_8469671010971069_comma__minus_0_dot_5195290446281433_comma__minus_10_dot_826122283935547_comma__minus_10_dot_067672729492188_comma_7_dot_158126354217529_comma_7_dot_479614734649658",
+        "object_type": "object",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_171",
+      "type": "entity",
+      "name": "Egg__minus_8_dot_91402816772461_comma__minus_8_dot_519895553588867_comma_4_dot_488741874694824_comma_4_dot_7544050216674805_comma_4_dot_637669563293457_comma_4_dot_921113014221191",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "object",
+        "source": "pddl",
+        "entity_type": "object"
+      }
+    },
+    {
+      "id": "state_172",
+      "type": "state",
+      "name": "Egg__minus_8_dot_91402816772461_comma__minus_8_dot_519895553588867_comma_4_dot_488741874694824_comma_4_dot_7544050216674805_comma_4_dot_637669563293457_comma_4_dot_921113014221191_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "Egg__minus_8_dot_91402816772461_comma__minus_8_dot_519895553588867_comma_4_dot_488741874694824_comma_4_dot_7544050216674805_comma_4_dot_637669563293457_comma_4_dot_921113014221191",
+        "object_type": "object",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_173",
+      "type": "entity",
+      "name": "Egg__minus_8_dot_80098819732666_comma__minus_8_dot_68975830078125_comma_5_dot_145737171173096_comma_5_dot_370550155639648_comma_1_dot_5878231525421143_comma_1_dot_9306919574737549",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "object",
+        "source": "pddl",
+        "entity_type": "object"
+      }
+    },
+    {
+      "id": "state_174",
+      "type": "state",
+      "name": "Egg__minus_8_dot_80098819732666_comma__minus_8_dot_68975830078125_comma_5_dot_145737171173096_comma_5_dot_370550155639648_comma_1_dot_5878231525421143_comma_1_dot_9306919574737549_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "Egg__minus_8_dot_80098819732666_comma__minus_8_dot_68975830078125_comma_5_dot_145737171173096_comma_5_dot_370550155639648_comma_1_dot_5878231525421143_comma_1_dot_9306919574737549",
+        "object_type": "object",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_175",
+      "type": "entity",
+      "name": "Egg__minus_8_dot_900911331176758_comma__minus_8_dot_787271499633789_comma_5_dot_1477251052856445_comma_5_dot_375_comma_1_dot_530555009841919_comma_1_dot_8044312000274658",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "object",
+        "source": "pddl",
+        "entity_type": "object"
+      }
+    },
+    {
+      "id": "state_176",
+      "type": "state",
+      "name": "Egg__minus_8_dot_900911331176758_comma__minus_8_dot_787271499633789_comma_5_dot_1477251052856445_comma_5_dot_375_comma_1_dot_530555009841919_comma_1_dot_8044312000274658_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "Egg__minus_8_dot_900911331176758_comma__minus_8_dot_787271499633789_comma_5_dot_1477251052856445_comma_5_dot_375_comma_1_dot_530555009841919_comma_1_dot_8044312000274658",
+        "object_type": "object",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_177",
+      "type": "entity",
+      "name": "Mug_6_dot_482807159423828_comma_7_dot_534183502197266_comma__minus_12_dot_0176420211792_comma__minus_9_dot_915420532226562_comma_3_dot_274169683456421_comma_4_dot_017481803894043",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "object",
+        "source": "pddl",
+        "entity_type": "object"
+      }
+    },
+    {
+      "id": "state_178",
+      "type": "state",
+      "name": "Mug_6_dot_482807159423828_comma_7_dot_534183502197266_comma__minus_12_dot_0176420211792_comma__minus_9_dot_915420532226562_comma_3_dot_274169683456421_comma_4_dot_017481803894043_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "Mug_6_dot_482807159423828_comma_7_dot_534183502197266_comma__minus_12_dot_0176420211792_comma__minus_9_dot_915420532226562_comma_3_dot_274169683456421_comma_4_dot_017481803894043",
+        "object_type": "object",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_179",
+      "type": "entity",
+      "name": "Sink__minus_15_dot_36121940612793_comma__minus_1_dot_132920265197754_comma__minus_7_dot_8365478515625_comma__minus_3_dot_00990891456604_comma_2_dot_1866648197174072_comma_5_dot_309326648712158",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "receptacle",
+        "source": "pddl",
+        "entity_type": "receptacle"
+      }
+    },
+    {
+      "id": "state_180",
+      "type": "state",
+      "name": "Sink__minus_15_dot_36121940612793_comma__minus_1_dot_132920265197754_comma__minus_7_dot_8365478515625_comma__minus_3_dot_00990891456604_comma_2_dot_1866648197174072_comma_5_dot_309326648712158_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "Sink__minus_15_dot_36121940612793_comma__minus_1_dot_132920265197754_comma__minus_7_dot_8365478515625_comma__minus_3_dot_00990891456604_comma_2_dot_1866648197174072_comma_5_dot_309326648712158",
+        "object_type": "receptacle",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_181",
+      "type": "entity",
+      "name": "StoveBurner__minus_0_dot_4282345771789551_comma_0_dot_4574732780456543_comma__minus_10_dot_498249053955078_comma__minus_9_dot_786360740661621_comma_3_dot_843601942062378_comma_3_dot_8987298011779785",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "receptacle",
+        "source": "pddl",
+        "entity_type": "receptacle"
+      }
+    },
+    {
+      "id": "state_182",
+      "type": "state",
+      "name": "StoveBurner__minus_0_dot_4282345771789551_comma_0_dot_4574732780456543_comma__minus_10_dot_498249053955078_comma__minus_9_dot_786360740661621_comma_3_dot_843601942062378_comma_3_dot_8987298011779785_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "StoveBurner__minus_0_dot_4282345771789551_comma_0_dot_4574732780456543_comma__minus_10_dot_498249053955078_comma__minus_9_dot_786360740661621_comma_3_dot_843601942062378_comma_3_dot_8987298011779785",
+        "object_type": "receptacle",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_183",
+      "type": "entity",
+      "name": "GarbageCan__minus_8_dot_800399780273438_comma__minus_6_dot_26822566986084_comma_6_dot_491903781890869_comma_9_dot_106473922729492_comma__minus_0_dot_08651280403137207_comma_2_dot_137377977371216",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "receptacle",
+        "source": "pddl",
+        "entity_type": "receptacle"
+      }
+    },
+    {
+      "id": "state_184",
+      "type": "state",
+      "name": "GarbageCan__minus_8_dot_800399780273438_comma__minus_6_dot_26822566986084_comma_6_dot_491903781890869_comma_9_dot_106473922729492_comma__minus_0_dot_08651280403137207_comma_2_dot_137377977371216_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "GarbageCan__minus_8_dot_800399780273438_comma__minus_6_dot_26822566986084_comma_6_dot_491903781890869_comma_9_dot_106473922729492_comma__minus_0_dot_08651280403137207_comma_2_dot_137377977371216",
+        "object_type": "receptacle",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_185",
+      "type": "entity",
+      "name": "GarbageCan__minus_3_dot_765505790710449_comma__minus_3_dot_0502500534057617_comma_6_dot_325629711151123_comma_7_dot_117653846740723_comma_2_dot_088554620742798_comma_3_dot_308518409729004",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "receptacle",
+        "source": "pddl",
+        "entity_type": "receptacle"
+      }
+    },
+    {
+      "id": "state_186",
+      "type": "state",
+      "name": "GarbageCan__minus_3_dot_765505790710449_comma__minus_3_dot_0502500534057617_comma_6_dot_325629711151123_comma_7_dot_117653846740723_comma_2_dot_088554620742798_comma_3_dot_308518409729004_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "GarbageCan__minus_3_dot_765505790710449_comma__minus_3_dot_0502500534057617_comma_6_dot_325629711151123_comma_7_dot_117653846740723_comma_2_dot_088554620742798_comma_3_dot_308518409729004",
+        "object_type": "receptacle",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_187",
+      "type": "entity",
+      "name": "Fridge__minus_14_dot_977668762207031_comma__minus_0_dot_8502640724182129_comma_1_dot_537651538848877_comma_7_dot_969181060791016_comma__minus_0_dot_622697114944458_comma_7_dot_610168933868408",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "receptacle",
+        "source": "pddl",
+        "entity_type": "receptacle"
+      }
+    },
+    {
+      "id": "state_188",
+      "type": "state",
+      "name": "Fridge__minus_14_dot_977668762207031_comma__minus_0_dot_8502640724182129_comma_1_dot_537651538848877_comma_7_dot_969181060791016_comma__minus_0_dot_622697114944458_comma_7_dot_610168933868408_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "Fridge__minus_14_dot_977668762207031_comma__minus_0_dot_8502640724182129_comma_1_dot_537651538848877_comma_7_dot_969181060791016_comma__minus_0_dot_622697114944458_comma_7_dot_610168933868408",
+        "object_type": "receptacle",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_189",
+      "type": "entity",
+      "name": "TableTop__minus_6_dot_215259552001953_comma_4_dot_385194778442383_comma__minus_6_dot_143848419189453_comma_8_dot_4503812789917_comma__minus_0_dot_04285311698913574_comma_6_dot_709390163421631",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "receptacle",
+        "source": "pddl",
+        "entity_type": "receptacle"
+      }
+    },
+    {
+      "id": "state_190",
+      "type": "state",
+      "name": "TableTop__minus_6_dot_215259552001953_comma_4_dot_385194778442383_comma__minus_6_dot_143848419189453_comma_8_dot_4503812789917_comma__minus_0_dot_04285311698913574_comma_6_dot_709390163421631_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "TableTop__minus_6_dot_215259552001953_comma_4_dot_385194778442383_comma__minus_6_dot_143848419189453_comma_8_dot_4503812789917_comma__minus_0_dot_04285311698913574_comma_6_dot_709390163421631",
+        "object_type": "receptacle",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_191",
+      "type": "entity",
+      "name": "TableTop__minus_11_dot_703232765197754_comma__minus_6_dot_333683013916016_comma_2_dot_7081685066223145_comma_7_dot_989096641540527_comma__minus_0_dot_034719228744506836_comma_6_dot_857334613800049",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "receptacle",
+        "source": "pddl",
+        "entity_type": "receptacle"
+      }
+    },
+    {
+      "id": "state_192",
+      "type": "state",
+      "name": "TableTop__minus_11_dot_703232765197754_comma__minus_6_dot_333683013916016_comma_2_dot_7081685066223145_comma_7_dot_989096641540527_comma__minus_0_dot_034719228744506836_comma_6_dot_857334613800049_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "TableTop__minus_11_dot_703232765197754_comma__minus_6_dot_333683013916016_comma_2_dot_7081685066223145_comma_7_dot_989096641540527_comma__minus_0_dot_034719228744506836_comma_6_dot_857334613800049",
+        "object_type": "receptacle",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_193",
+      "type": "entity",
+      "name": "Microwave__minus_0_dot_9467711448669434_comma_0_dot_9898943901062012_comma__minus_11_dot_547212600708008_comma__minus_8_dot_96939468383789_comma_6_dot_721449375152588_comma_8_dot_609888076782227",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "receptacle",
+        "source": "pddl",
+        "entity_type": "receptacle"
+      }
+    },
+    {
+      "id": "state_194",
+      "type": "state",
+      "name": "Microwave__minus_0_dot_9467711448669434_comma_0_dot_9898943901062012_comma__minus_11_dot_547212600708008_comma__minus_8_dot_96939468383789_comma_6_dot_721449375152588_comma_8_dot_609888076782227_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "Microwave__minus_0_dot_9467711448669434_comma_0_dot_9898943901062012_comma__minus_11_dot_547212600708008_comma__minus_8_dot_96939468383789_comma_6_dot_721449375152588_comma_8_dot_609888076782227",
+        "object_type": "receptacle",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_195",
+      "type": "entity",
+      "name": "loc_bar__minus_3_bar_7_bar_3_bar_60",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "location",
+        "source": "pddl",
+        "entity_type": "location"
+      }
+    },
+    {
+      "id": "state_196",
+      "type": "state",
+      "name": "loc_bar__minus_3_bar_7_bar_3_bar_60_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "loc_bar__minus_3_bar_7_bar_3_bar_60",
+        "object_type": "location",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_197",
+      "type": "entity",
+      "name": "loc_bar_0_bar__minus_7_bar_2_bar_45",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "location",
+        "source": "pddl",
+        "entity_type": "location"
+      }
+    },
+    {
+      "id": "state_198",
+      "type": "state",
+      "name": "loc_bar_0_bar__minus_7_bar_2_bar_45_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "loc_bar_0_bar__minus_7_bar_2_bar_45",
+        "object_type": "location",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_199",
+      "type": "entity",
+      "name": "loc_bar__minus_5_bar__minus_5_bar_3_bar_60",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "location",
+        "source": "pddl",
+        "entity_type": "location"
+      }
+    },
+    {
+      "id": "state_200",
+      "type": "state",
+      "name": "loc_bar__minus_5_bar__minus_5_bar_3_bar_60_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "loc_bar__minus_5_bar__minus_5_bar_3_bar_60",
+        "object_type": "location",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_201",
+      "type": "entity",
+      "name": "loc_bar__minus_5_bar_4_bar_3_bar_60",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "location",
+        "source": "pddl",
+        "entity_type": "location"
+      }
+    },
+    {
+      "id": "state_202",
+      "type": "state",
+      "name": "loc_bar__minus_5_bar_4_bar_3_bar_60_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "loc_bar__minus_5_bar_4_bar_3_bar_60",
+        "object_type": "location",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_203",
+      "type": "entity",
+      "name": "loc_bar_7_bar__minus_8_bar_2_bar_45",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "location",
+        "source": "pddl",
+        "entity_type": "location"
+      }
+    },
+    {
+      "id": "state_204",
+      "type": "state",
+      "name": "loc_bar_7_bar__minus_8_bar_2_bar_45_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "loc_bar_7_bar__minus_8_bar_2_bar_45",
+        "object_type": "location",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_205",
+      "type": "entity",
+      "name": "loc_bar__minus_5_bar_5_bar_3_bar_30",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "location",
+        "source": "pddl",
+        "entity_type": "location"
+      }
+    },
+    {
+      "id": "state_206",
+      "type": "state",
+      "name": "loc_bar__minus_5_bar_5_bar_3_bar_30_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "loc_bar__minus_5_bar_5_bar_3_bar_30",
+        "object_type": "location",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_207",
+      "type": "entity",
+      "name": "loc_bar__minus_5_bar_6_bar_3_bar_30",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "location",
+        "source": "pddl",
+        "entity_type": "location"
+      }
+    },
+    {
+      "id": "state_208",
+      "type": "state",
+      "name": "loc_bar__minus_5_bar_6_bar_3_bar_30_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "loc_bar__minus_5_bar_6_bar_3_bar_30",
+        "object_type": "location",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_209",
+      "type": "entity",
+      "name": "loc_bar__minus_1_bar__minus_7_bar_2_bar_0",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "location",
+        "source": "pddl",
+        "entity_type": "location"
+      }
+    },
+    {
+      "id": "state_210",
+      "type": "state",
+      "name": "loc_bar__minus_1_bar__minus_7_bar_2_bar_0_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "loc_bar__minus_1_bar__minus_7_bar_2_bar_0",
+        "object_type": "location",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_211",
+      "type": "entity",
+      "name": "loc_bar__minus_5_bar_6_bar_3_bar_60",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "location",
+        "source": "pddl",
+        "entity_type": "location"
+      }
+    },
+    {
+      "id": "state_212",
+      "type": "state",
+      "name": "loc_bar__minus_5_bar_6_bar_3_bar_60_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "loc_bar__minus_5_bar_6_bar_3_bar_60",
+        "object_type": "location",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_213",
+      "type": "entity",
+      "name": "loc_bar__minus_1_bar__minus_5_bar_0_bar_45",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "location",
+        "source": "pddl",
+        "entity_type": "location"
+      }
+    },
+    {
+      "id": "state_214",
+      "type": "state",
+      "name": "loc_bar__minus_1_bar__minus_5_bar_0_bar_45_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "loc_bar__minus_1_bar__minus_5_bar_0_bar_45",
+        "object_type": "location",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_215",
+      "type": "entity",
+      "name": "loc_bar__minus_5_bar_5_bar_3_bar_60",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "location",
+        "source": "pddl",
+        "entity_type": "location"
+      }
+    },
+    {
+      "id": "state_216",
+      "type": "state",
+      "name": "loc_bar__minus_5_bar_5_bar_3_bar_60_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "loc_bar__minus_5_bar_5_bar_3_bar_60",
+        "object_type": "location",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_217",
+      "type": "entity",
+      "name": "loc_bar__minus_4_bar_1_bar_1_bar_60",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "location",
+        "source": "pddl",
+        "entity_type": "location"
+      }
+    },
+    {
+      "id": "state_218",
+      "type": "state",
+      "name": "loc_bar__minus_4_bar_1_bar_1_bar_60_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "loc_bar__minus_4_bar_1_bar_1_bar_60",
+        "object_type": "location",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_219",
+      "type": "entity",
+      "name": "loc_bar_0_bar__minus_7_bar_2_bar_0",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "location",
+        "source": "pddl",
+        "entity_type": "location"
+      }
+    },
+    {
+      "id": "state_220",
+      "type": "state",
+      "name": "loc_bar_0_bar__minus_7_bar_2_bar_0_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "loc_bar_0_bar__minus_7_bar_2_bar_0",
+        "object_type": "location",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_221",
+      "type": "entity",
+      "name": "loc_bar__minus_5_bar_5_bar_3_bar_15",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "location",
+        "source": "pddl",
+        "entity_type": "location"
+      }
+    },
+    {
+      "id": "state_222",
+      "type": "state",
+      "name": "loc_bar__minus_5_bar_5_bar_3_bar_15_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "loc_bar__minus_5_bar_5_bar_3_bar_15",
+        "object_type": "location",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_223",
+      "type": "entity",
+      "name": "loc_bar_0_bar__minus_7_bar_2_bar_0",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "location",
+        "source": "pddl",
+        "entity_type": "location"
+      }
+    },
+    {
+      "id": "state_224",
+      "type": "state",
+      "name": "loc_bar_0_bar__minus_7_bar_2_bar_0_initial",
+      "attributes": {
+        "state_type": "initial",
+        "object_name": "loc_bar_0_bar__minus_7_bar_2_bar_0",
+        "object_type": "location",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "state_225",
+      "type": "state",
+      "name": "goal_problem_0_0",
+      "attributes": {
+        "state_type": "goal",
+        "goal_description": "(and\n                    (forall (?re - receptacle",
+        "source": "pddl",
+        "state_value": "target"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "entity_1",
+      "target": "entity_2",
+      "type": "contains",
+      "attributes": {
+        "relationship": "spatial_containment",
+        "position_info": "[-2.75, 2.25, 270, 30]"
+      }
+    },
+    {
+      "source": "entity_2",
+      "target": "state_3",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "availability"
+      }
+    },
+    {
+      "source": "entity_1",
+      "target": "entity_4",
+      "type": "contains",
+      "attributes": {
+        "relationship": "spatial_containment",
+        "position_info": "[-2.5, 1.5, 90, 30]"
+      }
+    },
+    {
+      "source": "entity_4",
+      "target": "state_5",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "availability"
+      }
+    },
+    {
+      "source": "entity_1",
+      "target": "entity_6",
+      "type": "contains",
+      "attributes": {
+        "relationship": "spatial_containment",
+        "position_info": "[-3.0, 3.75, 0, 30]"
+      }
+    },
+    {
+      "source": "entity_6",
+      "target": "state_7",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "availability"
+      }
+    },
+    {
+      "source": "entity_1",
+      "target": "entity_8",
+      "type": "contains",
+      "attributes": {
+        "relationship": "spatial_containment",
+        "position_info": "[-1.25, 4.25, 90, 30]"
+      }
+    },
+    {
+      "source": "entity_8",
+      "target": "state_9",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "availability"
+      }
+    },
+    {
+      "source": "entity_1",
+      "target": "entity_10",
+      "type": "contains",
+      "attributes": {
+        "relationship": "spatial_containment",
+        "position_info": "[-1.5, 4.25, 270, 30]"
+      }
+    },
+    {
+      "source": "entity_10",
+      "target": "state_11",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "availability"
+      }
+    },
+    {
+      "source": "entity_1",
+      "target": "entity_12",
+      "type": "contains",
+      "attributes": {
+        "relationship": "spatial_containment",
+        "position_info": "[-4.75, 4.5, 90, 30]"
+      }
+    },
+    {
+      "source": "entity_12",
+      "target": "state_13",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "availability"
+      }
+    },
+    {
+      "source": "entity_1",
+      "target": "entity_14",
+      "type": "contains",
+      "attributes": {
+        "relationship": "spatial_containment",
+        "position_info": "[-3.25, 1.75, 180, 30]"
+      }
+    },
+    {
+      "source": "entity_14",
+      "target": "state_15",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "availability"
+      }
+    },
+    {
+      "source": "entity_1",
+      "target": "entity_16",
+      "type": "contains",
+      "attributes": {
+        "relationship": "spatial_containment",
+        "position_info": "[-4.5, 2.5, 270, 30]"
+      }
+    },
+    {
+      "source": "entity_16",
+      "target": "state_17",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "availability"
+      }
+    },
+    {
+      "source": "entity_20",
+      "target": "entity_21",
+      "type": "contains",
+      "attributes": {
+        "relationship": "spatial_containment",
+        "position_info": "[-0.5, -1.0, 270, 30]"
+      }
+    },
+    {
+      "source": "entity_21",
+      "target": "state_22",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "availability"
+      }
+    },
+    {
+      "source": "entity_20",
+      "target": "entity_23",
+      "type": "contains",
+      "attributes": {
+        "relationship": "spatial_containment",
+        "position_info": "[-1.0, 0.5, 90, 30]"
+      }
+    },
+    {
+      "source": "entity_23",
+      "target": "state_24",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "availability"
+      }
+    },
+    {
+      "source": "entity_20",
+      "target": "entity_25",
+      "type": "contains",
+      "attributes": {
+        "relationship": "spatial_containment",
+        "position_info": "[1.25, -1.5, 0, 30]"
+      }
+    },
+    {
+      "source": "entity_25",
+      "target": "state_26",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "availability"
+      }
+    },
+    {
+      "source": "entity_20",
+      "target": "entity_27",
+      "type": "contains",
+      "attributes": {
+        "relationship": "spatial_containment",
+        "position_info": "[-0.75, 0.75, 0, 30]"
+      }
+    },
+    {
+      "source": "entity_27",
+      "target": "state_28",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "availability"
+      }
+    },
+    {
+      "source": "entity_20",
+      "target": "entity_29",
+      "type": "contains",
+      "attributes": {
+        "relationship": "spatial_containment",
+        "position_info": "[-0.75, 0.75, 0, 30]"
+      }
+    },
+    {
+      "source": "entity_29",
+      "target": "state_30",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "availability"
+      }
+    },
+    {
+      "source": "entity_20",
+      "target": "entity_31",
+      "type": "contains",
+      "attributes": {
+        "relationship": "spatial_containment",
+        "position_info": "[-0.5, 0.5, 270, 30]"
+      }
+    },
+    {
+      "source": "entity_31",
+      "target": "state_32",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "availability"
+      }
+    },
+    {
+      "source": "entity_20",
+      "target": "entity_33",
+      "type": "contains",
+      "attributes": {
+        "relationship": "spatial_containment",
+        "position_info": "[-0.75, 0.5, 270, 30]"
+      }
+    },
+    {
+      "source": "entity_33",
+      "target": "state_34",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "availability"
+      }
+    },
+    {
+      "source": "entity_20",
+      "target": "entity_35",
+      "type": "contains",
+      "attributes": {
+        "relationship": "spatial_containment",
+        "position_info": "[1.25, -1.5, 0, 30]"
+      }
+    },
+    {
+      "source": "entity_35",
+      "target": "state_36",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "availability"
+      }
+    },
+    {
+      "source": "entity_20",
+      "target": "entity_37",
+      "type": "contains",
+      "attributes": {
+        "relationship": "spatial_containment",
+        "position_info": "[2.5, -1.25, 90, 30]"
+      }
+    },
+    {
+      "source": "entity_37",
+      "target": "state_38",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "availability"
+      }
+    },
+    {
+      "source": "entity_20",
+      "target": "entity_39",
+      "type": "contains",
+      "attributes": {
+        "relationship": "spatial_containment",
+        "position_info": "[0.75, 0.5, 90, 30]"
+      }
+    },
+    {
+      "source": "entity_39",
+      "target": "state_40",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "availability"
+      }
+    },
+    {
+      "source": "entity_20",
+      "target": "entity_41",
+      "type": "contains",
+      "attributes": {
+        "relationship": "spatial_containment",
+        "position_info": "[-1.0, 0.5, 270, 30]"
+      }
+    },
+    {
+      "source": "entity_41",
+      "target": "state_42",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "availability"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_45",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_45",
+      "target": "state_46",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_47",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_47",
+      "target": "state_48",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_49",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_49",
+      "target": "state_50",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_51",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_51",
+      "target": "state_52",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_53",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_53",
+      "target": "state_54",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_55",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_55",
+      "target": "state_56",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_57",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_57",
+      "target": "state_58",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_59",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_59",
+      "target": "state_60",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_61",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_61",
+      "target": "state_62",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_63",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_63",
+      "target": "state_64",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_65",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_65",
+      "target": "state_66",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_67",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_67",
+      "target": "state_68",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_69",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_69",
+      "target": "state_70",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_71",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_71",
+      "target": "state_72",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_73",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_73",
+      "target": "state_74",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_75",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_75",
+      "target": "state_76",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_77",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_77",
+      "target": "state_78",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_79",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_79",
+      "target": "state_80",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_81",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_81",
+      "target": "state_82",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_83",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_83",
+      "target": "state_84",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_85",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_85",
+      "target": "state_86",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_87",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_87",
+      "target": "state_88",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_89",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_89",
+      "target": "state_90",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_91",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_91",
+      "target": "state_92",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_93",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_93",
+      "target": "state_94",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_95",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_95",
+      "target": "state_96",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_97",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_97",
+      "target": "state_98",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_99",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_99",
+      "target": "state_100",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_101",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_101",
+      "target": "state_102",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_103",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_103",
+      "target": "state_104",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_105",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_105",
+      "target": "state_106",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_107",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_107",
+      "target": "state_108",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_109",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_109",
+      "target": "state_110",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_111",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_111",
+      "target": "state_112",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_113",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_113",
+      "target": "state_114",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_115",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_115",
+      "target": "state_116",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_117",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_117",
+      "target": "state_118",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_119",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_119",
+      "target": "state_120",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_121",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_121",
+      "target": "state_122",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_123",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_123",
+      "target": "state_124",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_125",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_125",
+      "target": "state_126",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_127",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_127",
+      "target": "state_128",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_129",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_129",
+      "target": "state_130",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_131",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_131",
+      "target": "state_132",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_133",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_133",
+      "target": "state_134",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_135",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_135",
+      "target": "state_136",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_137",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_137",
+      "target": "state_138",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_139",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_139",
+      "target": "state_140",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_141",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_141",
+      "target": "state_142",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_143",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_143",
+      "target": "state_144",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_145",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_145",
+      "target": "state_146",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_147",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_147",
+      "target": "state_148",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_149",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_149",
+      "target": "state_150",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_151",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_151",
+      "target": "state_152",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_153",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_153",
+      "target": "state_154",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_155",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_155",
+      "target": "state_156",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_157",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_157",
+      "target": "state_158",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_159",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_159",
+      "target": "state_160",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_161",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_161",
+      "target": "state_162",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_163",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_163",
+      "target": "state_164",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_165",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_165",
+      "target": "state_166",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_167",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_167",
+      "target": "state_168",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_169",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_169",
+      "target": "state_170",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_171",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_171",
+      "target": "state_172",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_173",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_173",
+      "target": "state_174",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_175",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_175",
+      "target": "state_176",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_177",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_177",
+      "target": "state_178",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_179",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_179",
+      "target": "state_180",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_181",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_181",
+      "target": "state_182",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_183",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_183",
+      "target": "state_184",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_185",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_185",
+      "target": "state_186",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_187",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_187",
+      "target": "state_188",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_189",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_189",
+      "target": "state_190",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_191",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_191",
+      "target": "state_192",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_193",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_193",
+      "target": "state_194",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_195",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_195",
+      "target": "state_196",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_197",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_197",
+      "target": "state_198",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_199",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_199",
+      "target": "state_200",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_201",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_201",
+      "target": "state_202",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_203",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_203",
+      "target": "state_204",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_205",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_205",
+      "target": "state_206",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_207",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_207",
+      "target": "state_208",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_209",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_209",
+      "target": "state_210",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_211",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_211",
+      "target": "state_212",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_213",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_213",
+      "target": "state_214",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_215",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_215",
+      "target": "state_216",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_217",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_217",
+      "target": "state_218",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_219",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_219",
+      "target": "state_220",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_221",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_221",
+      "target": "state_222",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "entity_223",
+      "type": "contains",
+      "attributes": {
+        "relationship": "problem_contains_object"
+      }
+    },
+    {
+      "source": "entity_223",
+      "target": "state_224",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "initial"
+      }
+    },
+    {
+      "source": "entity_44",
+      "target": "state_225",
+      "type": "requires",
+      "attributes": {
+        "relationship": "problem_requires_goal"
+      }
+    }
+  ],
+  "metadata": {
+    "node_count": 225,
+    "edge_count": 219,
+    "node_types": [
+      "state",
+      "entity"
+    ]
+  }
+}

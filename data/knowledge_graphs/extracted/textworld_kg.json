@@ -1,0 +1,205 @@
+{
+  "nodes": [
+    {
+      "id": "entity_1",
+      "type": "entity",
+      "name": "sample_game",
+      "attributes": {
+        "category": "textworld_game",
+        "description": "TextWorld game: sample_game",
+        "source": "textworld",
+        "entity_type": "game"
+      }
+    },
+    {
+      "id": "entity_2",
+      "type": "entity",
+      "name": "kitchen",
+      "attributes": {
+        "category": "location",
+        "description": "A modern kitchen with appliances",
+        "source": "textworld",
+        "entity_type": "room"
+      }
+    },
+    {
+      "id": "entity_3",
+      "type": "entity",
+      "name": "living_room",
+      "attributes": {
+        "category": "location",
+        "description": "A cozy living room with furniture",
+        "source": "textworld",
+        "entity_type": "room"
+      }
+    },
+    {
+      "id": "entity_4",
+      "type": "entity",
+      "name": "bedroom",
+      "attributes": {
+        "category": "location",
+        "description": "A quiet bedroom",
+        "source": "textworld",
+        "entity_type": "room"
+      }
+    },
+    {
+      "id": "entity_5",
+      "type": "entity",
+      "name": "apple",
+      "attributes": {
+        "category": "game_object",
+        "description": "A red apple",
+        "properties": {
+          "edible": true,
+          "color": "red"
+        },
+        "source": "textworld",
+        "entity_type": "food"
+      }
+    },
+    {
+      "id": "state_6",
+      "type": "state",
+      "name": "apple_state",
+      "attributes": {
+        "state_type": "object_state",
+        "object_name": "apple",
+        "state_value": "fresh"
+      }
+    },
+    {
+      "id": "entity_7",
+      "type": "entity",
+      "name": "key",
+      "attributes": {
+        "category": "game_object",
+        "description": "A brass key",
+        "properties": {
+          "material": "brass",
+          "opens": "chest"
+        },
+        "source": "textworld",
+        "entity_type": "tool"
+      }
+    },
+    {
+      "id": "state_8",
+      "type": "state",
+      "name": "key_state",
+      "attributes": {
+        "state_type": "object_state",
+        "object_name": "key",
+        "state_value": "available"
+      }
+    },
+    {
+      "id": "entity_9",
+      "type": "entity",
+      "name": "chest",
+      "attributes": {
+        "category": "game_object",
+        "description": "A wooden chest",
+        "properties": {
+          "material": "wood",
+          "locked": true
+        },
+        "source": "textworld",
+        "entity_type": "container"
+      }
+    },
+    {
+      "id": "state_10",
+      "type": "state",
+      "name": "chest_state",
+      "attributes": {
+        "state_type": "object_state",
+        "object_name": "chest",
+        "state_value": "locked"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "entity_1",
+      "target": "entity_2",
+      "type": "contains",
+      "attributes": {
+        "relationship": "game_contains_room"
+      }
+    },
+    {
+      "source": "entity_1",
+      "target": "entity_3",
+      "type": "contains",
+      "attributes": {
+        "relationship": "game_contains_room"
+      }
+    },
+    {
+      "source": "entity_1",
+      "target": "entity_4",
+      "type": "contains",
+      "attributes": {
+        "relationship": "game_contains_room"
+      }
+    },
+    {
+      "source": "entity_1",
+      "target": "entity_5",
+      "type": "contains",
+      "attributes": {
+        "relationship": "game_contains_object"
+      }
+    },
+    {
+      "source": "entity_5",
+      "target": "state_6",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "object_state"
+      }
+    },
+    {
+      "source": "entity_1",
+      "target": "entity_7",
+      "type": "contains",
+      "attributes": {
+        "relationship": "game_contains_object"
+      }
+    },
+    {
+      "source": "entity_7",
+      "target": "state_8",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "object_state"
+      }
+    },
+    {
+      "source": "entity_1",
+      "target": "entity_9",
+      "type": "contains",
+      "attributes": {
+        "relationship": "game_contains_object"
+      }
+    },
+    {
+      "source": "entity_9",
+      "target": "state_10",
+      "type": "has_state",
+      "attributes": {
+        "state_category": "object_state"
+      }
+    }
+  ],
+  "metadata": {
+    "node_count": 10,
+    "edge_count": 9,
+    "node_types": [
+      "state",
+      "entity"
+    ]
+  }
+}

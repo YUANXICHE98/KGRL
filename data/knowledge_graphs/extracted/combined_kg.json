@@ -1,0 +1,65 @@
+{
+  "nodes": [
+    {
+      "id": "entity_1",
+      "type": "entity",
+      "name": "FloorPlan228-openable",
+      "attributes": {
+        "category": "environment",
+        "description": "ALFWorld scene: FloorPlan228-openable",
+        "entity_type": "scene"
+      }
+    },
+    {
+      "id": "entity_2",
+      "type": "entity",
+      "name": "CoffeeTable",
+      "attributes": {
+        "category": "physical_object",
+        "position": {
+          "x": -4.0,
+          "y": 0.01,
+          "z": 2.45
+        },
+        "layout_position": [
+          -2.75,
+          2.25,
+          270,
+          30
+        ],
+        "source": "alfworld",
+        "entity_type": "furniture"
+      }
+    },
+    {
+      "id": "entity_3",
+      "type": "entity",
+      "name": "problem_0_0",
+      "attributes": {
+        "category": "planning_problem",
+        "description": "PDDL planning problem: problem_0_0",
+        "source": "pddl",
+        "entity_type": "problem"
+      }
+    },
+    {
+      "id": "entity_4",
+      "type": "entity",
+      "name": "agent1",
+      "attributes": {
+        "category": "pddl_object",
+        "object_type": "agent",
+        "source": "pddl",
+        "entity_type": "agent"
+      }
+    }
+  ],
+  "edges": [],
+  "metadata": {
+    "node_count": 4,
+    "edge_count": 0,
+    "node_types": [
+      "entity"
+    ]
+  }
+}

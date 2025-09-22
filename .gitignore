@@ -221,3 +221,5 @@ dmypy.json
 !results/example_results.json
 !docs/
 !examples/
+data/benchmarks/alfworld/alfworld/
+data/benchmarks/textworld/TextWorld/

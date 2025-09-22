@@ -1,0 +1,26 @@
+{
+  "alfworld": {
+    "layout_files": 240,
+    "pddl_files": 2,
+    "total_objects": 110,
+    "object_types": [
+      "ArmChair",
+      "TVStand",
+      "DiningTable",
+      "CoffeeTable",
+      "Shelf",
+      "Sofa",
+      "SideTable",
+      "Drawer",
+      "GarbageCan"
+    ]
+  },
+  "textworld": {
+    "available": true,
+    "api_working": true
+  },
+  "knowledge_graphs": {
+    "existing_files": 6,
+    "total_size_bytes": 13506
+  }
+}

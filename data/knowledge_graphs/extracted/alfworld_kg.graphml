@@ -1,0 +1,2677 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d7" for="edge" attr.name="attributes_json" attr.type="string" />
+  <key id="d6" for="edge" attr.name="type" attr.type="string" />
+  <key id="d5" for="edge" attr.name="target" attr.type="string" />
+  <key id="d4" for="edge" attr.name="source" attr.type="string" />
+  <key id="d3" for="node" attr.name="attributes_json" attr.type="string" />
+  <key id="d2" for="node" attr.name="name" attr.type="string" />
+  <key id="d1" for="node" attr.name="type" attr.type="string" />
+  <key id="d0" for="node" attr.name="id" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="entity_1">
+      <data key="d0">entity_1</data>
+      <data key="d1">entity</data>
+      <data key="d2">FloorPlan228-openable</data>
+      <data key="d3">{'category': 'environment', 'description': 'ALFWorld scene: FloorPlan228-openable', 'entity_type': 'scene'}</data>
+    </node>
+    <node id="entity_2">
+      <data key="d0">entity_2</data>
+      <data key="d1">entity</data>
+      <data key="d2">CoffeeTable</data>
+      <data key="d3">{'category': 'physical_object', 'position_x': -4.0, 'position_y': 0.01, 'position_z': 2.45, 'layout_data': '[-2.75, 2.25, 270, 30]', 'source': 'alfworld', 'entity_type': 'furniture'}</data>
+    </node>
+    <node id="state_3">
+      <data key="d0">state_3</data>
+      <data key="d1">state</data>
+      <data key="d2">CoffeeTable_available</data>
+      <data key="d3">{'state_type': 'availability', 'object_name': 'CoffeeTable', 'description': 'CoffeeTable is accessible in the environment', 'state_value': 'accessible'}</data>
+    </node>
+    <node id="entity_4">
+      <data key="d0">entity_4</data>
+      <data key="d1">entity</data>
+      <data key="d2">DiningTable</data>
+      <data key="d3">{'category': 'physical_object', 'position_x': -1.4, 'position_y': 0.0, 'position_z': 1.45, 'layout_data': '[-2.5, 1.5, 90, 30]', 'source': 'alfworld', 'entity_type': 'furniture'}</data>
+    </node>
+    <node id="state_5">
+      <data key="d0">state_5</data>
+      <data key="d1">state</data>
+      <data key="d2">DiningTable_available</data>
+      <data key="d3">{'state_type': 'availability', 'object_name': 'DiningTable', 'description': 'DiningTable is accessible in the environment', 'state_value': 'accessible'}</data>
+    </node>
+    <node id="entity_6">
+      <data key="d0">entity_6</data>
+      <data key="d1">entity</data>
+      <data key="d2">Drawer</data>
+      <data key="d3">{'category': 'physical_object', 'position_x': -2.56, 'position_y': 0.53, 'position_z': 4.48, 'layout_data': '[-3.0, 3.75, 0, 30]', 'source': 'alfworld', 'entity_type': 'furniture'}</data>
+    </node>
+    <node id="state_7">
+      <data key="d0">state_7</data>
+      <data key="d1">state</data>
+      <data key="d2">Drawer_available</data>
+      <data key="d3">{'state_type': 'availability', 'object_name': 'Drawer', 'description': 'Drawer is accessible in the environment', 'state_value': 'accessible'}</data>
+    </node>
+    <node id="entity_8">
+      <data key="d0">entity_8</data>
+      <data key="d1">entity</data>
+      <data key="d2">GarbageCan</data>
+      <data key="d3">{'category': 'physical_object', 'position_x': -0.22, 'position_y': -0.01, 'position_z': 4.73, 'layout_data': '[-1.25, 4.25, 90, 30]', 'source': 'alfworld', 'entity_type': 'furniture'}</data>
+    </node>
+    <node id="state_9">
+      <data key="d0">state_9</data>
+      <data key="d1">state</data>
+      <data key="d2">GarbageCan_available</data>
+      <data key="d3">{'state_type': 'availability', 'object_name': 'GarbageCan', 'description': 'GarbageCan is accessible in the environment', 'state_value': 'accessible'}</data>
+    </node>
+    <node id="entity_10">
+      <data key="d0">entity_10</data>
+      <data key="d1">entity</data>
+      <data key="d2">SideTable</data>
+      <data key="d3">{'category': 'physical_object', 'position_x': -2.56, 'position_y': -0.01, 'position_z': 4.74, 'layout_data': '[-1.5, 4.25, 270, 30]', 'source': 'alfworld', 'entity_type': 'furniture'}</data>
+    </node>
+    <node id="state_11">
+      <data key="d0">state_11</data>
+      <data key="d1">state</data>
+      <data key="d2">SideTable_available</data>
+      <data key="d3">{'state_type': 'availability', 'object_name': 'SideTable', 'description': 'SideTable is accessible in the environment', 'state_value': 'accessible'}</data>
+    </node>
+    <node id="entity_12">
+      <data key="d0">entity_12</data>
+      <data key="d1">entity</data>
+      <data key="d2">SideTable</data>
+      <data key="d3">{'category': 'physical_object', 'position_x': -3.79, 'position_y': -0.01, 'position_z': 4.46, 'layout_data': '[-4.75, 4.5, 90, 30]', 'source': 'alfworld', 'entity_type': 'furniture'}</data>
+    </node>
+    <node id="state_13">
+      <data key="d0">state_13</data>
+      <data key="d1">state</data>
+      <data key="d2">SideTable_available</data>
+      <data key="d3">{'state_type': 'availability', 'object_name': 'SideTable', 'description': 'SideTable is accessible in the environment', 'state_value': 'accessible'}</data>
+    </node>
+    <node id="entity_14">
+      <data key="d0">entity_14</data>
+      <data key="d1">entity</data>
+      <data key="d2">Sofa</data>
+      <data key="d3">{'category': 'physical_object', 'position_x': -3.66, 'position_y': -0.02, 'position_z': 0.46, 'layout_data': '[-3.25, 1.75, 180, 30]', 'source': 'alfworld', 'entity_type': 'furniture'}</data>
+    </node>
+    <node id="state_15">
+      <data key="d0">state_15</data>
+      <data key="d1">state</data>
+      <data key="d2">Sofa_available</data>
+      <data key="d3">{'state_type': 'availability', 'object_name': 'Sofa', 'description': 'Sofa is accessible in the environment', 'state_value': 'accessible'}</data>
+    </node>
+    <node id="entity_16">
+      <data key="d0">entity_16</data>
+      <data key="d1">entity</data>
+      <data key="d2">Sofa</data>
+      <data key="d3">{'category': 'physical_object', 'position_x': -5.4, 'position_y': -0.02, 'position_z': 2.43, 'layout_data': '[-4.5, 2.5, 270, 30]', 'source': 'alfworld', 'entity_type': 'furniture'}</data>
+    </node>
+    <node id="state_17">
+      <data key="d0">state_17</data>
+      <data key="d1">state</data>
+      <data key="d2">Sofa_available</data>
+      <data key="d3">{'state_type': 'availability', 'object_name': 'Sofa', 'description': 'Sofa is accessible in the environment', 'state_value': 'accessible'}</data>
+    </node>
+    <node id="entity_18">
+      <data key="d0">entity_18</data>
+      <data key="d1">entity</data>
+      <data key="d2">FloorPlan24-objects</data>
+      <data key="d3">{'category': 'environment', 'description': 'ALFWorld scene: FloorPlan24-objects', 'entity_type': 'scene'}</data>
+    </node>
+    <node id="entity_19">
+      <data key="d0">entity_19</data>
+      <data key="d1">entity</data>
+      <data key="d2">FloorPlan213-objects</data>
+      <data key="d3">{'category': 'environment', 'description': 'ALFWorld scene: FloorPlan213-objects', 'entity_type': 'scene'}</data>
+    </node>
+    <node id="entity_20">
+      <data key="d0">entity_20</data>
+      <data key="d1">entity</data>
+      <data key="d2">FloorPlan211-openable</data>
+      <data key="d3">{'category': 'environment', 'description': 'ALFWorld scene: FloorPlan211-openable', 'entity_type': 'scene'}</data>
+    </node>
+    <node id="entity_21">
+      <data key="d0">entity_21</data>
+      <data key="d1">entity</data>
+      <data key="d2">ArmChair</data>
+      <data key="d3">{'category': 'physical_object', 'position_x': -1.76, 'position_y': 0.0, 'position_z': -1.49, 'layout_data': '[-0.5, -1.0, 270, 30]', 'source': 'alfworld', 'entity_type': 'furniture'}</data>
+    </node>
+    <node id="state_22">
+      <data key="d0">state_22</data>
+      <data key="d1">state</data>
+      <data key="d2">ArmChair_available</data>
+      <data key="d3">{'state_type': 'availability', 'object_name': 'ArmChair', 'description': 'ArmChair is accessible in the environment', 'state_value': 'accessible'}</data>
+    </node>
+    <node id="entity_23">
+      <data key="d0">entity_23</data>
+      <data key="d1">entity</data>
+      <data key="d2">CoffeeTable</data>
+      <data key="d3">{'category': 'physical_object', 'position_x': 0.17, 'position_y': 0.0, 'position_z': 0.42, 'layout_data': '[-1.0, 0.5, 90, 30]', 'source': 'alfworld', 'entity_type': 'furniture'}</data>
+    </node>
+    <node id="state_24">
+      <data key="d0">state_24</data>
+      <data key="d1">state</data>
+      <data key="d2">CoffeeTable_available</data>
+      <data key="d3">{'state_type': 'availability', 'object_name': 'CoffeeTable', 'description': 'CoffeeTable is accessible in the environment', 'state_value': 'accessible'}</data>
+    </node>
+    <node id="entity_25">
+      <data key="d0">entity_25</data>
+      <data key="d1">entity</data>
+      <data key="d2">Drawer</data>
+      <data key="d3">{'category': 'physical_object', 'position_x': 1.52, 'position_y': 0.62, 'position_z': -0.76, 'layout_data': '[1.25, -1.5, 0, 30]', 'source': 'alfworld', 'entity_type': 'furniture'}</data>
+    </node>
+    <node id="state_26">
+      <data key="d0">state_26</data>
+      <data key="d1">state</data>
+      <data key="d2">Drawer_available</data>
+      <data key="d3">{'state_type': 'availability', 'object_name': 'Drawer', 'description': 'Drawer is accessible in the environment', 'state_value': 'accessible'}</data>
+    </node>
+    <node id="entity_27">
+      <data key="d0">entity_27</data>
+      <data key="d1">entity</data>
+      <data key="d2">Shelf</data>
+      <data key="d3">{'category': 'physical_object', 'position_x': -0.2, 'position_y': 0.54, 'position_z': 1.93, 'layout_data': '[-0.75, 0.75, 0, 30]', 'source': 'alfworld', 'entity_type': 'furniture'}</data>
+    </node>
+    <node id="state_28">
+      <data key="d0">state_28</data>
+      <data key="d1">state</data>
+      <data key="d2">Shelf_available</data>
+      <data key="d3">{'state_type': 'availability', 'object_name': 'Shelf', 'description': 'Shelf is accessible in the environment', 'state_value': 'accessible'}</data>
+    </node>
+    <node id="entity_29">
+      <data key="d0">entity_29</data>
+      <data key="d1">entity</data>
+      <data key="d2">Shelf</data>
+      <data key="d3">{'category': 'physical_object', 'position_x': -0.2, 'position_y': 0.87, 'position_z': 1.93, 'layout_data': '[-0.75, 0.75, 0, 30]', 'source': 'alfworld', 'entity_type': 'furniture'}</data>
+    </node>
+    <node id="state_30">
+      <data key="d0">state_30</data>
+      <data key="d1">state</data>
+      <data key="d2">Shelf_available</data>
+      <data key="d3">{'state_type': 'availability', 'object_name': 'Shelf', 'description': 'Shelf is accessible in the environment', 'state_value': 'accessible'}</data>
+    </node>
+    <node id="entity_31">
+      <data key="d0">entity_31</data>
+      <data key="d1">entity</data>
+      <data key="d2">Shelf</data>
+      <data key="d3">{'category': 'physical_object', 'position_x': -1.82, 'position_y': 0.38, 'position_z': 0.56, 'layout_data': '[-0.5, 0.5, 270, 30]', 'source': 'alfworld', 'entity_type': 'furniture'}</data>
+    </node>
+    <node id="state_32">
+      <data key="d0">state_32</data>
+      <data key="d1">state</data>
+      <data key="d2">Shelf_available</data>
+      <data key="d3">{'state_type': 'availability', 'object_name': 'Shelf', 'description': 'Shelf is accessible in the environment', 'state_value': 'accessible'}</data>
+    </node>
+    <node id="entity_33">
+      <data key="d0">entity_33</data>
+      <data key="d1">entity</data>
+      <data key="d2">Shelf</data>
+      <data key="d3">{'category': 'physical_object', 'position_x': -1.83, 'position_y': 0.13, 'position_z': 0.56, 'layout_data': '[-0.75, 0.5, 270, 30]', 'source': 'alfworld', 'entity_type': 'furniture'}</data>
+    </node>
+    <node id="state_34">
+      <data key="d0">state_34</data>
+      <data key="d1">state</data>
+      <data key="d2">Shelf_available</data>
+      <data key="d3">{'state_type': 'availability', 'object_name': 'Shelf', 'description': 'Shelf is accessible in the environment', 'state_value': 'accessible'}</data>
+    </node>
+    <node id="entity_35">
+      <data key="d0">entity_35</data>
+      <data key="d1">entity</data>
+      <data key="d2">SideTable</data>
+      <data key="d3">{'category': 'physical_object', 'position_x': 1.52, 'position_y': 0.0, 'position_z': -0.7, 'layout_data': '[1.25, -1.5, 0, 30]', 'source': 'alfworld', 'entity_type': 'furniture'}</data>
+    </node>
+    <node id="state_36">
+      <data key="d0">state_36</data>
+      <data key="d1">state</data>
+      <data key="d2">SideTable_available</data>
+      <data key="d3">{'state_type': 'availability', 'object_name': 'SideTable', 'description': 'SideTable is accessible in the environment', 'state_value': 'accessible'}</data>
+    </node>
+    <node id="entity_37">
+      <data key="d0">entity_37</data>
+      <data key="d1">entity</data>
+      <data key="d2">SideTable</data>
+      <data key="d3">{'category': 'physical_object', 'position_x': 3.58, 'position_y': 0.0, 'position_z': -1.17, 'layout_data': '[2.5, -1.25, 90, 30]', 'source': 'alfworld', 'entity_type': 'furniture'}</data>
+    </node>
+    <node id="state_38">
+      <data key="d0">state_38</data>
+      <data key="d1">state</data>
+      <data key="d2">SideTable_available</data>
+      <data key="d3">{'state_type': 'availability', 'object_name': 'SideTable', 'description': 'SideTable is accessible in the environment', 'state_value': 'accessible'}</data>
+    </node>
+    <node id="entity_39">
+      <data key="d0">entity_39</data>
+      <data key="d1">entity</data>
+      <data key="d2">Sofa</data>
+      <data key="d3">{'category': 'physical_object', 'position_x': 1.42, 'position_y': 0.0, 'position_z': 0.39, 'layout_data': '[0.75, 0.5, 90, 30]', 'source': 'alfworld', 'entity_type': 'furniture'}</data>
+    </node>
+    <node id="state_40">
+      <data key="d0">state_40</data>
+      <data key="d1">state</data>
+      <data key="d2">Sofa_available</data>
+      <data key="d3">{'state_type': 'availability', 'object_name': 'Sofa', 'description': 'Sofa is accessible in the environment', 'state_value': 'accessible'}</data>
+    </node>
+    <node id="entity_41">
+      <data key="d0">entity_41</data>
+      <data key="d1">entity</data>
+      <data key="d2">TVStand</data>
+      <data key="d3">{'category': 'physical_object', 'position_x': -1.97, 'position_y': 0.0, 'position_z': 0.56, 'layout_data': '[-1.0, 0.5, 270, 30]', 'source': 'alfworld', 'entity_type': 'furniture'}</data>
+    </node>
+    <node id="state_42">
+      <data key="d0">state_42</data>
+      <data key="d1">state</data>
+      <data key="d2">TVStand_available</data>
+      <data key="d3">{'state_type': 'availability', 'object_name': 'TVStand', 'description': 'TVStand is accessible in the environment', 'state_value': 'accessible'}</data>
+    </node>
+    <node id="entity_43">
+      <data key="d0">entity_43</data>
+      <data key="d1">entity</data>
+      <data key="d2">FloorPlan415-objects</data>
+      <data key="d3">{'category': 'environment', 'description': 'ALFWorld scene: FloorPlan415-objects', 'entity_type': 'scene'}</data>
+    </node>
+    <node id="entity_44">
+      <data key="d0">entity_44</data>
+      <data key="d1">entity</data>
+      <data key="d2">problem_0_0</data>
+      <data key="d3">{'category': 'planning_problem', 'description': 'PDDL planning problem: problem_0_0', 'source': 'pddl', 'entity_type': 'problem'}</data>
+    </node>
+    <node id="entity_45">
+      <data key="d0">entity_45</data>
+      <data key="d1">entity</data>
+      <data key="d2">agent1</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'agent', 'source': 'pddl', 'entity_type': 'agent'}</data>
+    </node>
+    <node id="state_46">
+      <data key="d0">state_46</data>
+      <data key="d1">state</data>
+      <data key="d2">agent1_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'agent1', 'object_type': 'agent', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_47">
+      <data key="d0">entity_47</data>
+      <data key="d1">entity</data>
+      <data key="d2">Plate</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'object', 'source': 'pddl', 'entity_type': 'object'}</data>
+    </node>
+    <node id="state_48">
+      <data key="d0">state_48</data>
+      <data key="d1">state</data>
+      <data key="d2">Plate_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'Plate', 'object_type': 'object', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_49">
+      <data key="d0">entity_49</data>
+      <data key="d1">entity</data>
+      <data key="d2">Egg</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'object', 'source': 'pddl', 'entity_type': 'object'}</data>
+    </node>
+    <node id="state_50">
+      <data key="d0">state_50</data>
+      <data key="d1">state</data>
+      <data key="d2">Egg_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'Egg', 'object_type': 'object', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_51">
+      <data key="d0">entity_51</data>
+      <data key="d1">entity</data>
+      <data key="d2">TableTop</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'object', 'source': 'pddl', 'entity_type': 'object'}</data>
+    </node>
+    <node id="state_52">
+      <data key="d0">state_52</data>
+      <data key="d1">state</data>
+      <data key="d2">TableTop_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'TableTop', 'object_type': 'object', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_53">
+      <data key="d0">entity_53</data>
+      <data key="d1">entity</data>
+      <data key="d2">Bowl</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'object', 'source': 'pddl', 'entity_type': 'object'}</data>
+    </node>
+    <node id="state_54">
+      <data key="d0">state_54</data>
+      <data key="d1">state</data>
+      <data key="d2">Bowl_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'Bowl', 'object_type': 'object', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_55">
+      <data key="d0">entity_55</data>
+      <data key="d1">entity</data>
+      <data key="d2">Mug</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'object', 'source': 'pddl', 'entity_type': 'object'}</data>
+    </node>
+    <node id="state_56">
+      <data key="d0">state_56</data>
+      <data key="d1">state</data>
+      <data key="d2">Mug_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'Mug', 'object_type': 'object', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_57">
+      <data key="d0">entity_57</data>
+      <data key="d1">entity</data>
+      <data key="d2">Sink</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'object', 'source': 'pddl', 'entity_type': 'object'}</data>
+    </node>
+    <node id="state_58">
+      <data key="d0">state_58</data>
+      <data key="d1">state</data>
+      <data key="d2">Sink_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'Sink', 'object_type': 'object', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_59">
+      <data key="d0">entity_59</data>
+      <data key="d1">entity</data>
+      <data key="d2">Knife</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'object', 'source': 'pddl', 'entity_type': 'object'}</data>
+    </node>
+    <node id="state_60">
+      <data key="d0">state_60</data>
+      <data key="d1">state</data>
+      <data key="d2">Knife_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'Knife', 'object_type': 'object', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_61">
+      <data key="d0">entity_61</data>
+      <data key="d1">entity</data>
+      <data key="d2">Pot</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'object', 'source': 'pddl', 'entity_type': 'object'}</data>
+    </node>
+    <node id="state_62">
+      <data key="d0">state_62</data>
+      <data key="d1">state</data>
+      <data key="d2">Pot_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'Pot', 'object_type': 'object', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_63">
+      <data key="d0">entity_63</data>
+      <data key="d1">entity</data>
+      <data key="d2">Pan</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'object', 'source': 'pddl', 'entity_type': 'object'}</data>
+    </node>
+    <node id="state_64">
+      <data key="d0">state_64</data>
+      <data key="d1">state</data>
+      <data key="d2">Pan_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'Pan', 'object_type': 'object', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_65">
+      <data key="d0">entity_65</data>
+      <data key="d1">entity</data>
+      <data key="d2">Potato</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'object', 'source': 'pddl', 'entity_type': 'object'}</data>
+    </node>
+    <node id="state_66">
+      <data key="d0">state_66</data>
+      <data key="d1">state</data>
+      <data key="d2">Potato_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'Potato', 'object_type': 'object', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_67">
+      <data key="d0">entity_67</data>
+      <data key="d1">entity</data>
+      <data key="d2">Apple</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'object', 'source': 'pddl', 'entity_type': 'object'}</data>
+    </node>
+    <node id="state_68">
+      <data key="d0">state_68</data>
+      <data key="d1">state</data>
+      <data key="d2">Apple_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'Apple', 'object_type': 'object', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_69">
+      <data key="d0">entity_69</data>
+      <data key="d1">entity</data>
+      <data key="d2">StoveBurner</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'object', 'source': 'pddl', 'entity_type': 'object'}</data>
+    </node>
+    <node id="state_70">
+      <data key="d0">state_70</data>
+      <data key="d1">state</data>
+      <data key="d2">StoveBurner_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'StoveBurner', 'object_type': 'object', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_71">
+      <data key="d0">entity_71</data>
+      <data key="d1">entity</data>
+      <data key="d2">Tomato</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'object', 'source': 'pddl', 'entity_type': 'object'}</data>
+    </node>
+    <node id="state_72">
+      <data key="d0">state_72</data>
+      <data key="d1">state</data>
+      <data key="d2">Tomato_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'Tomato', 'object_type': 'object', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_73">
+      <data key="d0">entity_73</data>
+      <data key="d1">entity</data>
+      <data key="d2">Container</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'object', 'source': 'pddl', 'entity_type': 'object'}</data>
+    </node>
+    <node id="state_74">
+      <data key="d0">state_74</data>
+      <data key="d1">state</data>
+      <data key="d2">Container_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'Container', 'object_type': 'object', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_75">
+      <data key="d0">entity_75</data>
+      <data key="d1">entity</data>
+      <data key="d2">Fork</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'object', 'source': 'pddl', 'entity_type': 'object'}</data>
+    </node>
+    <node id="state_76">
+      <data key="d0">state_76</data>
+      <data key="d1">state</data>
+      <data key="d2">Fork_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'Fork', 'object_type': 'object', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_77">
+      <data key="d0">entity_77</data>
+      <data key="d1">entity</data>
+      <data key="d2">Lettuce</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'object', 'source': 'pddl', 'entity_type': 'object'}</data>
+    </node>
+    <node id="state_78">
+      <data key="d0">state_78</data>
+      <data key="d1">state</data>
+      <data key="d2">Lettuce_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'Lettuce', 'object_type': 'object', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_79">
+      <data key="d0">entity_79</data>
+      <data key="d1">entity</data>
+      <data key="d2">Cabinet</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'object', 'source': 'pddl', 'entity_type': 'object'}</data>
+    </node>
+    <node id="state_80">
+      <data key="d0">state_80</data>
+      <data key="d1">state</data>
+      <data key="d2">Cabinet_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'Cabinet', 'object_type': 'object', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_81">
+      <data key="d0">entity_81</data>
+      <data key="d1">entity</data>
+      <data key="d2">Background</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'object', 'source': 'pddl', 'entity_type': 'object'}</data>
+    </node>
+    <node id="state_82">
+      <data key="d0">state_82</data>
+      <data key="d1">state</data>
+      <data key="d2">Background_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'Background', 'object_type': 'object', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_83">
+      <data key="d0">entity_83</data>
+      <data key="d1">entity</data>
+      <data key="d2">Spoon</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'object', 'source': 'pddl', 'entity_type': 'object'}</data>
+    </node>
+    <node id="state_84">
+      <data key="d0">state_84</data>
+      <data key="d1">state</data>
+      <data key="d2">Spoon_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'Spoon', 'object_type': 'object', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_85">
+      <data key="d0">entity_85</data>
+      <data key="d1">entity</data>
+      <data key="d2">Microwave</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'object', 'source': 'pddl', 'entity_type': 'object'}</data>
+    </node>
+    <node id="state_86">
+      <data key="d0">state_86</data>
+      <data key="d1">state</data>
+      <data key="d2">Microwave_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'Microwave', 'object_type': 'object', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_87">
+      <data key="d0">entity_87</data>
+      <data key="d1">entity</data>
+      <data key="d2">GarbageCan</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'object', 'source': 'pddl', 'entity_type': 'object'}</data>
+    </node>
+    <node id="state_88">
+      <data key="d0">state_88</data>
+      <data key="d1">state</data>
+      <data key="d2">GarbageCan_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'GarbageCan', 'object_type': 'object', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_89">
+      <data key="d0">entity_89</data>
+      <data key="d1">entity</data>
+      <data key="d2">Fridge</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'object', 'source': 'pddl', 'entity_type': 'object'}</data>
+    </node>
+    <node id="state_90">
+      <data key="d0">state_90</data>
+      <data key="d1">state</data>
+      <data key="d2">Fridge_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'Fridge', 'object_type': 'object', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_91">
+      <data key="d0">entity_91</data>
+      <data key="d1">entity</data>
+      <data key="d2">Bread</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'object', 'source': 'pddl', 'entity_type': 'object'}</data>
+    </node>
+    <node id="state_92">
+      <data key="d0">state_92</data>
+      <data key="d1">state</data>
+      <data key="d2">Bread_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'Bread', 'object_type': 'object', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_93">
+      <data key="d0">entity_93</data>
+      <data key="d1">entity</data>
+      <data key="d2">PlateType</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'otype', 'source': 'pddl', 'entity_type': 'otype'}</data>
+    </node>
+    <node id="state_94">
+      <data key="d0">state_94</data>
+      <data key="d1">state</data>
+      <data key="d2">PlateType_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'PlateType', 'object_type': 'otype', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_95">
+      <data key="d0">entity_95</data>
+      <data key="d1">entity</data>
+      <data key="d2">EggType</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'otype', 'source': 'pddl', 'entity_type': 'otype'}</data>
+    </node>
+    <node id="state_96">
+      <data key="d0">state_96</data>
+      <data key="d1">state</data>
+      <data key="d2">EggType_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'EggType', 'object_type': 'otype', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_97">
+      <data key="d0">entity_97</data>
+      <data key="d1">entity</data>
+      <data key="d2">BowlType</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'otype', 'source': 'pddl', 'entity_type': 'otype'}</data>
+    </node>
+    <node id="state_98">
+      <data key="d0">state_98</data>
+      <data key="d1">state</data>
+      <data key="d2">BowlType_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'BowlType', 'object_type': 'otype', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_99">
+      <data key="d0">entity_99</data>
+      <data key="d1">entity</data>
+      <data key="d2">MugType</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'otype', 'source': 'pddl', 'entity_type': 'otype'}</data>
+    </node>
+    <node id="state_100">
+      <data key="d0">state_100</data>
+      <data key="d1">state</data>
+      <data key="d2">MugType_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'MugType', 'object_type': 'otype', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_101">
+      <data key="d0">entity_101</data>
+      <data key="d1">entity</data>
+      <data key="d2">KnifeType</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'otype', 'source': 'pddl', 'entity_type': 'otype'}</data>
+    </node>
+    <node id="state_102">
+      <data key="d0">state_102</data>
+      <data key="d1">state</data>
+      <data key="d2">KnifeType_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'KnifeType', 'object_type': 'otype', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_103">
+      <data key="d0">entity_103</data>
+      <data key="d1">entity</data>
+      <data key="d2">PotatoType</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'otype', 'source': 'pddl', 'entity_type': 'otype'}</data>
+    </node>
+    <node id="state_104">
+      <data key="d0">state_104</data>
+      <data key="d1">state</data>
+      <data key="d2">PotatoType_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'PotatoType', 'object_type': 'otype', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_105">
+      <data key="d0">entity_105</data>
+      <data key="d1">entity</data>
+      <data key="d2">AppleType</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'otype', 'source': 'pddl', 'entity_type': 'otype'}</data>
+    </node>
+    <node id="state_106">
+      <data key="d0">state_106</data>
+      <data key="d1">state</data>
+      <data key="d2">AppleType_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'AppleType', 'object_type': 'otype', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_107">
+      <data key="d0">entity_107</data>
+      <data key="d1">entity</data>
+      <data key="d2">TomatoType</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'otype', 'source': 'pddl', 'entity_type': 'otype'}</data>
+    </node>
+    <node id="state_108">
+      <data key="d0">state_108</data>
+      <data key="d1">state</data>
+      <data key="d2">TomatoType_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'TomatoType', 'object_type': 'otype', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_109">
+      <data key="d0">entity_109</data>
+      <data key="d1">entity</data>
+      <data key="d2">ContainerType</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'otype', 'source': 'pddl', 'entity_type': 'otype'}</data>
+    </node>
+    <node id="state_110">
+      <data key="d0">state_110</data>
+      <data key="d1">state</data>
+      <data key="d2">ContainerType_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'ContainerType', 'object_type': 'otype', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_111">
+      <data key="d0">entity_111</data>
+      <data key="d1">entity</data>
+      <data key="d2">ForkType</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'otype', 'source': 'pddl', 'entity_type': 'otype'}</data>
+    </node>
+    <node id="state_112">
+      <data key="d0">state_112</data>
+      <data key="d1">state</data>
+      <data key="d2">ForkType_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'ForkType', 'object_type': 'otype', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_113">
+      <data key="d0">entity_113</data>
+      <data key="d1">entity</data>
+      <data key="d2">LettuceType</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'otype', 'source': 'pddl', 'entity_type': 'otype'}</data>
+    </node>
+    <node id="state_114">
+      <data key="d0">state_114</data>
+      <data key="d1">state</data>
+      <data key="d2">LettuceType_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'LettuceType', 'object_type': 'otype', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_115">
+      <data key="d0">entity_115</data>
+      <data key="d1">entity</data>
+      <data key="d2">BackgroundType</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'otype', 'source': 'pddl', 'entity_type': 'otype'}</data>
+    </node>
+    <node id="state_116">
+      <data key="d0">state_116</data>
+      <data key="d1">state</data>
+      <data key="d2">BackgroundType_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'BackgroundType', 'object_type': 'otype', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_117">
+      <data key="d0">entity_117</data>
+      <data key="d1">entity</data>
+      <data key="d2">SpoonType</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'otype', 'source': 'pddl', 'entity_type': 'otype'}</data>
+    </node>
+    <node id="state_118">
+      <data key="d0">state_118</data>
+      <data key="d1">state</data>
+      <data key="d2">SpoonType_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'SpoonType', 'object_type': 'otype', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_119">
+      <data key="d0">entity_119</data>
+      <data key="d1">entity</data>
+      <data key="d2">BreadType</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'otype', 'source': 'pddl', 'entity_type': 'otype'}</data>
+    </node>
+    <node id="state_120">
+      <data key="d0">state_120</data>
+      <data key="d1">state</data>
+      <data key="d2">BreadType_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'BreadType', 'object_type': 'otype', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_121">
+      <data key="d0">entity_121</data>
+      <data key="d1">entity</data>
+      <data key="d2">CounterTopType</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'rtype', 'source': 'pddl', 'entity_type': 'rtype'}</data>
+    </node>
+    <node id="state_122">
+      <data key="d0">state_122</data>
+      <data key="d1">state</data>
+      <data key="d2">CounterTopType_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'CounterTopType', 'object_type': 'rtype', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_123">
+      <data key="d0">entity_123</data>
+      <data key="d1">entity</data>
+      <data key="d2">ToiletPaperHangerType</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'rtype', 'source': 'pddl', 'entity_type': 'rtype'}</data>
+    </node>
+    <node id="state_124">
+      <data key="d0">state_124</data>
+      <data key="d1">state</data>
+      <data key="d2">ToiletPaperHangerType_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'ToiletPaperHangerType', 'object_type': 'rtype', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_125">
+      <data key="d0">entity_125</data>
+      <data key="d1">entity</data>
+      <data key="d2">SinkType</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'rtype', 'source': 'pddl', 'entity_type': 'rtype'}</data>
+    </node>
+    <node id="state_126">
+      <data key="d0">state_126</data>
+      <data key="d1">state</data>
+      <data key="d2">SinkType_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'SinkType', 'object_type': 'rtype', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_127">
+      <data key="d0">entity_127</data>
+      <data key="d1">entity</data>
+      <data key="d2">PaintingHangerType</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'rtype', 'source': 'pddl', 'entity_type': 'rtype'}</data>
+    </node>
+    <node id="state_128">
+      <data key="d0">state_128</data>
+      <data key="d1">state</data>
+      <data key="d2">PaintingHangerType_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'PaintingHangerType', 'object_type': 'rtype', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_129">
+      <data key="d0">entity_129</data>
+      <data key="d1">entity</data>
+      <data key="d2">TableTopType</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'rtype', 'source': 'pddl', 'entity_type': 'rtype'}</data>
+    </node>
+    <node id="state_130">
+      <data key="d0">state_130</data>
+      <data key="d1">state</data>
+      <data key="d2">TableTopType_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'TableTopType', 'object_type': 'rtype', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_131">
+      <data key="d0">entity_131</data>
+      <data key="d1">entity</data>
+      <data key="d2">MicrowaveType</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'rtype', 'source': 'pddl', 'entity_type': 'rtype'}</data>
+    </node>
+    <node id="state_132">
+      <data key="d0">state_132</data>
+      <data key="d1">state</data>
+      <data key="d2">MicrowaveType_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'MicrowaveType', 'object_type': 'rtype', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_133">
+      <data key="d0">entity_133</data>
+      <data key="d1">entity</data>
+      <data key="d2">StoveBurnerType</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'rtype', 'source': 'pddl', 'entity_type': 'rtype'}</data>
+    </node>
+    <node id="state_134">
+      <data key="d0">state_134</data>
+      <data key="d1">state</data>
+      <data key="d2">StoveBurnerType_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'StoveBurnerType', 'object_type': 'rtype', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_135">
+      <data key="d0">entity_135</data>
+      <data key="d1">entity</data>
+      <data key="d2">TowelHolderType</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'rtype', 'source': 'pddl', 'entity_type': 'rtype'}</data>
+    </node>
+    <node id="state_136">
+      <data key="d0">state_136</data>
+      <data key="d1">state</data>
+      <data key="d2">TowelHolderType_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'TowelHolderType', 'object_type': 'rtype', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_137">
+      <data key="d0">entity_137</data>
+      <data key="d1">entity</data>
+      <data key="d2">BoxType</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'rtype', 'source': 'pddl', 'entity_type': 'rtype'}</data>
+    </node>
+    <node id="state_138">
+      <data key="d0">state_138</data>
+      <data key="d1">state</data>
+      <data key="d2">BoxType_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'BoxType', 'object_type': 'rtype', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_139">
+      <data key="d0">entity_139</data>
+      <data key="d1">entity</data>
+      <data key="d2">GarbageCanType</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'rtype', 'source': 'pddl', 'entity_type': 'rtype'}</data>
+    </node>
+    <node id="state_140">
+      <data key="d0">state_140</data>
+      <data key="d1">state</data>
+      <data key="d2">GarbageCanType_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'GarbageCanType', 'object_type': 'rtype', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_141">
+      <data key="d0">entity_141</data>
+      <data key="d1">entity</data>
+      <data key="d2">CoffeeMachineType</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'rtype', 'source': 'pddl', 'entity_type': 'rtype'}</data>
+    </node>
+    <node id="state_142">
+      <data key="d0">state_142</data>
+      <data key="d1">state</data>
+      <data key="d2">CoffeeMachineType_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'CoffeeMachineType', 'object_type': 'rtype', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_143">
+      <data key="d0">entity_143</data>
+      <data key="d1">entity</data>
+      <data key="d2">PotType</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'rtype', 'source': 'pddl', 'entity_type': 'rtype'}</data>
+    </node>
+    <node id="state_144">
+      <data key="d0">state_144</data>
+      <data key="d1">state</data>
+      <data key="d2">PotType_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'PotType', 'object_type': 'rtype', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_145">
+      <data key="d0">entity_145</data>
+      <data key="d1">entity</data>
+      <data key="d2">FridgeType</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'rtype', 'source': 'pddl', 'entity_type': 'rtype'}</data>
+    </node>
+    <node id="state_146">
+      <data key="d0">state_146</data>
+      <data key="d1">state</data>
+      <data key="d2">FridgeType_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'FridgeType', 'object_type': 'rtype', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_147">
+      <data key="d0">entity_147</data>
+      <data key="d1">entity</data>
+      <data key="d2">PanType</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'rtype', 'source': 'pddl', 'entity_type': 'rtype'}</data>
+    </node>
+    <node id="state_148">
+      <data key="d0">state_148</data>
+      <data key="d1">state</data>
+      <data key="d2">PanType_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'PanType', 'object_type': 'rtype', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_149">
+      <data key="d0">entity_149</data>
+      <data key="d1">entity</data>
+      <data key="d2">CabinetType</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'rtype', 'source': 'pddl', 'entity_type': 'rtype'}</data>
+    </node>
+    <node id="state_150">
+      <data key="d0">state_150</data>
+      <data key="d1">state</data>
+      <data key="d2">CabinetType_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'CabinetType', 'object_type': 'rtype', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_151">
+      <data key="d0">entity_151</data>
+      <data key="d1">entity</data>
+      <data key="d2">Tomato__minus_9_dot_035537719726562_comma__minus_7_dot_835324287414551_comma_5_dot_713982105255127_comma_6_dot_23344612121582_comma_2_dot_3547914028167725_comma_3_dot_755065441131592</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'object', 'source': 'pddl', 'entity_type': 'object'}</data>
+    </node>
+    <node id="state_152">
+      <data key="d0">state_152</data>
+      <data key="d1">state</data>
+      <data key="d2">Tomato__minus_9_dot_035537719726562_comma__minus_7_dot_835324287414551_comma_5_dot_713982105255127_comma_6_dot_23344612121582_comma_2_dot_3547914028167725_comma_3_dot_755065441131592_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'Tomato__minus_9_dot_035537719726562_comma__minus_7_dot_835324287414551_comma_5_dot_713982105255127_comma_6_dot_23344612121582_comma_2_dot_3547914028167725_comma_3_dot_755065441131592', 'object_type': 'object', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_153">
+      <data key="d0">entity_153</data>
+      <data key="d1">entity</data>
+      <data key="d2">Tomato__minus_1_dot_0570077896118164_comma__minus_0_dot_5236053466796875_comma__minus_2_dot_072747230529785_comma__minus_1_dot_8277060985565186_comma_4_dot_158245086669922_comma_4_dot_269499778747559</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'object', 'source': 'pddl', 'entity_type': 'object'}</data>
+    </node>
+    <node id="state_154">
+      <data key="d0">state_154</data>
+      <data key="d1">state</data>
+      <data key="d2">Tomato__minus_1_dot_0570077896118164_comma__minus_0_dot_5236053466796875_comma__minus_2_dot_072747230529785_comma__minus_1_dot_8277060985565186_comma_4_dot_158245086669922_comma_4_dot_269499778747559_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'Tomato__minus_1_dot_0570077896118164_comma__minus_0_dot_5236053466796875_comma__minus_2_dot_072747230529785_comma__minus_1_dot_8277060985565186_comma_4_dot_158245086669922_comma_4_dot_269499778747559', 'object_type': 'object', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_155">
+      <data key="d0">entity_155</data>
+      <data key="d1">entity</data>
+      <data key="d2">Tomato__minus_0_dot_831298828125_comma__minus_0_dot_287841796875_comma__minus_2_dot_0093939304351807_comma__minus_1_dot_8134915828704834_comma_4_dot_315568447113037_comma_4_dot_361780166625977</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'object', 'source': 'pddl', 'entity_type': 'object'}</data>
+    </node>
+    <node id="state_156">
+      <data key="d0">state_156</data>
+      <data key="d1">state</data>
+      <data key="d2">Tomato__minus_0_dot_831298828125_comma__minus_0_dot_287841796875_comma__minus_2_dot_0093939304351807_comma__minus_1_dot_8134915828704834_comma_4_dot_315568447113037_comma_4_dot_361780166625977_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'Tomato__minus_0_dot_831298828125_comma__minus_0_dot_287841796875_comma__minus_2_dot_0093939304351807_comma__minus_1_dot_8134915828704834_comma_4_dot_315568447113037_comma_4_dot_361780166625977', 'object_type': 'object', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_157">
+      <data key="d0">entity_157</data>
+      <data key="d1">entity</data>
+      <data key="d2">Egg__minus_9_dot_452194213867188_comma__minus_7_dot_5859246253967285_comma_4_dot_341163158416748_comma_5_dot_080314636230469_comma_2_dot_1993935108184814_comma_4_dot_265804290771484</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'object', 'source': 'pddl', 'entity_type': 'object'}</data>
+    </node>
+    <node id="state_158">
+      <data key="d0">state_158</data>
+      <data key="d1">state</data>
+      <data key="d2">Egg__minus_9_dot_452194213867188_comma__minus_7_dot_5859246253967285_comma_4_dot_341163158416748_comma_5_dot_080314636230469_comma_2_dot_1993935108184814_comma_4_dot_265804290771484_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'Egg__minus_9_dot_452194213867188_comma__minus_7_dot_5859246253967285_comma_4_dot_341163158416748_comma_5_dot_080314636230469_comma_2_dot_1993935108184814_comma_4_dot_265804290771484', 'object_type': 'object', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_159">
+      <data key="d0">entity_159</data>
+      <data key="d1">entity</data>
+      <data key="d2">Egg__minus_9_dot_652677536010742_comma__minus_8_dot_346057891845703_comma_5_dot_756226539611816_comma_6_dot_524506568908691_comma_4_dot_171130180358887_comma_5_dot_012834072113037</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'object', 'source': 'pddl', 'entity_type': 'object'}</data>
+    </node>
+    <node id="state_160">
+      <data key="d0">state_160</data>
+      <data key="d1">state</data>
+      <data key="d2">Egg__minus_9_dot_652677536010742_comma__minus_8_dot_346057891845703_comma_5_dot_756226539611816_comma_6_dot_524506568908691_comma_4_dot_171130180358887_comma_5_dot_012834072113037_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'Egg__minus_9_dot_652677536010742_comma__minus_8_dot_346057891845703_comma_5_dot_756226539611816_comma_6_dot_524506568908691_comma_4_dot_171130180358887_comma_5_dot_012834072113037', 'object_type': 'object', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_161">
+      <data key="d0">entity_161</data>
+      <data key="d1">entity</data>
+      <data key="d2">Egg__minus_9_dot_860950469970703_comma__minus_7_dot_895341873168945_comma_5_dot_116359710693359_comma_5_dot_503124713897705_comma_5_dot_927033424377441_comma_6_dot_482849597930908</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'object', 'source': 'pddl', 'entity_type': 'object'}</data>
+    </node>
+    <node id="state_162">
+      <data key="d0">state_162</data>
+      <data key="d1">state</data>
+      <data key="d2">Egg__minus_9_dot_860950469970703_comma__minus_7_dot_895341873168945_comma_5_dot_116359710693359_comma_5_dot_503124713897705_comma_5_dot_927033424377441_comma_6_dot_482849597930908_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'Egg__minus_9_dot_860950469970703_comma__minus_7_dot_895341873168945_comma_5_dot_116359710693359_comma_5_dot_503124713897705_comma_5_dot_927033424377441_comma_6_dot_482849597930908', 'object_type': 'object', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_163">
+      <data key="d0">entity_163</data>
+      <data key="d1">entity</data>
+      <data key="d2">Egg__minus_10_dot_358665466308594_comma__minus_9_dot_605772018432617_comma_6_dot_000458717346191_comma_6_dot_358250141143799_comma_3_dot_796931266784668_comma_4_dot_260854721069336</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'object', 'source': 'pddl', 'entity_type': 'object'}</data>
+    </node>
+    <node id="state_164">
+      <data key="d0">state_164</data>
+      <data key="d1">state</data>
+      <data key="d2">Egg__minus_10_dot_358665466308594_comma__minus_9_dot_605772018432617_comma_6_dot_000458717346191_comma_6_dot_358250141143799_comma_3_dot_796931266784668_comma_4_dot_260854721069336_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'Egg__minus_10_dot_358665466308594_comma__minus_9_dot_605772018432617_comma_6_dot_000458717346191_comma_6_dot_358250141143799_comma_3_dot_796931266784668_comma_4_dot_260854721069336', 'object_type': 'object', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_165">
+      <data key="d0">entity_165</data>
+      <data key="d1">entity</data>
+      <data key="d2">Egg__minus_8_dot_524584770202637_comma__minus_7_dot_802861213684082_comma_5_dot_121776580810547_comma_5_dot_33831787109375_comma_2_dot_2516515254974365_comma_2_dot_9880518913269043</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'object', 'source': 'pddl', 'entity_type': 'object'}</data>
+    </node>
+    <node id="state_166">
+      <data key="d0">state_166</data>
+      <data key="d1">state</data>
+      <data key="d2">Egg__minus_8_dot_524584770202637_comma__minus_7_dot_802861213684082_comma_5_dot_121776580810547_comma_5_dot_33831787109375_comma_2_dot_2516515254974365_comma_2_dot_9880518913269043_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'Egg__minus_8_dot_524584770202637_comma__minus_7_dot_802861213684082_comma_5_dot_121776580810547_comma_5_dot_33831787109375_comma_2_dot_2516515254974365_comma_2_dot_9880518913269043', 'object_type': 'object', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_167">
+      <data key="d0">entity_167</data>
+      <data key="d1">entity</data>
+      <data key="d2">Egg__minus_9_dot_063394546508789_comma__minus_8_dot_450336456298828_comma_4_dot_740201950073242_comma_5_dot_089858055114746_comma_4_dot_572659492492676_comma_4_dot_99241304397583</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'object', 'source': 'pddl', 'entity_type': 'object'}</data>
+    </node>
+    <node id="state_168">
+      <data key="d0">state_168</data>
+      <data key="d1">state</data>
+      <data key="d2">Egg__minus_9_dot_063394546508789_comma__minus_8_dot_450336456298828_comma_4_dot_740201950073242_comma_5_dot_089858055114746_comma_4_dot_572659492492676_comma_4_dot_99241304397583_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'Egg__minus_9_dot_063394546508789_comma__minus_8_dot_450336456298828_comma_4_dot_740201950073242_comma_5_dot_089858055114746_comma_4_dot_572659492492676_comma_4_dot_99241304397583', 'object_type': 'object', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_169">
+      <data key="d0">entity_169</data>
+      <data key="d1">entity</data>
+      <data key="d2">Egg__minus_0_dot_8469671010971069_comma__minus_0_dot_5195290446281433_comma__minus_10_dot_826122283935547_comma__minus_10_dot_067672729492188_comma_7_dot_158126354217529_comma_7_dot_479614734649658</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'object', 'source': 'pddl', 'entity_type': 'object'}</data>
+    </node>
+    <node id="state_170">
+      <data key="d0">state_170</data>
+      <data key="d1">state</data>
+      <data key="d2">Egg__minus_0_dot_8469671010971069_comma__minus_0_dot_5195290446281433_comma__minus_10_dot_826122283935547_comma__minus_10_dot_067672729492188_comma_7_dot_158126354217529_comma_7_dot_479614734649658_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'Egg__minus_0_dot_8469671010971069_comma__minus_0_dot_5195290446281433_comma__minus_10_dot_826122283935547_comma__minus_10_dot_067672729492188_comma_7_dot_158126354217529_comma_7_dot_479614734649658', 'object_type': 'object', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_171">
+      <data key="d0">entity_171</data>
+      <data key="d1">entity</data>
+      <data key="d2">Egg__minus_8_dot_91402816772461_comma__minus_8_dot_519895553588867_comma_4_dot_488741874694824_comma_4_dot_7544050216674805_comma_4_dot_637669563293457_comma_4_dot_921113014221191</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'object', 'source': 'pddl', 'entity_type': 'object'}</data>
+    </node>
+    <node id="state_172">
+      <data key="d0">state_172</data>
+      <data key="d1">state</data>
+      <data key="d2">Egg__minus_8_dot_91402816772461_comma__minus_8_dot_519895553588867_comma_4_dot_488741874694824_comma_4_dot_7544050216674805_comma_4_dot_637669563293457_comma_4_dot_921113014221191_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'Egg__minus_8_dot_91402816772461_comma__minus_8_dot_519895553588867_comma_4_dot_488741874694824_comma_4_dot_7544050216674805_comma_4_dot_637669563293457_comma_4_dot_921113014221191', 'object_type': 'object', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_173">
+      <data key="d0">entity_173</data>
+      <data key="d1">entity</data>
+      <data key="d2">Egg__minus_8_dot_80098819732666_comma__minus_8_dot_68975830078125_comma_5_dot_145737171173096_comma_5_dot_370550155639648_comma_1_dot_5878231525421143_comma_1_dot_9306919574737549</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'object', 'source': 'pddl', 'entity_type': 'object'}</data>
+    </node>
+    <node id="state_174">
+      <data key="d0">state_174</data>
+      <data key="d1">state</data>
+      <data key="d2">Egg__minus_8_dot_80098819732666_comma__minus_8_dot_68975830078125_comma_5_dot_145737171173096_comma_5_dot_370550155639648_comma_1_dot_5878231525421143_comma_1_dot_9306919574737549_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'Egg__minus_8_dot_80098819732666_comma__minus_8_dot_68975830078125_comma_5_dot_145737171173096_comma_5_dot_370550155639648_comma_1_dot_5878231525421143_comma_1_dot_9306919574737549', 'object_type': 'object', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_175">
+      <data key="d0">entity_175</data>
+      <data key="d1">entity</data>
+      <data key="d2">Egg__minus_8_dot_900911331176758_comma__minus_8_dot_787271499633789_comma_5_dot_1477251052856445_comma_5_dot_375_comma_1_dot_530555009841919_comma_1_dot_8044312000274658</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'object', 'source': 'pddl', 'entity_type': 'object'}</data>
+    </node>
+    <node id="state_176">
+      <data key="d0">state_176</data>
+      <data key="d1">state</data>
+      <data key="d2">Egg__minus_8_dot_900911331176758_comma__minus_8_dot_787271499633789_comma_5_dot_1477251052856445_comma_5_dot_375_comma_1_dot_530555009841919_comma_1_dot_8044312000274658_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'Egg__minus_8_dot_900911331176758_comma__minus_8_dot_787271499633789_comma_5_dot_1477251052856445_comma_5_dot_375_comma_1_dot_530555009841919_comma_1_dot_8044312000274658', 'object_type': 'object', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_177">
+      <data key="d0">entity_177</data>
+      <data key="d1">entity</data>
+      <data key="d2">Mug_6_dot_482807159423828_comma_7_dot_534183502197266_comma__minus_12_dot_0176420211792_comma__minus_9_dot_915420532226562_comma_3_dot_274169683456421_comma_4_dot_017481803894043</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'object', 'source': 'pddl', 'entity_type': 'object'}</data>
+    </node>
+    <node id="state_178">
+      <data key="d0">state_178</data>
+      <data key="d1">state</data>
+      <data key="d2">Mug_6_dot_482807159423828_comma_7_dot_534183502197266_comma__minus_12_dot_0176420211792_comma__minus_9_dot_915420532226562_comma_3_dot_274169683456421_comma_4_dot_017481803894043_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'Mug_6_dot_482807159423828_comma_7_dot_534183502197266_comma__minus_12_dot_0176420211792_comma__minus_9_dot_915420532226562_comma_3_dot_274169683456421_comma_4_dot_017481803894043', 'object_type': 'object', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_179">
+      <data key="d0">entity_179</data>
+      <data key="d1">entity</data>
+      <data key="d2">Sink__minus_15_dot_36121940612793_comma__minus_1_dot_132920265197754_comma__minus_7_dot_8365478515625_comma__minus_3_dot_00990891456604_comma_2_dot_1866648197174072_comma_5_dot_309326648712158</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'receptacle', 'source': 'pddl', 'entity_type': 'receptacle'}</data>
+    </node>
+    <node id="state_180">
+      <data key="d0">state_180</data>
+      <data key="d1">state</data>
+      <data key="d2">Sink__minus_15_dot_36121940612793_comma__minus_1_dot_132920265197754_comma__minus_7_dot_8365478515625_comma__minus_3_dot_00990891456604_comma_2_dot_1866648197174072_comma_5_dot_309326648712158_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'Sink__minus_15_dot_36121940612793_comma__minus_1_dot_132920265197754_comma__minus_7_dot_8365478515625_comma__minus_3_dot_00990891456604_comma_2_dot_1866648197174072_comma_5_dot_309326648712158', 'object_type': 'receptacle', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_181">
+      <data key="d0">entity_181</data>
+      <data key="d1">entity</data>
+      <data key="d2">StoveBurner__minus_0_dot_4282345771789551_comma_0_dot_4574732780456543_comma__minus_10_dot_498249053955078_comma__minus_9_dot_786360740661621_comma_3_dot_843601942062378_comma_3_dot_8987298011779785</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'receptacle', 'source': 'pddl', 'entity_type': 'receptacle'}</data>
+    </node>
+    <node id="state_182">
+      <data key="d0">state_182</data>
+      <data key="d1">state</data>
+      <data key="d2">StoveBurner__minus_0_dot_4282345771789551_comma_0_dot_4574732780456543_comma__minus_10_dot_498249053955078_comma__minus_9_dot_786360740661621_comma_3_dot_843601942062378_comma_3_dot_8987298011779785_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'StoveBurner__minus_0_dot_4282345771789551_comma_0_dot_4574732780456543_comma__minus_10_dot_498249053955078_comma__minus_9_dot_786360740661621_comma_3_dot_843601942062378_comma_3_dot_8987298011779785', 'object_type': 'receptacle', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_183">
+      <data key="d0">entity_183</data>
+      <data key="d1">entity</data>
+      <data key="d2">GarbageCan__minus_8_dot_800399780273438_comma__minus_6_dot_26822566986084_comma_6_dot_491903781890869_comma_9_dot_106473922729492_comma__minus_0_dot_08651280403137207_comma_2_dot_137377977371216</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'receptacle', 'source': 'pddl', 'entity_type': 'receptacle'}</data>
+    </node>
+    <node id="state_184">
+      <data key="d0">state_184</data>
+      <data key="d1">state</data>
+      <data key="d2">GarbageCan__minus_8_dot_800399780273438_comma__minus_6_dot_26822566986084_comma_6_dot_491903781890869_comma_9_dot_106473922729492_comma__minus_0_dot_08651280403137207_comma_2_dot_137377977371216_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'GarbageCan__minus_8_dot_800399780273438_comma__minus_6_dot_26822566986084_comma_6_dot_491903781890869_comma_9_dot_106473922729492_comma__minus_0_dot_08651280403137207_comma_2_dot_137377977371216', 'object_type': 'receptacle', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_185">
+      <data key="d0">entity_185</data>
+      <data key="d1">entity</data>
+      <data key="d2">GarbageCan__minus_3_dot_765505790710449_comma__minus_3_dot_0502500534057617_comma_6_dot_325629711151123_comma_7_dot_117653846740723_comma_2_dot_088554620742798_comma_3_dot_308518409729004</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'receptacle', 'source': 'pddl', 'entity_type': 'receptacle'}</data>
+    </node>
+    <node id="state_186">
+      <data key="d0">state_186</data>
+      <data key="d1">state</data>
+      <data key="d2">GarbageCan__minus_3_dot_765505790710449_comma__minus_3_dot_0502500534057617_comma_6_dot_325629711151123_comma_7_dot_117653846740723_comma_2_dot_088554620742798_comma_3_dot_308518409729004_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'GarbageCan__minus_3_dot_765505790710449_comma__minus_3_dot_0502500534057617_comma_6_dot_325629711151123_comma_7_dot_117653846740723_comma_2_dot_088554620742798_comma_3_dot_308518409729004', 'object_type': 'receptacle', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_187">
+      <data key="d0">entity_187</data>
+      <data key="d1">entity</data>
+      <data key="d2">Fridge__minus_14_dot_977668762207031_comma__minus_0_dot_8502640724182129_comma_1_dot_537651538848877_comma_7_dot_969181060791016_comma__minus_0_dot_622697114944458_comma_7_dot_610168933868408</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'receptacle', 'source': 'pddl', 'entity_type': 'receptacle'}</data>
+    </node>
+    <node id="state_188">
+      <data key="d0">state_188</data>
+      <data key="d1">state</data>
+      <data key="d2">Fridge__minus_14_dot_977668762207031_comma__minus_0_dot_8502640724182129_comma_1_dot_537651538848877_comma_7_dot_969181060791016_comma__minus_0_dot_622697114944458_comma_7_dot_610168933868408_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'Fridge__minus_14_dot_977668762207031_comma__minus_0_dot_8502640724182129_comma_1_dot_537651538848877_comma_7_dot_969181060791016_comma__minus_0_dot_622697114944458_comma_7_dot_610168933868408', 'object_type': 'receptacle', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_189">
+      <data key="d0">entity_189</data>
+      <data key="d1">entity</data>
+      <data key="d2">TableTop__minus_6_dot_215259552001953_comma_4_dot_385194778442383_comma__minus_6_dot_143848419189453_comma_8_dot_4503812789917_comma__minus_0_dot_04285311698913574_comma_6_dot_709390163421631</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'receptacle', 'source': 'pddl', 'entity_type': 'receptacle'}</data>
+    </node>
+    <node id="state_190">
+      <data key="d0">state_190</data>
+      <data key="d1">state</data>
+      <data key="d2">TableTop__minus_6_dot_215259552001953_comma_4_dot_385194778442383_comma__minus_6_dot_143848419189453_comma_8_dot_4503812789917_comma__minus_0_dot_04285311698913574_comma_6_dot_709390163421631_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'TableTop__minus_6_dot_215259552001953_comma_4_dot_385194778442383_comma__minus_6_dot_143848419189453_comma_8_dot_4503812789917_comma__minus_0_dot_04285311698913574_comma_6_dot_709390163421631', 'object_type': 'receptacle', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_191">
+      <data key="d0">entity_191</data>
+      <data key="d1">entity</data>
+      <data key="d2">TableTop__minus_11_dot_703232765197754_comma__minus_6_dot_333683013916016_comma_2_dot_7081685066223145_comma_7_dot_989096641540527_comma__minus_0_dot_034719228744506836_comma_6_dot_857334613800049</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'receptacle', 'source': 'pddl', 'entity_type': 'receptacle'}</data>
+    </node>
+    <node id="state_192">
+      <data key="d0">state_192</data>
+      <data key="d1">state</data>
+      <data key="d2">TableTop__minus_11_dot_703232765197754_comma__minus_6_dot_333683013916016_comma_2_dot_7081685066223145_comma_7_dot_989096641540527_comma__minus_0_dot_034719228744506836_comma_6_dot_857334613800049_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'TableTop__minus_11_dot_703232765197754_comma__minus_6_dot_333683013916016_comma_2_dot_7081685066223145_comma_7_dot_989096641540527_comma__minus_0_dot_034719228744506836_comma_6_dot_857334613800049', 'object_type': 'receptacle', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_193">
+      <data key="d0">entity_193</data>
+      <data key="d1">entity</data>
+      <data key="d2">Microwave__minus_0_dot_9467711448669434_comma_0_dot_9898943901062012_comma__minus_11_dot_547212600708008_comma__minus_8_dot_96939468383789_comma_6_dot_721449375152588_comma_8_dot_609888076782227</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'receptacle', 'source': 'pddl', 'entity_type': 'receptacle'}</data>
+    </node>
+    <node id="state_194">
+      <data key="d0">state_194</data>
+      <data key="d1">state</data>
+      <data key="d2">Microwave__minus_0_dot_9467711448669434_comma_0_dot_9898943901062012_comma__minus_11_dot_547212600708008_comma__minus_8_dot_96939468383789_comma_6_dot_721449375152588_comma_8_dot_609888076782227_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'Microwave__minus_0_dot_9467711448669434_comma_0_dot_9898943901062012_comma__minus_11_dot_547212600708008_comma__minus_8_dot_96939468383789_comma_6_dot_721449375152588_comma_8_dot_609888076782227', 'object_type': 'receptacle', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_195">
+      <data key="d0">entity_195</data>
+      <data key="d1">entity</data>
+      <data key="d2">loc_bar__minus_3_bar_7_bar_3_bar_60</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'location', 'source': 'pddl', 'entity_type': 'location'}</data>
+    </node>
+    <node id="state_196">
+      <data key="d0">state_196</data>
+      <data key="d1">state</data>
+      <data key="d2">loc_bar__minus_3_bar_7_bar_3_bar_60_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'loc_bar__minus_3_bar_7_bar_3_bar_60', 'object_type': 'location', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_197">
+      <data key="d0">entity_197</data>
+      <data key="d1">entity</data>
+      <data key="d2">loc_bar_0_bar__minus_7_bar_2_bar_45</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'location', 'source': 'pddl', 'entity_type': 'location'}</data>
+    </node>
+    <node id="state_198">
+      <data key="d0">state_198</data>
+      <data key="d1">state</data>
+      <data key="d2">loc_bar_0_bar__minus_7_bar_2_bar_45_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'loc_bar_0_bar__minus_7_bar_2_bar_45', 'object_type': 'location', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_199">
+      <data key="d0">entity_199</data>
+      <data key="d1">entity</data>
+      <data key="d2">loc_bar__minus_5_bar__minus_5_bar_3_bar_60</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'location', 'source': 'pddl', 'entity_type': 'location'}</data>
+    </node>
+    <node id="state_200">
+      <data key="d0">state_200</data>
+      <data key="d1">state</data>
+      <data key="d2">loc_bar__minus_5_bar__minus_5_bar_3_bar_60_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'loc_bar__minus_5_bar__minus_5_bar_3_bar_60', 'object_type': 'location', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_201">
+      <data key="d0">entity_201</data>
+      <data key="d1">entity</data>
+      <data key="d2">loc_bar__minus_5_bar_4_bar_3_bar_60</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'location', 'source': 'pddl', 'entity_type': 'location'}</data>
+    </node>
+    <node id="state_202">
+      <data key="d0">state_202</data>
+      <data key="d1">state</data>
+      <data key="d2">loc_bar__minus_5_bar_4_bar_3_bar_60_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'loc_bar__minus_5_bar_4_bar_3_bar_60', 'object_type': 'location', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_203">
+      <data key="d0">entity_203</data>
+      <data key="d1">entity</data>
+      <data key="d2">loc_bar_7_bar__minus_8_bar_2_bar_45</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'location', 'source': 'pddl', 'entity_type': 'location'}</data>
+    </node>
+    <node id="state_204">
+      <data key="d0">state_204</data>
+      <data key="d1">state</data>
+      <data key="d2">loc_bar_7_bar__minus_8_bar_2_bar_45_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'loc_bar_7_bar__minus_8_bar_2_bar_45', 'object_type': 'location', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_205">
+      <data key="d0">entity_205</data>
+      <data key="d1">entity</data>
+      <data key="d2">loc_bar__minus_5_bar_5_bar_3_bar_30</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'location', 'source': 'pddl', 'entity_type': 'location'}</data>
+    </node>
+    <node id="state_206">
+      <data key="d0">state_206</data>
+      <data key="d1">state</data>
+      <data key="d2">loc_bar__minus_5_bar_5_bar_3_bar_30_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'loc_bar__minus_5_bar_5_bar_3_bar_30', 'object_type': 'location', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_207">
+      <data key="d0">entity_207</data>
+      <data key="d1">entity</data>
+      <data key="d2">loc_bar__minus_5_bar_6_bar_3_bar_30</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'location', 'source': 'pddl', 'entity_type': 'location'}</data>
+    </node>
+    <node id="state_208">
+      <data key="d0">state_208</data>
+      <data key="d1">state</data>
+      <data key="d2">loc_bar__minus_5_bar_6_bar_3_bar_30_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'loc_bar__minus_5_bar_6_bar_3_bar_30', 'object_type': 'location', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_209">
+      <data key="d0">entity_209</data>
+      <data key="d1">entity</data>
+      <data key="d2">loc_bar__minus_1_bar__minus_7_bar_2_bar_0</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'location', 'source': 'pddl', 'entity_type': 'location'}</data>
+    </node>
+    <node id="state_210">
+      <data key="d0">state_210</data>
+      <data key="d1">state</data>
+      <data key="d2">loc_bar__minus_1_bar__minus_7_bar_2_bar_0_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'loc_bar__minus_1_bar__minus_7_bar_2_bar_0', 'object_type': 'location', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_211">
+      <data key="d0">entity_211</data>
+      <data key="d1">entity</data>
+      <data key="d2">loc_bar__minus_5_bar_6_bar_3_bar_60</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'location', 'source': 'pddl', 'entity_type': 'location'}</data>
+    </node>
+    <node id="state_212">
+      <data key="d0">state_212</data>
+      <data key="d1">state</data>
+      <data key="d2">loc_bar__minus_5_bar_6_bar_3_bar_60_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'loc_bar__minus_5_bar_6_bar_3_bar_60', 'object_type': 'location', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_213">
+      <data key="d0">entity_213</data>
+      <data key="d1">entity</data>
+      <data key="d2">loc_bar__minus_1_bar__minus_5_bar_0_bar_45</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'location', 'source': 'pddl', 'entity_type': 'location'}</data>
+    </node>
+    <node id="state_214">
+      <data key="d0">state_214</data>
+      <data key="d1">state</data>
+      <data key="d2">loc_bar__minus_1_bar__minus_5_bar_0_bar_45_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'loc_bar__minus_1_bar__minus_5_bar_0_bar_45', 'object_type': 'location', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_215">
+      <data key="d0">entity_215</data>
+      <data key="d1">entity</data>
+      <data key="d2">loc_bar__minus_5_bar_5_bar_3_bar_60</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'location', 'source': 'pddl', 'entity_type': 'location'}</data>
+    </node>
+    <node id="state_216">
+      <data key="d0">state_216</data>
+      <data key="d1">state</data>
+      <data key="d2">loc_bar__minus_5_bar_5_bar_3_bar_60_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'loc_bar__minus_5_bar_5_bar_3_bar_60', 'object_type': 'location', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_217">
+      <data key="d0">entity_217</data>
+      <data key="d1">entity</data>
+      <data key="d2">loc_bar__minus_4_bar_1_bar_1_bar_60</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'location', 'source': 'pddl', 'entity_type': 'location'}</data>
+    </node>
+    <node id="state_218">
+      <data key="d0">state_218</data>
+      <data key="d1">state</data>
+      <data key="d2">loc_bar__minus_4_bar_1_bar_1_bar_60_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'loc_bar__minus_4_bar_1_bar_1_bar_60', 'object_type': 'location', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_219">
+      <data key="d0">entity_219</data>
+      <data key="d1">entity</data>
+      <data key="d2">loc_bar_0_bar__minus_7_bar_2_bar_0</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'location', 'source': 'pddl', 'entity_type': 'location'}</data>
+    </node>
+    <node id="state_220">
+      <data key="d0">state_220</data>
+      <data key="d1">state</data>
+      <data key="d2">loc_bar_0_bar__minus_7_bar_2_bar_0_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'loc_bar_0_bar__minus_7_bar_2_bar_0', 'object_type': 'location', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_221">
+      <data key="d0">entity_221</data>
+      <data key="d1">entity</data>
+      <data key="d2">loc_bar__minus_5_bar_5_bar_3_bar_15</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'location', 'source': 'pddl', 'entity_type': 'location'}</data>
+    </node>
+    <node id="state_222">
+      <data key="d0">state_222</data>
+      <data key="d1">state</data>
+      <data key="d2">loc_bar__minus_5_bar_5_bar_3_bar_15_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'loc_bar__minus_5_bar_5_bar_3_bar_15', 'object_type': 'location', 'state_value': 'available'}</data>
+    </node>
+    <node id="entity_223">
+      <data key="d0">entity_223</data>
+      <data key="d1">entity</data>
+      <data key="d2">loc_bar_0_bar__minus_7_bar_2_bar_0</data>
+      <data key="d3">{'category': 'pddl_object', 'object_type': 'location', 'source': 'pddl', 'entity_type': 'location'}</data>
+    </node>
+    <node id="state_224">
+      <data key="d0">state_224</data>
+      <data key="d1">state</data>
+      <data key="d2">loc_bar_0_bar__minus_7_bar_2_bar_0_initial</data>
+      <data key="d3">{'state_type': 'initial', 'object_name': 'loc_bar_0_bar__minus_7_bar_2_bar_0', 'object_type': 'location', 'state_value': 'available'}</data>
+    </node>
+    <node id="state_225">
+      <data key="d0">state_225</data>
+      <data key="d1">state</data>
+      <data key="d2">goal_problem_0_0</data>
+      <data key="d3">{'state_type': 'goal', 'goal_description': '(and\n                    (forall (?re - receptacle', 'source': 'pddl', 'state_value': 'target'}</data>
+    </node>
+    <edge source="entity_1" target="entity_2">
+      <data key="d4">entity_1</data>
+      <data key="d5">entity_2</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'spatial_containment', 'position_info': '[-2.75, 2.25, 270, 30]'}</data>
+    </edge>
+    <edge source="entity_1" target="entity_4">
+      <data key="d4">entity_1</data>
+      <data key="d5">entity_4</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'spatial_containment', 'position_info': '[-2.5, 1.5, 90, 30]'}</data>
+    </edge>
+    <edge source="entity_1" target="entity_6">
+      <data key="d4">entity_1</data>
+      <data key="d5">entity_6</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'spatial_containment', 'position_info': '[-3.0, 3.75, 0, 30]'}</data>
+    </edge>
+    <edge source="entity_1" target="entity_8">
+      <data key="d4">entity_1</data>
+      <data key="d5">entity_8</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'spatial_containment', 'position_info': '[-1.25, 4.25, 90, 30]'}</data>
+    </edge>
+    <edge source="entity_1" target="entity_10">
+      <data key="d4">entity_1</data>
+      <data key="d5">entity_10</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'spatial_containment', 'position_info': '[-1.5, 4.25, 270, 30]'}</data>
+    </edge>
+    <edge source="entity_1" target="entity_12">
+      <data key="d4">entity_1</data>
+      <data key="d5">entity_12</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'spatial_containment', 'position_info': '[-4.75, 4.5, 90, 30]'}</data>
+    </edge>
+    <edge source="entity_1" target="entity_14">
+      <data key="d4">entity_1</data>
+      <data key="d5">entity_14</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'spatial_containment', 'position_info': '[-3.25, 1.75, 180, 30]'}</data>
+    </edge>
+    <edge source="entity_1" target="entity_16">
+      <data key="d4">entity_1</data>
+      <data key="d5">entity_16</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'spatial_containment', 'position_info': '[-4.5, 2.5, 270, 30]'}</data>
+    </edge>
+    <edge source="entity_2" target="state_3">
+      <data key="d4">entity_2</data>
+      <data key="d5">state_3</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'availability'}</data>
+    </edge>
+    <edge source="entity_4" target="state_5">
+      <data key="d4">entity_4</data>
+      <data key="d5">state_5</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'availability'}</data>
+    </edge>
+    <edge source="entity_6" target="state_7">
+      <data key="d4">entity_6</data>
+      <data key="d5">state_7</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'availability'}</data>
+    </edge>
+    <edge source="entity_8" target="state_9">
+      <data key="d4">entity_8</data>
+      <data key="d5">state_9</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'availability'}</data>
+    </edge>
+    <edge source="entity_10" target="state_11">
+      <data key="d4">entity_10</data>
+      <data key="d5">state_11</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'availability'}</data>
+    </edge>
+    <edge source="entity_12" target="state_13">
+      <data key="d4">entity_12</data>
+      <data key="d5">state_13</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'availability'}</data>
+    </edge>
+    <edge source="entity_14" target="state_15">
+      <data key="d4">entity_14</data>
+      <data key="d5">state_15</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'availability'}</data>
+    </edge>
+    <edge source="entity_16" target="state_17">
+      <data key="d4">entity_16</data>
+      <data key="d5">state_17</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'availability'}</data>
+    </edge>
+    <edge source="entity_20" target="entity_21">
+      <data key="d4">entity_20</data>
+      <data key="d5">entity_21</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'spatial_containment', 'position_info': '[-0.5, -1.0, 270, 30]'}</data>
+    </edge>
+    <edge source="entity_20" target="entity_23">
+      <data key="d4">entity_20</data>
+      <data key="d5">entity_23</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'spatial_containment', 'position_info': '[-1.0, 0.5, 90, 30]'}</data>
+    </edge>
+    <edge source="entity_20" target="entity_25">
+      <data key="d4">entity_20</data>
+      <data key="d5">entity_25</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'spatial_containment', 'position_info': '[1.25, -1.5, 0, 30]'}</data>
+    </edge>
+    <edge source="entity_20" target="entity_27">
+      <data key="d4">entity_20</data>
+      <data key="d5">entity_27</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'spatial_containment', 'position_info': '[-0.75, 0.75, 0, 30]'}</data>
+    </edge>
+    <edge source="entity_20" target="entity_29">
+      <data key="d4">entity_20</data>
+      <data key="d5">entity_29</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'spatial_containment', 'position_info': '[-0.75, 0.75, 0, 30]'}</data>
+    </edge>
+    <edge source="entity_20" target="entity_31">
+      <data key="d4">entity_20</data>
+      <data key="d5">entity_31</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'spatial_containment', 'position_info': '[-0.5, 0.5, 270, 30]'}</data>
+    </edge>
+    <edge source="entity_20" target="entity_33">
+      <data key="d4">entity_20</data>
+      <data key="d5">entity_33</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'spatial_containment', 'position_info': '[-0.75, 0.5, 270, 30]'}</data>
+    </edge>
+    <edge source="entity_20" target="entity_35">
+      <data key="d4">entity_20</data>
+      <data key="d5">entity_35</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'spatial_containment', 'position_info': '[1.25, -1.5, 0, 30]'}</data>
+    </edge>
+    <edge source="entity_20" target="entity_37">
+      <data key="d4">entity_20</data>
+      <data key="d5">entity_37</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'spatial_containment', 'position_info': '[2.5, -1.25, 90, 30]'}</data>
+    </edge>
+    <edge source="entity_20" target="entity_39">
+      <data key="d4">entity_20</data>
+      <data key="d5">entity_39</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'spatial_containment', 'position_info': '[0.75, 0.5, 90, 30]'}</data>
+    </edge>
+    <edge source="entity_20" target="entity_41">
+      <data key="d4">entity_20</data>
+      <data key="d5">entity_41</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'spatial_containment', 'position_info': '[-1.0, 0.5, 270, 30]'}</data>
+    </edge>
+    <edge source="entity_21" target="state_22">
+      <data key="d4">entity_21</data>
+      <data key="d5">state_22</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'availability'}</data>
+    </edge>
+    <edge source="entity_23" target="state_24">
+      <data key="d4">entity_23</data>
+      <data key="d5">state_24</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'availability'}</data>
+    </edge>
+    <edge source="entity_25" target="state_26">
+      <data key="d4">entity_25</data>
+      <data key="d5">state_26</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'availability'}</data>
+    </edge>
+    <edge source="entity_27" target="state_28">
+      <data key="d4">entity_27</data>
+      <data key="d5">state_28</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'availability'}</data>
+    </edge>
+    <edge source="entity_29" target="state_30">
+      <data key="d4">entity_29</data>
+      <data key="d5">state_30</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'availability'}</data>
+    </edge>
+    <edge source="entity_31" target="state_32">
+      <data key="d4">entity_31</data>
+      <data key="d5">state_32</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'availability'}</data>
+    </edge>
+    <edge source="entity_33" target="state_34">
+      <data key="d4">entity_33</data>
+      <data key="d5">state_34</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'availability'}</data>
+    </edge>
+    <edge source="entity_35" target="state_36">
+      <data key="d4">entity_35</data>
+      <data key="d5">state_36</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'availability'}</data>
+    </edge>
+    <edge source="entity_37" target="state_38">
+      <data key="d4">entity_37</data>
+      <data key="d5">state_38</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'availability'}</data>
+    </edge>
+    <edge source="entity_39" target="state_40">
+      <data key="d4">entity_39</data>
+      <data key="d5">state_40</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'availability'}</data>
+    </edge>
+    <edge source="entity_41" target="state_42">
+      <data key="d4">entity_41</data>
+      <data key="d5">state_42</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'availability'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_45">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_45</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_47">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_47</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_49">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_49</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_51">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_51</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_53">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_53</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_55">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_55</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_57">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_57</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_59">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_59</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_61">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_61</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_63">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_63</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_65">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_65</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_67">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_67</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_69">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_69</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_71">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_71</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_73">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_73</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_75">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_75</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_77">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_77</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_79">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_79</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_81">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_81</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_83">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_83</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_85">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_85</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_87">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_87</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_89">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_89</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_91">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_91</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_93">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_93</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_95">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_95</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_97">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_97</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_99">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_99</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_101">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_101</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_103">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_103</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_105">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_105</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_107">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_107</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_109">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_109</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_111">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_111</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_113">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_113</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_115">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_115</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_117">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_117</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_119">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_119</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_121">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_121</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_123">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_123</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_125">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_125</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_127">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_127</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_129">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_129</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_131">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_131</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_133">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_133</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_135">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_135</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_137">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_137</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_139">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_139</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_141">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_141</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_143">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_143</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_145">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_145</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_147">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_147</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_149">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_149</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_151">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_151</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_153">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_153</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_155">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_155</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_157">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_157</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_159">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_159</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_161">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_161</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_163">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_163</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_165">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_165</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_167">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_167</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_169">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_169</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_171">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_171</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_173">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_173</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_175">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_175</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_177">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_177</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_179">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_179</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_181">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_181</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_183">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_183</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_185">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_185</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_187">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_187</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_189">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_189</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_191">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_191</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_193">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_193</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_195">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_195</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_197">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_197</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_199">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_199</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_201">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_201</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_203">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_203</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_205">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_205</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_207">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_207</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_209">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_209</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_211">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_211</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_213">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_213</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_215">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_215</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_217">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_217</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_219">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_219</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_221">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_221</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="entity_223">
+      <data key="d4">entity_44</data>
+      <data key="d5">entity_223</data>
+      <data key="d6">contains</data>
+      <data key="d7">{'relationship': 'problem_contains_object'}</data>
+    </edge>
+    <edge source="entity_44" target="state_225">
+      <data key="d4">entity_44</data>
+      <data key="d5">state_225</data>
+      <data key="d6">requires</data>
+      <data key="d7">{'relationship': 'problem_requires_goal'}</data>
+    </edge>
+    <edge source="entity_45" target="state_46">
+      <data key="d4">entity_45</data>
+      <data key="d5">state_46</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_47" target="state_48">
+      <data key="d4">entity_47</data>
+      <data key="d5">state_48</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_49" target="state_50">
+      <data key="d4">entity_49</data>
+      <data key="d5">state_50</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_51" target="state_52">
+      <data key="d4">entity_51</data>
+      <data key="d5">state_52</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_53" target="state_54">
+      <data key="d4">entity_53</data>
+      <data key="d5">state_54</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_55" target="state_56">
+      <data key="d4">entity_55</data>
+      <data key="d5">state_56</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_57" target="state_58">
+      <data key="d4">entity_57</data>
+      <data key="d5">state_58</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_59" target="state_60">
+      <data key="d4">entity_59</data>
+      <data key="d5">state_60</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_61" target="state_62">
+      <data key="d4">entity_61</data>
+      <data key="d5">state_62</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_63" target="state_64">
+      <data key="d4">entity_63</data>
+      <data key="d5">state_64</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_65" target="state_66">
+      <data key="d4">entity_65</data>
+      <data key="d5">state_66</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_67" target="state_68">
+      <data key="d4">entity_67</data>
+      <data key="d5">state_68</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_69" target="state_70">
+      <data key="d4">entity_69</data>
+      <data key="d5">state_70</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_71" target="state_72">
+      <data key="d4">entity_71</data>
+      <data key="d5">state_72</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_73" target="state_74">
+      <data key="d4">entity_73</data>
+      <data key="d5">state_74</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_75" target="state_76">
+      <data key="d4">entity_75</data>
+      <data key="d5">state_76</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_77" target="state_78">
+      <data key="d4">entity_77</data>
+      <data key="d5">state_78</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_79" target="state_80">
+      <data key="d4">entity_79</data>
+      <data key="d5">state_80</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_81" target="state_82">
+      <data key="d4">entity_81</data>
+      <data key="d5">state_82</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_83" target="state_84">
+      <data key="d4">entity_83</data>
+      <data key="d5">state_84</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_85" target="state_86">
+      <data key="d4">entity_85</data>
+      <data key="d5">state_86</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_87" target="state_88">
+      <data key="d4">entity_87</data>
+      <data key="d5">state_88</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_89" target="state_90">
+      <data key="d4">entity_89</data>
+      <data key="d5">state_90</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_91" target="state_92">
+      <data key="d4">entity_91</data>
+      <data key="d5">state_92</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_93" target="state_94">
+      <data key="d4">entity_93</data>
+      <data key="d5">state_94</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_95" target="state_96">
+      <data key="d4">entity_95</data>
+      <data key="d5">state_96</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_97" target="state_98">
+      <data key="d4">entity_97</data>
+      <data key="d5">state_98</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_99" target="state_100">
+      <data key="d4">entity_99</data>
+      <data key="d5">state_100</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_101" target="state_102">
+      <data key="d4">entity_101</data>
+      <data key="d5">state_102</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_103" target="state_104">
+      <data key="d4">entity_103</data>
+      <data key="d5">state_104</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_105" target="state_106">
+      <data key="d4">entity_105</data>
+      <data key="d5">state_106</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_107" target="state_108">
+      <data key="d4">entity_107</data>
+      <data key="d5">state_108</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_109" target="state_110">
+      <data key="d4">entity_109</data>
+      <data key="d5">state_110</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_111" target="state_112">
+      <data key="d4">entity_111</data>
+      <data key="d5">state_112</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_113" target="state_114">
+      <data key="d4">entity_113</data>
+      <data key="d5">state_114</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_115" target="state_116">
+      <data key="d4">entity_115</data>
+      <data key="d5">state_116</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_117" target="state_118">
+      <data key="d4">entity_117</data>
+      <data key="d5">state_118</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_119" target="state_120">
+      <data key="d4">entity_119</data>
+      <data key="d5">state_120</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_121" target="state_122">
+      <data key="d4">entity_121</data>
+      <data key="d5">state_122</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_123" target="state_124">
+      <data key="d4">entity_123</data>
+      <data key="d5">state_124</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_125" target="state_126">
+      <data key="d4">entity_125</data>
+      <data key="d5">state_126</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_127" target="state_128">
+      <data key="d4">entity_127</data>
+      <data key="d5">state_128</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_129" target="state_130">
+      <data key="d4">entity_129</data>
+      <data key="d5">state_130</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_131" target="state_132">
+      <data key="d4">entity_131</data>
+      <data key="d5">state_132</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_133" target="state_134">
+      <data key="d4">entity_133</data>
+      <data key="d5">state_134</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_135" target="state_136">
+      <data key="d4">entity_135</data>
+      <data key="d5">state_136</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_137" target="state_138">
+      <data key="d4">entity_137</data>
+      <data key="d5">state_138</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_139" target="state_140">
+      <data key="d4">entity_139</data>
+      <data key="d5">state_140</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_141" target="state_142">
+      <data key="d4">entity_141</data>
+      <data key="d5">state_142</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_143" target="state_144">
+      <data key="d4">entity_143</data>
+      <data key="d5">state_144</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_145" target="state_146">
+      <data key="d4">entity_145</data>
+      <data key="d5">state_146</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_147" target="state_148">
+      <data key="d4">entity_147</data>
+      <data key="d5">state_148</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_149" target="state_150">
+      <data key="d4">entity_149</data>
+      <data key="d5">state_150</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_151" target="state_152">
+      <data key="d4">entity_151</data>
+      <data key="d5">state_152</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_153" target="state_154">
+      <data key="d4">entity_153</data>
+      <data key="d5">state_154</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_155" target="state_156">
+      <data key="d4">entity_155</data>
+      <data key="d5">state_156</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_157" target="state_158">
+      <data key="d4">entity_157</data>
+      <data key="d5">state_158</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_159" target="state_160">
+      <data key="d4">entity_159</data>
+      <data key="d5">state_160</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_161" target="state_162">
+      <data key="d4">entity_161</data>
+      <data key="d5">state_162</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_163" target="state_164">
+      <data key="d4">entity_163</data>
+      <data key="d5">state_164</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_165" target="state_166">
+      <data key="d4">entity_165</data>
+      <data key="d5">state_166</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_167" target="state_168">
+      <data key="d4">entity_167</data>
+      <data key="d5">state_168</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_169" target="state_170">
+      <data key="d4">entity_169</data>
+      <data key="d5">state_170</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_171" target="state_172">
+      <data key="d4">entity_171</data>
+      <data key="d5">state_172</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_173" target="state_174">
+      <data key="d4">entity_173</data>
+      <data key="d5">state_174</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_175" target="state_176">
+      <data key="d4">entity_175</data>
+      <data key="d5">state_176</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_177" target="state_178">
+      <data key="d4">entity_177</data>
+      <data key="d5">state_178</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_179" target="state_180">
+      <data key="d4">entity_179</data>
+      <data key="d5">state_180</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_181" target="state_182">
+      <data key="d4">entity_181</data>
+      <data key="d5">state_182</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_183" target="state_184">
+      <data key="d4">entity_183</data>
+      <data key="d5">state_184</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_185" target="state_186">
+      <data key="d4">entity_185</data>
+      <data key="d5">state_186</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_187" target="state_188">
+      <data key="d4">entity_187</data>
+      <data key="d5">state_188</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_189" target="state_190">
+      <data key="d4">entity_189</data>
+      <data key="d5">state_190</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_191" target="state_192">
+      <data key="d4">entity_191</data>
+      <data key="d5">state_192</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_193" target="state_194">
+      <data key="d4">entity_193</data>
+      <data key="d5">state_194</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_195" target="state_196">
+      <data key="d4">entity_195</data>
+      <data key="d5">state_196</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_197" target="state_198">
+      <data key="d4">entity_197</data>
+      <data key="d5">state_198</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_199" target="state_200">
+      <data key="d4">entity_199</data>
+      <data key="d5">state_200</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_201" target="state_202">
+      <data key="d4">entity_201</data>
+      <data key="d5">state_202</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_203" target="state_204">
+      <data key="d4">entity_203</data>
+      <data key="d5">state_204</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_205" target="state_206">
+      <data key="d4">entity_205</data>
+      <data key="d5">state_206</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_207" target="state_208">
+      <data key="d4">entity_207</data>
+      <data key="d5">state_208</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_209" target="state_210">
+      <data key="d4">entity_209</data>
+      <data key="d5">state_210</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_211" target="state_212">
+      <data key="d4">entity_211</data>
+      <data key="d5">state_212</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_213" target="state_214">
+      <data key="d4">entity_213</data>
+      <data key="d5">state_214</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_215" target="state_216">
+      <data key="d4">entity_215</data>
+      <data key="d5">state_216</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_217" target="state_218">
+      <data key="d4">entity_217</data>
+      <data key="d5">state_218</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_219" target="state_220">
+      <data key="d4">entity_219</data>
+      <data key="d5">state_220</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_221" target="state_222">
+      <data key="d4">entity_221</data>
+      <data key="d5">state_222</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+    <edge source="entity_223" target="state_224">
+      <data key="d4">entity_223</data>
+      <data key="d5">state_224</data>
+      <data key="d6">has_state</data>
+      <data key="d7">{'state_category': 'initial'}</data>
+    </edge>
+  </graph>
+</graphml>

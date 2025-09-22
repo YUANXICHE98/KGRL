@@ -1,0 +1,242 @@
+# 知识图谱构建配置文件
+# Knowledge Graph Construction Configuration
+
+# 项目信息
+project:
+  name: "KGRL"
+  version: "1.0.0"
+  description: "Knowledge Graph Enhanced Reinforcement Learning"
+
+# 知识图谱构建设置
+knowledge_graph:
+  # 节点类型定义
+  node_types:
+    - name: "ACTION"
+      description: "动作节点"
+      color: "#e1f5fe"
+      properties: ["name", "description", "required_entities", "effects"]
+    
+    - name: "ENTITY" 
+      description: "实体节点"
+      color: "#f3e5f5"
+      properties: ["name", "entity_type", "properties", "initial_state", "possible_states"]
+    
+    - name: "STATE"
+      description: "状态节点"
+      color: "#e8f5e8"
+      properties: ["name", "state_value", "entity_name", "state_type", "is_initial"]
+    
+    - name: "RESULT"
+      description: "结果节点"
+      color: "#fff3e0"
+      properties: ["name", "result_value", "action_name", "description"]
+    
+    - name: "CONDITION"
+      description: "条件节点"
+      color: "#fce4ec"
+      properties: ["name", "condition_type", "expression", "required_for"]
+    
+    - name: "RULE"
+      description: "规则节点"
+      color: "#f1f8e9"
+      properties: ["name", "rule_type", "conditions", "actions"]
+
+  # 边类型定义
+  edge_types:
+    - name: "REQUIRES"
+      description: "需要关系"
+      color: "#1976d2"
+      properties: ["relationship", "required_value", "condition"]
+    
+    - name: "PRODUCES"
+      description: "产生关系"
+      color: "#388e3c"
+      properties: ["relationship", "produced_value", "probability"]
+    
+    - name: "MODIFIES"
+      description: "修改关系"
+      color: "#f57c00"
+      properties: ["relationship", "new_value", "old_value"]
+    
+    - name: "ENABLES"
+      description: "启用关系"
+      color: "#7b1fa2"
+      properties: ["relationship", "condition", "probability"]
+    
+    - name: "PREVENTS"
+      description: "阻止关系"
+      color: "#d32f2f"
+      properties: ["relationship", "condition", "reason"]
+    
+    - name: "TRANSITIONS"
+      description: "状态转换"
+      color: "#0288d1"
+      properties: ["action", "conditions", "effects", "probability"]
+    
+    - name: "CONTAINS"
+      description: "包含关系"
+      color: "#5d4037"
+      properties: ["relationship", "container_type", "position"]
+    
+    - name: "HAS_STATE"
+      description: "具有状态关系"
+      color: "#455a64"
+      properties: ["state_value", "is_initial", "state_category"]
+
+  # 图谱属性
+  graph_properties:
+    directed: true
+    multigraph: true
+    allow_self_loops: false
+    max_nodes: 10000
+    max_edges: 50000
+
+  # 验证规则
+  validation:
+    check_node_consistency: true
+    check_edge_validity: true
+    check_graph_connectivity: true
+    min_nodes: 1
+    max_nodes: 10000
+    required_node_properties: ["id", "name", "type"]
+    required_edge_properties: ["source", "target", "type"]
+
+# DODAF架构设置
+dodaf:
+  # 架构视图
+  views:
+    - name: "OV-1"  # Overview and Summary
+      description: "高层架构概述"
+      elements: ["scenes", "entities", "high_level_processes"]
+    
+    - name: "SV-1"  # Systems Interface
+      description: "系统接口描述"
+      elements: ["entities", "interfaces", "data_flows"]
+    
+    - name: "SV-4"  # Systems Functionality
+      description: "系统功能描述"
+      elements: ["actions", "functions", "capabilities"]
+    
+    - name: "SV-10c" # Systems Event-Trace
+      description: "系统事件跟踪"
+      elements: ["states", "transitions", "events"]
+
+  # 状态建模
+  state_modeling:
+    # 状态类型
+    state_types:
+      - "initial"      # 初始状态
+      - "intermediate" # 中间状态
+      - "final"        # 最终状态
+      - "error"        # 错误状态
+    
+    # 转换类型
+    transition_types:
+      - "deterministic"  # 确定性转换
+      - "probabilistic"  # 概率性转换
+      - "conditional"    # 条件性转换
+    
+    # 状态属性
+    state_attributes:
+      - "accessibility"  # 可访问性
+      - "visibility"     # 可见性
+      - "modifiability"  # 可修改性
+      - "persistence"    # 持久性
+
+# 场景管理
+scene_management:
+  # 场景类型
+  scene_types:
+    - name: "alfworld"
+      description: "ALFWorld场景"
+      file_pattern: "*-openable.json"
+      max_scenes: 50
+    
+    - name: "textworld"
+      description: "TextWorld场景"
+      file_pattern: "*.json"
+      max_scenes: 20
+    
+    - name: "custom"
+      description: "自定义场景"
+      file_pattern: "custom_*.json"
+      max_scenes: 10
+
+  # 场景分割策略
+  separation_strategy:
+    mode: "by_scene"  # by_scene, by_type, combined
+    output_format: ["json", "graphml"]
+    create_index: true
+    create_summary: true
+
+  # 场景索引
+  indexing:
+    include_statistics: true
+    include_entity_types: true
+    include_action_types: true
+    sort_by: "name"  # name, size, complexity
+
+# 输出设置
+output:
+  # 目录结构
+  directories:
+    base: "data/knowledge_graphs"
+    extracted: "extracted"      # 合并的知识图谱
+    scenes: "scenes"            # 分割的场景图谱
+    schemas: "schemas"          # 图谱模式
+    templates: "templates"      # 图谱模板
+    cache: "cache"             # 缓存文件
+
+  # 文件格式
+  formats:
+    - name: "json"
+      extension: ".json"
+      description: "JSON格式，便于程序处理"
+      enabled: true
+    
+    - name: "graphml"
+      extension: ".graphml"
+      description: "GraphML格式，便于图分析工具"
+      enabled: true
+    
+    - name: "networkx_pickle"
+      extension: ".pkl"
+      description: "NetworkX pickle格式，便于Python处理"
+      enabled: false
+
+  # 文件命名
+  naming:
+    scene_prefix: ""
+    scene_suffix: "_kg"
+    timestamp: false
+    include_stats: false
+
+# 性能设置
+performance:
+  # 并行处理
+  parallel_processing:
+    enabled: false
+    max_workers: 4
+    chunk_size: 10
+  
+  # 内存管理
+  memory:
+    limit_mb: 2048
+    batch_size: 100
+    cache_size: 500
+  
+  # 缓存设置
+  caching:
+    enabled: true
+    cache_dir: "cache/kg_construction"
+    ttl_hours: 24
+    max_cache_size_mb: 1024
+
+# 日志设置
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/kg_construction.log"
+  console: true
+  max_file_size_mb: 100
+  backup_count: 5

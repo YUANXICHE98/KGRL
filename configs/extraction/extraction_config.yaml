@@ -1,0 +1,299 @@
+# 数据抽取配置文件
+# Data Extraction Configuration
+
+# 项目设置
+project:
+  name: "KGRL Data Extraction"
+  version: "1.0.0"
+  description: "Knowledge Graph Data Extraction from Benchmarks"
+
+# 数据源配置
+data_sources:
+  # ALFWorld配置
+  alfworld:
+    enabled: true
+    data_path: "data/benchmarks/alfworld"
+    description: "ALFWorld embodied AI benchmark"
+    
+    # 数据类型
+    data_types:
+      layouts:
+        enabled: true
+        path: "alfworld/alfworld/gen/layouts"
+        file_pattern: "*.json"
+        priority_pattern: "*-openable.json"  # 优先处理可打开的场景
+        max_files: 50
+        
+      pddl_problems:
+        enabled: true
+        path: "alfworld/alfworld/gen/ff_planner/samples"
+        file_pattern: "problem_*.pddl"
+        max_files: 10
+        
+      pddl_domains:
+        enabled: false
+        path: "alfworld/alfworld/gen/ff_planner"
+        file_pattern: "domain_*.pddl"
+        max_files: 5
+    
+    # 抽取规则
+    extraction_rules:
+      # 对象抽取
+      objects:
+        parse_position: true
+        parse_rotation: true
+        parse_scale: true
+        infer_states: true
+        infer_actions: true
+        
+      # 状态推断
+      state_inference:
+        # 对象类型 -> 可能状态
+        object_states:
+          Drawer: ["locked", "unlocked", "opened", "closed", "available"]
+          Cabinet: ["locked", "unlocked", "opened", "closed", "available"]
+          Fridge: ["closed", "opened", "available"]
+          CoffeeTable: ["available", "occupied", "clean", "dirty"]
+          DiningTable: ["available", "occupied", "clean", "dirty"]
+          Sink: ["available", "occupied", "clean", "dirty"]
+          Microwave: ["closed", "opened", "available", "heating"]
+          Safe: ["locked", "unlocked", "opened", "closed"]
+          
+      # 动作推断
+      action_inference:
+        # 对象类型 -> 可能动作
+        object_actions:
+          Drawer: ["open", "close", "lock", "unlock"]
+          Cabinet: ["open", "close", "lock", "unlock"]
+          Fridge: ["open", "close"]
+          CoffeeTable: ["place_on", "take_from", "clean"]
+          DiningTable: ["place_on", "take_from", "clean"]
+          Sink: ["use", "clean", "fill", "empty"]
+          Microwave: ["open", "close", "heat", "stop"]
+          Safe: ["open", "close", "lock", "unlock"]
+
+  # TextWorld配置
+  textworld:
+    enabled: true
+    data_path: "data/benchmarks/textworld"
+    description: "TextWorld text-based game benchmark"
+    
+    # 数据类型
+    data_types:
+      games:
+        enabled: true
+        path: "TextWorld"
+        file_pattern: "*.json"
+        max_files: 20
+        
+      benchmark_games:
+        enabled: true
+        path: "TextWorld/benchmark"
+        file_pattern: "games.json"
+        max_files: 5
+    
+    # 抽取规则
+    extraction_rules:
+      # 房间抽取
+      rooms:
+        create_scene_nodes: true
+        extract_connections: true
+        extract_descriptions: true
+        
+      # 物品抽取
+      objects:
+        extract_properties: true
+        infer_states: true
+        extract_locations: true
+        
+      # 动作抽取
+      actions:
+        extract_from_commands: true
+        infer_preconditions: true
+        infer_effects: true
+
+  # PDDL配置
+  pddl:
+    enabled: true
+    description: "Planning Domain Definition Language files"
+    
+    # 抽取规则
+    extraction_rules:
+      # 对象抽取
+      objects:
+        extract_types: true
+        extract_instances: true
+        
+      # 谓词抽取
+      predicates:
+        extract_definitions: true
+        extract_instances: true
+        
+      # 动作抽取
+      actions:
+        extract_preconditions: true
+        extract_effects: true
+        extract_parameters: true
+
+# 抽取策略
+extraction_strategy:
+  # 抽取模式
+  mode: "rule_based"  # rule_based, llm_based, hybrid
+  
+  # 规则抽取设置
+  rule_based:
+    strict_parsing: true
+    error_handling: "skip"  # skip, log, fail
+    validation: true
+    
+  # LLM抽取设置（备用）
+  llm_based:
+    enabled: false
+    model: "gpt-3.5-turbo"
+    temperature: 0.1
+    max_tokens: 2000
+    
+  # 混合模式设置
+  hybrid:
+    primary: "rule_based"
+    fallback: "llm_based"
+    confidence_threshold: 0.8
+
+# 输出配置
+output:
+  # 目录设置
+  directories:
+    base: "data/knowledge_graphs"
+    extracted: "extracted"
+    scenes: "scenes"
+    cache: "cache"
+    logs: "logs"
+    
+  # 文件格式
+  formats:
+    json:
+      enabled: true
+      pretty_print: true
+      ensure_ascii: false
+      
+    graphml:
+      enabled: true
+      include_attributes: true
+      
+    pickle:
+      enabled: false
+      protocol: 4
+      
+  # 场景分割
+  scene_separation:
+    enabled: true
+    strategy: "by_source_file"  # by_source_file, by_scene_type, combined
+    create_index: true
+    create_summary: true
+    
+  # 文件命名
+  naming:
+    use_timestamp: false
+    include_source: true
+    include_stats: false
+
+# 质量控制
+quality_control:
+  # 验证规则
+  validation:
+    # 节点验证
+    nodes:
+      required_properties: ["id", "name", "type"]
+      check_duplicates: true
+      check_empty_values: false
+      
+    # 边验证
+    edges:
+      required_properties: ["source", "target", "type"]
+      check_dangling_edges: true
+      check_self_loops: false
+      
+    # 图验证
+    graph:
+      check_connectivity: false
+      min_nodes: 1
+      max_nodes: 10000
+      min_edges: 0
+      max_edges: 50000
+      
+  # 统计收集
+  statistics:
+    collect_node_stats: true
+    collect_edge_stats: true
+    collect_graph_stats: true
+    collect_source_stats: true
+    
+  # 报告生成
+  reporting:
+    generate_summary: true
+    generate_detailed_report: false
+    include_visualizations: false
+
+# 性能配置
+performance:
+  # 并行处理
+  parallel:
+    enabled: false
+    max_workers: 4
+    chunk_size: 10
+    
+  # 内存管理
+  memory:
+    limit_mb: 2048
+    batch_size: 100
+    gc_interval: 1000
+    
+  # 缓存设置
+  caching:
+    enabled: true
+    cache_parsed_files: true
+    cache_extracted_data: false
+    ttl_hours: 24
+    max_size_mb: 512
+
+# 日志配置
+logging:
+  # 基本设置
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  
+  # 文件日志
+  file:
+    enabled: true
+    path: "logs/extraction.log"
+    max_size_mb: 100
+    backup_count: 5
+    
+  # 控制台日志
+  console:
+    enabled: true
+    level: "INFO"
+    
+  # 特定日志
+  extraction_log:
+    enabled: true
+    path: "logs/extraction_details.log"
+    level: "DEBUG"
+
+# 调试配置
+debug:
+  # 调试模式
+  enabled: false
+  
+  # 详细输出
+  verbose: false
+  
+  # 保存中间结果
+  save_intermediate: false
+  intermediate_path: "debug/intermediate"
+  
+  # 限制处理数量（调试用）
+  limit_files: 0  # 0表示无限制
+  
+  # 跳过验证（调试用）
+  skip_validation: false
