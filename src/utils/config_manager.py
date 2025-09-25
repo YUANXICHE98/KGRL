@@ -78,13 +78,39 @@ class ConfigManager:
         """获取数据抽取配置"""
         return self.get_config('extraction')
     
-    def get_agent_config(self) -> Dict[str, Any]:
+    def get_agent_config(self, agent_name: str = None) -> Dict[str, Any]:
         """获取智能体配置"""
-        return self.get_config('agents')
+        if agent_name:
+            # 获取特定智能体配置
+            agent_file_mapping = {
+                'llm_baseline': 'agents/llm_baseline.yaml',
+                'react': 'agents/rag_react_agent.yaml',
+                'rag': 'agents/rag_react_agent.yaml',
+                'kg_augmented': 'agents/kg_augmented.yaml',
+                'rl_kg': 'agents/rl_kg_agent.yaml'
+            }
+
+            if agent_name in agent_file_mapping:
+                return self.load_config(agent_file_mapping[agent_name])
+            else:
+                self.logger.warning(f"⚠️ 未知智能体类型: {agent_name}")
+                return self.get_config('agents')
+        else:
+            return self.get_config('agents')
     
-    def get_environment_config(self) -> Dict[str, Any]:
+    def get_environment_config(self, env_type: str = None) -> Dict[str, Any]:
         """获取环境配置"""
-        return self.get_config('environments')
+        env_config = self.get_config('environments')
+
+        if env_type and 'environments' in env_config:
+            # 返回特定环境类型的配置
+            if env_type in env_config['environments']:
+                return env_config['environments'][env_type]
+            else:
+                self.logger.warning(f"⚠️ 未知环境类型: {env_type}")
+                return env_config
+        else:
+            return env_config
     
     def get_database_connection_info(self) -> Dict[str, str]:
         """获取数据库连接信息"""

@@ -8,9 +8,11 @@ This module provides environment adapters for different text-based environments:
 
 from .base_env import BaseEnvironment, EnvironmentState
 from .textworld_adapter import TextWorldAdapter
+from .scene_based_env import SceneBasedEnvironment
 
 __all__ = [
     "BaseEnvironment",
-    "EnvironmentState", 
-    "TextWorldAdapter"
+    "EnvironmentState",
+    "TextWorldAdapter",
+    "SceneBasedEnvironment"
 ]

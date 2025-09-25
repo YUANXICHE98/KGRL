@@ -1,0 +1,106 @@
+# KGRL 简化配置文件
+# 包含所有必要的配置，去除冗余
+
+# 项目基本信息
+project:
+  name: "KGRL"
+  version: "1.0.0"
+  description: "Knowledge Graph Enhanced Reinforcement Learning"
+
+# 路径配置
+paths:
+  data: "data"
+  knowledge_graphs: "data/knowledge_graphs"
+  results: "experiments/results"
+  logs: "logs"
+
+# LLM配置
+llm:
+  model: "gpt-3.5-turbo"  # VimsAI支持的GPT模型
+  api_key: "sk-rvwMvUNbWBz9L76KB05650C7Cc464324BdC98dB3FbD4296a"
+  base_url: "https://vir.vimsai.com/v1"  # VimsAI API主地址
+  # 备用地址: "https://usa.vimsai.com/v1"
+  temperature: 0.3  # 降低随机性，提高结果稳定性
+  max_tokens: 512
+  timeout: 30
+
+# 智能体配置
+agents:
+  llm_baseline:
+    type: "LLMBaselineAgent"
+    description: "Pure LLM baseline agent"
+    
+  react:
+    type: "ReActAgent" 
+    description: "Reasoning and Acting agent"
+    max_reasoning_steps: 5
+    
+  rag:
+    type: "RAGAgent"
+    description: "Retrieval-Augmented Generation agent"
+    max_retrievals: 5
+    knowledge_base_path: "data/knowledge_graphs/enhanced_scenes"  # 使用增强场景KG
+
+# 环境配置
+environment:
+  type: "alfworld"
+  max_steps: 50
+  timeout: 300
+  
+  # 动作空间
+  actions:
+    - "go_to"
+    - "open" 
+    - "close"
+    - "pick_up"
+    - "put_down"
+    - "examine"
+    - "wait"
+  
+  # 奖励设置
+  rewards:
+    success: 10.0
+    failure: -5.0
+    step_penalty: -0.01
+    invalid_action: -0.1
+
+# 知识图谱配置
+knowledge_graph:
+  source: "neo4j"
+  update_mode: "real_time"
+  
+  # Neo4j连接
+  neo4j:
+    uri: "bolt://localhost:7687"
+    username: "neo4j"
+    password: "password"
+    database: "neo4j"
+
+# 实验配置
+experiment:
+  scenes:
+    - "FloorPlan202-openable"
+    - "FloorPlan308-openable"
+  
+  max_episodes: 2
+  max_steps_per_episode: 10
+  
+  # 输出设置
+  output:
+    save_detailed_logs: true
+    save_kg_access_patterns: true
+    save_visualizations: true
+
+# 日志配置
+logging:
+  level: "INFO"
+  console: true
+  file: true
+  detailed_output: true
+
+# 调试配置
+debug:
+  enabled: true
+  verbose_llm_calls: true
+  save_raw_responses: true
+  track_kg_nodes: true

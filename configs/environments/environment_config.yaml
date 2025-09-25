@@ -115,26 +115,48 @@ environments:
       
     # 奖励设置
     rewards:
+      success: 20.0
+      failure: -5.0
       completion: 20.0
       progress: 1.0
       step_penalty: -0.01
+      invalid_action: -0.05
       invalid_command: -0.05
 
   # 自定义环境
   custom:
     enabled: false
     description: "Custom knowledge graph environment"
-    
+
     # 基本设置
     settings:
       kg_source: "neo4j"
       update_frequency: "step"
-      
+      max_steps: 100
+      timeout: 600
+
     # 环境定义
     definition:
       state_space: "graph"
       action_space: "graph_operations"
       reward_function: "custom"
+
+    # 奖励设置
+    rewards:
+      success: 15.0
+      failure: -3.0
+      step_penalty: -0.01
+      invalid_action: -0.1
+      progress_bonus: 0.2
+
+    # 动作空间
+    action_space:
+      type: "discrete"
+      actions:
+        - "query_kg"
+        - "update_kg"
+        - "navigate"
+        - "examine"
 
 # 知识图谱集成
 kg_integration:

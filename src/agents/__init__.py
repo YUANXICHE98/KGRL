@@ -10,25 +10,12 @@ This module contains all agent implementations:
 """
 
 from .base_agent import BaseAgent, AgentStatistics
-from .llm_baseline import LLMBaselineAgent
-from .rag_react_agent import RAGReActAgent
-from .rl_kg_agent import RLKGAgent
-from .unified_agent import UnifiedAgent
+from .baseline_agents import LLMBaselineAgent, ReActAgent, RAGAgent
 
 __all__ = [
     "BaseAgent",
     "AgentStatistics",
     "LLMBaselineAgent",
-    "RAGReActAgent",
-    "RLKGAgent",
-    "UnifiedAgent"
-]
-from .unified_agent import UnifiedAgent
-
-__all__ = [
-    "BaseAgent",
-    "LLMBaselineAgent", 
-    "RAGReActAgent",
-    "RLKGAgent",
-    "UnifiedAgent",
+    "ReActAgent",
+    "RAGAgent"
 ]

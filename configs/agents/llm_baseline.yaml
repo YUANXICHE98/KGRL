@@ -8,7 +8,7 @@ description: "Pure LLM agent for task extraction and baseline decision making"
 # LLM配置
 llm:
   model_name: "gpt-4o"
-  api_key: "${OPENAI_API_KEY}"
+  api_key: "sk-proj-test-key-for-kgrl-experiment-placeholder"
   temperature: 0.7
   max_tokens: 512
   top_p: 0.9
