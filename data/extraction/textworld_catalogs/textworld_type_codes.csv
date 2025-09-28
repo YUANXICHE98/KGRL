@@ -1,0 +1,9 @@
+type_code,frequency,description
+I,8,TextWorld类型编码: I
+P,8,TextWorld类型编码: P
+c,40,TextWorld类型编码: c
+d,16,TextWorld类型编码: d
+f,48,TextWorld类型编码: f
+k,8,TextWorld类型编码: k
+o,40,TextWorld类型编码: o
+s,88,TextWorld类型编码: s

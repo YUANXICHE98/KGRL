@@ -1,0 +1,2525 @@
+{
+  "nodes": [
+    {
+      "id": "entity_1",
+      "type": "entity",
+      "name": "TextWorld_tw-another_game",
+      "attributes": {
+        "entity_type": "场景",
+        "properties": {
+          "描述": "TextWorld游戏场景: TextWorld_tw-another_game",
+          "类型": "文本冒险游戏",
+          "游戏目标": "Hey, thanks for coming over to the TextWorld today, there is something I need you to do for me. First of all, you could, like, look and see that the antique trunk inside the bedroom is opened. Then, recover the old key from the antique trunk. Then, make absolutely sure that the wooden door inside the bedroom is unlocked. After unlocking the wooden door, open the wooden door in the bedroom. Then, try to head east. After that, try to travel south. Once you get through with that, take the milk from the couch within the living room. Having taken the milk, attempt to travel north. That done, rest the milk on the stove inside the kitchen. And if you do that, you're the winner!",
+          "最大分数": "8",
+          "通关步骤数": "9"
+        },
+        "initial_state": "活跃",
+        "possible_states": [
+          "活跃",
+          "完成",
+          "失败"
+        ],
+        "description": "TextWorld游戏场景: TextWorld_tw-another_game"
+      }
+    },
+    {
+      "id": "entity_2",
+      "type": "entity",
+      "name": "玩家",
+      "attributes": {
+        "entity_type": "角色",
+        "properties": {
+          "描述": "游戏玩家",
+          "玩家ID": "P",
+          "玩家类型": "P",
+          "当前房间": "r_0"
+        },
+        "initial_state": "探索中",
+        "possible_states": [
+          "探索中",
+          "任务完成",
+          "游戏结束"
+        ],
+        "description": "游戏的主角玩家"
+      }
+    },
+    {
+      "id": "entity_3",
+      "type": "entity",
+      "name": "r_1",
+      "attributes": {
+        "entity_type": "房间",
+        "properties": {
+          "房间ID": "r_1",
+          "房间类型": "r",
+          "原始名称": "r_1"
+        },
+        "initial_state": "可访问",
+        "possible_states": [
+          "可访问",
+          "不可访问",
+          "已访问"
+        ],
+        "description": "游戏中的房间"
+      }
+    },
+    {
+      "id": "entity_4",
+      "type": "entity",
+      "name": "r_0",
+      "attributes": {
+        "entity_type": "房间",
+        "properties": {
+          "房间ID": "r_0",
+          "房间类型": "r",
+          "原始名称": "r_0"
+        },
+        "initial_state": "可访问",
+        "possible_states": [
+          "可访问",
+          "不可访问",
+          "已访问"
+        ],
+        "description": "游戏中的房间"
+      }
+    },
+    {
+      "id": "entity_5",
+      "type": "entity",
+      "name": "r_4",
+      "attributes": {
+        "entity_type": "房间",
+        "properties": {
+          "房间ID": "r_4",
+          "房间类型": "r",
+          "原始名称": "r_4"
+        },
+        "initial_state": "可访问",
+        "possible_states": [
+          "可访问",
+          "不可访问",
+          "已访问"
+        ],
+        "description": "游戏中的房间"
+      }
+    },
+    {
+      "id": "entity_6",
+      "type": "entity",
+      "name": "r_2",
+      "attributes": {
+        "entity_type": "房间",
+        "properties": {
+          "房间ID": "r_2",
+          "房间类型": "r",
+          "原始名称": "r_2"
+        },
+        "initial_state": "可访问",
+        "possible_states": [
+          "可访问",
+          "不可访问",
+          "已访问"
+        ],
+        "description": "游戏中的房间"
+      }
+    },
+    {
+      "id": "entity_7",
+      "type": "entity",
+      "name": "r_3",
+      "attributes": {
+        "entity_type": "房间",
+        "properties": {
+          "房间ID": "r_3",
+          "房间类型": "r",
+          "原始名称": "r_3"
+        },
+        "initial_state": "可访问",
+        "possible_states": [
+          "可访问",
+          "不可访问",
+          "已访问"
+        ],
+        "description": "游戏中的房间"
+      }
+    },
+    {
+      "id": "entity_8",
+      "type": "entity",
+      "name": "r_5",
+      "attributes": {
+        "entity_type": "房间",
+        "properties": {
+          "房间ID": "r_5",
+          "房间类型": "r",
+          "原始名称": "r_5"
+        },
+        "initial_state": "可访问",
+        "possible_states": [
+          "可访问",
+          "不可访问",
+          "已访问"
+        ],
+        "description": "游戏中的房间"
+      }
+    },
+    {
+      "id": "entity_9",
+      "type": "entity",
+      "name": "d_0",
+      "attributes": {
+        "entity_type": "门",
+        "properties": {
+          "物品ID": "d_0",
+          "类型编码": "d",
+          "原始名称": "d_0",
+          "原始类型": "WorldObject"
+        },
+        "initial_state": "关闭",
+        "possible_states": [
+          "关闭",
+          "打开",
+          "锁定",
+          "解锁"
+        ],
+        "description": "游戏中的门"
+      }
+    },
+    {
+      "id": "entity_10",
+      "type": "entity",
+      "name": "d_1",
+      "attributes": {
+        "entity_type": "门",
+        "properties": {
+          "物品ID": "d_1",
+          "类型编码": "d",
+          "原始名称": "d_1",
+          "原始类型": "WorldObject"
+        },
+        "initial_state": "关闭",
+        "possible_states": [
+          "关闭",
+          "打开",
+          "锁定",
+          "解锁"
+        ],
+        "description": "游戏中的门"
+      }
+    },
+    {
+      "id": "entity_11",
+      "type": "entity",
+      "name": "c_0",
+      "attributes": {
+        "entity_type": "容器",
+        "properties": {
+          "物品ID": "c_0",
+          "类型编码": "c",
+          "原始名称": "c_0",
+          "原始类型": "WorldObject"
+        },
+        "initial_state": "关闭",
+        "possible_states": [
+          "关闭",
+          "打开",
+          "锁定",
+          "解锁"
+        ],
+        "description": "游戏中的容器"
+      }
+    },
+    {
+      "id": "entity_12",
+      "type": "entity",
+      "name": "c_1",
+      "attributes": {
+        "entity_type": "容器",
+        "properties": {
+          "物品ID": "c_1",
+          "类型编码": "c",
+          "原始名称": "c_1",
+          "原始类型": "WorldObject"
+        },
+        "initial_state": "关闭",
+        "possible_states": [
+          "关闭",
+          "打开",
+          "锁定",
+          "解锁"
+        ],
+        "description": "游戏中的容器"
+      }
+    },
+    {
+      "id": "entity_13",
+      "type": "entity",
+      "name": "c_2",
+      "attributes": {
+        "entity_type": "容器",
+        "properties": {
+          "物品ID": "c_2",
+          "类型编码": "c",
+          "原始名称": "c_2",
+          "原始类型": "WorldObject"
+        },
+        "initial_state": "关闭",
+        "possible_states": [
+          "关闭",
+          "打开",
+          "锁定",
+          "解锁"
+        ],
+        "description": "游戏中的容器"
+      }
+    },
+    {
+      "id": "entity_14",
+      "type": "entity",
+      "name": "c_3",
+      "attributes": {
+        "entity_type": "容器",
+        "properties": {
+          "物品ID": "c_3",
+          "类型编码": "c",
+          "原始名称": "c_3",
+          "原始类型": "WorldObject"
+        },
+        "initial_state": "关闭",
+        "possible_states": [
+          "关闭",
+          "打开",
+          "锁定",
+          "解锁"
+        ],
+        "description": "游戏中的容器"
+      }
+    },
+    {
+      "id": "entity_15",
+      "type": "entity",
+      "name": "c_4",
+      "attributes": {
+        "entity_type": "容器",
+        "properties": {
+          "物品ID": "c_4",
+          "类型编码": "c",
+          "原始名称": "c_4",
+          "原始类型": "WorldObject"
+        },
+        "initial_state": "关闭",
+        "possible_states": [
+          "关闭",
+          "打开",
+          "锁定",
+          "解锁"
+        ],
+        "description": "游戏中的容器"
+      }
+    },
+    {
+      "id": "entity_16",
+      "type": "entity",
+      "name": "f_3",
+      "attributes": {
+        "entity_type": "食物",
+        "properties": {
+          "物品ID": "f_3",
+          "类型编码": "f",
+          "原始名称": "f_3",
+          "原始类型": "WorldObject"
+        },
+        "initial_state": "可获取",
+        "possible_states": [
+          "可获取",
+          "已获取",
+          "已消耗"
+        ],
+        "description": "游戏中的食物"
+      }
+    },
+    {
+      "id": "entity_17",
+      "type": "entity",
+      "name": "f_4",
+      "attributes": {
+        "entity_type": "食物",
+        "properties": {
+          "物品ID": "f_4",
+          "类型编码": "f",
+          "原始名称": "f_4",
+          "原始类型": "WorldObject"
+        },
+        "initial_state": "可获取",
+        "possible_states": [
+          "可获取",
+          "已获取",
+          "已消耗"
+        ],
+        "description": "游戏中的食物"
+      }
+    },
+    {
+      "id": "entity_18",
+      "type": "entity",
+      "name": "f_5",
+      "attributes": {
+        "entity_type": "食物",
+        "properties": {
+          "物品ID": "f_5",
+          "类型编码": "f",
+          "原始名称": "f_5",
+          "原始类型": "WorldObject"
+        },
+        "initial_state": "可获取",
+        "possible_states": [
+          "可获取",
+          "已获取",
+          "已消耗"
+        ],
+        "description": "游戏中的食物"
+      }
+    },
+    {
+      "id": "entity_19",
+      "type": "entity",
+      "name": "o_3",
+      "attributes": {
+        "entity_type": "物品",
+        "properties": {
+          "物品ID": "o_3",
+          "类型编码": "o",
+          "原始名称": "o_3",
+          "原始类型": "WorldObject"
+        },
+        "initial_state": "可获取",
+        "possible_states": [
+          "可获取",
+          "已获取",
+          "已使用"
+        ],
+        "description": "游戏中的物品"
+      }
+    },
+    {
+      "id": "entity_20",
+      "type": "entity",
+      "name": "s_0",
+      "attributes": {
+        "entity_type": "支撑面",
+        "properties": {
+          "物品ID": "s_0",
+          "类型编码": "s",
+          "原始名称": "s_0",
+          "原始类型": "WorldObject"
+        },
+        "initial_state": "可用",
+        "possible_states": [
+          "可用",
+          "不可用",
+          "已占用"
+        ],
+        "description": "游戏中的支撑面"
+      }
+    },
+    {
+      "id": "entity_21",
+      "type": "entity",
+      "name": "s_1",
+      "attributes": {
+        "entity_type": "支撑面",
+        "properties": {
+          "物品ID": "s_1",
+          "类型编码": "s",
+          "原始名称": "s_1",
+          "原始类型": "WorldObject"
+        },
+        "initial_state": "可用",
+        "possible_states": [
+          "可用",
+          "不可用",
+          "已占用"
+        ],
+        "description": "游戏中的支撑面"
+      }
+    },
+    {
+      "id": "entity_22",
+      "type": "entity",
+      "name": "s_10",
+      "attributes": {
+        "entity_type": "支撑面",
+        "properties": {
+          "物品ID": "s_10",
+          "类型编码": "s",
+          "原始名称": "s_10",
+          "原始类型": "WorldObject"
+        },
+        "initial_state": "可用",
+        "possible_states": [
+          "可用",
+          "不可用",
+          "已占用"
+        ],
+        "description": "游戏中的支撑面"
+      }
+    },
+    {
+      "id": "entity_23",
+      "type": "entity",
+      "name": "s_2",
+      "attributes": {
+        "entity_type": "支撑面",
+        "properties": {
+          "物品ID": "s_2",
+          "类型编码": "s",
+          "原始名称": "s_2",
+          "原始类型": "WorldObject"
+        },
+        "initial_state": "可用",
+        "possible_states": [
+          "可用",
+          "不可用",
+          "已占用"
+        ],
+        "description": "游戏中的支撑面"
+      }
+    },
+    {
+      "id": "entity_24",
+      "type": "entity",
+      "name": "s_3",
+      "attributes": {
+        "entity_type": "支撑面",
+        "properties": {
+          "物品ID": "s_3",
+          "类型编码": "s",
+          "原始名称": "s_3",
+          "原始类型": "WorldObject"
+        },
+        "initial_state": "可用",
+        "possible_states": [
+          "可用",
+          "不可用",
+          "已占用"
+        ],
+        "description": "游戏中的支撑面"
+      }
+    },
+    {
+      "id": "entity_25",
+      "type": "entity",
+      "name": "s_4",
+      "attributes": {
+        "entity_type": "支撑面",
+        "properties": {
+          "物品ID": "s_4",
+          "类型编码": "s",
+          "原始名称": "s_4",
+          "原始类型": "WorldObject"
+        },
+        "initial_state": "可用",
+        "possible_states": [
+          "可用",
+          "不可用",
+          "已占用"
+        ],
+        "description": "游戏中的支撑面"
+      }
+    },
+    {
+      "id": "entity_26",
+      "type": "entity",
+      "name": "s_5",
+      "attributes": {
+        "entity_type": "支撑面",
+        "properties": {
+          "物品ID": "s_5",
+          "类型编码": "s",
+          "原始名称": "s_5",
+          "原始类型": "WorldObject"
+        },
+        "initial_state": "可用",
+        "possible_states": [
+          "可用",
+          "不可用",
+          "已占用"
+        ],
+        "description": "游戏中的支撑面"
+      }
+    },
+    {
+      "id": "entity_27",
+      "type": "entity",
+      "name": "s_6",
+      "attributes": {
+        "entity_type": "支撑面",
+        "properties": {
+          "物品ID": "s_6",
+          "类型编码": "s",
+          "原始名称": "s_6",
+          "原始类型": "WorldObject"
+        },
+        "initial_state": "可用",
+        "possible_states": [
+          "可用",
+          "不可用",
+          "已占用"
+        ],
+        "description": "游戏中的支撑面"
+      }
+    },
+    {
+      "id": "entity_28",
+      "type": "entity",
+      "name": "s_7",
+      "attributes": {
+        "entity_type": "支撑面",
+        "properties": {
+          "物品ID": "s_7",
+          "类型编码": "s",
+          "原始名称": "s_7",
+          "原始类型": "WorldObject"
+        },
+        "initial_state": "可用",
+        "possible_states": [
+          "可用",
+          "不可用",
+          "已占用"
+        ],
+        "description": "游戏中的支撑面"
+      }
+    },
+    {
+      "id": "entity_29",
+      "type": "entity",
+      "name": "s_8",
+      "attributes": {
+        "entity_type": "支撑面",
+        "properties": {
+          "物品ID": "s_8",
+          "类型编码": "s",
+          "原始名称": "s_8",
+          "原始类型": "WorldObject"
+        },
+        "initial_state": "可用",
+        "possible_states": [
+          "可用",
+          "不可用",
+          "已占用"
+        ],
+        "description": "游戏中的支撑面"
+      }
+    },
+    {
+      "id": "entity_30",
+      "type": "entity",
+      "name": "s_9",
+      "attributes": {
+        "entity_type": "支撑面",
+        "properties": {
+          "物品ID": "s_9",
+          "类型编码": "s",
+          "原始名称": "s_9",
+          "原始类型": "WorldObject"
+        },
+        "initial_state": "可用",
+        "possible_states": [
+          "可用",
+          "不可用",
+          "已占用"
+        ],
+        "description": "游戏中的支撑面"
+      }
+    },
+    {
+      "id": "entity_31",
+      "type": "entity",
+      "name": "f_0",
+      "attributes": {
+        "entity_type": "食物",
+        "properties": {
+          "物品ID": "f_0",
+          "类型编码": "f",
+          "原始名称": "f_0",
+          "原始类型": "WorldObject"
+        },
+        "initial_state": "可获取",
+        "possible_states": [
+          "可获取",
+          "已获取",
+          "已消耗"
+        ],
+        "description": "游戏中的食物"
+      }
+    },
+    {
+      "id": "entity_32",
+      "type": "entity",
+      "name": "f_1",
+      "attributes": {
+        "entity_type": "食物",
+        "properties": {
+          "物品ID": "f_1",
+          "类型编码": "f",
+          "原始名称": "f_1",
+          "原始类型": "WorldObject"
+        },
+        "initial_state": "可获取",
+        "possible_states": [
+          "可获取",
+          "已获取",
+          "已消耗"
+        ],
+        "description": "游戏中的食物"
+      }
+    },
+    {
+      "id": "entity_33",
+      "type": "entity",
+      "name": "f_2",
+      "attributes": {
+        "entity_type": "食物",
+        "properties": {
+          "物品ID": "f_2",
+          "类型编码": "f",
+          "原始名称": "f_2",
+          "原始类型": "WorldObject"
+        },
+        "initial_state": "可获取",
+        "possible_states": [
+          "可获取",
+          "已获取",
+          "已消耗"
+        ],
+        "description": "游戏中的食物"
+      }
+    },
+    {
+      "id": "entity_34",
+      "type": "entity",
+      "name": "k_0",
+      "attributes": {
+        "entity_type": "钥匙",
+        "properties": {
+          "物品ID": "k_0",
+          "类型编码": "k",
+          "原始名称": "k_0",
+          "原始类型": "WorldObject"
+        },
+        "initial_state": "可获取",
+        "possible_states": [
+          "可获取",
+          "已获取",
+          "已使用"
+        ],
+        "description": "游戏中的钥匙"
+      }
+    },
+    {
+      "id": "entity_35",
+      "type": "entity",
+      "name": "o_1",
+      "attributes": {
+        "entity_type": "物品",
+        "properties": {
+          "物品ID": "o_1",
+          "类型编码": "o",
+          "原始名称": "o_1",
+          "原始类型": "WorldObject"
+        },
+        "initial_state": "可获取",
+        "possible_states": [
+          "可获取",
+          "已获取",
+          "已使用"
+        ],
+        "description": "游戏中的物品"
+      }
+    },
+    {
+      "id": "entity_36",
+      "type": "entity",
+      "name": "o_0",
+      "attributes": {
+        "entity_type": "物品",
+        "properties": {
+          "物品ID": "o_0",
+          "类型编码": "o",
+          "原始名称": "o_0",
+          "原始类型": "WorldObject"
+        },
+        "initial_state": "可获取",
+        "possible_states": [
+          "可获取",
+          "已获取",
+          "已使用"
+        ],
+        "description": "游戏中的物品"
+      }
+    },
+    {
+      "id": "entity_37",
+      "type": "entity",
+      "name": "o_2",
+      "attributes": {
+        "entity_type": "物品",
+        "properties": {
+          "物品ID": "o_2",
+          "类型编码": "o",
+          "原始名称": "o_2",
+          "原始类型": "WorldObject"
+        },
+        "initial_state": "可获取",
+        "possible_states": [
+          "可获取",
+          "已获取",
+          "已使用"
+        ],
+        "description": "游戏中的物品"
+      }
+    },
+    {
+      "id": "entity_38",
+      "type": "entity",
+      "name": "o_4",
+      "attributes": {
+        "entity_type": "物品",
+        "properties": {
+          "物品ID": "o_4",
+          "类型编码": "o",
+          "原始名称": "o_4",
+          "原始类型": "WorldObject"
+        },
+        "initial_state": "可获取",
+        "possible_states": [
+          "可获取",
+          "已获取",
+          "已使用"
+        ],
+        "description": "游戏中的物品"
+      }
+    },
+    {
+      "id": "state_1",
+      "type": "state",
+      "name": "TextWorld_tw-another_game_活跃",
+      "attributes": {
+        "entity_name": "TextWorld_tw-another_game",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "活跃",
+        "description": "TextWorld_tw-another_game的状态: 活跃"
+      }
+    },
+    {
+      "id": "state_2",
+      "type": "state",
+      "name": "TextWorld_tw-another_game_完成",
+      "attributes": {
+        "entity_name": "TextWorld_tw-another_game",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "完成",
+        "description": "TextWorld_tw-another_game的状态: 完成"
+      }
+    },
+    {
+      "id": "state_3",
+      "type": "state",
+      "name": "TextWorld_tw-another_game_失败",
+      "attributes": {
+        "entity_name": "TextWorld_tw-another_game",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "失败",
+        "description": "TextWorld_tw-another_game的状态: 失败"
+      }
+    },
+    {
+      "id": "state_4",
+      "type": "state",
+      "name": "玩家_探索中",
+      "attributes": {
+        "entity_name": "玩家",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "探索中",
+        "description": "玩家的状态: 探索中"
+      }
+    },
+    {
+      "id": "state_5",
+      "type": "state",
+      "name": "玩家_任务完成",
+      "attributes": {
+        "entity_name": "玩家",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "任务完成",
+        "description": "玩家的状态: 任务完成"
+      }
+    },
+    {
+      "id": "state_6",
+      "type": "state",
+      "name": "玩家_游戏结束",
+      "attributes": {
+        "entity_name": "玩家",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "游戏结束",
+        "description": "玩家的状态: 游戏结束"
+      }
+    },
+    {
+      "id": "state_7",
+      "type": "state",
+      "name": "r_1_可访问",
+      "attributes": {
+        "entity_name": "r_1",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "可访问",
+        "description": "r_1的状态: 可访问"
+      }
+    },
+    {
+      "id": "state_8",
+      "type": "state",
+      "name": "r_1_不可访问",
+      "attributes": {
+        "entity_name": "r_1",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "不可访问",
+        "description": "r_1的状态: 不可访问"
+      }
+    },
+    {
+      "id": "state_9",
+      "type": "state",
+      "name": "r_1_已访问",
+      "attributes": {
+        "entity_name": "r_1",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "已访问",
+        "description": "r_1的状态: 已访问"
+      }
+    },
+    {
+      "id": "state_10",
+      "type": "state",
+      "name": "r_0_可访问",
+      "attributes": {
+        "entity_name": "r_0",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "可访问",
+        "description": "r_0的状态: 可访问"
+      }
+    },
+    {
+      "id": "state_11",
+      "type": "state",
+      "name": "r_0_不可访问",
+      "attributes": {
+        "entity_name": "r_0",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "不可访问",
+        "description": "r_0的状态: 不可访问"
+      }
+    },
+    {
+      "id": "state_12",
+      "type": "state",
+      "name": "r_0_已访问",
+      "attributes": {
+        "entity_name": "r_0",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "已访问",
+        "description": "r_0的状态: 已访问"
+      }
+    },
+    {
+      "id": "state_13",
+      "type": "state",
+      "name": "r_4_可访问",
+      "attributes": {
+        "entity_name": "r_4",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "可访问",
+        "description": "r_4的状态: 可访问"
+      }
+    },
+    {
+      "id": "state_14",
+      "type": "state",
+      "name": "r_4_不可访问",
+      "attributes": {
+        "entity_name": "r_4",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "不可访问",
+        "description": "r_4的状态: 不可访问"
+      }
+    },
+    {
+      "id": "state_15",
+      "type": "state",
+      "name": "r_4_已访问",
+      "attributes": {
+        "entity_name": "r_4",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "已访问",
+        "description": "r_4的状态: 已访问"
+      }
+    },
+    {
+      "id": "state_16",
+      "type": "state",
+      "name": "r_2_可访问",
+      "attributes": {
+        "entity_name": "r_2",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "可访问",
+        "description": "r_2的状态: 可访问"
+      }
+    },
+    {
+      "id": "state_17",
+      "type": "state",
+      "name": "r_2_不可访问",
+      "attributes": {
+        "entity_name": "r_2",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "不可访问",
+        "description": "r_2的状态: 不可访问"
+      }
+    },
+    {
+      "id": "state_18",
+      "type": "state",
+      "name": "r_2_已访问",
+      "attributes": {
+        "entity_name": "r_2",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "已访问",
+        "description": "r_2的状态: 已访问"
+      }
+    },
+    {
+      "id": "state_19",
+      "type": "state",
+      "name": "r_3_可访问",
+      "attributes": {
+        "entity_name": "r_3",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "可访问",
+        "description": "r_3的状态: 可访问"
+      }
+    },
+    {
+      "id": "state_20",
+      "type": "state",
+      "name": "r_3_不可访问",
+      "attributes": {
+        "entity_name": "r_3",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "不可访问",
+        "description": "r_3的状态: 不可访问"
+      }
+    },
+    {
+      "id": "state_21",
+      "type": "state",
+      "name": "r_3_已访问",
+      "attributes": {
+        "entity_name": "r_3",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "已访问",
+        "description": "r_3的状态: 已访问"
+      }
+    },
+    {
+      "id": "state_22",
+      "type": "state",
+      "name": "r_5_可访问",
+      "attributes": {
+        "entity_name": "r_5",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "可访问",
+        "description": "r_5的状态: 可访问"
+      }
+    },
+    {
+      "id": "state_23",
+      "type": "state",
+      "name": "r_5_不可访问",
+      "attributes": {
+        "entity_name": "r_5",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "不可访问",
+        "description": "r_5的状态: 不可访问"
+      }
+    },
+    {
+      "id": "state_24",
+      "type": "state",
+      "name": "r_5_已访问",
+      "attributes": {
+        "entity_name": "r_5",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "已访问",
+        "description": "r_5的状态: 已访问"
+      }
+    },
+    {
+      "id": "state_25",
+      "type": "state",
+      "name": "d_0_关闭",
+      "attributes": {
+        "entity_name": "d_0",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "关闭",
+        "description": "d_0的状态: 关闭"
+      }
+    },
+    {
+      "id": "state_26",
+      "type": "state",
+      "name": "d_0_打开",
+      "attributes": {
+        "entity_name": "d_0",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "打开",
+        "description": "d_0的状态: 打开"
+      }
+    },
+    {
+      "id": "state_27",
+      "type": "state",
+      "name": "d_0_锁定",
+      "attributes": {
+        "entity_name": "d_0",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "锁定",
+        "description": "d_0的状态: 锁定"
+      }
+    },
+    {
+      "id": "state_28",
+      "type": "state",
+      "name": "d_0_解锁",
+      "attributes": {
+        "entity_name": "d_0",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "解锁",
+        "description": "d_0的状态: 解锁"
+      }
+    },
+    {
+      "id": "state_29",
+      "type": "state",
+      "name": "d_1_关闭",
+      "attributes": {
+        "entity_name": "d_1",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "关闭",
+        "description": "d_1的状态: 关闭"
+      }
+    },
+    {
+      "id": "state_30",
+      "type": "state",
+      "name": "d_1_打开",
+      "attributes": {
+        "entity_name": "d_1",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "打开",
+        "description": "d_1的状态: 打开"
+      }
+    },
+    {
+      "id": "state_31",
+      "type": "state",
+      "name": "d_1_锁定",
+      "attributes": {
+        "entity_name": "d_1",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "锁定",
+        "description": "d_1的状态: 锁定"
+      }
+    },
+    {
+      "id": "state_32",
+      "type": "state",
+      "name": "d_1_解锁",
+      "attributes": {
+        "entity_name": "d_1",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "解锁",
+        "description": "d_1的状态: 解锁"
+      }
+    },
+    {
+      "id": "state_33",
+      "type": "state",
+      "name": "c_0_关闭",
+      "attributes": {
+        "entity_name": "c_0",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "关闭",
+        "description": "c_0的状态: 关闭"
+      }
+    },
+    {
+      "id": "state_34",
+      "type": "state",
+      "name": "c_0_打开",
+      "attributes": {
+        "entity_name": "c_0",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "打开",
+        "description": "c_0的状态: 打开"
+      }
+    },
+    {
+      "id": "state_35",
+      "type": "state",
+      "name": "c_0_锁定",
+      "attributes": {
+        "entity_name": "c_0",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "锁定",
+        "description": "c_0的状态: 锁定"
+      }
+    },
+    {
+      "id": "state_36",
+      "type": "state",
+      "name": "c_0_解锁",
+      "attributes": {
+        "entity_name": "c_0",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "解锁",
+        "description": "c_0的状态: 解锁"
+      }
+    },
+    {
+      "id": "state_37",
+      "type": "state",
+      "name": "c_1_关闭",
+      "attributes": {
+        "entity_name": "c_1",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "关闭",
+        "description": "c_1的状态: 关闭"
+      }
+    },
+    {
+      "id": "state_38",
+      "type": "state",
+      "name": "c_1_打开",
+      "attributes": {
+        "entity_name": "c_1",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "打开",
+        "description": "c_1的状态: 打开"
+      }
+    },
+    {
+      "id": "state_39",
+      "type": "state",
+      "name": "c_1_锁定",
+      "attributes": {
+        "entity_name": "c_1",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "锁定",
+        "description": "c_1的状态: 锁定"
+      }
+    },
+    {
+      "id": "state_40",
+      "type": "state",
+      "name": "c_1_解锁",
+      "attributes": {
+        "entity_name": "c_1",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "解锁",
+        "description": "c_1的状态: 解锁"
+      }
+    },
+    {
+      "id": "state_41",
+      "type": "state",
+      "name": "c_2_关闭",
+      "attributes": {
+        "entity_name": "c_2",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "关闭",
+        "description": "c_2的状态: 关闭"
+      }
+    },
+    {
+      "id": "state_42",
+      "type": "state",
+      "name": "c_2_打开",
+      "attributes": {
+        "entity_name": "c_2",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "打开",
+        "description": "c_2的状态: 打开"
+      }
+    },
+    {
+      "id": "state_43",
+      "type": "state",
+      "name": "c_2_锁定",
+      "attributes": {
+        "entity_name": "c_2",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "锁定",
+        "description": "c_2的状态: 锁定"
+      }
+    },
+    {
+      "id": "state_44",
+      "type": "state",
+      "name": "c_2_解锁",
+      "attributes": {
+        "entity_name": "c_2",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "解锁",
+        "description": "c_2的状态: 解锁"
+      }
+    },
+    {
+      "id": "state_45",
+      "type": "state",
+      "name": "c_3_关闭",
+      "attributes": {
+        "entity_name": "c_3",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "关闭",
+        "description": "c_3的状态: 关闭"
+      }
+    },
+    {
+      "id": "state_46",
+      "type": "state",
+      "name": "c_3_打开",
+      "attributes": {
+        "entity_name": "c_3",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "打开",
+        "description": "c_3的状态: 打开"
+      }
+    },
+    {
+      "id": "state_47",
+      "type": "state",
+      "name": "c_3_锁定",
+      "attributes": {
+        "entity_name": "c_3",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "锁定",
+        "description": "c_3的状态: 锁定"
+      }
+    },
+    {
+      "id": "state_48",
+      "type": "state",
+      "name": "c_3_解锁",
+      "attributes": {
+        "entity_name": "c_3",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "解锁",
+        "description": "c_3的状态: 解锁"
+      }
+    },
+    {
+      "id": "state_49",
+      "type": "state",
+      "name": "c_4_关闭",
+      "attributes": {
+        "entity_name": "c_4",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "关闭",
+        "description": "c_4的状态: 关闭"
+      }
+    },
+    {
+      "id": "state_50",
+      "type": "state",
+      "name": "c_4_打开",
+      "attributes": {
+        "entity_name": "c_4",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "打开",
+        "description": "c_4的状态: 打开"
+      }
+    },
+    {
+      "id": "state_51",
+      "type": "state",
+      "name": "c_4_锁定",
+      "attributes": {
+        "entity_name": "c_4",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "锁定",
+        "description": "c_4的状态: 锁定"
+      }
+    },
+    {
+      "id": "state_52",
+      "type": "state",
+      "name": "c_4_解锁",
+      "attributes": {
+        "entity_name": "c_4",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "解锁",
+        "description": "c_4的状态: 解锁"
+      }
+    },
+    {
+      "id": "state_53",
+      "type": "state",
+      "name": "f_3_可获取",
+      "attributes": {
+        "entity_name": "f_3",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "可获取",
+        "description": "f_3的状态: 可获取"
+      }
+    },
+    {
+      "id": "state_54",
+      "type": "state",
+      "name": "f_3_已获取",
+      "attributes": {
+        "entity_name": "f_3",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "已获取",
+        "description": "f_3的状态: 已获取"
+      }
+    },
+    {
+      "id": "state_55",
+      "type": "state",
+      "name": "f_3_已消耗",
+      "attributes": {
+        "entity_name": "f_3",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "已消耗",
+        "description": "f_3的状态: 已消耗"
+      }
+    },
+    {
+      "id": "state_56",
+      "type": "state",
+      "name": "f_4_可获取",
+      "attributes": {
+        "entity_name": "f_4",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "可获取",
+        "description": "f_4的状态: 可获取"
+      }
+    },
+    {
+      "id": "state_57",
+      "type": "state",
+      "name": "f_4_已获取",
+      "attributes": {
+        "entity_name": "f_4",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "已获取",
+        "description": "f_4的状态: 已获取"
+      }
+    },
+    {
+      "id": "state_58",
+      "type": "state",
+      "name": "f_4_已消耗",
+      "attributes": {
+        "entity_name": "f_4",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "已消耗",
+        "description": "f_4的状态: 已消耗"
+      }
+    },
+    {
+      "id": "state_59",
+      "type": "state",
+      "name": "f_5_可获取",
+      "attributes": {
+        "entity_name": "f_5",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "可获取",
+        "description": "f_5的状态: 可获取"
+      }
+    },
+    {
+      "id": "state_60",
+      "type": "state",
+      "name": "f_5_已获取",
+      "attributes": {
+        "entity_name": "f_5",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "已获取",
+        "description": "f_5的状态: 已获取"
+      }
+    },
+    {
+      "id": "state_61",
+      "type": "state",
+      "name": "f_5_已消耗",
+      "attributes": {
+        "entity_name": "f_5",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "已消耗",
+        "description": "f_5的状态: 已消耗"
+      }
+    },
+    {
+      "id": "state_62",
+      "type": "state",
+      "name": "o_3_可获取",
+      "attributes": {
+        "entity_name": "o_3",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "可获取",
+        "description": "o_3的状态: 可获取"
+      }
+    },
+    {
+      "id": "state_63",
+      "type": "state",
+      "name": "o_3_已获取",
+      "attributes": {
+        "entity_name": "o_3",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "已获取",
+        "description": "o_3的状态: 已获取"
+      }
+    },
+    {
+      "id": "state_64",
+      "type": "state",
+      "name": "o_3_已使用",
+      "attributes": {
+        "entity_name": "o_3",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "已使用",
+        "description": "o_3的状态: 已使用"
+      }
+    },
+    {
+      "id": "state_65",
+      "type": "state",
+      "name": "s_0_可用",
+      "attributes": {
+        "entity_name": "s_0",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "可用",
+        "description": "s_0的状态: 可用"
+      }
+    },
+    {
+      "id": "state_66",
+      "type": "state",
+      "name": "s_0_不可用",
+      "attributes": {
+        "entity_name": "s_0",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "不可用",
+        "description": "s_0的状态: 不可用"
+      }
+    },
+    {
+      "id": "state_67",
+      "type": "state",
+      "name": "s_0_已占用",
+      "attributes": {
+        "entity_name": "s_0",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "已占用",
+        "description": "s_0的状态: 已占用"
+      }
+    },
+    {
+      "id": "state_68",
+      "type": "state",
+      "name": "s_1_可用",
+      "attributes": {
+        "entity_name": "s_1",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "可用",
+        "description": "s_1的状态: 可用"
+      }
+    },
+    {
+      "id": "state_69",
+      "type": "state",
+      "name": "s_1_不可用",
+      "attributes": {
+        "entity_name": "s_1",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "不可用",
+        "description": "s_1的状态: 不可用"
+      }
+    },
+    {
+      "id": "state_70",
+      "type": "state",
+      "name": "s_1_已占用",
+      "attributes": {
+        "entity_name": "s_1",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "已占用",
+        "description": "s_1的状态: 已占用"
+      }
+    },
+    {
+      "id": "state_71",
+      "type": "state",
+      "name": "s_10_可用",
+      "attributes": {
+        "entity_name": "s_10",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "可用",
+        "description": "s_10的状态: 可用"
+      }
+    },
+    {
+      "id": "state_72",
+      "type": "state",
+      "name": "s_10_不可用",
+      "attributes": {
+        "entity_name": "s_10",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "不可用",
+        "description": "s_10的状态: 不可用"
+      }
+    },
+    {
+      "id": "state_73",
+      "type": "state",
+      "name": "s_10_已占用",
+      "attributes": {
+        "entity_name": "s_10",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "已占用",
+        "description": "s_10的状态: 已占用"
+      }
+    },
+    {
+      "id": "state_74",
+      "type": "state",
+      "name": "s_2_可用",
+      "attributes": {
+        "entity_name": "s_2",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "可用",
+        "description": "s_2的状态: 可用"
+      }
+    },
+    {
+      "id": "state_75",
+      "type": "state",
+      "name": "s_2_不可用",
+      "attributes": {
+        "entity_name": "s_2",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "不可用",
+        "description": "s_2的状态: 不可用"
+      }
+    },
+    {
+      "id": "state_76",
+      "type": "state",
+      "name": "s_2_已占用",
+      "attributes": {
+        "entity_name": "s_2",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "已占用",
+        "description": "s_2的状态: 已占用"
+      }
+    },
+    {
+      "id": "state_77",
+      "type": "state",
+      "name": "s_3_可用",
+      "attributes": {
+        "entity_name": "s_3",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "可用",
+        "description": "s_3的状态: 可用"
+      }
+    },
+    {
+      "id": "state_78",
+      "type": "state",
+      "name": "s_3_不可用",
+      "attributes": {
+        "entity_name": "s_3",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "不可用",
+        "description": "s_3的状态: 不可用"
+      }
+    },
+    {
+      "id": "state_79",
+      "type": "state",
+      "name": "s_3_已占用",
+      "attributes": {
+        "entity_name": "s_3",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "已占用",
+        "description": "s_3的状态: 已占用"
+      }
+    },
+    {
+      "id": "state_80",
+      "type": "state",
+      "name": "s_4_可用",
+      "attributes": {
+        "entity_name": "s_4",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "可用",
+        "description": "s_4的状态: 可用"
+      }
+    },
+    {
+      "id": "state_81",
+      "type": "state",
+      "name": "s_4_不可用",
+      "attributes": {
+        "entity_name": "s_4",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "不可用",
+        "description": "s_4的状态: 不可用"
+      }
+    },
+    {
+      "id": "state_82",
+      "type": "state",
+      "name": "s_4_已占用",
+      "attributes": {
+        "entity_name": "s_4",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "已占用",
+        "description": "s_4的状态: 已占用"
+      }
+    },
+    {
+      "id": "state_83",
+      "type": "state",
+      "name": "s_5_可用",
+      "attributes": {
+        "entity_name": "s_5",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "可用",
+        "description": "s_5的状态: 可用"
+      }
+    },
+    {
+      "id": "state_84",
+      "type": "state",
+      "name": "s_5_不可用",
+      "attributes": {
+        "entity_name": "s_5",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "不可用",
+        "description": "s_5的状态: 不可用"
+      }
+    },
+    {
+      "id": "state_85",
+      "type": "state",
+      "name": "s_5_已占用",
+      "attributes": {
+        "entity_name": "s_5",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "已占用",
+        "description": "s_5的状态: 已占用"
+      }
+    },
+    {
+      "id": "state_86",
+      "type": "state",
+      "name": "s_6_可用",
+      "attributes": {
+        "entity_name": "s_6",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "可用",
+        "description": "s_6的状态: 可用"
+      }
+    },
+    {
+      "id": "state_87",
+      "type": "state",
+      "name": "s_6_不可用",
+      "attributes": {
+        "entity_name": "s_6",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "不可用",
+        "description": "s_6的状态: 不可用"
+      }
+    },
+    {
+      "id": "state_88",
+      "type": "state",
+      "name": "s_6_已占用",
+      "attributes": {
+        "entity_name": "s_6",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "已占用",
+        "description": "s_6的状态: 已占用"
+      }
+    },
+    {
+      "id": "state_89",
+      "type": "state",
+      "name": "s_7_可用",
+      "attributes": {
+        "entity_name": "s_7",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "可用",
+        "description": "s_7的状态: 可用"
+      }
+    },
+    {
+      "id": "state_90",
+      "type": "state",
+      "name": "s_7_不可用",
+      "attributes": {
+        "entity_name": "s_7",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "不可用",
+        "description": "s_7的状态: 不可用"
+      }
+    },
+    {
+      "id": "state_91",
+      "type": "state",
+      "name": "s_7_已占用",
+      "attributes": {
+        "entity_name": "s_7",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "已占用",
+        "description": "s_7的状态: 已占用"
+      }
+    },
+    {
+      "id": "state_92",
+      "type": "state",
+      "name": "s_8_可用",
+      "attributes": {
+        "entity_name": "s_8",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "可用",
+        "description": "s_8的状态: 可用"
+      }
+    },
+    {
+      "id": "state_93",
+      "type": "state",
+      "name": "s_8_不可用",
+      "attributes": {
+        "entity_name": "s_8",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "不可用",
+        "description": "s_8的状态: 不可用"
+      }
+    },
+    {
+      "id": "state_94",
+      "type": "state",
+      "name": "s_8_已占用",
+      "attributes": {
+        "entity_name": "s_8",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "已占用",
+        "description": "s_8的状态: 已占用"
+      }
+    },
+    {
+      "id": "state_95",
+      "type": "state",
+      "name": "s_9_可用",
+      "attributes": {
+        "entity_name": "s_9",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "可用",
+        "description": "s_9的状态: 可用"
+      }
+    },
+    {
+      "id": "state_96",
+      "type": "state",
+      "name": "s_9_不可用",
+      "attributes": {
+        "entity_name": "s_9",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "不可用",
+        "description": "s_9的状态: 不可用"
+      }
+    },
+    {
+      "id": "state_97",
+      "type": "state",
+      "name": "s_9_已占用",
+      "attributes": {
+        "entity_name": "s_9",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "已占用",
+        "description": "s_9的状态: 已占用"
+      }
+    },
+    {
+      "id": "state_98",
+      "type": "state",
+      "name": "f_0_可获取",
+      "attributes": {
+        "entity_name": "f_0",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "可获取",
+        "description": "f_0的状态: 可获取"
+      }
+    },
+    {
+      "id": "state_99",
+      "type": "state",
+      "name": "f_0_已获取",
+      "attributes": {
+        "entity_name": "f_0",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "已获取",
+        "description": "f_0的状态: 已获取"
+      }
+    },
+    {
+      "id": "state_100",
+      "type": "state",
+      "name": "f_0_已消耗",
+      "attributes": {
+        "entity_name": "f_0",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "已消耗",
+        "description": "f_0的状态: 已消耗"
+      }
+    },
+    {
+      "id": "state_101",
+      "type": "state",
+      "name": "f_1_可获取",
+      "attributes": {
+        "entity_name": "f_1",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "可获取",
+        "description": "f_1的状态: 可获取"
+      }
+    },
+    {
+      "id": "state_102",
+      "type": "state",
+      "name": "f_1_已获取",
+      "attributes": {
+        "entity_name": "f_1",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "已获取",
+        "description": "f_1的状态: 已获取"
+      }
+    },
+    {
+      "id": "state_103",
+      "type": "state",
+      "name": "f_1_已消耗",
+      "attributes": {
+        "entity_name": "f_1",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "已消耗",
+        "description": "f_1的状态: 已消耗"
+      }
+    },
+    {
+      "id": "state_104",
+      "type": "state",
+      "name": "f_2_可获取",
+      "attributes": {
+        "entity_name": "f_2",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "可获取",
+        "description": "f_2的状态: 可获取"
+      }
+    },
+    {
+      "id": "state_105",
+      "type": "state",
+      "name": "f_2_已获取",
+      "attributes": {
+        "entity_name": "f_2",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "已获取",
+        "description": "f_2的状态: 已获取"
+      }
+    },
+    {
+      "id": "state_106",
+      "type": "state",
+      "name": "f_2_已消耗",
+      "attributes": {
+        "entity_name": "f_2",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "已消耗",
+        "description": "f_2的状态: 已消耗"
+      }
+    },
+    {
+      "id": "state_107",
+      "type": "state",
+      "name": "k_0_可获取",
+      "attributes": {
+        "entity_name": "k_0",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "可获取",
+        "description": "k_0的状态: 可获取"
+      }
+    },
+    {
+      "id": "state_108",
+      "type": "state",
+      "name": "k_0_已获取",
+      "attributes": {
+        "entity_name": "k_0",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "已获取",
+        "description": "k_0的状态: 已获取"
+      }
+    },
+    {
+      "id": "state_109",
+      "type": "state",
+      "name": "k_0_已使用",
+      "attributes": {
+        "entity_name": "k_0",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "已使用",
+        "description": "k_0的状态: 已使用"
+      }
+    },
+    {
+      "id": "state_110",
+      "type": "state",
+      "name": "o_1_可获取",
+      "attributes": {
+        "entity_name": "o_1",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "可获取",
+        "description": "o_1的状态: 可获取"
+      }
+    },
+    {
+      "id": "state_111",
+      "type": "state",
+      "name": "o_1_已获取",
+      "attributes": {
+        "entity_name": "o_1",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "已获取",
+        "description": "o_1的状态: 已获取"
+      }
+    },
+    {
+      "id": "state_112",
+      "type": "state",
+      "name": "o_1_已使用",
+      "attributes": {
+        "entity_name": "o_1",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "已使用",
+        "description": "o_1的状态: 已使用"
+      }
+    },
+    {
+      "id": "state_113",
+      "type": "state",
+      "name": "o_0_可获取",
+      "attributes": {
+        "entity_name": "o_0",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "可获取",
+        "description": "o_0的状态: 可获取"
+      }
+    },
+    {
+      "id": "state_114",
+      "type": "state",
+      "name": "o_0_已获取",
+      "attributes": {
+        "entity_name": "o_0",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "已获取",
+        "description": "o_0的状态: 已获取"
+      }
+    },
+    {
+      "id": "state_115",
+      "type": "state",
+      "name": "o_0_已使用",
+      "attributes": {
+        "entity_name": "o_0",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "已使用",
+        "description": "o_0的状态: 已使用"
+      }
+    },
+    {
+      "id": "state_116",
+      "type": "state",
+      "name": "o_2_可获取",
+      "attributes": {
+        "entity_name": "o_2",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "可获取",
+        "description": "o_2的状态: 可获取"
+      }
+    },
+    {
+      "id": "state_117",
+      "type": "state",
+      "name": "o_2_已获取",
+      "attributes": {
+        "entity_name": "o_2",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "已获取",
+        "description": "o_2的状态: 已获取"
+      }
+    },
+    {
+      "id": "state_118",
+      "type": "state",
+      "name": "o_2_已使用",
+      "attributes": {
+        "entity_name": "o_2",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "已使用",
+        "description": "o_2的状态: 已使用"
+      }
+    },
+    {
+      "id": "state_119",
+      "type": "state",
+      "name": "o_4_可获取",
+      "attributes": {
+        "entity_name": "o_4",
+        "state_type": "entity_state",
+        "is_initial": true,
+        "state_value": "可获取",
+        "description": "o_4的状态: 可获取"
+      }
+    },
+    {
+      "id": "state_120",
+      "type": "state",
+      "name": "o_4_已获取",
+      "attributes": {
+        "entity_name": "o_4",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "已获取",
+        "description": "o_4的状态: 已获取"
+      }
+    },
+    {
+      "id": "state_121",
+      "type": "state",
+      "name": "o_4_已使用",
+      "attributes": {
+        "entity_name": "o_4",
+        "state_type": "entity_state",
+        "is_initial": false,
+        "state_value": "已使用",
+        "description": "o_4的状态: 已使用"
+      }
+    },
+    {
+      "id": "action_1",
+      "type": "action",
+      "name": "向east移动",
+      "attributes": {
+        "description": "向east方向移动",
+        "required_entities": [
+          "玩家"
+        ],
+        "required_states": {
+          "玩家": "探索中"
+        },
+        "effects": {
+          "玩家": "探索中"
+        },
+        "result": "移动到east方向"
+      }
+    },
+    {
+      "id": "action_2",
+      "type": "action",
+      "name": "向south移动",
+      "attributes": {
+        "description": "向south方向移动",
+        "required_entities": [
+          "玩家"
+        ],
+        "required_states": {
+          "玩家": "探索中"
+        },
+        "effects": {
+          "玩家": "探索中"
+        },
+        "result": "移动到south方向"
+      }
+    },
+    {
+      "id": "action_3",
+      "type": "action",
+      "name": "向north移动",
+      "attributes": {
+        "description": "向north方向移动",
+        "required_entities": [
+          "玩家"
+        ],
+        "required_states": {
+          "玩家": "探索中"
+        },
+        "effects": {
+          "玩家": "探索中"
+        },
+        "result": "移动到north方向"
+      }
+    },
+    {
+      "id": "result_1",
+      "type": "result",
+      "name": "向east移动_结果",
+      "attributes": {
+        "action_name": "向east移动",
+        "description": "执行向east移动的结果",
+        "result_value": "移动到east方向",
+        "is_core_action": true
+      }
+    },
+    {
+      "id": "result_2",
+      "type": "result",
+      "name": "向south移动_结果",
+      "attributes": {
+        "action_name": "向south移动",
+        "description": "执行向south移动的结果",
+        "result_value": "移动到south方向",
+        "is_core_action": true
+      }
+    },
+    {
+      "id": "result_3",
+      "type": "result",
+      "name": "向south移动_结果",
+      "attributes": {
+        "action_name": "向south移动",
+        "description": "执行向south移动的结果",
+        "result_value": "移动到south方向",
+        "is_core_action": true
+      }
+    },
+    {
+      "id": "result_4",
+      "type": "result",
+      "name": "向north移动_结果",
+      "attributes": {
+        "action_name": "向north移动",
+        "description": "执行向north移动的结果",
+        "result_value": "移动到north方向",
+        "is_core_action": true
+      }
+    },
+    {
+      "id": "result_5",
+      "type": "result",
+      "name": "向north移动_结果",
+      "attributes": {
+        "action_name": "向north移动",
+        "description": "执行向north移动的结果",
+        "result_value": "移动到north方向",
+        "is_core_action": true
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "action_1",
+      "target": "entity_2",
+      "type": "requires",
+      "attributes": {
+        "relationship": "action_requires_entity"
+      }
+    },
+    {
+      "source": "action_2",
+      "target": "entity_2",
+      "type": "requires",
+      "attributes": {
+        "relationship": "action_requires_entity"
+      }
+    },
+    {
+      "source": "action_3",
+      "target": "entity_2",
+      "type": "requires",
+      "attributes": {
+        "relationship": "action_requires_entity"
+      }
+    },
+    {
+      "source": "action_1",
+      "target": "state_4",
+      "type": "requires",
+      "attributes": {
+        "relationship": "action_requires_state",
+        "required_value": "探索中"
+      }
+    },
+    {
+      "source": "action_2",
+      "target": "state_4",
+      "type": "requires",
+      "attributes": {
+        "relationship": "action_requires_state",
+        "required_value": "探索中"
+      }
+    },
+    {
+      "source": "action_3",
+      "target": "state_4",
+      "type": "requires",
+      "attributes": {
+        "relationship": "action_requires_state",
+        "required_value": "探索中"
+      }
+    },
+    {
+      "source": "action_1",
+      "target": "state_4",
+      "type": "modifies",
+      "attributes": {
+        "relationship": "action_modifies_state",
+        "new_value": "探索中"
+      }
+    },
+    {
+      "source": "action_2",
+      "target": "state_4",
+      "type": "modifies",
+      "attributes": {
+        "relationship": "action_modifies_state",
+        "new_value": "探索中"
+      }
+    },
+    {
+      "source": "action_3",
+      "target": "state_4",
+      "type": "modifies",
+      "attributes": {
+        "relationship": "action_modifies_state",
+        "new_value": "探索中"
+      }
+    },
+    {
+      "source": "action_1",
+      "target": "result_1",
+      "type": "produces",
+      "attributes": {
+        "relationship": "action_produces_result"
+      }
+    },
+    {
+      "source": "action_2",
+      "target": "result_2",
+      "type": "produces",
+      "attributes": {
+        "relationship": "action_produces_result"
+      }
+    },
+    {
+      "source": "action_3",
+      "target": "result_3",
+      "type": "produces",
+      "attributes": {
+        "relationship": "action_produces_result"
+      }
+    },
+    {
+      "source": "state_4",
+      "target": "state_4",
+      "type": "transitions",
+      "attributes": {
+        "action": "向east移动",
+        "conditions": [
+          "玩家必须处于探索中状态"
+        ],
+        "effects": [
+          "玩家变为探索中状态"
+        ]
+      }
+    },
+    {
+      "source": "state_4",
+      "target": "state_4",
+      "type": "transitions",
+      "attributes": {
+        "action": "向south移动",
+        "conditions": [
+          "玩家必须处于探索中状态"
+        ],
+        "effects": [
+          "玩家变为探索中状态"
+        ]
+      }
+    },
+    {
+      "source": "state_4",
+      "target": "state_4",
+      "type": "transitions",
+      "attributes": {
+        "action": "向north移动",
+        "conditions": [
+          "玩家必须处于探索中状态"
+        ],
+        "effects": [
+          "玩家变为探索中状态"
+        ]
+      }
+    }
+  ],
+  "metadata": {
+    "node_count": 167,
+    "edge_count": 15,
+    "node_types": [
+      "entity",
+      "state",
+      "action",
+      "result"
+    ],
+    "scene_name": "TextWorld_tw-another_game",
+    "game_type": "textworld",
+    "schema_version": "1.0",
+    "data_source": "real_textworld_game"
+  }
+}

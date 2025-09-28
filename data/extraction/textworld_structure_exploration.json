@@ -1,0 +1,4362 @@
+{
+  "exploration_summary": {
+    "total_files_explored": 2,
+    "successful_explorations": 0,
+    "failed_explorations": 2
+  },
+  "detailed_results": [
+    {
+      "file_path": "/Users/cheyuanxi/PycharmProjects/KGRL/data/benchmarks/textworld/TextWorld/notebooks/games/tw-another_game.z8",
+      "file_name": "tw-another_game.z8",
+      "exploration_success": false,
+      "error": "object of type 'NoneType' has no len()",
+      "game_state_structure": {
+        "object_name": "game_state",
+        "type": "GameState",
+        "attributes": {},
+        "methods": [
+          "clear",
+          "copy",
+          "fromkeys",
+          "get",
+          "items",
+          "keys",
+          "pop",
+          "popitem",
+          "setdefault",
+          "update",
+          "values"
+        ],
+        "summary": "GameState"
+      },
+      "game_info_structure": {
+        "object_name": "game_info",
+        "type": "Game",
+        "attributes": {
+          "command_templates": {
+            "type": "list",
+            "value": "[24 items]",
+            "length": 24,
+            "first_item_type": "str"
+          },
+          "directions_names": {
+            "type": "list",
+            "value": "[4 items]",
+            "length": 4,
+            "first_item_type": "str"
+          },
+          "entity_names": {
+            "type": "list",
+            "value": "[34 items]",
+            "length": 34,
+            "first_item_type": "str"
+          },
+          "grammar": {
+            "type": "NoneType",
+            "value": "None"
+          },
+          "grammar_options": {
+            "type": "GrammarOptions",
+            "value": "theme: house\nnames_to_exclude: ['lettuce', 'stove', 'remote', 'refrigerator', 'note', 'backyard', No..."
+          },
+          "infos": {
+            "type": "dict",
+            "value": "{38 keys}",
+            "length": 38,
+            "keys": [
+              "P",
+              "I",
+              "r_1",
+              "r_0",
+              "r_4"
+            ]
+          },
+          "kb": {
+            "type": "KnowledgeBase",
+            "value": "logic_path: embedded in game\ngrammar_path: /data/src/TextWorld/textworld/challenges/tw_simple/textwo..."
+          },
+          "max_score": {
+            "type": "int",
+            "value": 8
+          },
+          "metadata": {
+            "type": "dict",
+            "value": "{6 keys}",
+            "length": 6,
+            "keys": [
+              "walkthrough",
+              "desc",
+              "seeds",
+              "world_size",
+              "quest_length"
+            ]
+          },
+          "objective": {
+            "type": "str",
+            "value": "Hey, thanks for coming over to the TextWorld today, there is something I need you to do for me. First of all, you could, like, look and see that the antique trunk inside the bedroom is opened. Then, recover the old key from the antique trunk. Then, make absolutely sure that the wooden door inside the bedroom is unlocked. After unlocking the wooden door, open the wooden door in the bedroom. Then, try to head east. After that, try to travel south. Once you get through with that, take the milk from the couch within the living room. Having taken the milk, attempt to travel north. That done, rest the milk on the stove inside the kitchen. And if you do that, you're the winner!"
+          },
+          "objects_names": {
+            "type": "list",
+            "value": "[30 items]",
+            "length": 30,
+            "first_item_type": "str"
+          },
+          "objects_names_and_types": {
+            "type": "list",
+            "value": "[30 items]",
+            "length": 30,
+            "first_item_type": "tuple"
+          },
+          "objects_types": {
+            "type": "list",
+            "value": "[10 items]",
+            "length": 10,
+            "first_item_type": "str"
+          },
+          "possible_admissible_commands": {
+            "type": "list",
+            "value": "[478 items]",
+            "length": 478,
+            "first_item_type": "str"
+          },
+          "possible_commands": {
+            "type": "list",
+            "value": "[4686 items]",
+            "length": 4686,
+            "first_item_type": "str"
+          },
+          "quests": {
+            "type": "tuple",
+            "value": "[9 items]",
+            "length": 9,
+            "first_item_type": "Quest"
+          },
+          "verbs": {
+            "type": "list",
+            "value": "[13 items]",
+            "length": 13,
+            "first_item_type": "str"
+          },
+          "walkthrough": {
+            "type": "list",
+            "value": "[9 items]",
+            "length": 9,
+            "first_item_type": "str"
+          },
+          "world": {
+            "type": "World",
+            "value": "<textworld.generator.world.World object at 0x7faca82a6910>"
+          }
+        },
+        "methods": [
+          "change_grammar",
+          "copy",
+          "deserialize",
+          "load",
+          "save",
+          "serialize"
+        ],
+        "summary": "Game"
+      },
+      "admissible_commands": null,
+      "world_structure": {
+        "object_name": "world",
+        "type": "World",
+        "attributes": {
+          "entities": {
+            "type": "odict_values",
+            "value": "odict_values([Variable('P', 'P'), Variable('I', 'I'), Variable('r_1', 'r'), Variable('r_0', 'r'), Va..."
+          },
+          "facts": {
+            "type": "list",
+            "value": "[63 items]",
+            "length": 63,
+            "first_item_type": "Proposition"
+          },
+          "inventory": {
+            "type": "WorldObject",
+            "value": "I"
+          },
+          "kb": {
+            "type": "KnowledgeBase",
+            "value": "logic_path: embedded in game\ngrammar_path: /data/src/TextWorld/textworld/challenges/tw_simple/textwo..."
+          },
+          "objects": {
+            "type": "list",
+            "value": "[32 items]",
+            "length": 32,
+            "first_item_type": "WorldObject"
+          },
+          "player": {
+            "type": "WorldObject",
+            "value": "P"
+          },
+          "player_room": {
+            "type": "WorldRoom",
+            "value": "r_0: r"
+          },
+          "rooms": {
+            "type": "list",
+            "value": "[6 items]",
+            "length": 6,
+            "first_item_type": "WorldRoom"
+          },
+          "state": {
+            "type": "State",
+            "value": "State({\n    at(P, r): {\n        at(P, r_0: r),\n    },\n    at(c, r): {\n        at(c_0: c, r_0: r),\n  ..."
+          }
+        },
+        "methods": [
+          "add_fact",
+          "add_facts",
+          "deserialize",
+          "find_object_by_id",
+          "find_room_by_id",
+          "from_facts",
+          "from_map",
+          "get_all_objects_in",
+          "get_entities_per_type",
+          "get_facts_in_scope",
+          "get_objects_in_inventory",
+          "get_visible_objects_in",
+          "populate",
+          "populate_room",
+          "populate_room_with",
+          "populate_with",
+          "serialize",
+          "set_player_room"
+        ],
+        "summary": "World"
+      },
+      "objects_found": [
+        {
+          "object_name": "object_0",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "id": {
+              "type": "str",
+              "value": "P"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "P"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "P"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=P, name=P, type=P)"
+        },
+        {
+          "object_name": "object_1",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "id": {
+              "type": "str",
+              "value": "I"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "I"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "type": {
+              "type": "str",
+              "value": "I"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=I, name=I, type=I)"
+        },
+        {
+          "object_name": "object_2",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "id": {
+              "type": "str",
+              "value": "d_0"
+            },
+            "matching_entity_id": {
+              "type": "str",
+              "value": "k_0"
+            },
+            "name": {
+              "type": "str",
+              "value": "d_0"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "str"
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[3 items]",
+              "length": 3,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "d"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=d_0, name=d_0, type=d)"
+        },
+        {
+          "object_name": "object_3",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "id": {
+              "type": "str",
+              "value": "d_1"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "d_1"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "str"
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[3 items]",
+              "length": 3,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "d"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=d_1, name=d_1, type=d)"
+        },
+        {
+          "object_name": "object_4",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "id": {
+              "type": "str",
+              "value": "c_0"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "c_0"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "str"
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[2 items]",
+              "length": 2,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "c"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=c_0, name=c_0, type=c)"
+        },
+        {
+          "object_name": "object_5",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "WorldObject"
+            },
+            "id": {
+              "type": "str",
+              "value": "c_1"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "c_1"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "str"
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[2 items]",
+              "length": 2,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "c"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=c_1, name=c_1, type=c)"
+        },
+        {
+          "object_name": "object_6",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[2 items]",
+              "length": 2,
+              "first_item_type": "WorldObject"
+            },
+            "id": {
+              "type": "str",
+              "value": "c_2"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "c_2"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "str"
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[2 items]",
+              "length": 2,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "c"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=c_2, name=c_2, type=c)"
+        },
+        {
+          "object_name": "object_7",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "id": {
+              "type": "str",
+              "value": "c_3"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "c_3"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "str"
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[2 items]",
+              "length": 2,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "c"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=c_3, name=c_3, type=c)"
+        },
+        {
+          "object_name": "object_8",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "WorldObject"
+            },
+            "id": {
+              "type": "str",
+              "value": "c_4"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "c_4"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "str"
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[2 items]",
+              "length": 2,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "c"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=c_4, name=c_4, type=c)"
+        },
+        {
+          "object_name": "object_9",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "id": {
+              "type": "str",
+              "value": "f_3"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "f_3"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "str"
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[2 items]",
+              "length": 2,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "f"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=f_3, name=f_3, type=f)"
+        },
+        {
+          "object_name": "object_10",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "id": {
+              "type": "str",
+              "value": "f_4"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "f_4"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "str"
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[2 items]",
+              "length": 2,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "f"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=f_4, name=f_4, type=f)"
+        },
+        {
+          "object_name": "object_11",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "id": {
+              "type": "str",
+              "value": "f_5"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "f_5"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "str"
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[2 items]",
+              "length": 2,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "f"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=f_5, name=f_5, type=f)"
+        },
+        {
+          "object_name": "object_12",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "id": {
+              "type": "str",
+              "value": "o_3"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "o_3"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "o"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=o_3, name=o_3, type=o)"
+        },
+        {
+          "object_name": "object_13",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "id": {
+              "type": "str",
+              "value": "s_0"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "s_0"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "s"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=s_0, name=s_0, type=s)"
+        },
+        {
+          "object_name": "object_14",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "id": {
+              "type": "str",
+              "value": "s_1"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "s_1"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "s"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=s_1, name=s_1, type=s)"
+        },
+        {
+          "object_name": "object_15",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "id": {
+              "type": "str",
+              "value": "s_10"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "s_10"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "s"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=s_10, name=s_10, type=s)"
+        },
+        {
+          "object_name": "object_16",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "id": {
+              "type": "str",
+              "value": "s_2"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "s_2"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "s"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=s_2, name=s_2, type=s)"
+        },
+        {
+          "object_name": "object_17",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "WorldObject"
+            },
+            "id": {
+              "type": "str",
+              "value": "s_3"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "s_3"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "s"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=s_3, name=s_3, type=s)"
+        },
+        {
+          "object_name": "object_18",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "WorldObject"
+            },
+            "id": {
+              "type": "str",
+              "value": "s_4"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "s_4"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "s"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=s_4, name=s_4, type=s)"
+        },
+        {
+          "object_name": "object_19",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "WorldObject"
+            },
+            "id": {
+              "type": "str",
+              "value": "s_5"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "s_5"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "s"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=s_5, name=s_5, type=s)"
+        },
+        {
+          "object_name": "object_20",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "WorldObject"
+            },
+            "id": {
+              "type": "str",
+              "value": "s_6"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "s_6"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "s"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=s_6, name=s_6, type=s)"
+        },
+        {
+          "object_name": "object_21",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "id": {
+              "type": "str",
+              "value": "s_7"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "s_7"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "s"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=s_7, name=s_7, type=s)"
+        },
+        {
+          "object_name": "object_22",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "id": {
+              "type": "str",
+              "value": "s_8"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "s_8"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "s"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=s_8, name=s_8, type=s)"
+        },
+        {
+          "object_name": "object_23",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "id": {
+              "type": "str",
+              "value": "s_9"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "s_9"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "s"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=s_9, name=s_9, type=s)"
+        },
+        {
+          "object_name": "object_24",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "id": {
+              "type": "str",
+              "value": "f_0"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "f_0"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "str"
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[2 items]",
+              "length": 2,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "f"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=f_0, name=f_0, type=f)"
+        },
+        {
+          "object_name": "object_25",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "id": {
+              "type": "str",
+              "value": "f_1"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "f_1"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "str"
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[2 items]",
+              "length": 2,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "f"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=f_1, name=f_1, type=f)"
+        },
+        {
+          "object_name": "object_26",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "id": {
+              "type": "str",
+              "value": "f_2"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "f_2"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "str"
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[2 items]",
+              "length": 2,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "f"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=f_2, name=f_2, type=f)"
+        },
+        {
+          "object_name": "object_27",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "id": {
+              "type": "str",
+              "value": "k_0"
+            },
+            "matching_entity_id": {
+              "type": "str",
+              "value": "d_0"
+            },
+            "name": {
+              "type": "str",
+              "value": "k_0"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[2 items]",
+              "length": 2,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "k"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=k_0, name=k_0, type=k)"
+        },
+        {
+          "object_name": "object_28",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "id": {
+              "type": "str",
+              "value": "o_1"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "o_1"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "o"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=o_1, name=o_1, type=o)"
+        },
+        {
+          "object_name": "object_29",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "id": {
+              "type": "str",
+              "value": "o_0"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "o_0"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "o"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=o_0, name=o_0, type=o)"
+        },
+        {
+          "object_name": "object_30",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "id": {
+              "type": "str",
+              "value": "o_2"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "o_2"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "o"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=o_2, name=o_2, type=o)"
+        },
+        {
+          "object_name": "object_31",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "id": {
+              "type": "str",
+              "value": "o_4"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "o_4"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "o"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=o_4, name=o_4, type=o)"
+        }
+      ],
+      "rooms_found": [
+        {
+          "object_name": "room_0",
+          "type": "WorldRoom",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[6 items]",
+              "length": 6,
+              "first_item_type": "WorldObject"
+            },
+            "doors": {
+              "type": "OrderedDict",
+              "value": "{2 keys}",
+              "length": 2,
+              "keys": [
+                "west",
+                "east"
+              ]
+            },
+            "exits": {
+              "type": "OrderedDict",
+              "value": "{4 keys}",
+              "length": 4,
+              "keys": [
+                "west",
+                "south",
+                "north",
+                "east"
+              ]
+            },
+            "id": {
+              "type": "str",
+              "value": "r_1"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "r_1"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[12 items]",
+              "length": 12,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "r"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldRoom(id=r_1, name=r_1, type=r)"
+        },
+        {
+          "object_name": "room_1",
+          "type": "WorldRoom",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[5 items]",
+              "length": 5,
+              "first_item_type": "WorldObject"
+            },
+            "doors": {
+              "type": "OrderedDict",
+              "value": "{1 keys}",
+              "length": 1,
+              "keys": [
+                "east"
+              ]
+            },
+            "exits": {
+              "type": "OrderedDict",
+              "value": "{1 keys}",
+              "length": 1,
+              "keys": [
+                "east"
+              ]
+            },
+            "id": {
+              "type": "str",
+              "value": "r_0"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "r_0"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[3 items]",
+              "length": 3,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "r"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldRoom(id=r_0, name=r_0, type=r)"
+        },
+        {
+          "object_name": "room_2",
+          "type": "WorldRoom",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[4 items]",
+              "length": 4,
+              "first_item_type": "WorldObject"
+            },
+            "doors": {
+              "type": "OrderedDict",
+              "value": "{1 keys}",
+              "length": 1,
+              "keys": [
+                "west"
+              ]
+            },
+            "exits": {
+              "type": "OrderedDict",
+              "value": "{2 keys}",
+              "length": 2,
+              "keys": [
+                "west",
+                "south"
+              ]
+            },
+            "id": {
+              "type": "str",
+              "value": "r_4"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "r_4"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[6 items]",
+              "length": 6,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "r"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldRoom(id=r_4, name=r_4, type=r)"
+        },
+        {
+          "object_name": "room_3",
+          "type": "WorldRoom",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[3 items]",
+              "length": 3,
+              "first_item_type": "WorldObject"
+            },
+            "doors": {
+              "type": "OrderedDict",
+              "value": "{0 keys}",
+              "length": 0,
+              "keys": []
+            },
+            "exits": {
+              "type": "OrderedDict",
+              "value": "{1 keys}",
+              "length": 1,
+              "keys": [
+                "north"
+              ]
+            },
+            "id": {
+              "type": "str",
+              "value": "r_2"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "r_2"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[3 items]",
+              "length": 3,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "r"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldRoom(id=r_2, name=r_2, type=r)"
+        },
+        {
+          "object_name": "room_4",
+          "type": "WorldRoom",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[3 items]",
+              "length": 3,
+              "first_item_type": "WorldObject"
+            },
+            "doors": {
+              "type": "OrderedDict",
+              "value": "{0 keys}",
+              "length": 0,
+              "keys": []
+            },
+            "exits": {
+              "type": "OrderedDict",
+              "value": "{1 keys}",
+              "length": 1,
+              "keys": [
+                "south"
+              ]
+            },
+            "id": {
+              "type": "str",
+              "value": "r_3"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "r_3"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[3 items]",
+              "length": 3,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "r"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldRoom(id=r_3, name=r_3, type=r)"
+        },
+        {
+          "object_name": "room_5",
+          "type": "WorldRoom",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[4 items]",
+              "length": 4,
+              "first_item_type": "WorldObject"
+            },
+            "doors": {
+              "type": "OrderedDict",
+              "value": "{0 keys}",
+              "length": 0,
+              "keys": []
+            },
+            "exits": {
+              "type": "OrderedDict",
+              "value": "{1 keys}",
+              "length": 1,
+              "keys": [
+                "north"
+              ]
+            },
+            "id": {
+              "type": "str",
+              "value": "r_5"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "r_5"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[3 items]",
+              "length": 3,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "r"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldRoom(id=r_5, name=r_5, type=r)"
+        }
+      ],
+      "other_attributes": {}
+    },
+    {
+      "file_path": "/Users/cheyuanxi/PycharmProjects/KGRL/data/benchmarks/textworld/TextWorld/notebooks/games/tw-rewardsSparse_goalDetailed.z8",
+      "file_name": "tw-rewardsSparse_goalDetailed.z8",
+      "exploration_success": false,
+      "error": "object of type 'NoneType' has no len()",
+      "game_state_structure": {
+        "object_name": "game_state",
+        "type": "GameState",
+        "attributes": {},
+        "methods": [
+          "clear",
+          "copy",
+          "fromkeys",
+          "get",
+          "items",
+          "keys",
+          "pop",
+          "popitem",
+          "setdefault",
+          "update",
+          "values"
+        ],
+        "summary": "GameState"
+      },
+      "game_info_structure": {
+        "object_name": "game_info",
+        "type": "Game",
+        "attributes": {
+          "command_templates": {
+            "type": "list",
+            "value": "[24 items]",
+            "length": 24,
+            "first_item_type": "str"
+          },
+          "directions_names": {
+            "type": "list",
+            "value": "[4 items]",
+            "length": 4,
+            "first_item_type": "str"
+          },
+          "entity_names": {
+            "type": "list",
+            "value": "[34 items]",
+            "length": 34,
+            "first_item_type": "str"
+          },
+          "grammar": {
+            "type": "NoneType",
+            "value": "None"
+          },
+          "grammar_options": {
+            "type": "GrammarOptions",
+            "value": "theme: house\nnames_to_exclude: ['set of chairs', 'old key', 'garden', 'bath', 'patio table', 'soap b..."
+          },
+          "infos": {
+            "type": "dict",
+            "value": "{38 keys}",
+            "length": 38,
+            "keys": [
+              "P",
+              "I",
+              "r_1",
+              "r_0",
+              "r_4"
+            ]
+          },
+          "kb": {
+            "type": "KnowledgeBase",
+            "value": "logic_path: embedded in game\ngrammar_path: /data/src/TextWorld/textworld/challenges/tw_simple/textwo..."
+          },
+          "max_score": {
+            "type": "int",
+            "value": 1
+          },
+          "metadata": {
+            "type": "dict",
+            "value": "{6 keys}",
+            "length": 6,
+            "keys": [
+              "walkthrough",
+              "desc",
+              "seeds",
+              "world_size",
+              "quest_length"
+            ]
+          },
+          "objective": {
+            "type": "str",
+            "value": "Welcome to TextWorld! Here is your task for today. First of all, you could, like, open the chest drawer. Then, pick up the old key from the chest drawer. After picking up the old key, assure that the wooden door is unlocked. Then, ensure that the wooden door is open. After pulling open the wooden door, take a trip east. And then, make sure that the screen door is wide open. After that, make an effort to move east. With that done, attempt to take a trip south. Then, pick-up the carrot from the floor of the garden. And then, attempt to go to the north. If you can succeed at that, make an effort to take a trip west. And then, rest the carrot on the stove. Got that? Good!"
+          },
+          "objects_names": {
+            "type": "list",
+            "value": "[30 items]",
+            "length": 30,
+            "first_item_type": "str"
+          },
+          "objects_names_and_types": {
+            "type": "list",
+            "value": "[30 items]",
+            "length": 30,
+            "first_item_type": "tuple"
+          },
+          "objects_types": {
+            "type": "list",
+            "value": "[10 items]",
+            "length": 10,
+            "first_item_type": "str"
+          },
+          "possible_admissible_commands": {
+            "type": "list",
+            "value": "[478 items]",
+            "length": 478,
+            "first_item_type": "str"
+          },
+          "possible_commands": {
+            "type": "list",
+            "value": "[4686 items]",
+            "length": 4686,
+            "first_item_type": "str"
+          },
+          "quests": {
+            "type": "tuple",
+            "value": "[2 items]",
+            "length": 2,
+            "first_item_type": "Quest"
+          },
+          "verbs": {
+            "type": "list",
+            "value": "[13 items]",
+            "length": 13,
+            "first_item_type": "str"
+          },
+          "walkthrough": {
+            "type": "list",
+            "value": "[12 items]",
+            "length": 12,
+            "first_item_type": "str"
+          },
+          "world": {
+            "type": "World",
+            "value": "<textworld.generator.world.World object at 0x7facb881d1f0>"
+          }
+        },
+        "methods": [
+          "change_grammar",
+          "copy",
+          "deserialize",
+          "load",
+          "save",
+          "serialize"
+        ],
+        "summary": "Game"
+      },
+      "admissible_commands": null,
+      "world_structure": {
+        "object_name": "world",
+        "type": "World",
+        "attributes": {
+          "entities": {
+            "type": "odict_values",
+            "value": "odict_values([Variable('P', 'P'), Variable('I', 'I'), Variable('r_1', 'r'), Variable('r_0', 'r'), Va..."
+          },
+          "facts": {
+            "type": "list",
+            "value": "[63 items]",
+            "length": 63,
+            "first_item_type": "Proposition"
+          },
+          "inventory": {
+            "type": "WorldObject",
+            "value": "I"
+          },
+          "kb": {
+            "type": "KnowledgeBase",
+            "value": "logic_path: embedded in game\ngrammar_path: /data/src/TextWorld/textworld/challenges/tw_simple/textwo..."
+          },
+          "objects": {
+            "type": "list",
+            "value": "[32 items]",
+            "length": 32,
+            "first_item_type": "WorldObject"
+          },
+          "player": {
+            "type": "WorldObject",
+            "value": "P"
+          },
+          "player_room": {
+            "type": "WorldRoom",
+            "value": "r_0: r"
+          },
+          "rooms": {
+            "type": "list",
+            "value": "[6 items]",
+            "length": 6,
+            "first_item_type": "WorldRoom"
+          },
+          "state": {
+            "type": "State",
+            "value": "State({\n    at(P, r): {\n        at(P, r_0: r),\n    },\n    at(c, r): {\n        at(c_0: c, r_0: r),\n  ..."
+          }
+        },
+        "methods": [
+          "add_fact",
+          "add_facts",
+          "deserialize",
+          "find_object_by_id",
+          "find_room_by_id",
+          "from_facts",
+          "from_map",
+          "get_all_objects_in",
+          "get_entities_per_type",
+          "get_facts_in_scope",
+          "get_objects_in_inventory",
+          "get_visible_objects_in",
+          "populate",
+          "populate_room",
+          "populate_room_with",
+          "populate_with",
+          "serialize",
+          "set_player_room"
+        ],
+        "summary": "World"
+      },
+      "objects_found": [
+        {
+          "object_name": "object_0",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "id": {
+              "type": "str",
+              "value": "P"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "P"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "P"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=P, name=P, type=P)"
+        },
+        {
+          "object_name": "object_1",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "id": {
+              "type": "str",
+              "value": "I"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "I"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "type": {
+              "type": "str",
+              "value": "I"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=I, name=I, type=I)"
+        },
+        {
+          "object_name": "object_2",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "id": {
+              "type": "str",
+              "value": "d_0"
+            },
+            "matching_entity_id": {
+              "type": "str",
+              "value": "k_0"
+            },
+            "name": {
+              "type": "str",
+              "value": "d_0"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "str"
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[3 items]",
+              "length": 3,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "d"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=d_0, name=d_0, type=d)"
+        },
+        {
+          "object_name": "object_3",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "id": {
+              "type": "str",
+              "value": "d_1"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "d_1"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "str"
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[3 items]",
+              "length": 3,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "d"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=d_1, name=d_1, type=d)"
+        },
+        {
+          "object_name": "object_4",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "WorldObject"
+            },
+            "id": {
+              "type": "str",
+              "value": "c_0"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "c_0"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "str"
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[2 items]",
+              "length": 2,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "c"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=c_0, name=c_0, type=c)"
+        },
+        {
+          "object_name": "object_5",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "id": {
+              "type": "str",
+              "value": "c_1"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "c_1"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "str"
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[2 items]",
+              "length": 2,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "c"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=c_1, name=c_1, type=c)"
+        },
+        {
+          "object_name": "object_6",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[2 items]",
+              "length": 2,
+              "first_item_type": "WorldObject"
+            },
+            "id": {
+              "type": "str",
+              "value": "c_2"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "c_2"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "str"
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[2 items]",
+              "length": 2,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "c"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=c_2, name=c_2, type=c)"
+        },
+        {
+          "object_name": "object_7",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "id": {
+              "type": "str",
+              "value": "c_3"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "c_3"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "str"
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[2 items]",
+              "length": 2,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "c"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=c_3, name=c_3, type=c)"
+        },
+        {
+          "object_name": "object_8",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "WorldObject"
+            },
+            "id": {
+              "type": "str",
+              "value": "c_4"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "c_4"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "str"
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[2 items]",
+              "length": 2,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "c"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=c_4, name=c_4, type=c)"
+        },
+        {
+          "object_name": "object_9",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "id": {
+              "type": "str",
+              "value": "f_3"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "f_3"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "str"
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[2 items]",
+              "length": 2,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "f"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=f_3, name=f_3, type=f)"
+        },
+        {
+          "object_name": "object_10",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "id": {
+              "type": "str",
+              "value": "f_4"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "f_4"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "str"
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[2 items]",
+              "length": 2,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "f"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=f_4, name=f_4, type=f)"
+        },
+        {
+          "object_name": "object_11",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "id": {
+              "type": "str",
+              "value": "f_5"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "f_5"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "str"
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[2 items]",
+              "length": 2,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "f"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=f_5, name=f_5, type=f)"
+        },
+        {
+          "object_name": "object_12",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "id": {
+              "type": "str",
+              "value": "o_3"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "o_3"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "o"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=o_3, name=o_3, type=o)"
+        },
+        {
+          "object_name": "object_13",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "id": {
+              "type": "str",
+              "value": "s_0"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "s_0"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "s"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=s_0, name=s_0, type=s)"
+        },
+        {
+          "object_name": "object_14",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "id": {
+              "type": "str",
+              "value": "s_1"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "s_1"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "s"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=s_1, name=s_1, type=s)"
+        },
+        {
+          "object_name": "object_15",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "id": {
+              "type": "str",
+              "value": "s_10"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "s_10"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "s"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=s_10, name=s_10, type=s)"
+        },
+        {
+          "object_name": "object_16",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "id": {
+              "type": "str",
+              "value": "s_2"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "s_2"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "s"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=s_2, name=s_2, type=s)"
+        },
+        {
+          "object_name": "object_17",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "WorldObject"
+            },
+            "id": {
+              "type": "str",
+              "value": "s_3"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "s_3"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "s"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=s_3, name=s_3, type=s)"
+        },
+        {
+          "object_name": "object_18",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "WorldObject"
+            },
+            "id": {
+              "type": "str",
+              "value": "s_4"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "s_4"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "s"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=s_4, name=s_4, type=s)"
+        },
+        {
+          "object_name": "object_19",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "WorldObject"
+            },
+            "id": {
+              "type": "str",
+              "value": "s_5"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "s_5"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "s"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=s_5, name=s_5, type=s)"
+        },
+        {
+          "object_name": "object_20",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "WorldObject"
+            },
+            "id": {
+              "type": "str",
+              "value": "s_6"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "s_6"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "s"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=s_6, name=s_6, type=s)"
+        },
+        {
+          "object_name": "object_21",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "id": {
+              "type": "str",
+              "value": "s_7"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "s_7"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "s"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=s_7, name=s_7, type=s)"
+        },
+        {
+          "object_name": "object_22",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "id": {
+              "type": "str",
+              "value": "s_8"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "s_8"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "s"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=s_8, name=s_8, type=s)"
+        },
+        {
+          "object_name": "object_23",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "id": {
+              "type": "str",
+              "value": "s_9"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "s_9"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "s"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=s_9, name=s_9, type=s)"
+        },
+        {
+          "object_name": "object_24",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "id": {
+              "type": "str",
+              "value": "f_0"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "f_0"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "str"
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[2 items]",
+              "length": 2,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "f"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=f_0, name=f_0, type=f)"
+        },
+        {
+          "object_name": "object_25",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "id": {
+              "type": "str",
+              "value": "f_1"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "f_1"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "str"
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[2 items]",
+              "length": 2,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "f"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=f_1, name=f_1, type=f)"
+        },
+        {
+          "object_name": "object_26",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "id": {
+              "type": "str",
+              "value": "f_2"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "f_2"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "str"
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[2 items]",
+              "length": 2,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "f"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=f_2, name=f_2, type=f)"
+        },
+        {
+          "object_name": "object_27",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "id": {
+              "type": "str",
+              "value": "k_0"
+            },
+            "matching_entity_id": {
+              "type": "str",
+              "value": "d_0"
+            },
+            "name": {
+              "type": "str",
+              "value": "k_0"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[2 items]",
+              "length": 2,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "k"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=k_0, name=k_0, type=k)"
+        },
+        {
+          "object_name": "object_28",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "id": {
+              "type": "str",
+              "value": "o_1"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "o_1"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "o"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=o_1, name=o_1, type=o)"
+        },
+        {
+          "object_name": "object_29",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "id": {
+              "type": "str",
+              "value": "o_0"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "o_0"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "o"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=o_0, name=o_0, type=o)"
+        },
+        {
+          "object_name": "object_30",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "id": {
+              "type": "str",
+              "value": "o_2"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "o_2"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "o"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=o_2, name=o_2, type=o)"
+        },
+        {
+          "object_name": "object_31",
+          "type": "WorldObject",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "id": {
+              "type": "str",
+              "value": "o_4"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "o_4"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[1 items]",
+              "length": 1,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "o"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldObject(id=o_4, name=o_4, type=o)"
+        }
+      ],
+      "rooms_found": [
+        {
+          "object_name": "room_0",
+          "type": "WorldRoom",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[6 items]",
+              "length": 6,
+              "first_item_type": "WorldObject"
+            },
+            "doors": {
+              "type": "OrderedDict",
+              "value": "{2 keys}",
+              "length": 2,
+              "keys": [
+                "west",
+                "east"
+              ]
+            },
+            "exits": {
+              "type": "OrderedDict",
+              "value": "{4 keys}",
+              "length": 4,
+              "keys": [
+                "west",
+                "south",
+                "north",
+                "east"
+              ]
+            },
+            "id": {
+              "type": "str",
+              "value": "r_1"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "r_1"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[12 items]",
+              "length": 12,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "r"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldRoom(id=r_1, name=r_1, type=r)"
+        },
+        {
+          "object_name": "room_1",
+          "type": "WorldRoom",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[5 items]",
+              "length": 5,
+              "first_item_type": "WorldObject"
+            },
+            "doors": {
+              "type": "OrderedDict",
+              "value": "{1 keys}",
+              "length": 1,
+              "keys": [
+                "east"
+              ]
+            },
+            "exits": {
+              "type": "OrderedDict",
+              "value": "{1 keys}",
+              "length": 1,
+              "keys": [
+                "east"
+              ]
+            },
+            "id": {
+              "type": "str",
+              "value": "r_0"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "r_0"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[3 items]",
+              "length": 3,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "r"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldRoom(id=r_0, name=r_0, type=r)"
+        },
+        {
+          "object_name": "room_2",
+          "type": "WorldRoom",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[4 items]",
+              "length": 4,
+              "first_item_type": "WorldObject"
+            },
+            "doors": {
+              "type": "OrderedDict",
+              "value": "{1 keys}",
+              "length": 1,
+              "keys": [
+                "west"
+              ]
+            },
+            "exits": {
+              "type": "OrderedDict",
+              "value": "{2 keys}",
+              "length": 2,
+              "keys": [
+                "west",
+                "south"
+              ]
+            },
+            "id": {
+              "type": "str",
+              "value": "r_4"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "r_4"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[6 items]",
+              "length": 6,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "r"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldRoom(id=r_4, name=r_4, type=r)"
+        },
+        {
+          "object_name": "room_3",
+          "type": "WorldRoom",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[3 items]",
+              "length": 3,
+              "first_item_type": "WorldObject"
+            },
+            "doors": {
+              "type": "OrderedDict",
+              "value": "{0 keys}",
+              "length": 0,
+              "keys": []
+            },
+            "exits": {
+              "type": "OrderedDict",
+              "value": "{1 keys}",
+              "length": 1,
+              "keys": [
+                "north"
+              ]
+            },
+            "id": {
+              "type": "str",
+              "value": "r_2"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "r_2"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[3 items]",
+              "length": 3,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "r"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldRoom(id=r_2, name=r_2, type=r)"
+        },
+        {
+          "object_name": "room_4",
+          "type": "WorldRoom",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[3 items]",
+              "length": 3,
+              "first_item_type": "WorldObject"
+            },
+            "doors": {
+              "type": "OrderedDict",
+              "value": "{0 keys}",
+              "length": 0,
+              "keys": []
+            },
+            "exits": {
+              "type": "OrderedDict",
+              "value": "{1 keys}",
+              "length": 1,
+              "keys": [
+                "south"
+              ]
+            },
+            "id": {
+              "type": "str",
+              "value": "r_3"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "r_3"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[3 items]",
+              "length": 3,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "r"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldRoom(id=r_3, name=r_3, type=r)"
+        },
+        {
+          "object_name": "room_5",
+          "type": "WorldRoom",
+          "attributes": {
+            "content": {
+              "type": "list",
+              "value": "[4 items]",
+              "length": 4,
+              "first_item_type": "WorldObject"
+            },
+            "doors": {
+              "type": "OrderedDict",
+              "value": "{0 keys}",
+              "length": 0,
+              "keys": []
+            },
+            "exits": {
+              "type": "OrderedDict",
+              "value": "{1 keys}",
+              "length": 1,
+              "keys": [
+                "north"
+              ]
+            },
+            "id": {
+              "type": "str",
+              "value": "r_5"
+            },
+            "matching_entity_id": {
+              "type": "NoneType",
+              "value": "None"
+            },
+            "name": {
+              "type": "str",
+              "value": "r_5"
+            },
+            "properties": {
+              "type": "list",
+              "value": "[0 items]",
+              "length": 0
+            },
+            "related_facts": {
+              "type": "list",
+              "value": "[3 items]",
+              "length": 3,
+              "first_item_type": "Proposition"
+            },
+            "type": {
+              "type": "str",
+              "value": "r"
+            }
+          },
+          "methods": [
+            "add_related_fact",
+            "create",
+            "deserialize",
+            "get_attributes",
+            "is_a",
+            "parse",
+            "serialize"
+          ],
+          "summary": "WorldRoom(id=r_5, name=r_5, type=r)"
+        }
+      ],
+      "other_attributes": {}
+    }
+  ],
+  "common_patterns": {
+    "common_game_state_attributes": {},
+    "common_world_attributes": {},
+    "common_object_types": {},
+    "common_room_attributes": {},
+    "command_patterns": {}
+  }
+}

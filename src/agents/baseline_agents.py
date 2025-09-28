@@ -553,8 +553,8 @@ class RAGAgent:
             print(f"⚠️  无法加载场景KG: 知识库路径无效")
             return
 
-        # 尝试加载增强场景KG
-        kg_file = os.path.join(self.knowledge_base_path, f"{scene_name}_enhanced_kg.json")
+        # 尝试加载动作-状态场景KG
+        kg_file = os.path.join(self.knowledge_base_path, f"{scene_name}_action_state_kg.json")
         if not os.path.exists(kg_file):
             print(f"⚠️  场景KG文件不存在: {kg_file}")
             return
@@ -910,7 +910,7 @@ Choose wisely based on the current situation, retrieved knowledge, and task obje
 
     def _parse_rag_response(self, response: str, available_actions: List[str],
                           visible_entities: List[str]) -> Tuple[str, str]:
-        """解析RAG响应"""
+        """解析RAG响应 - 改进版本，包含动作兼容性检查"""
         # 提取ACTION和TARGET
         action_match = re.search(r'ACTION:\s*(\w+)', response, re.IGNORECASE)
         target_match = re.search(r'TARGET:\s*([^\s\n]+)', response, re.IGNORECASE)
@@ -919,17 +919,83 @@ Choose wisely based on the current situation, retrieved knowledge, and task obje
             action = action_match.group(1).lower()
             target = target_match.group(1)
 
-            # 验证动作和目标
+            # 验证动作和目标的基本有效性
             if action in available_actions and target in visible_entities:
-                return action, target
-            else:
-                print(f"⚠️ Invalid action/target, using fallback")
+                # 进一步检查动作-目标兼容性
+                if self._is_action_compatible(action, target):
+                    return action, target
+                else:
+                    print(f"⚠️ Action {action} not compatible with {target}, finding alternative")
 
-        # 回退策略
-        if available_actions and visible_entities:
-            return available_actions[0], visible_entities[0]
+        # 智能回退策略 - 找到兼容的动作-目标组合
+        print(f"🔄 Using intelligent fallback strategy...")
+        return self._find_compatible_action(available_actions, visible_entities)
 
-        raise ValueError(f"Cannot parse RAG response: {response}")
+    def _is_action_compatible(self, action: str, target: str) -> bool:
+        """检查动作和目标是否兼容"""
+        # 检查是否是之前失败的组合
+        failed_key = f"{action}_{target}"
+        if hasattr(self, 'failed_actions') and failed_key in self.failed_actions:
+            failure_count = self.failed_actions[failed_key]
+            if failure_count >= 3:  # 如果失败超过3次，避免重复
+                print(f"⚠️ Avoiding repeated failure: {failed_key} (failed {failure_count} times)")
+                return False
+
+        # 从KG获取目标对象的属性
+        entity_info = self._get_entity_info_from_kg(target)
+
+        # 基于对象属性检查动作兼容性
+        if action == "pick_up":
+            # 检查对象是否可以拾取
+            for info in entity_info:
+                if "Type:" in info:
+                    object_type = info.split("Type: ")[1]
+                    # 大型家具不能拾取
+                    if object_type in ["ArmChair", "CoffeeTable", "Bed", "Desk", "Sofa", "Dresser"]:
+                        print(f"⚠️ Cannot pick up furniture: {object_type}")
+                        return False
+                    # 固定装置不能拾取
+                    if object_type in ["Sink", "Toilet", "Bathtub", "Stove", "Fridge"]:
+                        print(f"⚠️ Cannot pick up fixture: {object_type}")
+                        return False
+
+        elif action == "open":
+            # 检查对象是否可以打开
+            is_openable = False
+            for info in entity_info:
+                if "Openable: True" in info:
+                    is_openable = True
+                    break
+            if not is_openable:
+                print(f"⚠️ Object {target} is not openable")
+                return False
+
+        return True
+
+    def _find_compatible_action(self, available_actions: List[str],
+                              visible_entities: List[str]) -> Tuple[str, str]:
+        """找到兼容的动作-目标组合"""
+        # 优先级策略：examine > go_to > pick_up > open > others
+        action_priority = ["examine", "go_to", "pick_up", "open", "close", "put_down", "wait"]
+
+        for action in action_priority:
+            if action not in available_actions:
+                continue
+
+            for entity in visible_entities:
+                if self._is_action_compatible(action, entity):
+                    print(f"✅ Found compatible action: {action} -> {entity}")
+                    return action, entity
+
+        # 如果没有找到兼容的组合，使用最安全的选择
+        if "examine" in available_actions and visible_entities:
+            print(f"🔒 Using safe fallback: examine -> {visible_entities[0]}")
+            return "examine", visible_entities[0]
+        elif "wait" in available_actions:
+            print(f"🔒 Using wait action as last resort")
+            return "wait", ""
+
+        raise ValueError(f"Cannot find any compatible action-target combination")
 
     def update(self, observation: Dict[str, Any], action: str, target: str,
                reward: float, next_observation: Dict[str, Any], done: bool):

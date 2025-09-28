@@ -1,0 +1,215 @@
+# Enhanced Knowledge Graph Schema
+# Based on enhanced_example_kg.json design pattern
+# For KGRL project - supports game logic, state transitions, and action planning
+
+schema_version: "1.0"
+description: "Enhanced KG schema for game environments with state-action logic"
+
+# Node Types Definition
+node_types:
+  entity:
+    description: "Physical or conceptual objects in the game world"
+    required_attributes:
+      - entity_type
+    optional_attributes:
+      - properties
+      - initial_state
+      - possible_states
+      - description
+    subtypes:
+      scene:
+        description: "Game scenes or environments"
+        attributes:
+          - description
+          - type
+      道具:  # Items/Tools
+        description: "Game items, tools, keys, etc."
+        attributes:
+          - properties
+          - initial_state
+          - possible_states
+      容器:  # Containers
+        description: "Containers, boxes, chests, etc."
+        attributes:
+          - properties
+          - initial_state
+          - possible_states
+      角色:  # Characters
+        description: "Players, NPCs, agents"
+        attributes:
+          - properties
+          - initial_state
+          - possible_states
+      furniture:
+        description: "Furniture and room objects"
+        attributes:
+          - properties
+          - position
+          - initial_state
+          - possible_states
+
+  state:
+    description: "States of entities in the game world"
+    required_attributes:
+      - entity_name
+      - state_type
+      - state_value
+      - is_initial
+    optional_attributes:
+      - description
+      - conditions
+    subtypes:
+      entity_state:
+        description: "State of a specific entity"
+        attributes:
+          - entity_name
+          - state_value
+          - is_initial
+
+  action:
+    description: "Actions that can be performed in the game"
+    required_attributes:
+      - description
+      - required_entities
+      - required_states
+      - effects
+      - result
+    optional_attributes:
+      - preconditions
+      - postconditions
+      - cost
+    subtypes:
+      basic_action:
+        description: "Basic game actions"
+        examples: ["take", "open", "use", "move"]
+      complex_action:
+        description: "Complex multi-step actions"
+        examples: ["unlock_and_open", "search_and_take"]
+
+  result:
+    description: "Results of action execution"
+    required_attributes:
+      - action_name
+      - description
+      - result_value
+    optional_attributes:
+      - success_conditions
+      - failure_conditions
+
+# Edge Types Definition
+edge_types:
+  requires:
+    description: "Action requires entity or state"
+    source_types: ["action"]
+    target_types: ["entity", "state"]
+    attributes:
+      - relationship
+      - required_value (optional)
+
+  modifies:
+    description: "Action modifies entity state"
+    source_types: ["action"]
+    target_types: ["state"]
+    attributes:
+      - relationship
+      - new_value
+
+  produces:
+    description: "Action produces result"
+    source_types: ["action"]
+    target_types: ["result"]
+    attributes:
+      - relationship
+
+  transitions:
+    description: "State transitions"
+    source_types: ["state"]
+    target_types: ["state"]
+    attributes:
+      - action
+      - conditions
+      - effects
+
+  has_state:
+    description: "Entity has state"
+    source_types: ["entity"]
+    target_types: ["state"]
+    attributes:
+      - relationship
+
+  located_in:
+    description: "Entity located in scene/container"
+    source_types: ["entity"]
+    target_types: ["entity"]
+    attributes:
+      - relationship
+
+  connected_to:
+    description: "Entities are connected"
+    source_types: ["entity"]
+    target_types: ["entity"]
+    attributes:
+      - relationship
+      - connection_type
+
+# Validation Rules
+validation_rules:
+  nodes:
+    - "All nodes must have unique IDs"
+    - "Entity nodes must have entity_type attribute"
+    - "State nodes must reference valid entities"
+    - "Action nodes must have non-empty required_entities"
+    - "Result nodes must reference valid actions"
+
+  edges:
+    - "All edges must connect valid node types"
+    - "requires edges from actions must specify relationship"
+    - "modifies edges must specify new_value"
+    - "transitions edges must specify action and conditions"
+
+  consistency:
+    - "Entity initial_state must match a state node"
+    - "Action required_states must reference existing states"
+    - "Action effects must reference existing states"
+    - "State transitions must form valid state machine"
+
+# Metadata Structure
+metadata:
+  required_fields:
+    - node_count
+    - edge_count
+    - node_types
+  optional_fields:
+    - scene_name
+    - game_type
+    - creation_date
+    - version
+    - description
+
+# Example Usage Patterns
+usage_patterns:
+  game_scene:
+    description: "Complete game scene with entities, states, and actions"
+    components:
+      - "Scene entity as root"
+      - "Game objects as entities with states"
+      - "Player/agent as entity"
+      - "Actions with preconditions and effects"
+      - "State transitions for game logic"
+
+  planning_domain:
+    description: "PDDL-style planning domain"
+    components:
+      - "Objects as entities"
+      - "Predicates as states"
+      - "Actions with preconditions and effects"
+      - "Goal states"
+
+  textworld_scene:
+    description: "TextWorld game converted to KG"
+    components:
+      - "Rooms as scene entities"
+      - "Items as entities with states"
+      - "Containers with open/closed states"
+      - "Navigation and manipulation actions"
+      - "Inventory management states"

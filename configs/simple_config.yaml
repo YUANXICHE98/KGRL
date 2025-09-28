@@ -39,7 +39,7 @@ agents:
     type: "RAGAgent"
     description: "Retrieval-Augmented Generation agent"
     max_retrievals: 5
-    knowledge_base_path: "data/knowledge_graphs/enhanced_scenes"  # 使用增强场景KG
+    knowledge_base_path: "data/knowledge_graphs/action_state_scenes"  # 使用动作-状态KG
 
 # 环境配置
 environment:
