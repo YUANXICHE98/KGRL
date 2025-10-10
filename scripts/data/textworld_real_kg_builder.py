@@ -1,14 +1,20 @@
 #!/usr/bin/env python3
 """
-TextWorld Real Knowledge Graph Builder
+TextWorld Real Knowledge Graph Builder - Task-Scene Based
 严格基于真实TextWorld游戏文件构建知识图谱，不使用任何模拟数据
 
 设计理念：
+- 按任务场景分：每个游戏文件生成一个独立的KG
 - 只从真实TextWorld游戏文件提取数据
 - 完整的状态机设计
 - 动作的前置条件和效果
 - 状态转换逻辑
 - 支持推理和规划
+
+场景分化策略：
+- 物理场景：所有游戏共享相同的6个房间布局
+- 任务场景：每个游戏有不同的目标、奖励结构、物品配置
+- KG构建：为每个任务场景生成独立的KG文件
 """
 
 import sys
@@ -120,16 +126,16 @@ class RealTextWorldKGBuilder:
             # 从真实游戏信息提取数据
             self._extract_real_entities(scenario_name, game_info, game_state)
             self._extract_real_actions(game_info, game_state)
-            
+
             # 构建KG结构
             self._create_states_for_entities()
             self._create_state_transitions()
             self._create_relationships()
-            
-            kg_data = self._build_final_kg_data(scenario_name)
-            
+
+            kg_data = self._build_final_kg_data(scenario_name, game_info)
+
             print(f"✅ 成功构建KG: {len(self.entities)} 实体, {len(self.actions)} 动作, {len(self.states)} 状态")
-            
+
             return kg_data
             
         except Exception as e:
@@ -273,41 +279,72 @@ class RealTextWorldKGBuilder:
         return type_mapping[type_code]
 
     def _get_readable_name(self, obj_id: str, entity_type: str, game_info=None) -> str:
-        """从真实游戏数据中获取可读名称 - 基于100%真实数据"""
+        """从真实游戏数据中获取可读名称 - 修复版，基于100%真实数据"""
 
-        # 1. 首先尝试从游戏信息中获取真实名称
-        if game_info and hasattr(game_info, 'entity_names') and game_info.entity_names:
-            # 在真实实体名称列表中查找匹配
-            for entity_name in game_info.entity_names:
-                entity_str = str(entity_name)
-                # 检查ID是否在实体名称中，或者实体名称是否包含ID
-                if obj_id in entity_str or entity_str.replace(' ', '_').lower() == obj_id.lower():
-                    return entity_str
+        # 1. 首先尝试从infos字典获取真实名称（最可靠的来源）
+        if game_info and hasattr(game_info, 'infos'):
+            # infos可能是字典或列表，统一处理
+            if isinstance(game_info.infos, dict):
+                infos_dict = game_info.infos
+            elif isinstance(game_info.infos, list):
+                infos_dict = dict(game_info.infos)
+            else:
+                infos_dict = {}
 
-        # 2. 尝试从objects_names获取真实名称
-        if game_info and hasattr(game_info, 'objects_names') and game_info.objects_names:
-            for obj_name in game_info.objects_names:
-                obj_str = str(obj_name)
-                # 检查ID是否在物品名称中，或者物品名称是否包含ID
-                if obj_id in obj_str or obj_str.replace(' ', '_').lower() == obj_id.lower():
-                    return obj_str
+            if obj_id in infos_dict:
+                obj_info = infos_dict[obj_id]
 
-        # 3. 尝试从游戏世界对象中获取真实描述
+                # obj_info可能是EntityInfo对象或字典
+                if hasattr(obj_info, 'name'):
+                    # EntityInfo对象，直接访问name属性
+                    name = obj_info.name
+                    if name and name is not None:
+                        return str(name)
+                elif isinstance(obj_info, dict):
+                    # 字典，使用get方法
+                    name = obj_info.get('name')
+                    if name and name is not None:
+                        return str(name)
+                else:
+                    # 尝试直接转换为字符串（EntityInfo的__str__方法返回名称）
+                    name_str = str(obj_info)
+                    if name_str and name_str != obj_id:
+                        return name_str
+
+        # 2. 尝试从游戏世界对象中获取真实名称
         if game_info and hasattr(game_info, 'world') and game_info.world:
             world = game_info.world
+
+            # 2.1 检查rooms
+            if hasattr(world, 'rooms') and world.rooms:
+                for room in world.rooms:
+                    if hasattr(room, 'id') and str(room.id) == obj_id:
+                        if hasattr(room, 'name') and room.name:
+                            return str(room.name)
+
+            # 2.2 检查objects
             if hasattr(world, 'objects') and world.objects:
                 for obj in world.objects:
                     if hasattr(obj, 'id') and str(obj.id) == obj_id:
-                        # 检查对象是否有描述或名称属性
                         if hasattr(obj, 'name') and obj.name:
                             return str(obj.name)
-                        elif hasattr(obj, 'desc') and obj.desc:
-                            # 从描述中提取简短名称（取第一个词）
-                            desc_words = str(obj.desc).split()
-                            if desc_words:
-                                return desc_words[0]
 
-        # 4. 如果都找不到真实名称，直接使用原始ID
+        # 3. 尝试从entity_names获取真实名称
+        if game_info and hasattr(game_info, 'entity_names') and game_info.entity_names:
+            for entity_name in game_info.entity_names:
+                entity_str = str(entity_name)
+                # 检查ID是否在实体名称中
+                if obj_id in entity_str or entity_str.replace(' ', '_').lower() == obj_id.lower():
+                    return entity_str
+
+        # 4. 尝试从objects_names获取真实名称
+        if game_info and hasattr(game_info, 'objects_names') and game_info.objects_names:
+            for obj_name in game_info.objects_names:
+                obj_str = str(obj_name)
+                if obj_id in obj_str or obj_str.replace(' ', '_').lower() == obj_id.lower():
+                    return obj_str
+
+        # 5. 如果都找不到真实名称，直接使用原始ID
         # 严格遵循不使用模拟数据的原则
         return obj_id
     
@@ -347,19 +384,50 @@ class RealTextWorldKGBuilder:
                 processed_actions.add(command)
 
     def _parse_and_create_action(self, command: str, action_prefix: str, is_core_action: bool = False):
-        """解析命令并创建动作 - 基于100%真实动词集合"""
+        """解析命令并创建动作 - 增强版，支持复杂命令格式"""
         words = command.lower().split()
         if not words:
             return
 
         action_verb = words[0]
         player = next((e for e in self.entities if e.entity_type == "角色"), None)
+        if not player:
+            return
 
         # 基于从真实TextWorld数据提取的13个动词
         # 真实动词: ['close', 'drop', 'eat', 'examine', 'go', 'insert', 'inventory', 'lock', 'look', 'open', 'put', 'take', 'unlock']
 
-        # 基于真实动词创建动作
+        # === 1. TAKE 动作 ===
+        # 支持格式: "take X" 或 "take X from Y"
         if action_verb == 'take' and len(words) > 1:
+            # 检查是否有 "from" 关键词
+            if 'from' in words:
+                from_index = words.index('from')
+                target_name = ' '.join(words[1:from_index])
+                container_name = ' '.join(words[from_index+1:])
+
+                target_entity = self._find_entity_by_partial_name(target_name)
+                container_entity = self._find_entity_by_partial_name(container_name)
+
+                if target_entity and container_entity:
+                    action = GameAction(
+                        id=f"action_{self.action_counter}",
+                        name=f"从{container_entity.name}获取{target_entity.name}",
+                        description=f"从{container_entity.name}中拿取{target_entity.name}",
+                        required_entities=[player.name, target_entity.name, container_entity.name],
+                        required_states={
+                            target_entity.name: "可获取",
+                            container_entity.name: "打开"
+                        },
+                        effects={target_entity.name: "已获取"},
+                        result="获取成功"
+                    )
+                    self.actions.append(action)
+                    self.action_counter += 1
+                    return
+
+            # 简单的 "take X" 格式
+            target_name = ' '.join(words[1:])
             target_name = ' '.join(words[1:])
             target_entity = self._find_entity_by_partial_name(target_name)
 
@@ -410,7 +478,40 @@ class RealTextWorldKGBuilder:
                 self.actions.append(action)
                 self.action_counter += 1
 
+        # === 4. UNLOCK 动作 ===
+        # 支持格式: "unlock X" 或 "unlock X with Y"
         elif action_verb == 'unlock' and len(words) > 1:
+            # 检查是否有 "with" 关键词
+            if 'with' in words:
+                with_index = words.index('with')
+                target_name = ' '.join(words[1:with_index])
+                key_name = ' '.join(words[with_index+1:])
+
+                target_entity = self._find_entity_by_partial_name(target_name)
+                key_entity = self._find_entity_by_partial_name(key_name)
+
+                if target_entity and target_entity.entity_type in ["容器", "门"]:
+                    required_states = {target_entity.name: "锁定"}
+                    required_entities = [player.name, target_entity.name]
+
+                    if key_entity:
+                        required_states[key_entity.name] = "已获取"
+                        required_entities.append(key_entity.name)
+
+                    action = GameAction(
+                        id=f"action_{self.action_counter}",
+                        name=f"用{key_entity.name if key_entity else '钥匙'}解锁{target_entity.name}",
+                        description=f"使用{key_entity.name if key_entity else '钥匙'}解锁{target_entity.name}",
+                        required_entities=required_entities,
+                        required_states=required_states,
+                        effects={target_entity.name: "解锁"},
+                        result="解锁成功"
+                    )
+                    self.actions.append(action)
+                    self.action_counter += 1
+                    return
+
+            # 简单的 "unlock X" 格式
             target_name = ' '.join(words[1:])
             target_entity = self._find_entity_by_partial_name(target_name)
 
@@ -432,7 +533,40 @@ class RealTextWorldKGBuilder:
                 self.actions.append(action)
                 self.action_counter += 1
 
+        # === 5. LOCK 动作 ===
+        # 支持格式: "lock X" 或 "lock X with Y"
         elif action_verb == 'lock' and len(words) > 1:
+            # 检查是否有 "with" 关键词
+            if 'with' in words:
+                with_index = words.index('with')
+                target_name = ' '.join(words[1:with_index])
+                key_name = ' '.join(words[with_index+1:])
+
+                target_entity = self._find_entity_by_partial_name(target_name)
+                key_entity = self._find_entity_by_partial_name(key_name)
+
+                if target_entity and target_entity.entity_type in ["容器", "门"]:
+                    required_states = {target_entity.name: "解锁"}
+                    required_entities = [player.name, target_entity.name]
+
+                    if key_entity:
+                        required_states[key_entity.name] = "已获取"
+                        required_entities.append(key_entity.name)
+
+                    action = GameAction(
+                        id=f"action_{self.action_counter}",
+                        name=f"用{key_entity.name if key_entity else '钥匙'}锁定{target_entity.name}",
+                        description=f"使用{key_entity.name if key_entity else '钥匙'}锁定{target_entity.name}",
+                        required_entities=required_entities,
+                        required_states=required_states,
+                        effects={target_entity.name: "锁定"},
+                        result="锁定成功"
+                    )
+                    self.actions.append(action)
+                    self.action_counter += 1
+                    return
+
+            # 简单的 "lock X" 格式
             target_name = ' '.join(words[1:])
             target_entity = self._find_entity_by_partial_name(target_name)
 
@@ -470,26 +604,55 @@ class RealTextWorldKGBuilder:
                 self.actions.append(action)
                 self.action_counter += 1
 
-        elif action_verb == 'put' and len(words) > 3 and 'on' in words:
-            on_index = words.index('on')
-            item_name = ' '.join(words[1:on_index])
-            surface_name = ' '.join(words[on_index+1:])
+        # === 7. PUT 动作 ===
+        # 支持格式: "put X on Y" 或 "put X in Y"
+        elif action_verb == 'put' and len(words) > 3:
+            if 'on' in words:
+                on_index = words.index('on')
+                item_name = ' '.join(words[1:on_index])
+                surface_name = ' '.join(words[on_index+1:])
 
-            item_entity = self._find_entity_by_partial_name(item_name)
-            surface_entity = self._find_entity_by_partial_name(surface_name)
+                item_entity = self._find_entity_by_partial_name(item_name)
+                surface_entity = self._find_entity_by_partial_name(surface_name)
 
-            if item_entity and surface_entity and surface_entity.entity_type == "支撑面":
-                action = GameAction(
-                    id=f"action_{self.action_counter}",
-                    name=f"放置{item_entity.name}到{surface_entity.name}",
-                    description=f"将{item_entity.name}放置到{surface_entity.name}上",
-                    required_entities=[player.name, item_entity.name, surface_entity.name],
-                    required_states={item_entity.name: "已获取", surface_entity.name: "可用"},
-                    effects={item_entity.name: "已放置", surface_entity.name: "已占用"},
-                    result="放置成功"
-                )
-                self.actions.append(action)
-                self.action_counter += 1
+                if item_entity and surface_entity:
+                    action = GameAction(
+                        id=f"action_{self.action_counter}",
+                        name=f"放置{item_entity.name}到{surface_entity.name}",
+                        description=f"将{item_entity.name}放置到{surface_entity.name}上",
+                        required_entities=[player.name, item_entity.name, surface_entity.name],
+                        required_states={item_entity.name: "已获取"},
+                        effects={item_entity.name: "已放置"},
+                        result="放置成功"
+                    )
+                    self.actions.append(action)
+                    self.action_counter += 1
+                    return
+
+            elif 'in' in words:
+                in_index = words.index('in')
+                item_name = ' '.join(words[1:in_index])
+                container_name = ' '.join(words[in_index+1:])
+
+                item_entity = self._find_entity_by_partial_name(item_name)
+                container_entity = self._find_entity_by_partial_name(container_name)
+
+                if item_entity and container_entity and container_entity.entity_type == "容器":
+                    action = GameAction(
+                        id=f"action_{self.action_counter}",
+                        name=f"放入{item_entity.name}到{container_entity.name}",
+                        description=f"将{item_entity.name}放入{container_entity.name}中",
+                        required_entities=[player.name, item_entity.name, container_entity.name],
+                        required_states={
+                            item_entity.name: "已获取",
+                            container_entity.name: "打开"
+                        },
+                        effects={item_entity.name: "已放置"},
+                        result="放入成功"
+                    )
+                    self.actions.append(action)
+                    self.action_counter += 1
+                    return
 
         elif action_verb == 'drop' and len(words) > 1:
             target_name = ' '.join(words[1:])
@@ -508,6 +671,7 @@ class RealTextWorldKGBuilder:
                 self.actions.append(action)
                 self.action_counter += 1
 
+        # === 9. EAT 动作 ===
         elif action_verb == 'eat' and len(words) > 1:
             target_name = ' '.join(words[1:])
             target_entity = self._find_entity_by_partial_name(target_name)
@@ -521,6 +685,32 @@ class RealTextWorldKGBuilder:
                     required_states={target_entity.name: "已获取"},
                     effects={target_entity.name: "已消耗"},
                     result="食用成功"
+                )
+                self.actions.append(action)
+                self.action_counter += 1
+
+        # === 10. INSERT 动作 ===
+        # 支持格式: "insert X into Y"
+        elif action_verb == 'insert' and len(words) > 3 and 'into' in words:
+            into_index = words.index('into')
+            item_name = ' '.join(words[1:into_index])
+            container_name = ' '.join(words[into_index+1:])
+
+            item_entity = self._find_entity_by_partial_name(item_name)
+            container_entity = self._find_entity_by_partial_name(container_name)
+
+            if item_entity and container_entity and container_entity.entity_type == "容器":
+                action = GameAction(
+                    id=f"action_{self.action_counter}",
+                    name=f"插入{item_entity.name}到{container_entity.name}",
+                    description=f"将{item_entity.name}插入{container_entity.name}中",
+                    required_entities=[player.name, item_entity.name, container_entity.name],
+                    required_states={
+                        item_entity.name: "已获取",
+                        container_entity.name: "打开"
+                    },
+                    effects={item_entity.name: "已放置"},
+                    result="插入成功"
                 )
                 self.actions.append(action)
                 self.action_counter += 1
@@ -689,8 +879,8 @@ class RealTextWorldKGBuilder:
                     }
                 })
 
-    def _build_final_kg_data(self, scenario_name: str) -> Dict[str, Any]:
-        """构建最终的KG数据"""
+    def _build_final_kg_data(self, scenario_name: str, game_info=None) -> Dict[str, Any]:
+        """构建最终的KG数据 - 包含任务场景信息"""
         nodes = []
 
         # 添加实体节点
@@ -742,6 +932,17 @@ class RealTextWorldKGBuilder:
         for result in self.results:
             nodes.append(result)
 
+        # 提取任务场景信息
+        task_info = {}
+        if game_info:
+            if hasattr(game_info, 'objective'):
+                task_info['objective'] = game_info.objective
+            if hasattr(game_info, 'max_score'):
+                task_info['max_score'] = game_info.max_score
+            if hasattr(game_info, 'walkthrough'):
+                task_info['walkthrough'] = game_info.walkthrough
+                task_info['walkthrough_length'] = len(game_info.walkthrough)
+
         return {
             "nodes": nodes,
             "edges": self.edges,
@@ -750,17 +951,21 @@ class RealTextWorldKGBuilder:
                 "edge_count": len(self.edges),
                 "node_types": ["entity", "state", "action", "result"],
                 "scene_name": scenario_name,
+                "scene_type": "task_scene",  # 标记为任务场景
                 "game_type": "textworld",
-                "schema_version": "1.0",
-                "data_source": "real_textworld_game"
+                "schema_version": "2.0",  # 更新版本号
+                "data_source": "real_textworld_game",
+                "task_info": task_info  # 添加任务信息
             }
         }
 
 
 def main():
-    """主函数"""
-    print("🚀 Real TextWorld Knowledge Graph Builder")
-    print("=" * 50)
+    """主函数 - 按任务场景批量处理所有TextWorld游戏文件"""
+    print("🚀 TextWorld Knowledge Graph Builder - Task-Scene Based")
+    print("=" * 80)
+    print("📋 策略: 为每个任务场景生成独立的知识图谱")
+    print("=" * 80)
 
     builder = RealTextWorldKGBuilder()
 
@@ -777,39 +982,102 @@ def main():
         print(f"📁 搜索目录: {textworld_dir}")
         return
 
-    print(f"📁 找到 {len(game_files)} 个TextWorld游戏文件")
+    # 排序确保处理顺序一致
+    game_files = sorted(game_files)
 
-    # 处理第一个游戏文件作为示例
-    game_file = game_files[0]
-    print(f"🎯 处理游戏文件: {game_file}")
+    print(f"\n📁 找到 {len(game_files)} 个TextWorld任务场景文件:")
+    for i, gf in enumerate(game_files, 1):
+        print(f"   {i}. {gf.name}")
 
-    try:
-        kg_data = builder.build_kg_from_real_game_file(str(game_file))
+    print(f"\n{'=' * 80}")
+    print(f"🎯 开始批量处理...")
+    print(f"{'=' * 80}\n")
 
-        # 保存KG文件
-        scenario_name = kg_data["metadata"]["scene_name"]
-        output_file = project_root / f"data/kg/enhanced_scenes/{scenario_name}_enhanced_kg.json"
-        output_file.parent.mkdir(parents=True, exist_ok=True)
+    # 统计信息
+    success_count = 0
+    failed_count = 0
+    failed_files = []
+    kg_summary = []
 
-        with open(output_file, 'w', encoding='utf-8') as f:
-            json.dump(kg_data, f, indent=2, ensure_ascii=False)
+    # 批量处理所有游戏文件
+    for i, game_file in enumerate(game_files, 1):
+        print(f"\n{'=' * 80}")
+        print(f"� 处理任务场景 {i}/{len(game_files)}: {game_file.name}")
+        print(f"{'=' * 80}")
 
-        print(f"✅ KG保存成功: {output_file}")
-        print(f"📊 统计: {kg_data['metadata']['node_count']} 节点, {kg_data['metadata']['edge_count']} 边")
+        try:
+            # 构建KG
+            kg_data = builder.build_kg_from_real_game_file(str(game_file))
 
-        # 显示节点类型分布
-        node_types = {}
-        for node in kg_data['nodes']:
-            node_type = node['type']
-            node_types[node_type] = node_types.get(node_type, 0) + 1
+            # 保存KG文件
+            scenario_name = kg_data["metadata"]["scene_name"]
+            output_file = project_root / f"data/kg/task_scenes/{scenario_name}_task_kg.json"
+            output_file.parent.mkdir(parents=True, exist_ok=True)
 
-        print("\n📋 节点类型分布:")
-        for node_type, count in node_types.items():
-            print(f"   - {node_type}: {count}")
+            with open(output_file, 'w', encoding='utf-8') as f:
+                json.dump(kg_data, f, indent=2, ensure_ascii=False)
 
-    except Exception as e:
-        print(f"❌ 处理失败: {e}")
-        return
+            # 统计节点类型分布
+            node_types = {}
+            for node in kg_data['nodes']:
+                node_type = node['type']
+                node_types[node_type] = node_types.get(node_type, 0) + 1
+
+            print(f"\n✅ KG保存成功: {output_file.name}")
+            print(f"📊 统计: {kg_data['metadata']['node_count']} 节点, {kg_data['metadata']['edge_count']} 边")
+            print(f"📋 节点类型分布: {node_types}")
+
+            # 记录成功
+            success_count += 1
+            kg_summary.append({
+                "file": game_file.name,
+                "scenario": scenario_name,
+                "output": output_file.name,
+                "nodes": kg_data['metadata']['node_count'],
+                "edges": kg_data['metadata']['edge_count'],
+                "node_types": node_types,
+                "status": "success"
+            })
+
+        except Exception as e:
+            print(f"\n❌ 处理失败: {e}")
+            import traceback
+            traceback.print_exc()
+
+            failed_count += 1
+            failed_files.append(game_file.name)
+            kg_summary.append({
+                "file": game_file.name,
+                "status": "failed",
+                "error": str(e)
+            })
+
+    # 打印最终汇总
+    print(f"\n{'=' * 80}")
+    print(f"🎉 批量处理完成！")
+    print(f"{'=' * 80}")
+    print(f"✅ 成功: {success_count}/{len(game_files)}")
+    print(f"❌ 失败: {failed_count}/{len(game_files)}")
+
+    if failed_files:
+        print(f"\n❌ 失败的文件:")
+        for ff in failed_files:
+            print(f"   - {ff}")
+
+    # 保存汇总报告
+    summary_file = project_root / "data/kg/task_scenes/task_scenes_summary.json"
+    with open(summary_file, 'w', encoding='utf-8') as f:
+        json.dump({
+            "total_files": len(game_files),
+            "success_count": success_count,
+            "failed_count": failed_count,
+            "failed_files": failed_files,
+            "kg_details": kg_summary
+        }, f, indent=2, ensure_ascii=False)
+
+    print(f"\n📄 汇总报告已保存: {summary_file.name}")
+    print(f"📁 所有KG文件保存在: data/kg/task_scenes/")
+    print(f"\n{'=' * 80}")
 
 
 if __name__ == "__main__":

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-交互式知识图谱导入脚本
-让用户选择数字导入对应的KG文件到Neo4j
+TextWorld任务场景知识图谱导入器
+专门用于导入TextWorld任务场景KG到Neo4j
 """
 
 import sys
@@ -14,22 +14,20 @@ sys.path.insert(0, str(project_root))
 
 try:
     from neo4j import GraphDatabase
-    NEO4J_AVAILABLE = True
 except ImportError:
-    NEO4J_AVAILABLE = False
     print("❌ Neo4j driver未安装，请运行: pip install neo4j")
     sys.exit(1)
 
 
-class SimpleNeo4jImporter:
-    """简单的Neo4j导入器"""
-    
+class TextWorldKGImporter:
+    """TextWorld任务场景KG导入器"""
+
     def __init__(self, uri="bolt://localhost:7687", user="neo4j", password="yuanxi98"):
         self.uri = uri
         self.user = user
         self.password = password
         self.driver = None
-    
+
     def connect(self):
         """连接到Neo4j"""
         try:
@@ -40,182 +38,271 @@ class SimpleNeo4jImporter:
             return True
         except Exception as e:
             print(f"❌ 连接Neo4j失败: {e}")
+            print(f"   请确保Neo4j正在运行，地址: {self.uri}")
             return False
-    
+
     def clear_database(self):
         """清空数据库"""
         try:
             with self.driver.session() as session:
-                # 删除所有节点和关系
                 session.run("MATCH (n) DETACH DELETE n")
-
-                # 删除所有约束
-                constraints_result = session.run("SHOW CONSTRAINTS")
-                for record in constraints_result:
-                    constraint_name = record.get("name")
-                    if constraint_name:
-                        try:
-                            session.run(f"DROP CONSTRAINT {constraint_name}")
-                        except:
-                            pass  # 忽略删除约束的错误
-
-                # 删除所有索引
-                indexes_result = session.run("SHOW INDEXES")
-                for record in indexes_result:
-                    index_name = record.get("name")
-                    if index_name and not index_name.startswith("system"):
-                        try:
-                            session.run(f"DROP INDEX {index_name}")
-                        except:
-                            pass  # 忽略删除索引的错误
-
-            print("🧹 数据库已完全清空 (包括约束和索引)")
+            print("🧹 数据库已清空")
             return True
         except Exception as e:
             print(f"❌ 清空数据库失败: {e}")
             return False
-    
-    def import_kg_simple(self, json_file):
-        """简单导入KG文件"""
+
+    def create_indexes_and_constraints(self):
+        """创建索引和约束以改善可视化性能"""
         try:
-            print(f"📁 加载文件: {json_file}")
-            
+            with self.driver.session() as session:
+                # 为每种节点类型创建唯一约束
+                node_types = ['Entity', 'Action', 'State', 'Result']
+
+                for node_type in node_types:
+                    try:
+                        # 创建唯一约束（如果不存在）
+                        constraint_query = f"CREATE CONSTRAINT IF NOT EXISTS FOR (n:{node_type}) REQUIRE n.id IS UNIQUE"
+                        session.run(constraint_query)
+
+                        # 创建name索引以改善搜索性能
+                        index_query = f"CREATE INDEX IF NOT EXISTS FOR (n:{node_type}) ON (n.name)"
+                        session.run(index_query)
+
+                    except Exception as e:
+                        # 忽略已存在的约束/索引错误
+                        pass
+
+                print("📊 已创建索引和约束")
+                return True
+        except Exception as e:
+            print(f"⚠️ 创建索引失败: {e}")
+            return False
+    
+    def import_textworld_kg(self, json_file):
+        """导入TextWorld任务场景KG"""
+        try:
+            print(f"📁 加载文件: {Path(json_file).name}")
+
             with open(json_file, 'r', encoding='utf-8') as f:
                 data = json.load(f)
-            
+
             nodes = data.get('nodes', [])
             edges = data.get('edges', [])
-            
+            metadata = data.get('metadata', {})
+
             print(f"📊 统计: {len(nodes)} 节点, {len(edges)} 边")
-            
+
+            # 显示任务信息
+            task_info = metadata.get('task_info', {})
+            if task_info:
+                print(f"🎯 任务: {task_info.get('objective', 'N/A')[:60]}...")
+                print(f"📈 最大分数: {task_info.get('max_score', 'N/A')}")
+                print(f"🎮 通关步骤: {task_info.get('walkthrough_length', 'N/A')}步")
+
+            # 创建索引和约束
+            self.create_indexes_and_constraints()
+
             with self.driver.session() as session:
                 # 导入节点
                 print("🔄 导入节点...")
                 for i, node in enumerate(nodes):
-                    if i % 50 == 0:
+                    if i % 50 == 0 and i > 0:
                         print(f"   进度: {i}/{len(nodes)}")
-                    
-                    label = self._get_label(node['type'])
+
+                    # 根据节点类型设置标签
+                    node_type = node['type']
+                    label = node_type.capitalize()
+
+                    # 准备基础属性
                     props = {
                         'id': node['id'],
                         'name': node['name'],
-                        'type': node['type']
+                        'type': node_type,
+                        'display_name': node['name']  # 专门用于显示的属性
                     }
-                    
-                    # 添加属性
+
+                    # 添加attributes中的属性
                     attrs = node.get('attributes', {})
                     for key, value in attrs.items():
-                        if isinstance(value, (str, int, float, bool)):
+                        # 跳过复杂的嵌套属性，避免显示混乱
+                        if key in ['properties', 'required_entities', 'required_states', 'effects']:
+                            if isinstance(value, dict):
+                                # 将字典转换为易读的字符串
+                                props[key] = json.dumps(value, ensure_ascii=False, indent=2)
+                            elif isinstance(value, list):
+                                props[key] = ', '.join(str(v) for v in value)
+                            else:
+                                props[key] = str(value)
+                        elif isinstance(value, (str, int, float, bool)):
                             props[key] = value
+                        elif isinstance(value, (list, dict)):
+                            props[key] = json.dumps(value, ensure_ascii=False)
                         else:
                             props[key] = str(value)
-                    
-                    # 使用MERGE避免重复节点
+
+                    # 为不同类型的节点添加特殊属性以改善可视化
+                    if node_type == 'entity':
+                        entity_type = attrs.get('entity_type', 'unknown')
+                        props['entity_type'] = entity_type
+                        props['label_display'] = f"{node['name']} ({entity_type})"
+                    elif node_type == 'action':
+                        props['label_display'] = f"⚡ {node['name']}"
+                    elif node_type == 'state':
+                        props['label_display'] = f"🔄 {node['name']}"
+                    elif node_type == 'result':
+                        props['label_display'] = f"✅ {node['name']}"
+                    else:
+                        props['label_display'] = node['name']
+
+                    # 创建节点，使用MERGE避免重复
                     query = f"MERGE (n:{label} {{id: $id}}) SET n = $props"
                     session.run(query, id=props['id'], props=props)
-                
+
                 print(f"✅ 导入了 {len(nodes)} 个节点")
-                
-                # 导入边
-                print("🔄 导入边...")
+
+                # 导入关系
+                print("🔄 导入关系...")
                 for i, edge in enumerate(edges):
-                    if i % 50 == 0:
+                    if i % 50 == 0 and i > 0:
                         print(f"   进度: {i}/{len(edges)}")
-                    
+
                     rel_type = edge['type'].upper()
-                    # 使用MERGE避免重复关系
-                    query = f"""
-                    MATCH (a {{id: $source}})
-                    MATCH (b {{id: $target}})
-                    MERGE (a)-[r:{rel_type}]->(b)
-                    """
-                    session.run(query, source=edge['source'], target=edge['target'])
-                
-                print(f"✅ 导入了 {len(edges)} 条边")
-            
+
+                    # 准备关系属性
+                    rel_props = {
+                        'type': edge['type']
+                    }
+
+                    # 添加其他边属性（如果有）
+                    for key, value in edge.items():
+                        if key not in ['source', 'target', 'type']:
+                            if isinstance(value, (str, int, float, bool)):
+                                rel_props[key] = value
+                            else:
+                                rel_props[key] = str(value)
+
+                    # 创建关系
+                    if rel_props:
+                        query = f"""
+                        MATCH (a {{id: $source}})
+                        MATCH (b {{id: $target}})
+                        MERGE (a)-[r:{rel_type}]->(b)
+                        SET r = $props
+                        """
+                        session.run(query, source=edge['source'], target=edge['target'], props=rel_props)
+                    else:
+                        query = f"""
+                        MATCH (a {{id: $source}})
+                        MATCH (b {{id: $target}})
+                        MERGE (a)-[r:{rel_type}]->(b)
+                        """
+                        session.run(query, source=edge['source'], target=edge['target'])
+
+                print(f"✅ 导入了 {len(edges)} 条关系")
+
+                # 设置Neo4j浏览器的节点显示属性
+                print("🎨 配置节点显示...")
+                display_configs = [
+                    "CALL db.createLabel('Entity')",
+                    "CALL db.createLabel('Action')",
+                    "CALL db.createLabel('State')",
+                    "CALL db.createLabel('Result')"
+                ]
+
+                # 这些命令可能在某些Neo4j版本中不可用，所以忽略错误
+                for config in display_configs:
+                    try:
+                        session.run(config)
+                    except:
+                        pass
+
+                print("💡 提示: 在Neo4j浏览器中，点击节点类型图标，选择'name'作为Caption属性")
+
             return True
-            
+
         except Exception as e:
             print(f"❌ 导入失败: {e}")
             return False
-    
-    def _get_label(self, node_type):
-        """获取节点标签"""
-        mapping = {
-            'action': 'Action',
-            'entity': 'Entity',
-            'state': 'State',
-            'result': 'Result',
-            'condition': 'Condition',
-            'rule': 'Rule'
-        }
-        return mapping.get(node_type, node_type.capitalize())
-    
+
     def get_stats(self):
-        """获取统计信息"""
+        """获取数据库统计信息"""
         try:
             with self.driver.session() as session:
+                # 节点统计
                 node_result = session.run("MATCH (n) RETURN count(n) as count")
                 node_count = node_result.single()['count']
-                
+
+                # 关系统计
                 rel_result = session.run("MATCH ()-[r]->() RETURN count(r) as count")
                 rel_count = rel_result.single()['count']
-                
-                return {'nodes': node_count, 'relationships': rel_count}
-        except:
-            return {'nodes': 0, 'relationships': 0}
-    
+
+                # 节点类型统计
+                type_result = session.run("MATCH (n) RETURN n.type as type, count(n) as count")
+                type_stats = {record['type']: record['count'] for record in type_result}
+
+                return {
+                    'nodes': node_count,
+                    'relationships': rel_count,
+                    'node_types': type_stats
+                }
+        except Exception as e:
+            print(f"❌ 获取统计信息失败: {e}")
+            return {'nodes': 0, 'relationships': 0, 'node_types': {}}
+
     def close(self):
         """关闭连接"""
         if self.driver:
             self.driver.close()
 
 
+def get_available_kg_files():
+    """获取可用的KG文件列表"""
+    kg_dir = Path("data/kg/task_scenes")
+    kg_files = []
+
+    if kg_dir.exists():
+        for kg_file in sorted(kg_dir.glob("TextWorld_*_task_kg.json")):
+            kg_files.append(str(kg_file))
+
+    return kg_files
+
+
 def main():
     """主函数"""
-    
-    # KG文件映射 - 更新为包含新的TextWorld KG
-    kg_files = {
-        # 1. 真实TextWorld KG文件 (新生成的基于100%真实数据)
-        1: "data/kg/enhanced_scenes/TextWorld_tw-another_game_enhanced_kg.json",
 
-        # 2. 增强示例KG (原来的4号，作为对比)
-        2: "data/kg/extracted/enhanced_example_kg.json",
+    print("🚀 TextWorld任务场景KG导入器")
+    print("=" * 60)
+    print("📋 专门用于导入TextWorld任务场景知识图谱到Neo4j")
+    print("=" * 60)
 
-        # 3-8. 其他可用的KG文件 (如果存在)
-        3: "data/kg/extracted/alfworld_kg.json",
-        4: "data/kg/extracted/test_kg.json",
-        5: "data/kg/extracted/textworld_kg.json",
-        6: "data/kg/domains/textworld/basic_game.json",
-        7: "data/kg/schemas/kg_schema.json",
-        8: "data/kg/enhanced_scenes/enhanced_scenes_summary.json"
-    }
-    
-    print("🚀 交互式知识图谱导入器")
-    print("=" * 50)
-    
-    # 显示文件列表
-    print("📋 可用的KG文件:")
-    print("  1. 🎮 真实TextWorld KG (基于100%真实数据)")
-    print("  2. 📦 增强示例KG (原设计模板)")
-    print("  3. 📦 ALFWorld KG")
-    print("  4. 📦 测试KG")
-    print("  5. 📦 TextWorld KG (旧版)")
-    print("  6. 📄 基础游戏KG")
-    print("  7. 📄 KG模式定义")
-    print("  8. 📄 场景汇总")
-    
-    print("\n" + "=" * 50)
-    
+    # 获取可用的KG文件
+    kg_files = get_available_kg_files()
+
+    if not kg_files:
+        print("❌ 未找到任务场景KG文件")
+        print("   请确保 data/kg/task_scenes/ 目录下有KG文件")
+        return
+
+    print(f"\n📁 找到 {len(kg_files)} 个任务场景KG文件:")
+    for i, kg_file in enumerate(kg_files, 1):
+        filename = Path(kg_file).name
+        scenario_name = filename.replace("TextWorld_", "").replace("_task_kg.json", "")
+        print(f"  {i}. {scenario_name}")
+
+    print(f"\n  {len(kg_files)+1}. 🎯 导入全部文件")
+    print(f"  {len(kg_files)+2}. 📄 查看汇总报告")
+
     # 创建导入器
-    importer = SimpleNeo4jImporter()
-    
+    importer = TextWorldKGImporter()
+
     if not importer.connect():
         return
-    
+
     try:
         while True:
-            print("\n🎯 请选择要导入的KG文件 (输入数字 1-8，或 'q' 退出):")
+            max_choice = len(kg_files) + 2
+            print(f"\n🎯 请选择操作 (输入数字 1-{max_choice}，或 'q' 退出):")
             choice = input(">>> ").strip()
 
             if choice.lower() == 'q':
@@ -224,79 +311,73 @@ def main():
 
             try:
                 num = int(choice)
-                if num not in kg_files:
-                    print("❌ 无效的数字，请输入 1-8")
-                    continue
 
-                selected = kg_files[num]
+                if 1 <= num <= len(kg_files):
+                    # 导入单个KG文件
+                    selected_file = kg_files[num - 1]
 
-                # 确认清空数据库
-                confirm = input("🧹 是否先清空数据库? (y/n): ").strip().lower()
-                if confirm == 'y':
-                    importer.clear_database()
+                    # 确认清空数据库
+                    confirm = input("🧹 是否先清空数据库? (y/n): ").strip().lower()
+                    if confirm == 'y':
+                        importer.clear_database()
 
-                # 处理单个文件或文件组
-                if isinstance(selected, list):
-                    # 文件组 (选项1和7)
-                    print(f"\n📁 选择的文件组包含 {len(selected)} 个文件:")
-                    for i, file_path in enumerate(selected, 1):
-                        filename = Path(file_path).name
-                        print(f"  {i}. {filename}")
-
-                    sub_choice = input(f"\n请选择具体文件 (1-{len(selected)}) 或 'a' 导入全部: ").strip()
-
-                    if sub_choice.lower() == 'a':
-                        # 导入全部
-                        success_count = 0
-                        for file_path in selected:
-                            kg_file = project_root / file_path
-                            if kg_file.exists():
-                                print(f"\n� 导入: {kg_file.name}")
-                                if importer.import_kg_simple(str(kg_file)):
-                                    success_count += 1
-
-                        stats = importer.get_stats()
-                        print(f"\n✅ 成功导入 {success_count}/{len(selected)} 个文件")
-                        print(f"📊 数据库统计: {stats['nodes']} 节点, {stats['relationships']} 关系")
-                    else:
-                        # 导入单个
-                        try:
-                            sub_num = int(sub_choice) - 1
-                            if 0 <= sub_num < len(selected):
-                                kg_file = project_root / selected[sub_num]
-                                if kg_file.exists():
-                                    print(f"\n🚀 导入: {kg_file.name}")
-                                    success = importer.import_kg_simple(str(kg_file))
-                                    if success:
-                                        stats = importer.get_stats()
-                                        print(f"\n✅ 导入成功!")
-                                        print(f"📊 数据库统计: {stats['nodes']} 节点, {stats['relationships']} 关系")
-                            else:
-                                print("❌ 无效的文件编号")
-                        except ValueError:
-                            print("❌ 请输入有效的数字")
-                else:
-                    # 单个文件
-                    kg_file = project_root / selected
-
-                    if not kg_file.exists():
-                        print(f"❌ 文件不存在: {kg_file}")
-                        continue
-
-                    print(f"\n📁 选择的文件: {kg_file.name}")
-
-                    # 导入文件
-                    print(f"\n🚀 开始导入...")
-                    success = importer.import_kg_simple(str(kg_file))
+                    print(f"\n🚀 开始导入: {Path(selected_file).name}")
+                    success = importer.import_textworld_kg(selected_file)
 
                     if success:
                         stats = importer.get_stats()
                         print(f"\n✅ 导入成功!")
-                        print(f"📊 数据库统计: {stats['nodes']} 节点, {stats['relationships']} 关系")
-                    else:
-                        print(f"\n❌ 导入失败!")
+                        print(f"📊 数据库统计:")
+                        print(f"   总节点: {stats['nodes']}")
+                        print(f"   总关系: {stats['relationships']}")
+                        print(f"   节点类型: {stats['node_types']}")
+                        print(f"🌐 Neo4j浏览器: http://localhost:7474")
 
-                print(f"🌐 查看地址: http://localhost:7474")
+                elif num == len(kg_files) + 1:
+                    # 导入全部文件
+                    confirm = input("🧹 是否先清空数据库? (y/n): ").strip().lower()
+                    if confirm == 'y':
+                        importer.clear_database()
+
+                    print(f"\n🚀 开始批量导入 {len(kg_files)} 个文件...")
+                    success_count = 0
+
+                    for i, kg_file in enumerate(kg_files, 1):
+                        print(f"\n📦 [{i}/{len(kg_files)}] 导入: {Path(kg_file).name}")
+                        if importer.import_textworld_kg(kg_file):
+                            success_count += 1
+
+                    stats = importer.get_stats()
+                    print(f"\n✅ 批量导入完成: {success_count}/{len(kg_files)} 成功")
+                    print(f"📊 最终数据库统计:")
+                    print(f"   总节点: {stats['nodes']}")
+                    print(f"   总关系: {stats['relationships']}")
+                    print(f"   节点类型: {stats['node_types']}")
+                    print(f"🌐 Neo4j浏览器: http://localhost:7474")
+
+                elif num == len(kg_files) + 2:
+                    # 查看汇总报告
+                    summary_file = "data/kg/task_scenes/task_scenes_summary.json"
+                    try:
+                        with open(summary_file, 'r', encoding='utf-8') as f:
+                            summary = json.load(f)
+
+                        print(f"\n📊 任务场景KG汇总报告:")
+                        print(f"   总文件数: {summary['total_files']}")
+                        print(f"   成功处理: {summary['success_count']}")
+                        print(f"   失败数: {summary['failed_count']}")
+
+                        print(f"\n📋 详细统计:")
+                        for detail in summary['kg_details']:
+                            scenario = detail['scenario'].replace('TextWorld_', '')
+                            print(f"   {scenario}:")
+                            print(f"     节点: {detail['nodes']}, 边: {detail['edges']}")
+                            print(f"     动作: {detail['node_types']['action']}")
+                    except Exception as e:
+                        print(f"❌ 读取汇总报告失败: {e}")
+
+                else:
+                    print(f"❌ 无效的数字，请输入 1-{max_choice}")
 
             except ValueError:
                 print("❌ 请输入有效的数字")
@@ -304,7 +385,7 @@ def main():
             except KeyboardInterrupt:
                 print("\n\n👋 用户中断，退出程序")
                 break
-    
+
     finally:
         importer.close()
 

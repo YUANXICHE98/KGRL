@@ -1,0 +1,120 @@
+{
+  "total_files": 8,
+  "success_count": 8,
+  "failed_count": 0,
+  "failed_files": [],
+  "kg_details": [
+    {
+      "file": "tw-another_game.z8",
+      "scenario": "TextWorld_tw-another_game",
+      "output": "TextWorld_tw-another_game_task_kg.json",
+      "nodes": 173,
+      "edges": 51,
+      "node_types": {
+        "entity": 38,
+        "state": 121,
+        "action": 9,
+        "result": 5
+      },
+      "status": "success"
+    },
+    {
+      "file": "tw-rewardsBalanced_goalBrief.z8",
+      "scenario": "TextWorld_tw-rewardsBalanced_goalBrief",
+      "output": "TextWorld_tw-rewardsBalanced_goalBrief_task_kg.json",
+      "nodes": 180,
+      "edges": 67,
+      "node_types": {
+        "entity": 38,
+        "state": 121,
+        "action": 12,
+        "result": 9
+      },
+      "status": "success"
+    },
+    {
+      "file": "tw-rewardsBalanced_goalDetailed.z8",
+      "scenario": "TextWorld_tw-rewardsBalanced_goalDetailed",
+      "output": "TextWorld_tw-rewardsBalanced_goalDetailed_task_kg.json",
+      "nodes": 180,
+      "edges": 67,
+      "node_types": {
+        "entity": 38,
+        "state": 121,
+        "action": 12,
+        "result": 9
+      },
+      "status": "success"
+    },
+    {
+      "file": "tw-rewardsDense_goalBrief.z8",
+      "scenario": "TextWorld_tw-rewardsDense_goalBrief",
+      "output": "TextWorld_tw-rewardsDense_goalBrief_task_kg.json",
+      "nodes": 180,
+      "edges": 67,
+      "node_types": {
+        "entity": 38,
+        "state": 121,
+        "action": 12,
+        "result": 9
+      },
+      "status": "success"
+    },
+    {
+      "file": "tw-rewardsDense_goalDetailed.z8",
+      "scenario": "TextWorld_tw-rewardsDense_goalDetailed",
+      "output": "TextWorld_tw-rewardsDense_goalDetailed_task_kg.json",
+      "nodes": 180,
+      "edges": 67,
+      "node_types": {
+        "entity": 38,
+        "state": 121,
+        "action": 12,
+        "result": 9
+      },
+      "status": "success"
+    },
+    {
+      "file": "tw-rewardsSparse_goalBrief.z8",
+      "scenario": "TextWorld_tw-rewardsSparse_goalBrief",
+      "output": "TextWorld_tw-rewardsSparse_goalBrief_task_kg.json",
+      "nodes": 180,
+      "edges": 67,
+      "node_types": {
+        "entity": 38,
+        "state": 121,
+        "action": 12,
+        "result": 9
+      },
+      "status": "success"
+    },
+    {
+      "file": "tw-rewardsSparse_goalDetailed.z8",
+      "scenario": "TextWorld_tw-rewardsSparse_goalDetailed",
+      "output": "TextWorld_tw-rewardsSparse_goalDetailed_task_kg.json",
+      "nodes": 180,
+      "edges": 67,
+      "node_types": {
+        "entity": 38,
+        "state": 121,
+        "action": 12,
+        "result": 9
+      },
+      "status": "success"
+    },
+    {
+      "file": "tw-rewardsSparse_goalNone.z8",
+      "scenario": "TextWorld_tw-rewardsSparse_goalNone",
+      "output": "TextWorld_tw-rewardsSparse_goalNone_task_kg.json",
+      "nodes": 180,
+      "edges": 67,
+      "node_types": {
+        "entity": 38,
+        "state": 121,
+        "action": 12,
+        "result": 9
+      },
+      "status": "success"
+    }
+  ]
+}

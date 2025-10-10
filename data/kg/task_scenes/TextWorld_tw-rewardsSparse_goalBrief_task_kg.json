@@ -3,15 +3,15 @@
     {
       "id": "entity_1",
       "type": "entity",
-      "name": "TextWorld_tw-another_game",
+      "name": "TextWorld_tw-rewardsSparse_goalBrief",
       "attributes": {
         "entity_type": "场景",
         "properties": {
-          "描述": "TextWorld游戏场景: TextWorld_tw-another_game",
+          "描述": "TextWorld游戏场景: TextWorld_tw-rewardsSparse_goalBrief",
           "类型": "文本冒险游戏",
-          "游戏目标": "Hey, thanks for coming over to the TextWorld today, there is something I need you to do for me. First of all, you could, like, look and see that the antique trunk inside the bedroom is opened. Then, recover the old key from the antique trunk. Then, make absolutely sure that the wooden door inside the bedroom is unlocked. After unlocking the wooden door, open the wooden door in the bedroom. Then, try to head east. After that, try to travel south. Once you get through with that, take the milk from the couch within the living room. Having taken the milk, attempt to travel north. That done, rest the milk on the stove inside the kitchen. And if you do that, you're the winner!",
-          "最大分数": "8",
-          "通关步骤数": "9"
+          "游戏目标": "The dinner is almost ready! It's only missing a grilled carrot.",
+          "最大分数": "1",
+          "通关步骤数": "12"
         },
         "initial_state": "活跃",
         "possible_states": [
@@ -19,7 +19,7 @@
           "完成",
           "失败"
         ],
-        "description": "TextWorld游戏场景: TextWorld_tw-another_game"
+        "description": "TextWorld游戏场景: TextWorld_tw-rewardsSparse_goalBrief"
       }
     },
     {
@@ -46,7 +46,7 @@
     {
       "id": "entity_3",
       "type": "entity",
-      "name": "r_1",
+      "name": "kitchen",
       "attributes": {
         "entity_type": "房间",
         "properties": {
@@ -66,7 +66,7 @@
     {
       "id": "entity_4",
       "type": "entity",
-      "name": "r_0",
+      "name": "bedroom",
       "attributes": {
         "entity_type": "房间",
         "properties": {
@@ -86,7 +86,7 @@
     {
       "id": "entity_5",
       "type": "entity",
-      "name": "r_4",
+      "name": "backyard",
       "attributes": {
         "entity_type": "房间",
         "properties": {
@@ -106,7 +106,7 @@
     {
       "id": "entity_6",
       "type": "entity",
-      "name": "r_2",
+      "name": "living room",
       "attributes": {
         "entity_type": "房间",
         "properties": {
@@ -126,7 +126,7 @@
     {
       "id": "entity_7",
       "type": "entity",
-      "name": "r_3",
+      "name": "bathroom",
       "attributes": {
         "entity_type": "房间",
         "properties": {
@@ -146,7 +146,7 @@
     {
       "id": "entity_8",
       "type": "entity",
-      "name": "r_5",
+      "name": "garden",
       "attributes": {
         "entity_type": "房间",
         "properties": {
@@ -166,7 +166,7 @@
     {
       "id": "entity_9",
       "type": "entity",
-      "name": "d_0",
+      "name": "wooden door",
       "attributes": {
         "entity_type": "门",
         "properties": {
@@ -188,7 +188,7 @@
     {
       "id": "entity_10",
       "type": "entity",
-      "name": "d_1",
+      "name": "screen door",
       "attributes": {
         "entity_type": "门",
         "properties": {
@@ -210,7 +210,7 @@
     {
       "id": "entity_11",
       "type": "entity",
-      "name": "c_0",
+      "name": "chest drawer",
       "attributes": {
         "entity_type": "容器",
         "properties": {
@@ -232,7 +232,7 @@
     {
       "id": "entity_12",
       "type": "entity",
-      "name": "c_1",
+      "name": "antique trunk",
       "attributes": {
         "entity_type": "容器",
         "properties": {
@@ -254,7 +254,7 @@
     {
       "id": "entity_13",
       "type": "entity",
-      "name": "c_2",
+      "name": "refrigerator",
       "attributes": {
         "entity_type": "容器",
         "properties": {
@@ -276,7 +276,7 @@
     {
       "id": "entity_14",
       "type": "entity",
-      "name": "c_3",
+      "name": "toilet",
       "attributes": {
         "entity_type": "容器",
         "properties": {
@@ -298,7 +298,7 @@
     {
       "id": "entity_15",
       "type": "entity",
-      "name": "c_4",
+      "name": "bath",
       "attributes": {
         "entity_type": "容器",
         "properties": {
@@ -320,7 +320,7 @@
     {
       "id": "entity_16",
       "type": "entity",
-      "name": "f_3",
+      "name": "half of a bag of chips",
       "attributes": {
         "entity_type": "食物",
         "properties": {
@@ -341,7 +341,7 @@
     {
       "id": "entity_17",
       "type": "entity",
-      "name": "f_4",
+      "name": "carrot",
       "attributes": {
         "entity_type": "食物",
         "properties": {
@@ -362,7 +362,7 @@
     {
       "id": "entity_18",
       "type": "entity",
-      "name": "f_5",
+      "name": "apple",
       "attributes": {
         "entity_type": "食物",
         "properties": {
@@ -383,7 +383,7 @@
     {
       "id": "entity_19",
       "type": "entity",
-      "name": "o_3",
+      "name": "shovel",
       "attributes": {
         "entity_type": "物品",
         "properties": {
@@ -404,7 +404,7 @@
     {
       "id": "entity_20",
       "type": "entity",
-      "name": "s_0",
+      "name": "king-size bed",
       "attributes": {
         "entity_type": "支撑面",
         "properties": {
@@ -425,7 +425,7 @@
     {
       "id": "entity_21",
       "type": "entity",
-      "name": "s_1",
+      "name": "counter",
       "attributes": {
         "entity_type": "支撑面",
         "properties": {
@@ -446,7 +446,7 @@
     {
       "id": "entity_22",
       "type": "entity",
-      "name": "s_10",
+      "name": "set of chairs",
       "attributes": {
         "entity_type": "支撑面",
         "properties": {
@@ -467,7 +467,7 @@
     {
       "id": "entity_23",
       "type": "entity",
-      "name": "s_2",
+      "name": "stove",
       "attributes": {
         "entity_type": "支撑面",
         "properties": {
@@ -488,7 +488,7 @@
     {
       "id": "entity_24",
       "type": "entity",
-      "name": "s_3",
+      "name": "kitchen island",
       "attributes": {
         "entity_type": "支撑面",
         "properties": {
@@ -509,7 +509,7 @@
     {
       "id": "entity_25",
       "type": "entity",
-      "name": "s_4",
+      "name": "sink",
       "attributes": {
         "entity_type": "支撑面",
         "properties": {
@@ -530,7 +530,7 @@
     {
       "id": "entity_26",
       "type": "entity",
-      "name": "s_5",
+      "name": "couch",
       "attributes": {
         "entity_type": "支撑面",
         "properties": {
@@ -551,7 +551,7 @@
     {
       "id": "entity_27",
       "type": "entity",
-      "name": "s_6",
+      "name": "low table",
       "attributes": {
         "entity_type": "支撑面",
         "properties": {
@@ -572,7 +572,7 @@
     {
       "id": "entity_28",
       "type": "entity",
-      "name": "s_7",
+      "name": "tv",
       "attributes": {
         "entity_type": "支撑面",
         "properties": {
@@ -593,7 +593,7 @@
     {
       "id": "entity_29",
       "type": "entity",
-      "name": "s_8",
+      "name": "bbq",
       "attributes": {
         "entity_type": "支撑面",
         "properties": {
@@ -614,7 +614,7 @@
     {
       "id": "entity_30",
       "type": "entity",
-      "name": "s_9",
+      "name": "patio table",
       "attributes": {
         "entity_type": "支撑面",
         "properties": {
@@ -635,7 +635,7 @@
     {
       "id": "entity_31",
       "type": "entity",
-      "name": "f_0",
+      "name": "lettuce",
       "attributes": {
         "entity_type": "食物",
         "properties": {
@@ -656,7 +656,7 @@
     {
       "id": "entity_32",
       "type": "entity",
-      "name": "f_1",
+      "name": "milk",
       "attributes": {
         "entity_type": "食物",
         "properties": {
@@ -677,7 +677,7 @@
     {
       "id": "entity_33",
       "type": "entity",
-      "name": "f_2",
+      "name": "tomato plant",
       "attributes": {
         "entity_type": "食物",
         "properties": {
@@ -698,7 +698,7 @@
     {
       "id": "entity_34",
       "type": "entity",
-      "name": "k_0",
+      "name": "old key",
       "attributes": {
         "entity_type": "钥匙",
         "properties": {
@@ -719,7 +719,7 @@
     {
       "id": "entity_35",
       "type": "entity",
-      "name": "o_1",
+      "name": "soap bar",
       "attributes": {
         "entity_type": "物品",
         "properties": {
@@ -740,7 +740,7 @@
     {
       "id": "entity_36",
       "type": "entity",
-      "name": "o_0",
+      "name": "toothbrush",
       "attributes": {
         "entity_type": "物品",
         "properties": {
@@ -761,7 +761,7 @@
     {
       "id": "entity_37",
       "type": "entity",
-      "name": "o_2",
+      "name": "remote",
       "attributes": {
         "entity_type": "物品",
         "properties": {
@@ -782,7 +782,7 @@
     {
       "id": "entity_38",
       "type": "entity",
-      "name": "o_4",
+      "name": "note",
       "attributes": {
         "entity_type": "物品",
         "properties": {
@@ -803,37 +803,37 @@
     {
       "id": "state_1",
       "type": "state",
-      "name": "TextWorld_tw-another_game_活跃",
+      "name": "TextWorld_tw-rewardsSparse_goalBrief_活跃",
       "attributes": {
-        "entity_name": "TextWorld_tw-another_game",
+        "entity_name": "TextWorld_tw-rewardsSparse_goalBrief",
         "state_type": "entity_state",
         "is_initial": true,
         "state_value": "活跃",
-        "description": "TextWorld_tw-another_game的状态: 活跃"
+        "description": "TextWorld_tw-rewardsSparse_goalBrief的状态: 活跃"
       }
     },
     {
       "id": "state_2",
       "type": "state",
-      "name": "TextWorld_tw-another_game_完成",
+      "name": "TextWorld_tw-rewardsSparse_goalBrief_完成",
       "attributes": {
-        "entity_name": "TextWorld_tw-another_game",
+        "entity_name": "TextWorld_tw-rewardsSparse_goalBrief",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "完成",
-        "description": "TextWorld_tw-another_game的状态: 完成"
+        "description": "TextWorld_tw-rewardsSparse_goalBrief的状态: 完成"
       }
     },
     {
       "id": "state_3",
       "type": "state",
-      "name": "TextWorld_tw-another_game_失败",
+      "name": "TextWorld_tw-rewardsSparse_goalBrief_失败",
       "attributes": {
-        "entity_name": "TextWorld_tw-another_game",
+        "entity_name": "TextWorld_tw-rewardsSparse_goalBrief",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "失败",
-        "description": "TextWorld_tw-another_game的状态: 失败"
+        "description": "TextWorld_tw-rewardsSparse_goalBrief的状态: 失败"
       }
     },
     {
@@ -875,1385 +875,1465 @@
     {
       "id": "state_7",
       "type": "state",
-      "name": "r_1_可访问",
+      "name": "kitchen_可访问",
       "attributes": {
-        "entity_name": "r_1",
+        "entity_name": "kitchen",
         "state_type": "entity_state",
         "is_initial": true,
         "state_value": "可访问",
-        "description": "r_1的状态: 可访问"
+        "description": "kitchen的状态: 可访问"
       }
     },
     {
       "id": "state_8",
       "type": "state",
-      "name": "r_1_不可访问",
+      "name": "kitchen_不可访问",
       "attributes": {
-        "entity_name": "r_1",
+        "entity_name": "kitchen",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "不可访问",
-        "description": "r_1的状态: 不可访问"
+        "description": "kitchen的状态: 不可访问"
       }
     },
     {
       "id": "state_9",
       "type": "state",
-      "name": "r_1_已访问",
+      "name": "kitchen_已访问",
       "attributes": {
-        "entity_name": "r_1",
+        "entity_name": "kitchen",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "已访问",
-        "description": "r_1的状态: 已访问"
+        "description": "kitchen的状态: 已访问"
       }
     },
     {
       "id": "state_10",
       "type": "state",
-      "name": "r_0_可访问",
+      "name": "bedroom_可访问",
       "attributes": {
-        "entity_name": "r_0",
+        "entity_name": "bedroom",
         "state_type": "entity_state",
         "is_initial": true,
         "state_value": "可访问",
-        "description": "r_0的状态: 可访问"
+        "description": "bedroom的状态: 可访问"
       }
     },
     {
       "id": "state_11",
       "type": "state",
-      "name": "r_0_不可访问",
+      "name": "bedroom_不可访问",
       "attributes": {
-        "entity_name": "r_0",
+        "entity_name": "bedroom",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "不可访问",
-        "description": "r_0的状态: 不可访问"
+        "description": "bedroom的状态: 不可访问"
       }
     },
     {
       "id": "state_12",
       "type": "state",
-      "name": "r_0_已访问",
+      "name": "bedroom_已访问",
       "attributes": {
-        "entity_name": "r_0",
+        "entity_name": "bedroom",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "已访问",
-        "description": "r_0的状态: 已访问"
+        "description": "bedroom的状态: 已访问"
       }
     },
     {
       "id": "state_13",
       "type": "state",
-      "name": "r_4_可访问",
+      "name": "backyard_可访问",
       "attributes": {
-        "entity_name": "r_4",
+        "entity_name": "backyard",
         "state_type": "entity_state",
         "is_initial": true,
         "state_value": "可访问",
-        "description": "r_4的状态: 可访问"
+        "description": "backyard的状态: 可访问"
       }
     },
     {
       "id": "state_14",
       "type": "state",
-      "name": "r_4_不可访问",
+      "name": "backyard_不可访问",
       "attributes": {
-        "entity_name": "r_4",
+        "entity_name": "backyard",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "不可访问",
-        "description": "r_4的状态: 不可访问"
+        "description": "backyard的状态: 不可访问"
       }
     },
     {
       "id": "state_15",
       "type": "state",
-      "name": "r_4_已访问",
+      "name": "backyard_已访问",
       "attributes": {
-        "entity_name": "r_4",
+        "entity_name": "backyard",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "已访问",
-        "description": "r_4的状态: 已访问"
+        "description": "backyard的状态: 已访问"
       }
     },
     {
       "id": "state_16",
       "type": "state",
-      "name": "r_2_可访问",
+      "name": "living room_可访问",
       "attributes": {
-        "entity_name": "r_2",
+        "entity_name": "living room",
         "state_type": "entity_state",
         "is_initial": true,
         "state_value": "可访问",
-        "description": "r_2的状态: 可访问"
+        "description": "living room的状态: 可访问"
       }
     },
     {
       "id": "state_17",
       "type": "state",
-      "name": "r_2_不可访问",
+      "name": "living room_不可访问",
       "attributes": {
-        "entity_name": "r_2",
+        "entity_name": "living room",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "不可访问",
-        "description": "r_2的状态: 不可访问"
+        "description": "living room的状态: 不可访问"
       }
     },
     {
       "id": "state_18",
       "type": "state",
-      "name": "r_2_已访问",
+      "name": "living room_已访问",
       "attributes": {
-        "entity_name": "r_2",
+        "entity_name": "living room",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "已访问",
-        "description": "r_2的状态: 已访问"
+        "description": "living room的状态: 已访问"
       }
     },
     {
       "id": "state_19",
       "type": "state",
-      "name": "r_3_可访问",
+      "name": "bathroom_可访问",
       "attributes": {
-        "entity_name": "r_3",
+        "entity_name": "bathroom",
         "state_type": "entity_state",
         "is_initial": true,
         "state_value": "可访问",
-        "description": "r_3的状态: 可访问"
+        "description": "bathroom的状态: 可访问"
       }
     },
     {
       "id": "state_20",
       "type": "state",
-      "name": "r_3_不可访问",
+      "name": "bathroom_不可访问",
       "attributes": {
-        "entity_name": "r_3",
+        "entity_name": "bathroom",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "不可访问",
-        "description": "r_3的状态: 不可访问"
+        "description": "bathroom的状态: 不可访问"
       }
     },
     {
       "id": "state_21",
       "type": "state",
-      "name": "r_3_已访问",
+      "name": "bathroom_已访问",
       "attributes": {
-        "entity_name": "r_3",
+        "entity_name": "bathroom",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "已访问",
-        "description": "r_3的状态: 已访问"
+        "description": "bathroom的状态: 已访问"
       }
     },
     {
       "id": "state_22",
       "type": "state",
-      "name": "r_5_可访问",
+      "name": "garden_可访问",
       "attributes": {
-        "entity_name": "r_5",
+        "entity_name": "garden",
         "state_type": "entity_state",
         "is_initial": true,
         "state_value": "可访问",
-        "description": "r_5的状态: 可访问"
+        "description": "garden的状态: 可访问"
       }
     },
     {
       "id": "state_23",
       "type": "state",
-      "name": "r_5_不可访问",
+      "name": "garden_不可访问",
       "attributes": {
-        "entity_name": "r_5",
+        "entity_name": "garden",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "不可访问",
-        "description": "r_5的状态: 不可访问"
+        "description": "garden的状态: 不可访问"
       }
     },
     {
       "id": "state_24",
       "type": "state",
-      "name": "r_5_已访问",
+      "name": "garden_已访问",
       "attributes": {
-        "entity_name": "r_5",
+        "entity_name": "garden",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "已访问",
-        "description": "r_5的状态: 已访问"
+        "description": "garden的状态: 已访问"
       }
     },
     {
       "id": "state_25",
       "type": "state",
-      "name": "d_0_关闭",
+      "name": "wooden door_关闭",
       "attributes": {
-        "entity_name": "d_0",
+        "entity_name": "wooden door",
         "state_type": "entity_state",
         "is_initial": true,
         "state_value": "关闭",
-        "description": "d_0的状态: 关闭"
+        "description": "wooden door的状态: 关闭"
       }
     },
     {
       "id": "state_26",
       "type": "state",
-      "name": "d_0_打开",
+      "name": "wooden door_打开",
       "attributes": {
-        "entity_name": "d_0",
+        "entity_name": "wooden door",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "打开",
-        "description": "d_0的状态: 打开"
+        "description": "wooden door的状态: 打开"
       }
     },
     {
       "id": "state_27",
       "type": "state",
-      "name": "d_0_锁定",
+      "name": "wooden door_锁定",
       "attributes": {
-        "entity_name": "d_0",
+        "entity_name": "wooden door",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "锁定",
-        "description": "d_0的状态: 锁定"
+        "description": "wooden door的状态: 锁定"
       }
     },
     {
       "id": "state_28",
       "type": "state",
-      "name": "d_0_解锁",
+      "name": "wooden door_解锁",
       "attributes": {
-        "entity_name": "d_0",
+        "entity_name": "wooden door",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "解锁",
-        "description": "d_0的状态: 解锁"
+        "description": "wooden door的状态: 解锁"
       }
     },
     {
       "id": "state_29",
       "type": "state",
-      "name": "d_1_关闭",
+      "name": "screen door_关闭",
       "attributes": {
-        "entity_name": "d_1",
+        "entity_name": "screen door",
         "state_type": "entity_state",
         "is_initial": true,
         "state_value": "关闭",
-        "description": "d_1的状态: 关闭"
+        "description": "screen door的状态: 关闭"
       }
     },
     {
       "id": "state_30",
       "type": "state",
-      "name": "d_1_打开",
+      "name": "screen door_打开",
       "attributes": {
-        "entity_name": "d_1",
+        "entity_name": "screen door",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "打开",
-        "description": "d_1的状态: 打开"
+        "description": "screen door的状态: 打开"
       }
     },
     {
       "id": "state_31",
       "type": "state",
-      "name": "d_1_锁定",
+      "name": "screen door_锁定",
       "attributes": {
-        "entity_name": "d_1",
+        "entity_name": "screen door",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "锁定",
-        "description": "d_1的状态: 锁定"
+        "description": "screen door的状态: 锁定"
       }
     },
     {
       "id": "state_32",
       "type": "state",
-      "name": "d_1_解锁",
+      "name": "screen door_解锁",
       "attributes": {
-        "entity_name": "d_1",
+        "entity_name": "screen door",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "解锁",
-        "description": "d_1的状态: 解锁"
+        "description": "screen door的状态: 解锁"
       }
     },
     {
       "id": "state_33",
       "type": "state",
-      "name": "c_0_关闭",
+      "name": "chest drawer_关闭",
       "attributes": {
-        "entity_name": "c_0",
+        "entity_name": "chest drawer",
         "state_type": "entity_state",
         "is_initial": true,
         "state_value": "关闭",
-        "description": "c_0的状态: 关闭"
+        "description": "chest drawer的状态: 关闭"
       }
     },
     {
       "id": "state_34",
       "type": "state",
-      "name": "c_0_打开",
+      "name": "chest drawer_打开",
       "attributes": {
-        "entity_name": "c_0",
+        "entity_name": "chest drawer",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "打开",
-        "description": "c_0的状态: 打开"
+        "description": "chest drawer的状态: 打开"
       }
     },
     {
       "id": "state_35",
       "type": "state",
-      "name": "c_0_锁定",
+      "name": "chest drawer_锁定",
       "attributes": {
-        "entity_name": "c_0",
+        "entity_name": "chest drawer",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "锁定",
-        "description": "c_0的状态: 锁定"
+        "description": "chest drawer的状态: 锁定"
       }
     },
     {
       "id": "state_36",
       "type": "state",
-      "name": "c_0_解锁",
+      "name": "chest drawer_解锁",
       "attributes": {
-        "entity_name": "c_0",
+        "entity_name": "chest drawer",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "解锁",
-        "description": "c_0的状态: 解锁"
+        "description": "chest drawer的状态: 解锁"
       }
     },
     {
       "id": "state_37",
       "type": "state",
-      "name": "c_1_关闭",
+      "name": "antique trunk_关闭",
       "attributes": {
-        "entity_name": "c_1",
+        "entity_name": "antique trunk",
         "state_type": "entity_state",
         "is_initial": true,
         "state_value": "关闭",
-        "description": "c_1的状态: 关闭"
+        "description": "antique trunk的状态: 关闭"
       }
     },
     {
       "id": "state_38",
       "type": "state",
-      "name": "c_1_打开",
+      "name": "antique trunk_打开",
       "attributes": {
-        "entity_name": "c_1",
+        "entity_name": "antique trunk",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "打开",
-        "description": "c_1的状态: 打开"
+        "description": "antique trunk的状态: 打开"
       }
     },
     {
       "id": "state_39",
       "type": "state",
-      "name": "c_1_锁定",
+      "name": "antique trunk_锁定",
       "attributes": {
-        "entity_name": "c_1",
+        "entity_name": "antique trunk",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "锁定",
-        "description": "c_1的状态: 锁定"
+        "description": "antique trunk的状态: 锁定"
       }
     },
     {
       "id": "state_40",
       "type": "state",
-      "name": "c_1_解锁",
+      "name": "antique trunk_解锁",
       "attributes": {
-        "entity_name": "c_1",
+        "entity_name": "antique trunk",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "解锁",
-        "description": "c_1的状态: 解锁"
+        "description": "antique trunk的状态: 解锁"
       }
     },
     {
       "id": "state_41",
       "type": "state",
-      "name": "c_2_关闭",
+      "name": "refrigerator_关闭",
       "attributes": {
-        "entity_name": "c_2",
+        "entity_name": "refrigerator",
         "state_type": "entity_state",
         "is_initial": true,
         "state_value": "关闭",
-        "description": "c_2的状态: 关闭"
+        "description": "refrigerator的状态: 关闭"
       }
     },
     {
       "id": "state_42",
       "type": "state",
-      "name": "c_2_打开",
+      "name": "refrigerator_打开",
       "attributes": {
-        "entity_name": "c_2",
+        "entity_name": "refrigerator",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "打开",
-        "description": "c_2的状态: 打开"
+        "description": "refrigerator的状态: 打开"
       }
     },
     {
       "id": "state_43",
       "type": "state",
-      "name": "c_2_锁定",
+      "name": "refrigerator_锁定",
       "attributes": {
-        "entity_name": "c_2",
+        "entity_name": "refrigerator",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "锁定",
-        "description": "c_2的状态: 锁定"
+        "description": "refrigerator的状态: 锁定"
       }
     },
     {
       "id": "state_44",
       "type": "state",
-      "name": "c_2_解锁",
+      "name": "refrigerator_解锁",
       "attributes": {
-        "entity_name": "c_2",
+        "entity_name": "refrigerator",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "解锁",
-        "description": "c_2的状态: 解锁"
+        "description": "refrigerator的状态: 解锁"
       }
     },
     {
       "id": "state_45",
       "type": "state",
-      "name": "c_3_关闭",
+      "name": "toilet_关闭",
       "attributes": {
-        "entity_name": "c_3",
+        "entity_name": "toilet",
         "state_type": "entity_state",
         "is_initial": true,
         "state_value": "关闭",
-        "description": "c_3的状态: 关闭"
+        "description": "toilet的状态: 关闭"
       }
     },
     {
       "id": "state_46",
       "type": "state",
-      "name": "c_3_打开",
+      "name": "toilet_打开",
       "attributes": {
-        "entity_name": "c_3",
+        "entity_name": "toilet",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "打开",
-        "description": "c_3的状态: 打开"
+        "description": "toilet的状态: 打开"
       }
     },
     {
       "id": "state_47",
       "type": "state",
-      "name": "c_3_锁定",
+      "name": "toilet_锁定",
       "attributes": {
-        "entity_name": "c_3",
+        "entity_name": "toilet",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "锁定",
-        "description": "c_3的状态: 锁定"
+        "description": "toilet的状态: 锁定"
       }
     },
     {
       "id": "state_48",
       "type": "state",
-      "name": "c_3_解锁",
+      "name": "toilet_解锁",
       "attributes": {
-        "entity_name": "c_3",
+        "entity_name": "toilet",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "解锁",
-        "description": "c_3的状态: 解锁"
+        "description": "toilet的状态: 解锁"
       }
     },
     {
       "id": "state_49",
       "type": "state",
-      "name": "c_4_关闭",
+      "name": "bath_关闭",
       "attributes": {
-        "entity_name": "c_4",
+        "entity_name": "bath",
         "state_type": "entity_state",
         "is_initial": true,
         "state_value": "关闭",
-        "description": "c_4的状态: 关闭"
+        "description": "bath的状态: 关闭"
       }
     },
     {
       "id": "state_50",
       "type": "state",
-      "name": "c_4_打开",
+      "name": "bath_打开",
       "attributes": {
-        "entity_name": "c_4",
+        "entity_name": "bath",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "打开",
-        "description": "c_4的状态: 打开"
+        "description": "bath的状态: 打开"
       }
     },
     {
       "id": "state_51",
       "type": "state",
-      "name": "c_4_锁定",
+      "name": "bath_锁定",
       "attributes": {
-        "entity_name": "c_4",
+        "entity_name": "bath",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "锁定",
-        "description": "c_4的状态: 锁定"
+        "description": "bath的状态: 锁定"
       }
     },
     {
       "id": "state_52",
       "type": "state",
-      "name": "c_4_解锁",
+      "name": "bath_解锁",
       "attributes": {
-        "entity_name": "c_4",
+        "entity_name": "bath",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "解锁",
-        "description": "c_4的状态: 解锁"
+        "description": "bath的状态: 解锁"
       }
     },
     {
       "id": "state_53",
       "type": "state",
-      "name": "f_3_可获取",
+      "name": "half of a bag of chips_可获取",
       "attributes": {
-        "entity_name": "f_3",
+        "entity_name": "half of a bag of chips",
         "state_type": "entity_state",
         "is_initial": true,
         "state_value": "可获取",
-        "description": "f_3的状态: 可获取"
+        "description": "half of a bag of chips的状态: 可获取"
       }
     },
     {
       "id": "state_54",
       "type": "state",
-      "name": "f_3_已获取",
+      "name": "half of a bag of chips_已获取",
       "attributes": {
-        "entity_name": "f_3",
+        "entity_name": "half of a bag of chips",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "已获取",
-        "description": "f_3的状态: 已获取"
+        "description": "half of a bag of chips的状态: 已获取"
       }
     },
     {
       "id": "state_55",
       "type": "state",
-      "name": "f_3_已消耗",
+      "name": "half of a bag of chips_已消耗",
       "attributes": {
-        "entity_name": "f_3",
+        "entity_name": "half of a bag of chips",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "已消耗",
-        "description": "f_3的状态: 已消耗"
+        "description": "half of a bag of chips的状态: 已消耗"
       }
     },
     {
       "id": "state_56",
       "type": "state",
-      "name": "f_4_可获取",
+      "name": "carrot_可获取",
       "attributes": {
-        "entity_name": "f_4",
+        "entity_name": "carrot",
         "state_type": "entity_state",
         "is_initial": true,
         "state_value": "可获取",
-        "description": "f_4的状态: 可获取"
+        "description": "carrot的状态: 可获取"
       }
     },
     {
       "id": "state_57",
       "type": "state",
-      "name": "f_4_已获取",
+      "name": "carrot_已获取",
       "attributes": {
-        "entity_name": "f_4",
+        "entity_name": "carrot",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "已获取",
-        "description": "f_4的状态: 已获取"
+        "description": "carrot的状态: 已获取"
       }
     },
     {
       "id": "state_58",
       "type": "state",
-      "name": "f_4_已消耗",
+      "name": "carrot_已消耗",
       "attributes": {
-        "entity_name": "f_4",
+        "entity_name": "carrot",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "已消耗",
-        "description": "f_4的状态: 已消耗"
+        "description": "carrot的状态: 已消耗"
       }
     },
     {
       "id": "state_59",
       "type": "state",
-      "name": "f_5_可获取",
+      "name": "apple_可获取",
       "attributes": {
-        "entity_name": "f_5",
+        "entity_name": "apple",
         "state_type": "entity_state",
         "is_initial": true,
         "state_value": "可获取",
-        "description": "f_5的状态: 可获取"
+        "description": "apple的状态: 可获取"
       }
     },
     {
       "id": "state_60",
       "type": "state",
-      "name": "f_5_已获取",
+      "name": "apple_已获取",
       "attributes": {
-        "entity_name": "f_5",
+        "entity_name": "apple",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "已获取",
-        "description": "f_5的状态: 已获取"
+        "description": "apple的状态: 已获取"
       }
     },
     {
       "id": "state_61",
       "type": "state",
-      "name": "f_5_已消耗",
+      "name": "apple_已消耗",
       "attributes": {
-        "entity_name": "f_5",
+        "entity_name": "apple",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "已消耗",
-        "description": "f_5的状态: 已消耗"
+        "description": "apple的状态: 已消耗"
       }
     },
     {
       "id": "state_62",
       "type": "state",
-      "name": "o_3_可获取",
+      "name": "shovel_可获取",
       "attributes": {
-        "entity_name": "o_3",
+        "entity_name": "shovel",
         "state_type": "entity_state",
         "is_initial": true,
         "state_value": "可获取",
-        "description": "o_3的状态: 可获取"
+        "description": "shovel的状态: 可获取"
       }
     },
     {
       "id": "state_63",
       "type": "state",
-      "name": "o_3_已获取",
+      "name": "shovel_已获取",
       "attributes": {
-        "entity_name": "o_3",
+        "entity_name": "shovel",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "已获取",
-        "description": "o_3的状态: 已获取"
+        "description": "shovel的状态: 已获取"
       }
     },
     {
       "id": "state_64",
       "type": "state",
-      "name": "o_3_已使用",
+      "name": "shovel_已使用",
       "attributes": {
-        "entity_name": "o_3",
+        "entity_name": "shovel",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "已使用",
-        "description": "o_3的状态: 已使用"
+        "description": "shovel的状态: 已使用"
       }
     },
     {
       "id": "state_65",
       "type": "state",
-      "name": "s_0_可用",
+      "name": "king-size bed_可用",
       "attributes": {
-        "entity_name": "s_0",
+        "entity_name": "king-size bed",
         "state_type": "entity_state",
         "is_initial": true,
         "state_value": "可用",
-        "description": "s_0的状态: 可用"
+        "description": "king-size bed的状态: 可用"
       }
     },
     {
       "id": "state_66",
       "type": "state",
-      "name": "s_0_不可用",
+      "name": "king-size bed_不可用",
       "attributes": {
-        "entity_name": "s_0",
+        "entity_name": "king-size bed",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "不可用",
-        "description": "s_0的状态: 不可用"
+        "description": "king-size bed的状态: 不可用"
       }
     },
     {
       "id": "state_67",
       "type": "state",
-      "name": "s_0_已占用",
+      "name": "king-size bed_已占用",
       "attributes": {
-        "entity_name": "s_0",
+        "entity_name": "king-size bed",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "已占用",
-        "description": "s_0的状态: 已占用"
+        "description": "king-size bed的状态: 已占用"
       }
     },
     {
       "id": "state_68",
       "type": "state",
-      "name": "s_1_可用",
+      "name": "counter_可用",
       "attributes": {
-        "entity_name": "s_1",
+        "entity_name": "counter",
         "state_type": "entity_state",
         "is_initial": true,
         "state_value": "可用",
-        "description": "s_1的状态: 可用"
+        "description": "counter的状态: 可用"
       }
     },
     {
       "id": "state_69",
       "type": "state",
-      "name": "s_1_不可用",
+      "name": "counter_不可用",
       "attributes": {
-        "entity_name": "s_1",
+        "entity_name": "counter",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "不可用",
-        "description": "s_1的状态: 不可用"
+        "description": "counter的状态: 不可用"
       }
     },
     {
       "id": "state_70",
       "type": "state",
-      "name": "s_1_已占用",
+      "name": "counter_已占用",
       "attributes": {
-        "entity_name": "s_1",
+        "entity_name": "counter",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "已占用",
-        "description": "s_1的状态: 已占用"
+        "description": "counter的状态: 已占用"
       }
     },
     {
       "id": "state_71",
       "type": "state",
-      "name": "s_10_可用",
+      "name": "set of chairs_可用",
       "attributes": {
-        "entity_name": "s_10",
+        "entity_name": "set of chairs",
         "state_type": "entity_state",
         "is_initial": true,
         "state_value": "可用",
-        "description": "s_10的状态: 可用"
+        "description": "set of chairs的状态: 可用"
       }
     },
     {
       "id": "state_72",
       "type": "state",
-      "name": "s_10_不可用",
+      "name": "set of chairs_不可用",
       "attributes": {
-        "entity_name": "s_10",
+        "entity_name": "set of chairs",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "不可用",
-        "description": "s_10的状态: 不可用"
+        "description": "set of chairs的状态: 不可用"
       }
     },
     {
       "id": "state_73",
       "type": "state",
-      "name": "s_10_已占用",
+      "name": "set of chairs_已占用",
       "attributes": {
-        "entity_name": "s_10",
+        "entity_name": "set of chairs",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "已占用",
-        "description": "s_10的状态: 已占用"
+        "description": "set of chairs的状态: 已占用"
       }
     },
     {
       "id": "state_74",
       "type": "state",
-      "name": "s_2_可用",
+      "name": "stove_可用",
       "attributes": {
-        "entity_name": "s_2",
+        "entity_name": "stove",
         "state_type": "entity_state",
         "is_initial": true,
         "state_value": "可用",
-        "description": "s_2的状态: 可用"
+        "description": "stove的状态: 可用"
       }
     },
     {
       "id": "state_75",
       "type": "state",
-      "name": "s_2_不可用",
+      "name": "stove_不可用",
       "attributes": {
-        "entity_name": "s_2",
+        "entity_name": "stove",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "不可用",
-        "description": "s_2的状态: 不可用"
+        "description": "stove的状态: 不可用"
       }
     },
     {
       "id": "state_76",
       "type": "state",
-      "name": "s_2_已占用",
+      "name": "stove_已占用",
       "attributes": {
-        "entity_name": "s_2",
+        "entity_name": "stove",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "已占用",
-        "description": "s_2的状态: 已占用"
+        "description": "stove的状态: 已占用"
       }
     },
     {
       "id": "state_77",
       "type": "state",
-      "name": "s_3_可用",
+      "name": "kitchen island_可用",
       "attributes": {
-        "entity_name": "s_3",
+        "entity_name": "kitchen island",
         "state_type": "entity_state",
         "is_initial": true,
         "state_value": "可用",
-        "description": "s_3的状态: 可用"
+        "description": "kitchen island的状态: 可用"
       }
     },
     {
       "id": "state_78",
       "type": "state",
-      "name": "s_3_不可用",
+      "name": "kitchen island_不可用",
       "attributes": {
-        "entity_name": "s_3",
+        "entity_name": "kitchen island",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "不可用",
-        "description": "s_3的状态: 不可用"
+        "description": "kitchen island的状态: 不可用"
       }
     },
     {
       "id": "state_79",
       "type": "state",
-      "name": "s_3_已占用",
+      "name": "kitchen island_已占用",
       "attributes": {
-        "entity_name": "s_3",
+        "entity_name": "kitchen island",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "已占用",
-        "description": "s_3的状态: 已占用"
+        "description": "kitchen island的状态: 已占用"
       }
     },
     {
       "id": "state_80",
       "type": "state",
-      "name": "s_4_可用",
+      "name": "sink_可用",
       "attributes": {
-        "entity_name": "s_4",
+        "entity_name": "sink",
         "state_type": "entity_state",
         "is_initial": true,
         "state_value": "可用",
-        "description": "s_4的状态: 可用"
+        "description": "sink的状态: 可用"
       }
     },
     {
       "id": "state_81",
       "type": "state",
-      "name": "s_4_不可用",
+      "name": "sink_不可用",
       "attributes": {
-        "entity_name": "s_4",
+        "entity_name": "sink",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "不可用",
-        "description": "s_4的状态: 不可用"
+        "description": "sink的状态: 不可用"
       }
     },
     {
       "id": "state_82",
       "type": "state",
-      "name": "s_4_已占用",
+      "name": "sink_已占用",
       "attributes": {
-        "entity_name": "s_4",
+        "entity_name": "sink",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "已占用",
-        "description": "s_4的状态: 已占用"
+        "description": "sink的状态: 已占用"
       }
     },
     {
       "id": "state_83",
       "type": "state",
-      "name": "s_5_可用",
+      "name": "couch_可用",
       "attributes": {
-        "entity_name": "s_5",
+        "entity_name": "couch",
         "state_type": "entity_state",
         "is_initial": true,
         "state_value": "可用",
-        "description": "s_5的状态: 可用"
+        "description": "couch的状态: 可用"
       }
     },
     {
       "id": "state_84",
       "type": "state",
-      "name": "s_5_不可用",
+      "name": "couch_不可用",
       "attributes": {
-        "entity_name": "s_5",
+        "entity_name": "couch",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "不可用",
-        "description": "s_5的状态: 不可用"
+        "description": "couch的状态: 不可用"
       }
     },
     {
       "id": "state_85",
       "type": "state",
-      "name": "s_5_已占用",
+      "name": "couch_已占用",
       "attributes": {
-        "entity_name": "s_5",
+        "entity_name": "couch",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "已占用",
-        "description": "s_5的状态: 已占用"
+        "description": "couch的状态: 已占用"
       }
     },
     {
       "id": "state_86",
       "type": "state",
-      "name": "s_6_可用",
+      "name": "low table_可用",
       "attributes": {
-        "entity_name": "s_6",
+        "entity_name": "low table",
         "state_type": "entity_state",
         "is_initial": true,
         "state_value": "可用",
-        "description": "s_6的状态: 可用"
+        "description": "low table的状态: 可用"
       }
     },
     {
       "id": "state_87",
       "type": "state",
-      "name": "s_6_不可用",
+      "name": "low table_不可用",
       "attributes": {
-        "entity_name": "s_6",
+        "entity_name": "low table",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "不可用",
-        "description": "s_6的状态: 不可用"
+        "description": "low table的状态: 不可用"
       }
     },
     {
       "id": "state_88",
       "type": "state",
-      "name": "s_6_已占用",
+      "name": "low table_已占用",
       "attributes": {
-        "entity_name": "s_6",
+        "entity_name": "low table",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "已占用",
-        "description": "s_6的状态: 已占用"
+        "description": "low table的状态: 已占用"
       }
     },
     {
       "id": "state_89",
       "type": "state",
-      "name": "s_7_可用",
+      "name": "tv_可用",
       "attributes": {
-        "entity_name": "s_7",
+        "entity_name": "tv",
         "state_type": "entity_state",
         "is_initial": true,
         "state_value": "可用",
-        "description": "s_7的状态: 可用"
+        "description": "tv的状态: 可用"
       }
     },
     {
       "id": "state_90",
       "type": "state",
-      "name": "s_7_不可用",
+      "name": "tv_不可用",
       "attributes": {
-        "entity_name": "s_7",
+        "entity_name": "tv",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "不可用",
-        "description": "s_7的状态: 不可用"
+        "description": "tv的状态: 不可用"
       }
     },
     {
       "id": "state_91",
       "type": "state",
-      "name": "s_7_已占用",
+      "name": "tv_已占用",
       "attributes": {
-        "entity_name": "s_7",
+        "entity_name": "tv",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "已占用",
-        "description": "s_7的状态: 已占用"
+        "description": "tv的状态: 已占用"
       }
     },
     {
       "id": "state_92",
       "type": "state",
-      "name": "s_8_可用",
+      "name": "bbq_可用",
       "attributes": {
-        "entity_name": "s_8",
+        "entity_name": "bbq",
         "state_type": "entity_state",
         "is_initial": true,
         "state_value": "可用",
-        "description": "s_8的状态: 可用"
+        "description": "bbq的状态: 可用"
       }
     },
     {
       "id": "state_93",
       "type": "state",
-      "name": "s_8_不可用",
+      "name": "bbq_不可用",
       "attributes": {
-        "entity_name": "s_8",
+        "entity_name": "bbq",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "不可用",
-        "description": "s_8的状态: 不可用"
+        "description": "bbq的状态: 不可用"
       }
     },
     {
       "id": "state_94",
       "type": "state",
-      "name": "s_8_已占用",
+      "name": "bbq_已占用",
       "attributes": {
-        "entity_name": "s_8",
+        "entity_name": "bbq",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "已占用",
-        "description": "s_8的状态: 已占用"
+        "description": "bbq的状态: 已占用"
       }
     },
     {
       "id": "state_95",
       "type": "state",
-      "name": "s_9_可用",
+      "name": "patio table_可用",
       "attributes": {
-        "entity_name": "s_9",
+        "entity_name": "patio table",
         "state_type": "entity_state",
         "is_initial": true,
         "state_value": "可用",
-        "description": "s_9的状态: 可用"
+        "description": "patio table的状态: 可用"
       }
     },
     {
       "id": "state_96",
       "type": "state",
-      "name": "s_9_不可用",
+      "name": "patio table_不可用",
       "attributes": {
-        "entity_name": "s_9",
+        "entity_name": "patio table",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "不可用",
-        "description": "s_9的状态: 不可用"
+        "description": "patio table的状态: 不可用"
       }
     },
     {
       "id": "state_97",
       "type": "state",
-      "name": "s_9_已占用",
+      "name": "patio table_已占用",
       "attributes": {
-        "entity_name": "s_9",
+        "entity_name": "patio table",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "已占用",
-        "description": "s_9的状态: 已占用"
+        "description": "patio table的状态: 已占用"
       }
     },
     {
       "id": "state_98",
       "type": "state",
-      "name": "f_0_可获取",
+      "name": "lettuce_可获取",
       "attributes": {
-        "entity_name": "f_0",
+        "entity_name": "lettuce",
         "state_type": "entity_state",
         "is_initial": true,
         "state_value": "可获取",
-        "description": "f_0的状态: 可获取"
+        "description": "lettuce的状态: 可获取"
       }
     },
     {
       "id": "state_99",
       "type": "state",
-      "name": "f_0_已获取",
+      "name": "lettuce_已获取",
       "attributes": {
-        "entity_name": "f_0",
+        "entity_name": "lettuce",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "已获取",
-        "description": "f_0的状态: 已获取"
+        "description": "lettuce的状态: 已获取"
       }
     },
     {
       "id": "state_100",
       "type": "state",
-      "name": "f_0_已消耗",
+      "name": "lettuce_已消耗",
       "attributes": {
-        "entity_name": "f_0",
+        "entity_name": "lettuce",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "已消耗",
-        "description": "f_0的状态: 已消耗"
+        "description": "lettuce的状态: 已消耗"
       }
     },
     {
       "id": "state_101",
       "type": "state",
-      "name": "f_1_可获取",
+      "name": "milk_可获取",
       "attributes": {
-        "entity_name": "f_1",
+        "entity_name": "milk",
         "state_type": "entity_state",
         "is_initial": true,
         "state_value": "可获取",
-        "description": "f_1的状态: 可获取"
+        "description": "milk的状态: 可获取"
       }
     },
     {
       "id": "state_102",
       "type": "state",
-      "name": "f_1_已获取",
+      "name": "milk_已获取",
       "attributes": {
-        "entity_name": "f_1",
+        "entity_name": "milk",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "已获取",
-        "description": "f_1的状态: 已获取"
+        "description": "milk的状态: 已获取"
       }
     },
     {
       "id": "state_103",
       "type": "state",
-      "name": "f_1_已消耗",
+      "name": "milk_已消耗",
       "attributes": {
-        "entity_name": "f_1",
+        "entity_name": "milk",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "已消耗",
-        "description": "f_1的状态: 已消耗"
+        "description": "milk的状态: 已消耗"
       }
     },
     {
       "id": "state_104",
       "type": "state",
-      "name": "f_2_可获取",
+      "name": "tomato plant_可获取",
       "attributes": {
-        "entity_name": "f_2",
+        "entity_name": "tomato plant",
         "state_type": "entity_state",
         "is_initial": true,
         "state_value": "可获取",
-        "description": "f_2的状态: 可获取"
+        "description": "tomato plant的状态: 可获取"
       }
     },
     {
       "id": "state_105",
       "type": "state",
-      "name": "f_2_已获取",
+      "name": "tomato plant_已获取",
       "attributes": {
-        "entity_name": "f_2",
+        "entity_name": "tomato plant",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "已获取",
-        "description": "f_2的状态: 已获取"
+        "description": "tomato plant的状态: 已获取"
       }
     },
     {
       "id": "state_106",
       "type": "state",
-      "name": "f_2_已消耗",
+      "name": "tomato plant_已消耗",
       "attributes": {
-        "entity_name": "f_2",
+        "entity_name": "tomato plant",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "已消耗",
-        "description": "f_2的状态: 已消耗"
+        "description": "tomato plant的状态: 已消耗"
       }
     },
     {
       "id": "state_107",
       "type": "state",
-      "name": "k_0_可获取",
+      "name": "old key_可获取",
       "attributes": {
-        "entity_name": "k_0",
+        "entity_name": "old key",
         "state_type": "entity_state",
         "is_initial": true,
         "state_value": "可获取",
-        "description": "k_0的状态: 可获取"
+        "description": "old key的状态: 可获取"
       }
     },
     {
       "id": "state_108",
       "type": "state",
-      "name": "k_0_已获取",
+      "name": "old key_已获取",
       "attributes": {
-        "entity_name": "k_0",
+        "entity_name": "old key",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "已获取",
-        "description": "k_0的状态: 已获取"
+        "description": "old key的状态: 已获取"
       }
     },
     {
       "id": "state_109",
       "type": "state",
-      "name": "k_0_已使用",
+      "name": "old key_已使用",
       "attributes": {
-        "entity_name": "k_0",
+        "entity_name": "old key",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "已使用",
-        "description": "k_0的状态: 已使用"
+        "description": "old key的状态: 已使用"
       }
     },
     {
       "id": "state_110",
       "type": "state",
-      "name": "o_1_可获取",
+      "name": "soap bar_可获取",
       "attributes": {
-        "entity_name": "o_1",
+        "entity_name": "soap bar",
         "state_type": "entity_state",
         "is_initial": true,
         "state_value": "可获取",
-        "description": "o_1的状态: 可获取"
+        "description": "soap bar的状态: 可获取"
       }
     },
     {
       "id": "state_111",
       "type": "state",
-      "name": "o_1_已获取",
+      "name": "soap bar_已获取",
       "attributes": {
-        "entity_name": "o_1",
+        "entity_name": "soap bar",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "已获取",
-        "description": "o_1的状态: 已获取"
+        "description": "soap bar的状态: 已获取"
       }
     },
     {
       "id": "state_112",
       "type": "state",
-      "name": "o_1_已使用",
+      "name": "soap bar_已使用",
       "attributes": {
-        "entity_name": "o_1",
+        "entity_name": "soap bar",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "已使用",
-        "description": "o_1的状态: 已使用"
+        "description": "soap bar的状态: 已使用"
       }
     },
     {
       "id": "state_113",
       "type": "state",
-      "name": "o_0_可获取",
+      "name": "toothbrush_可获取",
       "attributes": {
-        "entity_name": "o_0",
+        "entity_name": "toothbrush",
         "state_type": "entity_state",
         "is_initial": true,
         "state_value": "可获取",
-        "description": "o_0的状态: 可获取"
+        "description": "toothbrush的状态: 可获取"
       }
     },
     {
       "id": "state_114",
       "type": "state",
-      "name": "o_0_已获取",
+      "name": "toothbrush_已获取",
       "attributes": {
-        "entity_name": "o_0",
+        "entity_name": "toothbrush",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "已获取",
-        "description": "o_0的状态: 已获取"
+        "description": "toothbrush的状态: 已获取"
       }
     },
     {
       "id": "state_115",
       "type": "state",
-      "name": "o_0_已使用",
+      "name": "toothbrush_已使用",
       "attributes": {
-        "entity_name": "o_0",
+        "entity_name": "toothbrush",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "已使用",
-        "description": "o_0的状态: 已使用"
+        "description": "toothbrush的状态: 已使用"
       }
     },
     {
       "id": "state_116",
       "type": "state",
-      "name": "o_2_可获取",
+      "name": "remote_可获取",
       "attributes": {
-        "entity_name": "o_2",
+        "entity_name": "remote",
         "state_type": "entity_state",
         "is_initial": true,
         "state_value": "可获取",
-        "description": "o_2的状态: 可获取"
+        "description": "remote的状态: 可获取"
       }
     },
     {
       "id": "state_117",
       "type": "state",
-      "name": "o_2_已获取",
+      "name": "remote_已获取",
       "attributes": {
-        "entity_name": "o_2",
+        "entity_name": "remote",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "已获取",
-        "description": "o_2的状态: 已获取"
+        "description": "remote的状态: 已获取"
       }
     },
     {
       "id": "state_118",
       "type": "state",
-      "name": "o_2_已使用",
+      "name": "remote_已使用",
       "attributes": {
-        "entity_name": "o_2",
+        "entity_name": "remote",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "已使用",
-        "description": "o_2的状态: 已使用"
+        "description": "remote的状态: 已使用"
       }
     },
     {
       "id": "state_119",
       "type": "state",
-      "name": "o_4_可获取",
+      "name": "note_可获取",
       "attributes": {
-        "entity_name": "o_4",
+        "entity_name": "note",
         "state_type": "entity_state",
         "is_initial": true,
         "state_value": "可获取",
-        "description": "o_4的状态: 可获取"
+        "description": "note的状态: 可获取"
       }
     },
     {
       "id": "state_120",
       "type": "state",
-      "name": "o_4_已获取",
+      "name": "note_已获取",
       "attributes": {
-        "entity_name": "o_4",
+        "entity_name": "note",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "已获取",
-        "description": "o_4的状态: 已获取"
+        "description": "note的状态: 已获取"
       }
     },
     {
       "id": "state_121",
       "type": "state",
-      "name": "o_4_已使用",
+      "name": "note_已使用",
       "attributes": {
-        "entity_name": "o_4",
+        "entity_name": "note",
         "state_type": "entity_state",
         "is_initial": false,
         "state_value": "已使用",
-        "description": "o_4的状态: 已使用"
+        "description": "note的状态: 已使用"
       }
     },
     {
       "id": "action_1",
+      "type": "action",
+      "name": "打开chest drawer",
+      "attributes": {
+        "description": "打开chest drawer",
+        "required_entities": [
+          "玩家",
+          "chest drawer"
+        ],
+        "required_states": {
+          "chest drawer": "关闭"
+        },
+        "effects": {
+          "chest drawer": "打开"
+        },
+        "result": "打开成功"
+      }
+    },
+    {
+      "id": "action_2",
+      "type": "action",
+      "name": "从chest drawer获取old key",
+      "attributes": {
+        "description": "从chest drawer中拿取old key",
+        "required_entities": [
+          "玩家",
+          "old key",
+          "chest drawer"
+        ],
+        "required_states": {
+          "old key": "可获取",
+          "chest drawer": "打开"
+        },
+        "effects": {
+          "old key": "已获取"
+        },
+        "result": "获取成功"
+      }
+    },
+    {
+      "id": "action_3",
+      "type": "action",
+      "name": "用old key解锁wooden door",
+      "attributes": {
+        "description": "使用old key解锁wooden door",
+        "required_entities": [
+          "玩家",
+          "wooden door",
+          "old key"
+        ],
+        "required_states": {
+          "wooden door": "锁定",
+          "old key": "已获取"
+        },
+        "effects": {
+          "wooden door": "解锁"
+        },
+        "result": "解锁成功"
+      }
+    },
+    {
+      "id": "action_4",
+      "type": "action",
+      "name": "打开wooden door",
+      "attributes": {
+        "description": "打开wooden door",
+        "required_entities": [
+          "玩家",
+          "wooden door"
+        ],
+        "required_states": {
+          "wooden door": "关闭"
+        },
+        "effects": {
+          "wooden door": "打开"
+        },
+        "result": "打开成功"
+      }
+    },
+    {
+      "id": "action_5",
       "type": "action",
       "name": "向east移动",
       "attributes": {
@@ -2271,7 +2351,44 @@
       }
     },
     {
-      "id": "action_2",
+      "id": "action_6",
+      "type": "action",
+      "name": "打开screen door",
+      "attributes": {
+        "description": "打开screen door",
+        "required_entities": [
+          "玩家",
+          "screen door"
+        ],
+        "required_states": {
+          "screen door": "关闭"
+        },
+        "effects": {
+          "screen door": "打开"
+        },
+        "result": "打开成功"
+      }
+    },
+    {
+      "id": "action_7",
+      "type": "action",
+      "name": "向east移动",
+      "attributes": {
+        "description": "向east方向移动",
+        "required_entities": [
+          "玩家"
+        ],
+        "required_states": {
+          "玩家": "探索中"
+        },
+        "effects": {
+          "玩家": "探索中"
+        },
+        "result": "移动到east方向"
+      }
+    },
+    {
+      "id": "action_8",
       "type": "action",
       "name": "向south移动",
       "attributes": {
@@ -2289,7 +2406,26 @@
       }
     },
     {
-      "id": "action_3",
+      "id": "action_9",
+      "type": "action",
+      "name": "获取carrot",
+      "attributes": {
+        "description": "从环境中拿取carrot",
+        "required_entities": [
+          "玩家",
+          "carrot"
+        ],
+        "required_states": {
+          "carrot": "可获取"
+        },
+        "effects": {
+          "carrot": "已获取"
+        },
+        "result": "获取成功"
+      }
+    },
+    {
+      "id": "action_10",
       "type": "action",
       "name": "向north移动",
       "attributes": {
@@ -2307,7 +2443,67 @@
       }
     },
     {
+      "id": "action_11",
+      "type": "action",
+      "name": "向west移动",
+      "attributes": {
+        "description": "向west方向移动",
+        "required_entities": [
+          "玩家"
+        ],
+        "required_states": {
+          "玩家": "探索中"
+        },
+        "effects": {
+          "玩家": "探索中"
+        },
+        "result": "移动到west方向"
+      }
+    },
+    {
+      "id": "action_12",
+      "type": "action",
+      "name": "放置carrot到stove",
+      "attributes": {
+        "description": "将carrot放置到stove上",
+        "required_entities": [
+          "玩家",
+          "carrot",
+          "stove"
+        ],
+        "required_states": {
+          "carrot": "已获取"
+        },
+        "effects": {
+          "carrot": "已放置"
+        },
+        "result": "放置成功"
+      }
+    },
+    {
       "id": "result_1",
+      "type": "result",
+      "name": "打开chest drawer_结果",
+      "attributes": {
+        "action_name": "打开chest drawer",
+        "description": "执行打开chest drawer的结果",
+        "result_value": "打开成功",
+        "is_core_action": true
+      }
+    },
+    {
+      "id": "result_2",
+      "type": "result",
+      "name": "打开wooden door_结果",
+      "attributes": {
+        "action_name": "打开wooden door",
+        "description": "执行打开wooden door的结果",
+        "result_value": "打开成功",
+        "is_core_action": true
+      }
+    },
+    {
+      "id": "result_3",
       "type": "result",
       "name": "向east移动_结果",
       "attributes": {
@@ -2318,46 +2514,68 @@
       }
     },
     {
-      "id": "result_2",
-      "type": "result",
-      "name": "向south移动_结果",
-      "attributes": {
-        "action_name": "向south移动",
-        "description": "执行向south移动的结果",
-        "result_value": "移动到south方向",
-        "is_core_action": true
-      }
-    },
-    {
-      "id": "result_3",
-      "type": "result",
-      "name": "向south移动_结果",
-      "attributes": {
-        "action_name": "向south移动",
-        "description": "执行向south移动的结果",
-        "result_value": "移动到south方向",
-        "is_core_action": true
-      }
-    },
-    {
       "id": "result_4",
       "type": "result",
-      "name": "向north移动_结果",
+      "name": "打开screen door_结果",
       "attributes": {
-        "action_name": "向north移动",
-        "description": "执行向north移动的结果",
-        "result_value": "移动到north方向",
+        "action_name": "打开screen door",
+        "description": "执行打开screen door的结果",
+        "result_value": "打开成功",
         "is_core_action": true
       }
     },
     {
       "id": "result_5",
       "type": "result",
+      "name": "向east移动_结果",
+      "attributes": {
+        "action_name": "向east移动",
+        "description": "执行向east移动的结果",
+        "result_value": "移动到east方向",
+        "is_core_action": true
+      }
+    },
+    {
+      "id": "result_6",
+      "type": "result",
+      "name": "向south移动_结果",
+      "attributes": {
+        "action_name": "向south移动",
+        "description": "执行向south移动的结果",
+        "result_value": "移动到south方向",
+        "is_core_action": true
+      }
+    },
+    {
+      "id": "result_7",
+      "type": "result",
+      "name": "获取carrot_结果",
+      "attributes": {
+        "action_name": "获取carrot",
+        "description": "执行获取carrot的结果",
+        "result_value": "获取成功",
+        "is_core_action": true
+      }
+    },
+    {
+      "id": "result_8",
+      "type": "result",
       "name": "向north移动_结果",
       "attributes": {
         "action_name": "向north移动",
         "description": "执行向north移动的结果",
         "result_value": "移动到north方向",
+        "is_core_action": true
+      }
+    },
+    {
+      "id": "result_9",
+      "type": "result",
+      "name": "向west移动_结果",
+      "attributes": {
+        "action_name": "向west移动",
+        "description": "执行向west移动的结果",
+        "result_value": "移动到west方向",
         "is_core_action": true
       }
     }
@@ -2372,8 +2590,32 @@
       }
     },
     {
+      "source": "action_1",
+      "target": "entity_11",
+      "type": "requires",
+      "attributes": {
+        "relationship": "action_requires_entity"
+      }
+    },
+    {
       "source": "action_2",
       "target": "entity_2",
+      "type": "requires",
+      "attributes": {
+        "relationship": "action_requires_entity"
+      }
+    },
+    {
+      "source": "action_2",
+      "target": "entity_34",
+      "type": "requires",
+      "attributes": {
+        "relationship": "action_requires_entity"
+      }
+    },
+    {
+      "source": "action_2",
+      "target": "entity_11",
       "type": "requires",
       "attributes": {
         "relationship": "action_requires_entity"
@@ -2388,25 +2630,189 @@
       }
     },
     {
-      "source": "action_1",
-      "target": "state_4",
+      "source": "action_3",
+      "target": "entity_9",
       "type": "requires",
       "attributes": {
-        "relationship": "action_requires_state",
-        "required_value": "探索中"
-      }
-    },
-    {
-      "source": "action_2",
-      "target": "state_4",
-      "type": "requires",
-      "attributes": {
-        "relationship": "action_requires_state",
-        "required_value": "探索中"
+        "relationship": "action_requires_entity"
       }
     },
     {
       "source": "action_3",
+      "target": "entity_34",
+      "type": "requires",
+      "attributes": {
+        "relationship": "action_requires_entity"
+      }
+    },
+    {
+      "source": "action_4",
+      "target": "entity_2",
+      "type": "requires",
+      "attributes": {
+        "relationship": "action_requires_entity"
+      }
+    },
+    {
+      "source": "action_4",
+      "target": "entity_9",
+      "type": "requires",
+      "attributes": {
+        "relationship": "action_requires_entity"
+      }
+    },
+    {
+      "source": "action_5",
+      "target": "entity_2",
+      "type": "requires",
+      "attributes": {
+        "relationship": "action_requires_entity"
+      }
+    },
+    {
+      "source": "action_6",
+      "target": "entity_2",
+      "type": "requires",
+      "attributes": {
+        "relationship": "action_requires_entity"
+      }
+    },
+    {
+      "source": "action_6",
+      "target": "entity_10",
+      "type": "requires",
+      "attributes": {
+        "relationship": "action_requires_entity"
+      }
+    },
+    {
+      "source": "action_7",
+      "target": "entity_2",
+      "type": "requires",
+      "attributes": {
+        "relationship": "action_requires_entity"
+      }
+    },
+    {
+      "source": "action_8",
+      "target": "entity_2",
+      "type": "requires",
+      "attributes": {
+        "relationship": "action_requires_entity"
+      }
+    },
+    {
+      "source": "action_9",
+      "target": "entity_2",
+      "type": "requires",
+      "attributes": {
+        "relationship": "action_requires_entity"
+      }
+    },
+    {
+      "source": "action_9",
+      "target": "entity_17",
+      "type": "requires",
+      "attributes": {
+        "relationship": "action_requires_entity"
+      }
+    },
+    {
+      "source": "action_10",
+      "target": "entity_2",
+      "type": "requires",
+      "attributes": {
+        "relationship": "action_requires_entity"
+      }
+    },
+    {
+      "source": "action_11",
+      "target": "entity_2",
+      "type": "requires",
+      "attributes": {
+        "relationship": "action_requires_entity"
+      }
+    },
+    {
+      "source": "action_12",
+      "target": "entity_2",
+      "type": "requires",
+      "attributes": {
+        "relationship": "action_requires_entity"
+      }
+    },
+    {
+      "source": "action_12",
+      "target": "entity_17",
+      "type": "requires",
+      "attributes": {
+        "relationship": "action_requires_entity"
+      }
+    },
+    {
+      "source": "action_12",
+      "target": "entity_23",
+      "type": "requires",
+      "attributes": {
+        "relationship": "action_requires_entity"
+      }
+    },
+    {
+      "source": "action_1",
+      "target": "state_33",
+      "type": "requires",
+      "attributes": {
+        "relationship": "action_requires_state",
+        "required_value": "关闭"
+      }
+    },
+    {
+      "source": "action_2",
+      "target": "state_107",
+      "type": "requires",
+      "attributes": {
+        "relationship": "action_requires_state",
+        "required_value": "可获取"
+      }
+    },
+    {
+      "source": "action_2",
+      "target": "state_34",
+      "type": "requires",
+      "attributes": {
+        "relationship": "action_requires_state",
+        "required_value": "打开"
+      }
+    },
+    {
+      "source": "action_3",
+      "target": "state_27",
+      "type": "requires",
+      "attributes": {
+        "relationship": "action_requires_state",
+        "required_value": "锁定"
+      }
+    },
+    {
+      "source": "action_3",
+      "target": "state_108",
+      "type": "requires",
+      "attributes": {
+        "relationship": "action_requires_state",
+        "required_value": "已获取"
+      }
+    },
+    {
+      "source": "action_4",
+      "target": "state_25",
+      "type": "requires",
+      "attributes": {
+        "relationship": "action_requires_state",
+        "required_value": "关闭"
+      }
+    },
+    {
+      "source": "action_5",
       "target": "state_4",
       "type": "requires",
       "attributes": {
@@ -2415,7 +2821,106 @@
       }
     },
     {
+      "source": "action_6",
+      "target": "state_29",
+      "type": "requires",
+      "attributes": {
+        "relationship": "action_requires_state",
+        "required_value": "关闭"
+      }
+    },
+    {
+      "source": "action_7",
+      "target": "state_4",
+      "type": "requires",
+      "attributes": {
+        "relationship": "action_requires_state",
+        "required_value": "探索中"
+      }
+    },
+    {
+      "source": "action_8",
+      "target": "state_4",
+      "type": "requires",
+      "attributes": {
+        "relationship": "action_requires_state",
+        "required_value": "探索中"
+      }
+    },
+    {
+      "source": "action_9",
+      "target": "state_56",
+      "type": "requires",
+      "attributes": {
+        "relationship": "action_requires_state",
+        "required_value": "可获取"
+      }
+    },
+    {
+      "source": "action_10",
+      "target": "state_4",
+      "type": "requires",
+      "attributes": {
+        "relationship": "action_requires_state",
+        "required_value": "探索中"
+      }
+    },
+    {
+      "source": "action_11",
+      "target": "state_4",
+      "type": "requires",
+      "attributes": {
+        "relationship": "action_requires_state",
+        "required_value": "探索中"
+      }
+    },
+    {
+      "source": "action_12",
+      "target": "state_57",
+      "type": "requires",
+      "attributes": {
+        "relationship": "action_requires_state",
+        "required_value": "已获取"
+      }
+    },
+    {
       "source": "action_1",
+      "target": "state_34",
+      "type": "modifies",
+      "attributes": {
+        "relationship": "action_modifies_state",
+        "new_value": "打开"
+      }
+    },
+    {
+      "source": "action_2",
+      "target": "state_108",
+      "type": "modifies",
+      "attributes": {
+        "relationship": "action_modifies_state",
+        "new_value": "已获取"
+      }
+    },
+    {
+      "source": "action_3",
+      "target": "state_28",
+      "type": "modifies",
+      "attributes": {
+        "relationship": "action_modifies_state",
+        "new_value": "解锁"
+      }
+    },
+    {
+      "source": "action_4",
+      "target": "state_26",
+      "type": "modifies",
+      "attributes": {
+        "relationship": "action_modifies_state",
+        "new_value": "打开"
+      }
+    },
+    {
+      "source": "action_5",
       "target": "state_4",
       "type": "modifies",
       "attributes": {
@@ -2424,7 +2929,16 @@
       }
     },
     {
-      "source": "action_2",
+      "source": "action_6",
+      "target": "state_30",
+      "type": "modifies",
+      "attributes": {
+        "relationship": "action_modifies_state",
+        "new_value": "打开"
+      }
+    },
+    {
+      "source": "action_7",
       "target": "state_4",
       "type": "modifies",
       "attributes": {
@@ -2433,7 +2947,34 @@
       }
     },
     {
-      "source": "action_3",
+      "source": "action_8",
+      "target": "state_4",
+      "type": "modifies",
+      "attributes": {
+        "relationship": "action_modifies_state",
+        "new_value": "探索中"
+      }
+    },
+    {
+      "source": "action_9",
+      "target": "state_57",
+      "type": "modifies",
+      "attributes": {
+        "relationship": "action_modifies_state",
+        "new_value": "已获取"
+      }
+    },
+    {
+      "source": "action_10",
+      "target": "state_4",
+      "type": "modifies",
+      "attributes": {
+        "relationship": "action_modifies_state",
+        "new_value": "探索中"
+      }
+    },
+    {
+      "source": "action_11",
       "target": "state_4",
       "type": "modifies",
       "attributes": {
@@ -2466,6 +3007,138 @@
       }
     },
     {
+      "source": "action_4",
+      "target": "result_4",
+      "type": "produces",
+      "attributes": {
+        "relationship": "action_produces_result"
+      }
+    },
+    {
+      "source": "action_5",
+      "target": "result_5",
+      "type": "produces",
+      "attributes": {
+        "relationship": "action_produces_result"
+      }
+    },
+    {
+      "source": "action_6",
+      "target": "result_6",
+      "type": "produces",
+      "attributes": {
+        "relationship": "action_produces_result"
+      }
+    },
+    {
+      "source": "action_7",
+      "target": "result_7",
+      "type": "produces",
+      "attributes": {
+        "relationship": "action_produces_result"
+      }
+    },
+    {
+      "source": "action_8",
+      "target": "result_8",
+      "type": "produces",
+      "attributes": {
+        "relationship": "action_produces_result"
+      }
+    },
+    {
+      "source": "action_9",
+      "target": "result_9",
+      "type": "produces",
+      "attributes": {
+        "relationship": "action_produces_result"
+      }
+    },
+    {
+      "source": "state_33",
+      "target": "state_34",
+      "type": "transitions",
+      "attributes": {
+        "action": "打开chest drawer",
+        "conditions": [
+          "chest drawer必须处于关闭状态"
+        ],
+        "effects": [
+          "chest drawer变为打开状态"
+        ]
+      }
+    },
+    {
+      "source": "state_107",
+      "target": "state_108",
+      "type": "transitions",
+      "attributes": {
+        "action": "从chest drawer获取old key",
+        "conditions": [
+          "old key必须处于可获取状态"
+        ],
+        "effects": [
+          "old key变为已获取状态"
+        ]
+      }
+    },
+    {
+      "source": "state_27",
+      "target": "state_28",
+      "type": "transitions",
+      "attributes": {
+        "action": "用old key解锁wooden door",
+        "conditions": [
+          "wooden door必须处于锁定状态"
+        ],
+        "effects": [
+          "wooden door变为解锁状态"
+        ]
+      }
+    },
+    {
+      "source": "state_25",
+      "target": "state_26",
+      "type": "transitions",
+      "attributes": {
+        "action": "打开wooden door",
+        "conditions": [
+          "wooden door必须处于关闭状态"
+        ],
+        "effects": [
+          "wooden door变为打开状态"
+        ]
+      }
+    },
+    {
+      "source": "state_4",
+      "target": "state_4",
+      "type": "transitions",
+      "attributes": {
+        "action": "向east移动",
+        "conditions": [
+          "玩家必须处于探索中状态"
+        ],
+        "effects": [
+          "玩家变为探索中状态"
+        ]
+      }
+    },
+    {
+      "source": "state_29",
+      "target": "state_30",
+      "type": "transitions",
+      "attributes": {
+        "action": "打开screen door",
+        "conditions": [
+          "screen door必须处于关闭状态"
+        ],
+        "effects": [
+          "screen door变为打开状态"
+        ]
+      }
+    },
+    {
       "source": "state_4",
       "target": "state_4",
       "type": "transitions",
@@ -2494,6 +3167,20 @@
       }
     },
     {
+      "source": "state_56",
+      "target": "state_57",
+      "type": "transitions",
+      "attributes": {
+        "action": "获取carrot",
+        "conditions": [
+          "carrot必须处于可获取状态"
+        ],
+        "effects": [
+          "carrot变为已获取状态"
+        ]
+      }
+    },
+    {
       "source": "state_4",
       "target": "state_4",
       "type": "transitions",
@@ -2506,20 +3193,54 @@
           "玩家变为探索中状态"
         ]
       }
+    },
+    {
+      "source": "state_4",
+      "target": "state_4",
+      "type": "transitions",
+      "attributes": {
+        "action": "向west移动",
+        "conditions": [
+          "玩家必须处于探索中状态"
+        ],
+        "effects": [
+          "玩家变为探索中状态"
+        ]
+      }
     }
   ],
   "metadata": {
-    "node_count": 167,
-    "edge_count": 15,
+    "node_count": 180,
+    "edge_count": 67,
     "node_types": [
       "entity",
       "state",
       "action",
       "result"
     ],
-    "scene_name": "TextWorld_tw-another_game",
+    "scene_name": "TextWorld_tw-rewardsSparse_goalBrief",
+    "scene_type": "task_scene",
     "game_type": "textworld",
-    "schema_version": "1.0",
-    "data_source": "real_textworld_game"
+    "schema_version": "2.0",
+    "data_source": "real_textworld_game",
+    "task_info": {
+      "objective": "The dinner is almost ready! It's only missing a grilled carrot.",
+      "max_score": 1,
+      "walkthrough": [
+        "open chest drawer",
+        "take old key from chest drawer",
+        "unlock wooden door with old key",
+        "open wooden door",
+        "go east",
+        "open screen door",
+        "go east",
+        "go south",
+        "take carrot",
+        "go north",
+        "go west",
+        "put carrot on stove"
+      ],
+      "walkthrough_length": 12
+    }
   }
 }
